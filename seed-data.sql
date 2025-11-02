@@ -13,29 +13,29 @@ INSERT INTO countries (id, iso2, name, region, subregion) VALUES
 ON CONFLICT (iso2) DO NOTHING;
 
 INSERT INTO reactors (country_id, plant_name, unit_name, reactor_type, status, net_capacity_mwe, thermal_power_mwt, latitude, longitude, operator, owner, supplier, construction_start, first_grid_connection, commercial_operation) VALUES
-((SELECT id FROM countries WHERE iso2 = 'US'), 'Vogtle', 'Unit 3', 'PWR', 'Operating', 1117, 3415, 33.1415, -81.7609, 'Southern Nuclear', 'Southern Company', 'Westinghouse', '2013-03-12', '2023-07-31', '2023-07-31'),
-((SELECT id FROM countries WHERE iso2 = 'US'), 'Vogtle', 'Unit 4', 'PWR', 'Under Construction', 1117, 3415, 33.1415, -81.7609, 'Southern Nuclear', 'Southern Company', 'Westinghouse', '2013-11-19', NULL, NULL),
-((SELECT id FROM countries WHERE iso2 = 'US'), 'Palo Verde', 'Unit 1', 'PWR', 'Operating', 1314, 3990, 33.3883, -112.8650, 'Arizona Public Service', 'Arizona Public Service', 'Combustion Engineering', '1976-05-25', '1985-05-25', '1986-01-28'),
-((SELECT id FROM countries WHERE iso2 = 'US'), 'Palo Verde', 'Unit 2', 'PWR', 'Operating', 1314, 3990, 33.3883, -112.8650, 'Arizona Public Service', 'Arizona Public Service', 'Combustion Engineering', '1976-05-25', '1986-04-18', '1986-09-19'),
-((SELECT id FROM countries WHERE iso2 = 'US'), 'Palo Verde', 'Unit 3', 'PWR', 'Operating', 1312, 3990, 33.3883, -112.8650, 'Arizona Public Service', 'Arizona Public Service', 'Combustion Engineering', '1976-05-25', '1987-10-25', '1988-01-08'),
-((SELECT id FROM countries WHERE iso2 = 'US'), 'Diablo Canyon', 'Unit 1', 'PWR', 'Operating', 1138, 3411, 35.2111, -120.8522, 'Pacific Gas & Electric', 'Pacific Gas & Electric', 'Westinghouse', '1968-04-23', '1984-11-02', '1985-05-07'),
-((SELECT id FROM countries WHERE iso2 = 'US'), 'Diablo Canyon', 'Unit 2', 'PWR', 'Operating', 1118, 3411, 35.2111, -120.8522, 'Pacific Gas & Electric', 'Pacific Gas & Electric', 'Westinghouse', '1970-12-23', '1985-08-19', '1986-03-13'),
-((SELECT id FROM countries WHERE iso2 = 'US'), 'Browns Ferry', 'Unit 1', 'BWR', 'Operating', 1155, 3458, 34.7042, -87.1186, 'Tennessee Valley Authority', 'Tennessee Valley Authority', 'General Electric', '1967-05-01', '1973-08-01', '1974-08-01'),
-((SELECT id FROM countries WHERE iso2 = 'US'), 'Peach Bottom', 'Unit 2', 'BWR', 'Operating', 1112, 3514, 39.7589, -76.2692, 'Exelon Generation', 'Exelon', 'General Electric', '1968-01-31', '1973-09-16', '1974-07-05'),
-((SELECT id FROM countries WHERE iso2 = 'US'), 'Peach Bottom', 'Unit 3', 'BWR', 'Operating', 1112, 3514, 39.7589, -76.2692, 'Exelon Generation', 'Exelon', 'General Electric', '1968-01-31', '1974-08-07', '1974-12-23');
+((SELECT id FROM countries WHERE iso2 = 'US'), 'Vogtle', 'Unit 3', 'PWR', 'Operating', 1117, 3415, 33.1415, -81.7609, 'Southern Nuclear', 'Southern Company', 'Westinghouse', DATE '2013-03-12', DATE '2023-07-31', DATE '2023-07-31'),
+((SELECT id FROM countries WHERE iso2 = 'US'), 'Vogtle', 'Unit 4', 'PWR', 'Under Construction', 1117, 3415, 33.1415, -81.7609, 'Southern Nuclear', 'Southern Company', 'Westinghouse', DATE '2013-11-19', NULL, NULL),
+((SELECT id FROM countries WHERE iso2 = 'US'), 'Palo Verde', 'Unit 1', 'PWR', 'Operating', 1314, 3990, 33.3883, -112.8650, 'Arizona Public Service', 'Arizona Public Service', 'Combustion Engineering', DATE '1976-05-25', DATE '1985-05-25', DATE '1986-01-28'),
+((SELECT id FROM countries WHERE iso2 = 'US'), 'Palo Verde', 'Unit 2', 'PWR', 'Operating', 1314, 3990, 33.3883, -112.8650, 'Arizona Public Service', 'Arizona Public Service', 'Combustion Engineering', DATE '1976-05-25', DATE '1986-04-18', DATE '1986-09-19'),
+((SELECT id FROM countries WHERE iso2 = 'US'), 'Palo Verde', 'Unit 3', 'PWR', 'Operating', 1312, 3990, 33.3883, -112.8650, 'Arizona Public Service', 'Arizona Public Service', 'Combustion Engineering', DATE '1976-05-25', DATE '1987-10-25', DATE '1988-01-08'),
+((SELECT id FROM countries WHERE iso2 = 'US'), 'Diablo Canyon', 'Unit 1', 'PWR', 'Operating', 1138, 3411, 35.2111, -120.8522, 'Pacific Gas & Electric', 'Pacific Gas & Electric', 'Westinghouse', DATE '1968-04-23', DATE '1984-11-02', DATE '1985-05-07'),
+((SELECT id FROM countries WHERE iso2 = 'US'), 'Diablo Canyon', 'Unit 2', 'PWR', 'Operating', 1118, 3411, 35.2111, -120.8522, 'Pacific Gas & Electric', 'Pacific Gas & Electric', 'Westinghouse', DATE '1970-12-23', DATE '1985-08-19', DATE '1986-03-13'),
+((SELECT id FROM countries WHERE iso2 = 'US'), 'Browns Ferry', 'Unit 1', 'BWR', 'Operating', 1155, 3458, 34.7042, -87.1186, 'Tennessee Valley Authority', 'Tennessee Valley Authority', 'General Electric', DATE '1967-05-01', DATE '1973-08-01', DATE '1974-08-01'),
+((SELECT id FROM countries WHERE iso2 = 'US'), 'Peach Bottom', 'Unit 2', 'BWR', 'Operating', 1112, 3514, 39.7589, -76.2692, 'Exelon Generation', 'Exelon', 'General Electric', DATE '1968-01-31', DATE '1973-09-16', DATE '1974-07-05'),
+((SELECT id FROM countries WHERE iso2 = 'US'), 'Peach Bottom', 'Unit 3', 'BWR', 'Operating', 1112, 3514, 39.7589, -76.2692, 'Exelon Generation', 'Exelon', 'General Electric', DATE '1968-01-31', DATE '1974-08-07', DATE '1974-12-23');
 
 INSERT INTO reactors (country_id, plant_name, unit_name, reactor_type, status, net_capacity_mwe, latitude, longitude, operator, construction_start, first_grid_connection, commercial_operation) VALUES
-((SELECT id FROM countries WHERE iso2 = 'FR'), 'Flamanville', 'Unit 3', 'PWR', 'Under Construction', 1650, 49.5361, -1.8819, 'EDF', '2007-12-03', NULL, NULL),
-((SELECT id FROM countries WHERE iso2 = 'FR'), 'Civaux', 'Unit 1', 'PWR', 'Operating', 1495, 46.4569, 0.6544, 'EDF', '1991-04-01', '1997-12-24', '2002-05-01'),
-((SELECT id FROM countries WHERE iso2 = 'FR'), 'Civaux', 'Unit 2', 'PWR', 'Operating', 1495, 46.4569, 0.6544, 'EDF', '1991-04-01', '1999-12-24', '2002-05-01'),
-((SELECT id FROM countries WHERE iso2 = 'FR'), 'Cattenom', 'Unit 1', 'PWR', 'Operating', 1300, 49.4167, 6.2181, 'EDF', '1979-01-01', '1986-11-13', '1987-04-01'),
-((SELECT id FROM countries WHERE iso2 = 'FR'), 'Cattenom', 'Unit 2', 'PWR', 'Operating', 1300, 49.4167, 6.2181, 'EDF', '1979-01-01', '1987-08-06', '1988-02-01');
+((SELECT id FROM countries WHERE iso2 = 'FR'), 'Flamanville', 'Unit 3', 'PWR', 'Under Construction', 1650, 49.5361, -1.8819, 'EDF', DATE '2007-12-03', NULL, NULL),
+((SELECT id FROM countries WHERE iso2 = 'FR'), 'Civaux', 'Unit 1', 'PWR', 'Operating', 1495, 46.4569, 0.6544, 'EDF', DATE '1991-04-01', DATE '1997-12-24', DATE '2002-05-01'),
+((SELECT id FROM countries WHERE iso2 = 'FR'), 'Civaux', 'Unit 2', 'PWR', 'Operating', 1495, 46.4569, 0.6544, 'EDF', DATE '1991-04-01', DATE '1999-12-24', DATE '2002-05-01'),
+((SELECT id FROM countries WHERE iso2 = 'FR'), 'Cattenom', 'Unit 1', 'PWR', 'Operating', 1300, 49.4167, 6.2181, 'EDF', DATE '1979-01-01', DATE '1986-11-13', DATE '1987-04-01'),
+((SELECT id FROM countries WHERE iso2 = 'FR'), 'Cattenom', 'Unit 2', 'PWR', 'Operating', 1300, 49.4167, 6.2181, 'EDF', DATE '1979-01-01', DATE '1987-08-06', DATE '1988-02-01');
 
 INSERT INTO reactors (country_id, plant_name, unit_name, reactor_type, status, net_capacity_mwe, latitude, longitude, operator, construction_start, first_grid_connection, commercial_operation) VALUES
-((SELECT id FROM countries WHERE iso2 = 'CN'), 'Taishan', 'Unit 1', 'PWR', 'Operating', 1750, 21.9144, 112.9861, 'CGNPC', '2009-10-18', '2018-06-29', '2018-12-13'),
-((SELECT id FROM countries WHERE iso2 = 'CN'), 'Taishan', 'Unit 2', 'PWR', 'Operating', 1750, 21.9144, 112.9861, 'CGNPC', '2010-04-15', '2019-06-23', '2019-09-07'),
-((SELECT id FROM countries WHERE iso2 = 'CN'), 'Hualong One Demo', 'Unit 1', 'PWR', 'Operating', 1150, 28.4667, 121.4167, 'CNNC', '2015-05-07', '2020-11-27', '2021-01-30'),
-((SELECT id FROM countries WHERE iso2 = 'CN'), 'Tianwan', 'Unit 1', 'PWR', 'Operating', 1060, 34.6869, 119.4569, 'CNNC', '1999-10-20', '2006-05-17', '2007-05-17');
+((SELECT id FROM countries WHERE iso2 = 'CN'), 'Taishan', 'Unit 1', 'PWR', 'Operating', 1750, 21.9144, 112.9861, 'CGNPC', DATE '2009-10-18', DATE '2018-06-29', DATE '2018-12-13'),
+((SELECT id FROM countries WHERE iso2 = 'CN'), 'Taishan', 'Unit 2', 'PWR', 'Operating', 1750, 21.9144, 112.9861, 'CGNPC', DATE '2010-04-15', DATE '2019-06-23', DATE '2019-09-07'),
+((SELECT id FROM countries WHERE iso2 = 'CN'), 'Hualong One Demo', 'Unit 1', 'PWR', 'Operating', 1150, 28.4667, 121.4167, 'CNNC', DATE '2015-05-07', DATE '2020-11-27', DATE '2021-01-30'),
+((SELECT id FROM countries WHERE iso2 = 'CN'), 'Tianwan', 'Unit 1', 'PWR', 'Operating', 1060, 34.6869, 119.4569, 'CNNC', DATE '1999-10-20', DATE '2006-05-17', DATE '2007-05-17');
 
 INSERT INTO generation_monthly (reactor_id, year, month, gross_mwh, net_mwh, capacity_factor) 
 SELECT r.id, 2023, 8, 850000, 820000, 95.5
@@ -74,13 +74,13 @@ INSERT INTO country_energy_stats (country_id, year, nuclear_twh, total_electrici
 ((SELECT id FROM countries WHERE iso2 = 'CN'), 2021, 407.0, 8500.0, 4.8);
 
 INSERT INTO reactor_status_history (reactor_id, status, effective_date)
-SELECT r.id, 'Under Construction', '2013-03-12'
+SELECT r.id, 'Under Construction', DATE '2013-03-12'
 FROM reactors r WHERE r.plant_name = 'Vogtle' AND r.unit_name = 'Unit 3'
 UNION ALL
-SELECT r.id, 'Operating', '2023-07-31'
+SELECT r.id, 'Operating', DATE '2023-07-31'
 FROM reactors r WHERE r.plant_name = 'Vogtle' AND r.unit_name = 'Unit 3'
 UNION ALL
-SELECT r.id, 'Under Construction', '2013-11-19'
+SELECT r.id, 'Under Construction', DATE '2013-11-19'
 FROM reactors r WHERE r.plant_name = 'Vogtle' AND r.unit_name = 'Unit 4';
 
 INSERT INTO facts (category, title, body, tags) VALUES
