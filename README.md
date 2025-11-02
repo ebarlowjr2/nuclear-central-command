@@ -69,12 +69,18 @@ MAPBOX_TOKEN=your_mapbox_token
    - Copy and paste the contents of `supabase-schema.sql`
    - Execute the SQL to create all tables and indexes
 
-5. Run the development server:
+5. Load sample data (recommended for testing):
+   - In the Supabase SQL Editor, copy and paste the contents of `seed-data.sql`
+   - Execute the SQL to populate the database with realistic sample data
+   - This includes 10 countries, 19 reactors, generation data, country stats, and educational facts
+   - You can skip this step if you plan to use the ETL routes to fetch real data
+
+6. Run the development server:
 ```bash
 npm run dev
 ```
 
-6. Open [http://localhost:3000](http://localhost:3000) in your browser
+7. Open [http://localhost:3000](http://localhost:3000) in your browser
 
 ## Project Structure
 
@@ -107,6 +113,7 @@ nuclear-central-command/
 │   └── supabaseServer.ts     # Supabase server client
 ├── types.ts                  # TypeScript type definitions
 ├── supabase-schema.sql       # Database schema
+├── seed-data.sql             # Sample data for testing
 └── README.md                 # This file
 ```
 
