@@ -1,9 +1,12 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { supabaseAdmin } from '@/lib/supabaseServer';
+import { getSupabaseAdmin } from '@/lib/supabaseServer';
 import Papa from 'papaparse';
+
+export const dynamic = 'force-dynamic';
 
 export async function POST(request: NextRequest) {
   try {
+    const supabase = getSupabaseAdmin();
     const formData = await request.formData();
     const file = formData.get('file') as File;
 
@@ -37,7 +40,7 @@ export async function POST(request: NextRequest) {
       iaea_pris_id: row.iaea_pris_id || row.PRIS_ID
     }));
 
-    const { data, error } = await supabaseAdmin
+    const { data, error } = await supabase
       .from('reactors')
       .upsert(reactors, { onConflict: 'iaea_pris_id' });
 

@@ -1,8 +1,11 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { supabaseAdmin } from '@/lib/supabaseServer';
+import { getSupabaseAdmin } from '@/lib/supabaseServer';
+
+export const dynamic = 'force-dynamic';
 
 export async function GET(request: NextRequest) {
   try {
+    const supabase = getSupabaseAdmin();
     const searchParams = request.nextUrl.searchParams;
     const country = searchParams.get('country');
     const metric = searchParams.get('metric') || 'nuclear_twh';
@@ -11,7 +14,7 @@ export async function GET(request: NextRequest) {
       return NextResponse.json({ error: 'Country parameter required' }, { status: 400 });
     }
 
-    const { data: countryData, error: countryError } = await supabaseAdmin
+    const { data: countryData, error: countryError } = await supabase
       .from('countries')
       .select('id')
       .eq('iso2', country)
@@ -21,7 +24,7 @@ export async function GET(request: NextRequest) {
       return NextResponse.json({ error: 'Country not found' }, { status: 404 });
     }
 
-    const { data, error } = await supabaseAdmin
+    const { data, error } = await supabase
       .from('country_energy_stats')
       .select('*')
       .eq('country_id', countryData.id)

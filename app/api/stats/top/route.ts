@@ -1,15 +1,18 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { supabaseAdmin } from '@/lib/supabaseServer';
+import { getSupabaseAdmin } from '@/lib/supabaseServer';
+
+export const dynamic = 'force-dynamic';
 
 export async function GET(request: NextRequest) {
   try {
+    const supabase = getSupabaseAdmin();
     const searchParams = request.nextUrl.searchParams;
     const metric = searchParams.get('metric') || 'capacity';
     const scope = searchParams.get('scope') || 'country';
     const limit = parseInt(searchParams.get('limit') || '10');
 
     if (scope === 'reactor') {
-      const { data, error } = await supabaseAdmin
+      const { data, error } = await supabase
         .from('reactors')
         .select('*, countries(name, iso2)')
         .eq('status', 'Operating')
@@ -22,7 +25,7 @@ export async function GET(request: NextRequest) {
 
       return NextResponse.json({ data: data || [] });
     } else {
-      const { data: reactors, error } = await supabaseAdmin
+      const { data: reactors, error } = await supabase
         .from('reactors')
         .select('country_id, net_capacity_mwe, status, countries(name, iso2)');
 

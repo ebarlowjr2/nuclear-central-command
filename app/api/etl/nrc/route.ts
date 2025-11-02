@@ -1,17 +1,20 @@
 import { NextResponse } from 'next/server';
-import { supabaseAdmin } from '@/lib/supabaseServer';
+import { getSupabaseAdmin } from '@/lib/supabaseServer';
+
+export const dynamic = 'force-dynamic';
 
 export async function GET() {
   try {
+    const supabase = getSupabaseAdmin();
     
-    const { data: usaCountry, error: countryError } = await supabaseAdmin
+    const { data: usaCountry, error: countryError } = await supabase
       .from('countries')
       .select('id')
       .eq('iso2', 'US')
       .single();
 
     if (countryError && countryError.code === 'PGRST116') {
-      const { data: newCountry } = await supabaseAdmin
+      const { data: newCountry } = await supabase
         .from('countries')
         .insert({ iso2: 'US', name: 'United States', region: 'Americas', subregion: 'Northern America' })
         .select()

@@ -1,14 +1,17 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { supabaseAdmin } from '@/lib/supabaseServer';
+import { getSupabaseAdmin } from '@/lib/supabaseServer';
+
+export const dynamic = 'force-dynamic';
 
 export async function GET(
   request: NextRequest,
   { params }: { params: Promise<{ id: string }> }
 ) {
   try {
+    const supabase = getSupabaseAdmin();
     const { id } = await params;
 
-    const { data: reactor, error: reactorError } = await supabaseAdmin
+    const { data: reactor, error: reactorError } = await supabase
       .from('reactors')
       .select('*, countries(name, iso2, region)')
       .eq('id', id)
@@ -18,7 +21,7 @@ export async function GET(
       return NextResponse.json({ error: reactorError.message }, { status: 500 });
     }
 
-    const { data: generation, error: genError } = await supabaseAdmin
+    const { data: generation, error: genError } = await supabase
       .from('generation_monthly')
       .select('*')
       .eq('reactor_id', id)
@@ -26,7 +29,7 @@ export async function GET(
       .order('month', { ascending: false })
       .limit(12);
 
-    const { data: statusHistory, error: statusError } = await supabaseAdmin
+    const { data: statusHistory, error: statusError } = await supabase
       .from('reactor_status_history')
       .select('*')
       .eq('reactor_id', id)

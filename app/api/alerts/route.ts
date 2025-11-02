@@ -1,8 +1,11 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { supabaseAdmin } from '@/lib/supabaseServer';
+import { getSupabaseAdmin } from '@/lib/supabaseServer';
+
+export const dynamic = 'force-dynamic';
 
 export async function POST(request: NextRequest) {
   try {
+    const supabase = getSupabaseAdmin();
     const body = await request.json();
     const { email, reactor_id, alert_type } = body;
 
@@ -10,7 +13,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Email and alert_type required' }, { status: 400 });
     }
 
-    const { data, error } = await supabaseAdmin
+    const { data, error } = await supabase
       .from('alerts')
       .insert({ email, reactor_id, alert_type })
       .select()

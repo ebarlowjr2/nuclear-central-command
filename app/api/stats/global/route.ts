@@ -1,9 +1,12 @@
 import { NextResponse } from 'next/server';
-import { supabaseAdmin } from '@/lib/supabaseServer';
+import { getSupabaseAdmin } from '@/lib/supabaseServer';
+
+export const dynamic = 'force-dynamic';
 
 export async function GET() {
   try {
-    const { data: reactors, error: reactorsError } = await supabaseAdmin
+    const supabase = getSupabaseAdmin();
+    const { data: reactors, error: reactorsError } = await supabase
       .from('reactors')
       .select('status, net_capacity_mwe');
 
