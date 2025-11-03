@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import StatsCards from '@/components/StatsCards';
 import ReactorCard from '@/components/ReactorCard';
 import FactCard from '@/components/FactCard';
+import { MarketTabs } from '@/components/Market/MarketTabs';
 import { Skeleton } from '@/components/ui/skeleton';
 import { Reactor, Fact } from '@/types';
 
@@ -131,6 +132,10 @@ export default function Home() {
           ))}
         </div>
       </div>
+
+      <section>
+        <MarketTabs />
+      </section>
     </div>
   );
 }
