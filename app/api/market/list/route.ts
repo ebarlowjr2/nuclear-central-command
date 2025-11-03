@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { getSupabaseAdmin } from '@/lib/supabaseServer';
 
-export const revalidate = 300; // Cache for 5 minutes
+export const dynamic = 'force-dynamic';
 
 /**
  * List securities with their latest quotes
@@ -46,10 +46,17 @@ export async function GET(req: Request) {
       updated_at: r.security_quotes?.updated_at ?? null
     }));
 
-    return NextResponse.json({
-      ok: true,
-      items: rows
-    });
+    return NextResponse.json(
+      {
+        ok: true,
+        items: rows
+      },
+      {
+        headers: {
+          'Cache-Control': 's-maxage=300, stale-while-revalidate=3600'
+        }
+      }
+    );
   } catch (e: any) {
     console.error('List exception:', e);
     return NextResponse.json({
