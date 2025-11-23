@@ -14,6 +14,7 @@ export default function TopNav() {
     { href: '/countries', label: 'Countries' },
     { href: '/countries/compare', label: 'Compare' },
     { href: '/learn', label: 'Learn' },
+    { href: '/blog', label: 'Blog' },
   ];
 
   return (
