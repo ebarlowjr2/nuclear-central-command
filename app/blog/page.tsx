@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { getSupabaseAdmin } from "@/lib/supabaseServer";
 
 interface BlogPost {
   id: string;
@@ -10,10 +11,18 @@ interface BlogPost {
 
 async function getPosts(): Promise<BlogPost[]> {
   try {
-    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
-    const res = await fetch(`${baseUrl}/api/blog`, { cache: "no-store" });
-    if (!res.ok) return [];
-    return res.json();
+    const supabase = getSupabaseAdmin();
+    const { data, error } = await supabase
+      .from("blog_posts")
+      .select("*")
+      .eq("status", "published")
+      .order("published_at", { ascending: false });
+
+    if (error) {
+      console.error("Error fetching blog posts:", error);
+      return [];
+    }
+    return data ?? [];
   } catch (err) {
     console.error("Error fetching posts:", err);
     return [];

@@ -1,3 +1,5 @@
+import { getSupabaseAdmin } from "@/lib/supabaseServer";
+
 interface NewsItem {
   id: string;
   source_name: string;
@@ -9,12 +11,18 @@ interface NewsItem {
 
 async function fetchNews(): Promise<NewsItem[]> {
   try {
-    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
-    const res = await fetch(`${baseUrl}/api/news?limit=50`, {
-      cache: "no-store",
-    });
-    if (!res.ok) return [];
-    return res.json();
+    const supabase = getSupabaseAdmin();
+    const { data, error } = await supabase
+      .from("nuclear_news")
+      .select("*")
+      .order("published_at", { ascending: false })
+      .limit(50);
+
+    if (error) {
+      console.error("Error fetching nuclear_news:", error);
+      return [];
+    }
+    return data ?? [];
   } catch (err) {
     console.error("Error fetching news:", err);
     return [];
