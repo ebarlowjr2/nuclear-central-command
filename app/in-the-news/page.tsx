@@ -44,7 +44,8 @@ export default async function InTheNewsPage() {
     );
   }
 
-  const [featured, ...rest] = news;
+  const featured = news.find((item) => item.image_url) ?? news[0];
+  const rest = news.filter((item) => item.id !== featured.id);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">
