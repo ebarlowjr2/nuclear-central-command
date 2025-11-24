@@ -38,6 +38,47 @@ export async function refreshNuclearNews() {
           imageUrl = mediaContent[0].$.url;
         }
 
+        const itemWithThumb = item as { "media:thumbnail"?: Array<{ $?: { url?: string } }> };
+        const mediaThumb = itemWithThumb["media:thumbnail"];
+        if (!imageUrl && Array.isArray(mediaThumb) && mediaThumb[0]?.$?.url) {
+          imageUrl = mediaThumb[0].$.url;
+        }
+
+        const itemWithWnnImage = item as { "wnn:articleImage"?: string };
+        if (!imageUrl && itemWithWnnImage["wnn:articleImage"]) {
+          imageUrl = itemWithWnnImage["wnn:articleImage"];
+        }
+
+        if (!imageUrl) {
+          const itemWithContent = item as {
+            "content:encoded"?: string;
+            content?: string;
+            description?: string;
+            summary?: string;
+          };
+          const html =
+            itemWithContent["content:encoded"] ??
+            itemWithContent.content ??
+            itemWithContent.description ??
+            itemWithContent.summary;
+
+          if (typeof html === "string") {
+            const match = html.match(/<img[^>]+src=["']([^"']+)["']/i);
+            if (match?.[1]) {
+              const src = match[1];
+              if (src.startsWith("http")) {
+                imageUrl = src;
+              } else if (feed.siteUrl) {
+                try {
+                  imageUrl = new URL(src, feed.siteUrl).toString();
+                } catch (e) {
+                  console.error("Error parsing relative image URL:", e);
+                }
+              }
+            }
+          }
+        }
+
         // Upsert by guid or link to avoid duplicates
         const { error } = await supabase
           .from("nuclear_news")
