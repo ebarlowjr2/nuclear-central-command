@@ -4,6 +4,9 @@ import { NUCLEAR_FEEDS } from "./nuclearNewsFeeds";
 
 const parser = new Parser({
   timeout: 15000,
+  customFields: {
+    item: ["wnn:articleImage", "wnn:fullText", "media:content", "media:thumbnail", "content:encoded"],
+  },
 });
 
 export async function refreshNuclearNews() {
