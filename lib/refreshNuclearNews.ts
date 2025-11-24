@@ -25,6 +25,19 @@ export async function refreshNuclearNews() {
             ? new Date(item.isoDate || (item.pubDate as string))
             : null;
 
+        let imageUrl: string | null = null;
+
+        const itemWithEnclosure = item as { enclosure?: { url?: string } };
+        if (itemWithEnclosure.enclosure?.url) {
+          imageUrl = itemWithEnclosure.enclosure.url;
+        }
+
+        const itemWithMedia = item as { "media:content"?: Array<{ $?: { url?: string } }> };
+        const mediaContent = itemWithMedia["media:content"];
+        if (!imageUrl && Array.isArray(mediaContent) && mediaContent[0]?.$?.url) {
+          imageUrl = mediaContent[0].$.url;
+        }
+
         // Upsert by guid or link to avoid duplicates
         const { error } = await supabase
           .from("nuclear_news")
@@ -37,6 +50,7 @@ export async function refreshNuclearNews() {
               summary: item.contentSnippet || item.content || item.summary || null,
               guid,
               published_at: publishedAt ? publishedAt.toISOString() : null,
+              image_url: imageUrl,
             },
             {
               onConflict: guid ? "guid" : "link",
