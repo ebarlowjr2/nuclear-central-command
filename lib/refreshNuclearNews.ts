@@ -2,7 +2,26 @@ import Parser from "rss-parser";
 import { getSupabaseAdmin } from "./supabaseServer";
 import { NUCLEAR_FEEDS } from "./nuclearNewsFeeds";
 
-const parser = new Parser({
+interface CustomItem {
+  guid?: string;
+  id?: string;
+  link?: string;
+  title?: string;
+  isoDate?: string;
+  pubDate?: string;
+  contentSnippet?: string;
+  content?: string;
+  summary?: string;
+  enclosure?: { url?: string };
+  "wnn:articleImage"?: string;
+  "wnn:fullText"?: string;
+  "media:content"?: Array<{ $?: { url?: string } }>;
+  "media:thumbnail"?: Array<{ $?: { url?: string } }>;
+  "content:encoded"?: string;
+  description?: string;
+}
+
+const parser = new Parser<Record<string, never>, CustomItem>({
   timeout: 15000,
   customFields: {
     item: ["wnn:articleImage", "wnn:fullText", "media:content", "media:thumbnail", "content:encoded"],
@@ -30,40 +49,30 @@ export async function refreshNuclearNews() {
 
         let imageUrl: string | null = null;
 
-        const itemWithEnclosure = item as { enclosure?: { url?: string } };
-        if (itemWithEnclosure.enclosure?.url) {
-          imageUrl = itemWithEnclosure.enclosure.url;
+        if (item.enclosure?.url) {
+          imageUrl = item.enclosure.url;
         }
 
-        const itemWithMedia = item as { "media:content"?: Array<{ $?: { url?: string } }> };
-        const mediaContent = itemWithMedia["media:content"];
+        const mediaContent = item["media:content"];
         if (!imageUrl && Array.isArray(mediaContent) && mediaContent[0]?.$?.url) {
           imageUrl = mediaContent[0].$.url;
         }
 
-        const itemWithThumb = item as { "media:thumbnail"?: Array<{ $?: { url?: string } }> };
-        const mediaThumb = itemWithThumb["media:thumbnail"];
+        const mediaThumb = item["media:thumbnail"];
         if (!imageUrl && Array.isArray(mediaThumb) && mediaThumb[0]?.$?.url) {
           imageUrl = mediaThumb[0].$.url;
         }
 
-        const itemWithWnnImage = item as { "wnn:articleImage"?: string };
-        if (!imageUrl && itemWithWnnImage["wnn:articleImage"]) {
-          imageUrl = itemWithWnnImage["wnn:articleImage"];
+        if (!imageUrl && item["wnn:articleImage"]) {
+          imageUrl = item["wnn:articleImage"];
         }
 
         if (!imageUrl) {
-          const itemWithContent = item as {
-            "content:encoded"?: string;
-            content?: string;
-            description?: string;
-            summary?: string;
-          };
           const html =
-            itemWithContent["content:encoded"] ??
-            itemWithContent.content ??
-            itemWithContent.description ??
-            itemWithContent.summary;
+            item["content:encoded"] ??
+            item.content ??
+            item.description ??
+            item.summary;
 
           if (typeof html === "string") {
             const match = html.match(/<img[^>]+src=["']([^"']+)["']/i);
