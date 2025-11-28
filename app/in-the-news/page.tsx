@@ -49,8 +49,8 @@ export default async function InTheNewsPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">
-      <div className="mx-auto max-w-6xl px-4 py-10 lg:py-14">
-        <header className="mb-10">
+      <div className="mx-auto max-w-6xl px-4 py-6 md:py-10 lg:py-14">
+        <header className="mb-6 md:mb-8 lg:mb-10">
           <p className="text-xs uppercase tracking-[0.25em] text-emerald-300/80">
             Nuclear Central Command
           </p>
@@ -64,8 +64,8 @@ export default async function InTheNewsPage() {
           </p>
         </header>
 
-        <div className="grid gap-8 lg:grid-cols-[2fr,1fr]">
-          <section className="space-y-8">
+        <div className="grid gap-5 md:gap-8 lg:grid-cols-[2fr,1fr]">
+          <section className="space-y-6 md:space-y-8">
             <a
               href={featured.link}
               target="_blank"
@@ -120,7 +120,7 @@ export default async function InTheNewsPage() {
               </div>
             </a>
 
-            <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+            <div className="grid gap-4 md:gap-5 md:grid-cols-2 xl:grid-cols-3">
               {rest.map((item) => (
                 <a
                   key={item.id}
@@ -175,7 +175,7 @@ export default async function InTheNewsPage() {
             </div>
           </section>
 
-          <aside className="space-y-6">
+          <aside className="space-y-4 md:space-y-6">
             <div className="rounded-2xl border border-slate-800/80 bg-slate-900/80 p-4">
               <h2 className="text-sm font-semibold text-white">
                 Sources in this feed
