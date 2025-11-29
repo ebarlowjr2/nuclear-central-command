@@ -56,13 +56,13 @@ export default function AdminNewsPage() {
   }, []);
 
   return (
-    <div className="max-w-5xl mx-auto py-10">
-      <div className="flex items-center justify-between mb-6">
-        <h1 className="text-2xl font-bold">Nuclear News Aggregator</h1>
+    <div className="max-w-5xl mx-auto px-4 py-6 md:py-10">
+      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 mb-4 md:mb-6">
+        <h1 className="text-xl md:text-2xl font-bold">Nuclear News Aggregator</h1>
         <button
           onClick={handleRefresh}
           disabled={refreshing}
-          className="px-4 py-2 rounded bg-primary text-primary-foreground text-sm disabled:opacity-50"
+          className="px-4 py-2 rounded bg-primary text-primary-foreground text-sm disabled:opacity-50 w-full sm:w-auto"
         >
           {refreshing ? "Refreshing..." : "Refresh Feeds"}
         </button>

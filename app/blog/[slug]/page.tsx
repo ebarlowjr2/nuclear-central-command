@@ -59,9 +59,9 @@ export default async function BlogPostPage({ params }: PageProps) {
   }
 
   return (
-    <div className="max-w-3xl mx-auto py-10">
-      <h1 className="text-3xl font-bold mb-3">{post.title}</h1>
-      <p className="text-xs text-muted-foreground mb-6">
+    <div className="max-w-3xl mx-auto px-4 py-6 md:py-10">
+      <h1 className="text-2xl md:text-3xl font-bold mb-3">{post.title}</h1>
+      <p className="text-xs text-muted-foreground mb-4 md:mb-6">
         {post.published_at && new Date(post.published_at).toDateString()}
       </p>
       <article className="prose prose-invert max-w-none prose-headings:text-foreground prose-p:text-foreground prose-a:text-primary prose-strong:text-foreground prose-code:text-foreground prose-pre:bg-muted prose-li:text-foreground">

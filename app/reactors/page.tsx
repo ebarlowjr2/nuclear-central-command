@@ -45,29 +45,29 @@ export default function ReactorsPage() {
   };
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-6 md:space-y-8">
       <div>
-        <h1 className="text-4xl font-bold mb-2">Reactor Directory</h1>
+        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-2">Reactor Directory</h1>
         <p className="text-muted-foreground">
           Browse and filter nuclear reactors worldwide
         </p>
       </div>
 
-      <div className="grid gap-8 md:grid-cols-4">
+      <div className="grid gap-6 md:gap-8 grid-cols-1 md:grid-cols-4">
         <div className="md:col-span-1">
           <FilterPanel onFilterChange={handleFilterChange} />
         </div>
 
         <div className="md:col-span-3">
           {loading ? (
-            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
               {[...Array(6)].map((_, i) => (
                 <Skeleton key={i} className="h-48" />
               ))}
             </div>
           ) : reactors.length > 0 ? (
             <>
-              <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+              <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 {reactors.map((reactor) => (
                   <ReactorCard key={reactor.id} reactor={reactor} />
                 ))}

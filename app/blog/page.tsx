@@ -33,14 +33,14 @@ export default async function BlogPage() {
   const posts = await getPosts();
 
   return (
-    <div className="max-w-4xl mx-auto py-10">
-      <h1 className="text-3xl font-bold mb-6">Nuclear Insights & Fun Facts</h1>
-      <p className="text-sm text-muted-foreground mb-6">
+    <div className="max-w-4xl mx-auto px-4 py-6 md:py-10">
+      <h1 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6">Nuclear Insights & Fun Facts</h1>
+      <p className="text-sm text-muted-foreground mb-4 md:mb-6">
         Original posts from the Nuclear Command Center on reactors, SMRs,
         policy, and nuclear tech.
       </p>
 
-      <div className="space-y-4">
+      <div className="space-y-3 md:space-y-4">
         {posts.length === 0 ? (
           <div className="border rounded p-8 text-center text-muted-foreground">
             No blog posts published yet. Check back soon for nuclear insights and updates.

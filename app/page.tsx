@@ -73,9 +73,9 @@ export default function Home() {
   }
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-6 md:space-y-8">
       <div>
-        <h1 className="text-4xl font-bold mb-2">Nuclear Command Center</h1>
+        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-2">Nuclear Command Center</h1>
         <p className="text-muted-foreground">
           Global nuclear reactor tracking, statistics, and educational resources
         </p>
@@ -83,10 +83,10 @@ export default function Home() {
 
       {stats && <StatsCards stats={stats} />}
 
-      <div className="grid gap-8 md:grid-cols-2">
+      <div className="grid gap-6 md:gap-8 grid-cols-1 md:grid-cols-2">
         <div>
-          <h2 className="text-2xl font-bold mb-4">Under Construction Now</h2>
-          <div className="space-y-4">
+          <h2 className="text-xl md:text-2xl font-bold mb-3 md:mb-4">Under Construction Now</h2>
+          <div className="space-y-3 md:space-y-4">
             {underConstruction.length > 0 ? (
               underConstruction.map((reactor) => (
                 <ReactorCard key={reactor.id} reactor={reactor} />
@@ -98,7 +98,7 @@ export default function Home() {
         </div>
 
         <div>
-          <h2 className="text-2xl font-bold mb-4">Top Capacity by Country</h2>
+          <h2 className="text-xl md:text-2xl font-bold mb-3 md:mb-4">Top Capacity by Country</h2>
           {topReactors.length > 0 ? (
             <div className="space-y-2">
               {topReactors.map((country, idx) => (
@@ -125,8 +125,8 @@ export default function Home() {
       </div>
 
       <div>
-        <h2 className="text-2xl font-bold mb-4">Did You Know?</h2>
-        <div className="grid gap-4 md:grid-cols-3">
+        <h2 className="text-xl md:text-2xl font-bold mb-3 md:mb-4">Did You Know?</h2>
+        <div className="grid gap-4 md:gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {facts.map((fact, idx) => (
             <FactCard key={idx} fact={fact} />
           ))}

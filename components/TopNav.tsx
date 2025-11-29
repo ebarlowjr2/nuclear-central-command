@@ -22,17 +22,18 @@ export default function TopNav() {
     <nav className="border-b bg-card">
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
-          <Link href="/" className="flex items-center gap-2 font-bold text-xl">
-            <Atom className="h-6 w-6 text-primary" />
-            <span>Nuclear Command Center</span>
+          <Link href="/" className="flex items-center gap-2 font-bold text-base md:text-xl">
+            <Atom className="h-5 w-5 md:h-6 md:w-6 text-primary" />
+            <span className="hidden sm:inline">Nuclear Command Center</span>
+            <span className="sm:hidden">NCC</span>
           </Link>
           
-          <div className="flex gap-6">
+          <div className="flex gap-3 md:gap-6 flex-wrap">
             {links.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-sm font-medium transition-colors hover:text-primary ${
+                className={`text-xs md:text-sm font-medium transition-colors hover:text-primary ${
                   pathname === link.href
                     ? 'text-primary'
                     : 'text-muted-foreground'

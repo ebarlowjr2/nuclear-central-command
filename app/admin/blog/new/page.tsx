@@ -51,8 +51,8 @@ export default function NewBlogPostPage() {
   };
 
   return (
-    <div className="max-w-3xl mx-auto py-10">
-      <h1 className="text-2xl font-bold mb-4">New Blog Post</h1>
+    <div className="max-w-3xl mx-auto px-4 py-6 md:py-10">
+      <h1 className="text-xl md:text-2xl font-bold mb-4">New Blog Post</h1>
 
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>

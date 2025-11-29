@@ -72,16 +72,16 @@ export default function LearnPage() {
   const categories = ['all', 'technology', 'environment', 'safety', 'fuel', 'performance', 'applications', 'statistics'];
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-6 md:space-y-8">
       <div>
-        <h1 className="text-4xl font-bold mb-2">Learn About Nuclear Energy</h1>
+        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-2">Learn About Nuclear Energy</h1>
         <p className="text-muted-foreground">
           Educational resources, facts, and glossary
         </p>
       </div>
 
       <Tabs defaultValue="all" className="w-full">
-        <TabsList className="grid w-full grid-cols-4 lg:grid-cols-8">
+        <TabsList className="grid w-full grid-cols-2 sm:grid-cols-4 lg:grid-cols-8">
           {categories.map((cat) => (
             <TabsTrigger key={cat} value={cat} className="capitalize">
               {cat}
@@ -90,8 +90,8 @@ export default function LearnPage() {
         </TabsList>
         
         {categories.map((cat) => (
-          <TabsContent key={cat} value={cat} className="mt-6">
-            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+          <TabsContent key={cat} value={cat} className="mt-4 md:mt-6">
+            <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
               {facts
                 .filter((fact) => cat === 'all' || fact.category === cat)
                 .map((fact, idx) => (

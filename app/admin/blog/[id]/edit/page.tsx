@@ -101,15 +101,15 @@ export default function EditBlogPostPage() {
 
   if (loading) {
     return (
-      <div className="max-w-3xl mx-auto py-10">
+      <div className="max-w-3xl mx-auto px-4 py-6 md:py-10">
         <p>Loading...</p>
       </div>
     );
   }
 
   return (
-    <div className="max-w-3xl mx-auto py-10">
-      <h1 className="text-2xl font-bold mb-4">Edit Blog Post</h1>
+    <div className="max-w-3xl mx-auto px-4 py-6 md:py-10">
+      <h1 className="text-xl md:text-2xl font-bold mb-4">Edit Blog Post</h1>
 
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>

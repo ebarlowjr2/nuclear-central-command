@@ -33,9 +33,9 @@ export default async function AdminBlogPage() {
   const posts = await getAllPosts();
 
   return (
-    <div className="max-w-4xl mx-auto py-10">
-      <div className="flex items-center justify-between mb-6">
-        <h1 className="text-2xl font-bold">Blog Posts</h1>
+    <div className="max-w-4xl mx-auto px-4 py-6 md:py-10">
+      <div className="flex items-center justify-between mb-4 md:mb-6">
+        <h1 className="text-xl md:text-2xl font-bold">Blog Posts</h1>
         <Link
           href="/admin/blog/new"
           className="px-4 py-2 rounded bg-primary text-primary-foreground text-sm hover:bg-primary/90"
