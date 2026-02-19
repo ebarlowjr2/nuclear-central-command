@@ -10,6 +10,7 @@ import { Reactor, Fact } from '@/types';
 
 export default function Home() {
   const [stats, setStats] = useState<any>(null);
+  const [statsError, setStatsError] = useState<string | null>(null);
   const [underConstruction, setUnderConstruction] = useState<Reactor[]>([]);
   const [topReactors, setTopReactors] = useState<any[]>([]);
   const [facts, setFacts] = useState<Fact[]>([]);
@@ -28,9 +29,19 @@ export default function Home() {
         const ucData = await ucRes.json();
         const topData = await topRes.json();
 
-        setStats(statsData);
-        setUnderConstruction(ucData.data || []);
-        setTopReactors(topData.data || []);
+        if (!statsRes.ok || statsData?.error) {
+          setStats(null);
+          setStatsError(
+            statsData?.error ||
+              'Unable to load global stats right now.'
+          );
+        } else {
+          setStats(statsData);
+          setStatsError(null);
+        }
+
+        setUnderConstruction(ucData?.data || []);
+        setTopReactors(topData?.data || []);
 
         const sampleFacts: Fact[] = [
           {
@@ -81,7 +92,13 @@ export default function Home() {
         </p>
       </div>
 
-      {stats && <StatsCards stats={stats} />}
+      {stats ? (
+        <StatsCards stats={stats} />
+      ) : (
+        <div className="rounded-lg border border-border bg-muted/30 p-4 text-sm text-muted-foreground">
+          {statsError || 'Global stats are temporarily unavailable.'}
+        </div>
+      )}
 
       <div className="grid gap-8 md:grid-cols-2">
         <div>
