@@ -6,6 +6,7 @@ import ReactorCard from '@/components/ReactorCard';
 import FactCard from '@/components/FactCard';
 import { MarketTabs } from '@/components/Market/MarketTabs';
 import { Skeleton } from '@/components/ui/skeleton';
+import TopCountryGauges from '@/components/TopCountryGauges';
 import { Reactor, Fact } from '@/types';
 
 export default function Home() {
@@ -91,6 +92,8 @@ export default function Home() {
           Global nuclear reactor tracking, statistics, and educational resources
         </p>
       </div>
+
+      <TopCountryGauges />
 
       {stats ? (
         <StatsCards stats={stats} />
