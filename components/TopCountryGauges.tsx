@@ -251,6 +251,10 @@ export default function TopCountryGauges() {
             </Card>
           ))}
         </div>
+        <div className="mt-4 text-xs text-muted-foreground">
+          Output values are estimated from public capacity data and recent trend deltas. Fluctuations are
+          simulated to visualize momentum, not real-time telemetry.
+        </div>
       </CardContent>
     </Card>
   );
