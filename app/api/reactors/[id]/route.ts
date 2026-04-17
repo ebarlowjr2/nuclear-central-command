@@ -1,5 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getSupabaseAdmin } from '@/lib/supabaseServer';
+import { getLocalReactors } from '@/lib/reactors/localStore';
+import { normalizeSupabaseReactorRow } from '@/lib/reactors/normalize';
 
 export const dynamic = 'force-dynamic';
 
@@ -8,40 +10,55 @@ export async function GET(
   { params }: { params: Promise<{ id: string }> }
 ) {
   try {
-    const supabase = getSupabaseAdmin();
     const { id } = await params;
 
-    const { data: reactor, error: reactorError } = await supabase
-      .from('reactors')
-      .select('*, countries(name, iso2, region)')
-      .eq('id', id)
-      .single();
+    // Prefer Supabase when configured; fall back to local dataset otherwise.
+    try {
+      const supabase = getSupabaseAdmin();
 
-    if (reactorError) {
-      return NextResponse.json({ error: reactorError.message }, { status: 500 });
+      const { data: reactor, error: reactorError } = await supabase
+        .from('reactors')
+        .select('*, countries(name, iso2, region)')
+        .eq('id', id)
+        .single();
+
+      if (reactorError) {
+        return NextResponse.json({ error: reactorError.message }, { status: 500 });
+      }
+
+      const { data: generation } = await supabase
+        .from('generation_monthly')
+        .select('*')
+        .eq('reactor_id', id)
+        .order('year', { ascending: false })
+        .order('month', { ascending: false })
+        .limit(12);
+
+      const { data: statusHistory } = await supabase
+        .from('reactor_status_history')
+        .select('*')
+        .eq('reactor_id', id)
+        .order('effective_date', { ascending: false });
+
+      return NextResponse.json({
+        reactor: normalizeSupabaseReactorRow(reactor),
+        generation: generation || [],
+        statusHistory: statusHistory || [],
+        source: 'supabase',
+      });
+    } catch {
+      const reactors = await getLocalReactors();
+      const reactor = reactors.find((r) => r.id === id) || null;
+      return NextResponse.json({
+        reactor,
+        generation: [],
+        statusHistory: [],
+        source: 'local',
+      });
     }
-
-    const { data: generation, error: genError } = await supabase
-      .from('generation_monthly')
-      .select('*')
-      .eq('reactor_id', id)
-      .order('year', { ascending: false })
-      .order('month', { ascending: false })
-      .limit(12);
-
-    const { data: statusHistory, error: statusError } = await supabase
-      .from('reactor_status_history')
-      .select('*')
-      .eq('reactor_id', id)
-      .order('effective_date', { ascending: false });
-
-    return NextResponse.json({
-      reactor,
-      generation: generation || [],
-      statusHistory: statusHistory || []
-    });
-  } catch (e: any) {
-    return NextResponse.json({ error: e.message }, { status: 500 });
+  } catch (e: unknown) {
+    const message = e instanceof Error ? e.message : 'Unexpected error';
+    return NextResponse.json({ error: message }, { status: 500 });
   }
 }
 

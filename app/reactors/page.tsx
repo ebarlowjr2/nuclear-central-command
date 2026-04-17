@@ -5,12 +5,17 @@ import ReactorCard from '@/components/ReactorCard';
 import FilterPanel from '@/components/FilterPanel';
 import { Button } from '@/components/ui/button';
 import { Skeleton } from '@/components/ui/skeleton';
-import { Reactor } from '@/types';
+import type { Reactor } from '@/lib/reactors/types';
 
 export default function ReactorsPage() {
   const [reactors, setReactors] = useState<Reactor[]>([]);
   const [loading, setLoading] = useState(true);
-  const [filters, setFilters] = useState<any>({});
+  const [filters, setFilters] = useState<{
+    status?: string;
+    type?: string;
+    country?: string;
+    search?: string;
+  }>({});
   const [offset, setOffset] = useState(0);
   const limit = 12;
 
@@ -28,7 +33,17 @@ export default function ReactorsPage() {
 
         const res = await fetch(`/api/reactors/list?${params}`);
         const data = await res.json();
-        setReactors(data.data || []);
+        const list = (data.data || []) as Reactor[];
+        const q = String(filters.search || '').trim().toLowerCase();
+        setReactors(
+          !q
+            ? list
+            : list.filter((r) =>
+                `${r.name} ${r.plant} ${r.country} ${r.type || ''} ${r.operator || ''}`
+                  .toLowerCase()
+                  .includes(q)
+              )
+        );
       } catch (error) {
         console.error('Error fetching reactors:', error);
       } finally {
@@ -39,7 +54,12 @@ export default function ReactorsPage() {
     fetchReactors();
   }, [filters, offset]);
 
-  const handleFilterChange = (newFilters: any) => {
+  const handleFilterChange = (newFilters: {
+    status?: string;
+    type?: string;
+    country?: string;
+    search?: string;
+  }) => {
     setFilters(newFilters);
     setOffset(0);
   };

@@ -67,10 +67,11 @@ export default function FilterPanel({ onFilterChange }: FilterPanelProps) {
             </SelectTrigger>
             <SelectContent>
               <SelectItem value="all">All statuses</SelectItem>
-              <SelectItem value="Operating">Operating</SelectItem>
-              <SelectItem value="Under Construction">Under Construction</SelectItem>
-              <SelectItem value="Planned">Planned</SelectItem>
-              <SelectItem value="Decommissioned">Decommissioned</SelectItem>
+              <SelectItem value="operating">Operating</SelectItem>
+              <SelectItem value="suspended">Suspended / Offline</SelectItem>
+              <SelectItem value="under_construction">Under Construction</SelectItem>
+              <SelectItem value="planned">Planned</SelectItem>
+              <SelectItem value="shutdown">Shutdown</SelectItem>
             </SelectContent>
           </Select>
         </div>
@@ -95,7 +96,7 @@ export default function FilterPanel({ onFilterChange }: FilterPanelProps) {
         <div>
           <label className="text-sm font-medium mb-2 block">Country</label>
           <Input
-            placeholder="Country code (e.g., US)"
+            placeholder="Country name (e.g., United States)"
             value={country}
             onChange={(e) => setCountry(e.target.value)}
           />

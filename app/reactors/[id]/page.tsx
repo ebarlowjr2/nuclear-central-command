@@ -6,11 +6,17 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Skeleton } from '@/components/ui/skeleton';
 import TrendsChart from '@/components/TrendsChart';
-import { MapPin, Zap, Building2, Calendar } from 'lucide-react';
+import { MapPin, Zap, Building2 } from 'lucide-react';
+import type { Reactor } from '@/lib/reactors/types';
 
 export default function ReactorDetailPage() {
   const params = useParams();
-  const [data, setData] = useState<any>(null);
+  const [data, setData] = useState<{
+    reactor: Reactor | null;
+    generation: Array<{ year: number; month: number; net_mwh?: number | null }>;
+    statusHistory: Array<{ status: string; effective_date: string }>;
+    source?: string;
+  } | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -45,25 +51,30 @@ export default function ReactorDetailPage() {
 
   const { reactor, generation, statusHistory } = data;
 
-  const statusColors: Record<string, string> = {
-    'Operating': 'bg-green-500',
-    'Under Construction': 'bg-blue-500',
-    'Planned': 'bg-yellow-500',
-    'Decommissioned': 'bg-gray-500',
+  const statusColors: Record<Reactor['status'], string> = {
+    operating: 'bg-emerald-500',
+    suspended: 'bg-yellow-500',
+    under_construction: 'bg-blue-500',
+    planned: 'bg-purple-500',
+    shutdown: 'bg-slate-400',
+  };
+
+  const statusLabel: Record<Reactor['status'], string> = {
+    operating: 'Operating',
+    suspended: 'Suspended / Offline',
+    under_construction: 'Under Construction',
+    planned: 'Planned',
+    shutdown: 'Shutdown',
   };
 
   return (
     <div className="space-y-8">
       <div>
         <div className="flex items-start justify-between mb-2">
-          <h1 className="text-4xl font-bold">{reactor.plant_name}</h1>
-          <Badge className={statusColors[reactor.status || 'Operating']}>
-            {reactor.status}
-          </Badge>
+          <h1 className="text-4xl font-bold">{reactor.plant}</h1>
+          <Badge className={statusColors[reactor.status]}>{statusLabel[reactor.status]}</Badge>
         </div>
-        {reactor.unit_name && (
-          <p className="text-xl text-muted-foreground">{reactor.unit_name}</p>
-        )}
+        <p className="text-xl text-muted-foreground">{reactor.name}</p>
       </div>
 
       <div className="grid gap-6 md:grid-cols-2">
@@ -72,25 +83,18 @@ export default function ReactorDetailPage() {
             <CardTitle>Technical Details</CardTitle>
           </CardHeader>
           <CardContent className="space-y-3">
-            {reactor.reactor_type && (
+            {reactor.type && (
               <div className="flex items-center gap-2">
                 <Zap className="h-4 w-4 text-muted-foreground" />
                 <span className="font-medium">Type:</span>
-                <span>{reactor.reactor_type}</span>
+                <span>{reactor.type}</span>
               </div>
             )}
-            {reactor.net_capacity_mwe && (
+            {reactor.capacityMWe != null && (
               <div className="flex items-center gap-2">
                 <Zap className="h-4 w-4 text-muted-foreground" />
                 <span className="font-medium">Capacity:</span>
-                <span>{reactor.net_capacity_mwe} MW(e)</span>
-              </div>
-            )}
-            {reactor.thermal_power_mwt && (
-              <div className="flex items-center gap-2">
-                <Zap className="h-4 w-4 text-muted-foreground" />
-                <span className="font-medium">Thermal Power:</span>
-                <span>{reactor.thermal_power_mwt} MW(th)</span>
+                <span>{reactor.capacityMWe} MWe</span>
               </div>
             )}
             {reactor.operator && (
@@ -100,20 +104,9 @@ export default function ReactorDetailPage() {
                 <span>{reactor.operator}</span>
               </div>
             )}
-            {reactor.owner && (
-              <div className="flex items-center gap-2">
-                <Building2 className="h-4 w-4 text-muted-foreground" />
-                <span className="font-medium">Owner:</span>
-                <span>{reactor.owner}</span>
-              </div>
-            )}
-            {reactor.supplier && (
-              <div className="flex items-center gap-2">
-                <Building2 className="h-4 w-4 text-muted-foreground" />
-                <span className="font-medium">Supplier:</span>
-                <span>{reactor.supplier}</span>
-              </div>
-            )}
+            <div className="text-xs text-muted-foreground">
+              Source: {reactor.source} • Updated: {new Date(reactor.lastUpdated).toLocaleDateString()}
+            </div>
           </CardContent>
         </Card>
 
@@ -122,48 +115,26 @@ export default function ReactorDetailPage() {
             <CardTitle>Timeline</CardTitle>
           </CardHeader>
           <CardContent className="space-y-3">
-            {reactor.construction_start && (
-              <div className="flex items-center gap-2">
-                <Calendar className="h-4 w-4 text-muted-foreground" />
-                <span className="font-medium">Construction Start:</span>
-                <span>{new Date(reactor.construction_start).toLocaleDateString()}</span>
-              </div>
-            )}
-            {reactor.first_grid_connection && (
-              <div className="flex items-center gap-2">
-                <Calendar className="h-4 w-4 text-muted-foreground" />
-                <span className="font-medium">First Grid Connection:</span>
-                <span>{new Date(reactor.first_grid_connection).toLocaleDateString()}</span>
-              </div>
-            )}
-            {reactor.commercial_operation && (
-              <div className="flex items-center gap-2">
-                <Calendar className="h-4 w-4 text-muted-foreground" />
-                <span className="font-medium">Commercial Operation:</span>
-                <span>{new Date(reactor.commercial_operation).toLocaleDateString()}</span>
-              </div>
-            )}
-            {reactor.shutdown_date && (
-              <div className="flex items-center gap-2">
-                <Calendar className="h-4 w-4 text-muted-foreground" />
-                <span className="font-medium">Shutdown:</span>
-                <span>{new Date(reactor.shutdown_date).toLocaleDateString()}</span>
-              </div>
-            )}
-            {reactor.latitude && reactor.longitude && (
+            {(typeof reactor.lat === 'number' || typeof reactor.lng === 'number') && (
               <div className="flex items-center gap-2">
                 <MapPin className="h-4 w-4 text-muted-foreground" />
                 <span className="font-medium">Location:</span>
-                <span>{reactor.latitude.toFixed(4)}, {reactor.longitude.toFixed(4)}</span>
+                <span>
+                  {typeof reactor.lat === 'number' ? reactor.lat.toFixed(4) : '—'},{' '}
+                  {typeof reactor.lng === 'number' ? reactor.lng.toFixed(4) : '—'}
+                </span>
               </div>
             )}
+            <div className="text-sm text-muted-foreground">
+              Timeline details appear when present in the local DB.
+            </div>
           </CardContent>
         </Card>
       </div>
 
       {generation && generation.length > 0 && (
         <TrendsChart
-          data={generation.map((g: any) => ({
+          data={generation.map((g) => ({
             period: `${g.year}-${String(g.month).padStart(2, '0')}`,
             net_mwh: g.net_mwh || 0,
           }))}
@@ -182,7 +153,7 @@ export default function ReactorDetailPage() {
             <div className="space-y-2">
               {statusHistory.map((sh: any, idx: number) => (
                 <div key={idx} className="flex items-center justify-between p-3 border rounded">
-                  <Badge className={statusColors[sh.status]}>{sh.status}</Badge>
+                  <Badge className="bg-slate-200 text-slate-900">{sh.status}</Badge>
                   <span className="text-sm text-muted-foreground">
                     {new Date(sh.effective_date).toLocaleDateString()}
                   </span>

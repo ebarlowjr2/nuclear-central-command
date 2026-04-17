@@ -7,7 +7,8 @@ import FactCard from '@/components/FactCard';
 import { MarketTabs } from '@/components/Market/MarketTabs';
 import { Skeleton } from '@/components/ui/skeleton';
 import TopCountryGauges from '@/components/TopCountryGauges';
-import { Reactor, Fact } from '@/types';
+import type { Reactor } from '@/lib/reactors/types';
+import type { Fact } from '@/types';
 
 export default function Home() {
   const [stats, setStats] = useState<any>(null);
@@ -22,7 +23,7 @@ export default function Home() {
       try {
         const [statsRes, ucRes, topRes] = await Promise.all([
           fetch('/api/stats/global'),
-          fetch('/api/reactors/list?status=Under Construction&limit=3'),
+          fetch('/api/reactors/list?status=under_construction&limit=3'),
           fetch('/api/stats/top?metric=capacity&scope=country&limit=5'),
         ]);
 
