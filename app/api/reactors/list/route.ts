@@ -6,6 +6,7 @@ import type { ReactorStatus } from '@/lib/reactors/types';
 import { normalizeSupabaseReactorRow } from '@/lib/reactors/normalize';
 
 export const dynamic = 'force-dynamic';
+export const runtime = 'nodejs';
 
 export async function GET(request: NextRequest) {
   try {
