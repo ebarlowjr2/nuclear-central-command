@@ -11,9 +11,11 @@ export default function TopNav() {
     { href: '/', label: 'Dashboard' },
     { href: '/map', label: 'Map' },
     { href: '/reactors', label: 'Reactors' },
+    { href: '/companies', label: 'Companies' },
     { href: '/countries', label: 'Countries' },
     { href: '/countries/compare', label: 'Compare' },
     { href: '/learn', label: 'Learn' },
+    { href: '/news', label: 'News' },
   ];
 
   return (

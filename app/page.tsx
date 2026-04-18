@@ -11,6 +11,7 @@ import type { Reactor } from '@/lib/reactors/types';
 import type { Fact } from '@/types';
 import Link from 'next/link';
 import type { NewsItem } from '@/lib/news/types';
+import type { Company } from '@/lib/companies/types';
 
 export default function Home() {
   const [stats, setStats] = useState<any>(null);
@@ -20,6 +21,8 @@ export default function Home() {
   const [facts, setFacts] = useState<Fact[]>([]);
   const [news, setNews] = useState<NewsItem[]>([]);
   const [newsError, setNewsError] = useState<string | null>(null);
+  const [companies, setCompanies] = useState<Company[]>([]);
+  const [companiesError, setCompaniesError] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -62,6 +65,21 @@ export default function Home() {
         } catch (e) {
           setNews([]);
           setNewsError('Unable to load news right now.');
+        }
+
+        try {
+          const companiesRes = await fetch('/api/companies/list?limit=9&offset=0');
+          const companiesJson = await companiesRes.json();
+          if (!companiesRes.ok || companiesJson?.error) {
+            setCompanies([]);
+            setCompaniesError(companiesJson?.error || 'Unable to load companies right now.');
+          } else {
+            setCompanies((companiesJson?.data || []) as Company[]);
+            setCompaniesError(null);
+          }
+        } catch (e) {
+          setCompanies([]);
+          setCompaniesError('Unable to load companies right now.');
         }
 
         const sampleFacts: Fact[] = [
@@ -206,6 +224,53 @@ export default function Home() {
           <div className="rounded-lg border border-border bg-muted/30 p-4 text-sm text-muted-foreground">
             {newsError ||
               'No news loaded yet. If this is a fresh deploy, the first cron run will populate the feed.'}
+          </div>
+        )}
+      </section>
+
+      <section className="space-y-4">
+        <div className="flex items-end justify-between gap-4">
+          <div>
+            <h2 className="text-2xl font-bold">Companies</h2>
+            <p className="text-muted-foreground">Key organizations shaping nuclear deployment and innovation.</p>
+          </div>
+          <Link className="text-sm text-primary hover:underline" href="/companies">
+            Explore companies
+          </Link>
+        </div>
+
+        {companies.length > 0 ? (
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {companies.map((c) => (
+              <div key={c.id} className="rounded-lg border bg-white p-4 hover:shadow-lg transition-shadow">
+                <div className="flex items-start justify-between gap-3">
+                  <div>
+                    <div className="font-semibold">{c.name}</div>
+                    <div className="text-sm text-muted-foreground mt-1">{c.category.replace(/_/g, ' ')}</div>
+                  </div>
+                  {c.latestUpdate && (
+                    <span className="text-xs rounded-full border bg-white px-2 py-1 text-slate-700 whitespace-nowrap">
+                      Updated {new Date(c.latestUpdate).toLocaleDateString()}
+                    </span>
+                  )}
+                </div>
+                <p className="text-sm mt-3">{c.description}</p>
+                <div className="mt-3 flex flex-wrap gap-2 text-sm">
+                  <a className="text-primary hover:underline" href={c.website} target="_blank" rel="noreferrer">
+                    Website
+                  </a>
+                  {c.socials?.linkedin && (
+                    <a className="text-primary hover:underline" href={c.socials.linkedin} target="_blank" rel="noreferrer">
+                      LinkedIn
+                    </a>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div className="rounded-lg border border-border bg-muted/30 p-4 text-sm text-muted-foreground">
+            {companiesError || 'No companies loaded yet.'}
           </div>
         )}
       </section>
