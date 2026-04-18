@@ -14,6 +14,17 @@ export async function GET(
     const { id } = await params;
 
     // Prefer Supabase when configured; fall back to local dataset otherwise.
+    if (process.env.USE_SUPABASE !== 'true') {
+      const reactors = await getLocalReactors();
+      const reactor = reactors.find((r) => r.id === id) || null;
+      return NextResponse.json({
+        reactor,
+        generation: [],
+        statusHistory: [],
+        source: 'local',
+      });
+    }
+
     try {
       const supabase = getSupabaseAdmin();
 

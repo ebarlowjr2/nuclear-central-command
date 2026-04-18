@@ -17,8 +17,16 @@ export async function GET(request: NextRequest) {
     const limit = parseInt(searchParams.get('limit') || '50');
     const offset = parseInt(searchParams.get('offset') || '0');
 
-    // Prefer Supabase when configured, but never break local/dev environments.
-    // If Supabase env vars are missing, fall back to a local normalized dataset.
+    // Local-first: avoid any upstream network calls at request time unless explicitly enabled.
+    if (process.env.USE_SUPABASE !== 'true') {
+      const reactors = await getLocalReactors();
+      const filtered = filterReactors(reactors, { status, country, type, limit, offset });
+      const total = filtered.length;
+      const paged = filtered.slice(offset, offset + limit);
+      return NextResponse.json({ data: paged, count: total, limit, offset, source: 'local' });
+    }
+
+    // If enabled, prefer Supabase, but never break: fall back to local dataset on any error.
     try {
       const supabase = getSupabaseAdmin();
 
