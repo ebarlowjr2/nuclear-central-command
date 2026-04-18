@@ -10,6 +10,8 @@ import 'leaflet.markercluster/dist/MarkerCluster.css';
 import 'leaflet.markercluster/dist/MarkerCluster.Default.css';
 
 import type { Reactor, ReactorStatus } from '@/lib/reactors/types';
+import StatusPill from '@/components/badges/StatusPill';
+import { STATUS_COLORS } from '@/components/badges/statusColors';
 
 type Filters = {
   status: ReactorStatus | 'all';
@@ -18,28 +20,16 @@ type Filters = {
   q: string;
 };
 
-const STATUS_LABEL: Record<ReactorStatus, string> = {
-  operating: 'Operating',
-  suspended: 'Suspended / Offline',
-  shutdown: 'Shutdown',
-  under_construction: 'Under Construction',
-  planned: 'Planned',
-};
+const STATUS_OPTIONS: Array<{ value: ReactorStatus; label: string }> = [
+  { value: 'operating', label: 'Operating' },
+  { value: 'suspended', label: 'Suspended / Offline' },
+  { value: 'under_construction', label: 'Under Construction' },
+  { value: 'planned', label: 'Planned' },
+  { value: 'shutdown', label: 'Shutdown' },
+];
 
 function statusColor(status: ReactorStatus): string {
-  switch (status) {
-    case 'operating':
-      return '#18B6A4'; // green-ish accent
-    case 'suspended':
-      return '#F5B942'; // highlight yellow
-    case 'under_construction':
-      return '#1479FF'; // primary blue
-    case 'planned':
-      return '#7C3AED'; // purple for planned
-    case 'shutdown':
-    default:
-      return '#94A3B8'; // gray
-  }
+  return STATUS_COLORS[status].dot;
 }
 
 function markerIcon(status: ReactorStatus) {
@@ -197,8 +187,9 @@ export default function WorldMap() {
                   <div className="p-1">
                     <div className="font-semibold">{reactor.name}</div>
                     <div className="text-sm text-slate-700">{reactor.country}</div>
-                    <div className="text-sm">
-                      <span className="font-medium">Status:</span> {STATUS_LABEL[reactor.status]}
+                    <div className="text-sm flex items-center gap-2">
+                      <span className="font-medium">Status:</span>
+                      <StatusPill status={reactor.status} compact />
                     </div>
                     {reactor.capacityMWe != null && (
                       <div className="text-sm">
@@ -231,9 +222,9 @@ export default function WorldMap() {
                 }
               >
                 <option value="all">All statuses</option>
-                {Object.entries(STATUS_LABEL).map(([k, v]) => (
-                  <option key={k} value={k}>
-                    {v}
+                {STATUS_OPTIONS.map((o) => (
+                  <option key={o.value} value={o.value}>
+                    {o.label}
                   </option>
                 ))}
               </select>
@@ -294,16 +285,7 @@ export default function WorldMap() {
                     >
                       <div className="flex items-center justify-between gap-2">
                         <div className="font-medium text-sm">{r.name}</div>
-                        <span
-                          className="text-[11px] px-2 py-0.5 rounded-full border"
-                          style={{
-                            borderColor: statusColor(r.status),
-                            color: '#0F172A',
-                            background: 'rgba(255,255,255,0.7)',
-                          }}
-                        >
-                          {STATUS_LABEL[r.status]}
-                        </span>
+                        <StatusPill status={r.status} compact />
                       </div>
                       <div className="text-xs text-muted-foreground">
                         {r.country}

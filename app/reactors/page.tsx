@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { Skeleton } from '@/components/ui/skeleton';
 import type { Reactor } from '@/lib/reactors/types';
 import PageHeader from '@/components/layout/PageHeader';
+import StatusPill from '@/components/badges/StatusPill';
 
 type SortKey = 'name' | 'capacity' | 'status';
 type SortDir = 'asc' | 'desc';
@@ -18,14 +19,6 @@ type DirectoryFilters = {
   maxCapacity: string;
   sortKey: SortKey;
   sortDir: SortDir;
-};
-
-const STATUS_LABEL: Record<Reactor['status'], string> = {
-  operating: 'Operating',
-  suspended: 'Suspended / Offline',
-  shutdown: 'Shutdown',
-  under_construction: 'Under Construction',
-  planned: 'Planned',
 };
 
 const STATUS_ORDER: Record<Reactor['status'], number> = {
@@ -176,9 +169,17 @@ export default function ReactorsPage() {
                 }
               >
                 <option value="all">All statuses</option>
-                {Object.entries(STATUS_LABEL).map(([k, v]) => (
+                {(
+                  [
+                    ['operating', 'Operating'],
+                    ['suspended', 'Suspended / Offline'],
+                    ['under_construction', 'Under Construction'],
+                    ['planned', 'Planned'],
+                    ['shutdown', 'Shutdown'],
+                  ] as const
+                ).map(([k, label]) => (
                   <option key={k} value={k}>
-                    {v}
+                    {label}
                   </option>
                 ))}
               </select>
@@ -296,24 +297,7 @@ export default function ReactorsPage() {
                         <td className="px-4 py-3 text-muted-foreground">{r.plant}</td>
                         <td className="px-4 py-3 text-muted-foreground">{r.country}</td>
                         <td className="px-4 py-3">
-                          <span className="inline-flex items-center gap-2">
-                            <span
-                              className="h-2.5 w-2.5 rounded-full"
-                              style={{
-                                background:
-                                  r.status === 'operating'
-                                    ? '#18B6A4'
-                                    : r.status === 'suspended'
-                                      ? '#F5B942'
-                                      : r.status === 'under_construction'
-                                        ? '#1479FF'
-                                        : r.status === 'planned'
-                                          ? '#7C3AED'
-                                          : '#94A3B8',
-                              }}
-                            />
-                            {STATUS_LABEL[r.status]}
-                          </span>
+                          <StatusPill status={r.status} compact />
                         </td>
                         <td className="px-4 py-3 text-right tabular-nums">
                           {r.capacityMWe != null ? r.capacityMWe.toLocaleString() : '—'}

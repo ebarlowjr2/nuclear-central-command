@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Skeleton } from '@/components/ui/skeleton';
 import type { Company, CompanyCategory } from '@/lib/companies/types';
 import PageHeader from '@/components/layout/PageHeader';
+import { STATUS_COLORS } from '@/components/badges/statusColors';
 
 type Filters = {
   q: string;
@@ -139,7 +140,13 @@ export default function CompaniesPage() {
                       <div className="text-sm text-muted-foreground mt-1">{CATEGORY_LABEL[c.category]}</div>
                     </div>
                     {latest && (
-                      <span className="text-xs rounded-full border bg-white px-2 py-1 text-slate-700 whitespace-nowrap">
+                      <span
+                        className="text-xs rounded-full border px-2 py-1 text-slate-700 whitespace-nowrap"
+                        style={{
+                          borderColor: STATUS_COLORS.operating.border,
+                          background: STATUS_COLORS.operating.bg,
+                        }}
+                      >
                         Updated {latest}
                       </span>
                     )}
