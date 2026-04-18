@@ -9,6 +9,8 @@ import { Skeleton } from '@/components/ui/skeleton';
 import TopCountryGauges from '@/components/TopCountryGauges';
 import type { Reactor } from '@/lib/reactors/types';
 import type { Fact } from '@/types';
+import Link from 'next/link';
+import type { NewsItem } from '@/lib/news/types';
 
 export default function Home() {
   const [stats, setStats] = useState<any>(null);
@@ -16,6 +18,8 @@ export default function Home() {
   const [underConstruction, setUnderConstruction] = useState<Reactor[]>([]);
   const [topReactors, setTopReactors] = useState<any[]>([]);
   const [facts, setFacts] = useState<Fact[]>([]);
+  const [news, setNews] = useState<NewsItem[]>([]);
+  const [newsError, setNewsError] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -44,6 +48,21 @@ export default function Home() {
 
         setUnderConstruction(ucData?.data || []);
         setTopReactors(topData?.data || []);
+
+        try {
+          const newsRes = await fetch('/api/news/list?limit=6&offset=0');
+          const newsJson = await newsRes.json();
+          if (!newsRes.ok || newsJson?.error) {
+            setNews([]);
+            setNewsError(newsJson?.error || 'Unable to load news right now.');
+          } else {
+            setNews((newsJson?.data || []) as NewsItem[]);
+            setNewsError(null);
+          }
+        } catch (e) {
+          setNews([]);
+          setNewsError('Unable to load news right now.');
+        }
 
         const sampleFacts: Fact[] = [
           {
@@ -153,6 +172,43 @@ export default function Home() {
           ))}
         </div>
       </div>
+
+      <section className="space-y-4">
+        <div className="flex items-end justify-between gap-4">
+          <div>
+            <h2 className="text-2xl font-bold">Latest News</h2>
+            <p className="text-muted-foreground">Fresh headlines, ingested and stored locally.</p>
+          </div>
+          <Link className="text-sm text-primary hover:underline" href="/news">
+            View all news
+          </Link>
+        </div>
+
+        {news.length > 0 ? (
+          <div className="rounded-lg border bg-white overflow-hidden">
+            <div className="divide-y">
+              {news.map((n, i) => (
+                <a
+                  key={n.id}
+                  className="block p-4 hover:bg-slate-50 transition"
+                  href={n.url}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <div className="font-medium">{i === 0 ? `Featured: ${n.title}` : n.title}</div>
+                  <div className="text-sm text-muted-foreground mt-1">{n.source}</div>
+                  {n.summary && <div className="text-sm mt-2">{n.summary}</div>}
+                </a>
+              ))}
+            </div>
+          </div>
+        ) : (
+          <div className="rounded-lg border border-border bg-muted/30 p-4 text-sm text-muted-foreground">
+            {newsError ||
+              'No news loaded yet. If this is a fresh deploy, the first cron run will populate the feed.'}
+          </div>
+        )}
+      </section>
 
       <section>
         <MarketTabs />
