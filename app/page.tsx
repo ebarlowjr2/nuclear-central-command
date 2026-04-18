@@ -13,6 +13,7 @@ import Link from 'next/link';
 import type { NewsItem } from '@/lib/news/types';
 import type { Company } from '@/lib/companies/types';
 import WorldMapPreview from '@/components/WorldMapPreview';
+import LiveStatsStrip from '@/components/stats/LiveStatsStrip';
 
 export default function Home() {
   const [stats, setStats] = useState<any>(null);
@@ -160,6 +161,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <LiveStatsStrip />
 
       <TopCountryGauges />
 
