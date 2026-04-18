@@ -12,7 +12,13 @@ function isAuthorized(req: NextRequest) {
   const secret = process.env.CRON_SECRET;
   if (!secret) return true; // allow local/dev by default
   const header = req.headers.get('x-cron-secret');
-  return header === secret;
+  const auth = req.headers.get('authorization');
+  const qp = req.nextUrl.searchParams.get('secret');
+
+  // Vercel Cron Jobs can authenticate via an Authorization header using CRON_SECRET.
+  // Keep additional mechanisms for local/dev tooling.
+  const bearerOk = auth === `Bearer ${secret}`;
+  return bearerOk || header === secret || qp === secret;
 }
 
 function stripHtml(s: string) {
@@ -82,4 +88,3 @@ export async function POST(req: NextRequest) {
 export async function GET(req: NextRequest) {
   return POST(req);
 }
-
