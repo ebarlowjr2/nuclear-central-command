@@ -9,6 +9,12 @@ export const NEWS_SOURCES: NewsSource[] = [
     rssUrl: 'https://world-nuclear-news.org/rss',
   },
   {
+    id: 'nuclear-engineering-international',
+    name: 'Nuclear Engineering International',
+    // NEI appears to be WordPress-backed; standard feed endpoint.
+    rssUrl: 'https://www.neimagazine.com/feed/',
+  },
+  {
     id: 'iaea-news',
     name: 'IAEA News',
     rssUrl: 'https://www.iaea.org/newscenter/news/rss.xml',
@@ -34,6 +40,16 @@ export const NEWS_SOURCES: NewsSource[] = [
     rssUrl: 'https://www.powermag.com/feed/',
   },
   {
+    id: 'nrc-news-releases',
+    name: 'NRC News Releases',
+    rssUrl: 'https://www.nrc.gov/public-involve/rss?feed=news',
+  },
+  {
+    id: 'nrc-reactor-status',
+    name: 'NRC Power Reactor Status',
+    rssUrl: 'https://www.nrc.gov/public-involve/rss?feed=plant-status',
+  },
+  {
     id: 'nuclear-innovation-alliance',
     name: 'Nuclear Innovation Alliance',
     rssUrl: 'https://www.nuclearinnovationalliance.org/rss.xml',
@@ -44,4 +60,3 @@ export const NEWS_SOURCES: NewsSource[] = [
     rssUrl: 'https://www.nei.org/rss/news',
   },
 ];
-
