@@ -48,38 +48,39 @@
     "Apple Color Emoji", "Segoe UI Emoji";
   --app-font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
     monospace;
-  /* Nuclear Blue Command Center Theme - Light Mode */
-  --background: oklch(0.98 0.01 240);
-  --foreground: oklch(0.15 0.02 240);
-  --card: oklch(1 0.005 240);
-  --card-foreground: oklch(0.15 0.02 240);
-  --popover: oklch(1 0.005 240);
-  --popover-foreground: oklch(0.15 0.02 240);
-  --primary: oklch(0.55 0.18 240);
-  --primary-foreground: oklch(0.98 0.01 240);
-  --secondary: oklch(0.92 0.03 240);
-  --secondary-foreground: oklch(0.2 0.02 240);
-  --muted: oklch(0.94 0.02 240);
-  --muted-foreground: oklch(0.5 0.02 240);
-  --accent: oklch(0.65 0.15 220);
-  --accent-foreground: oklch(0.98 0.01 240);
+  /* Phase 6: optimistic, educational palette */
+  --background: #f7fafc;
+  --foreground: #122033;
+  --card: #ffffff;
+  --card-foreground: #122033;
+  --popover: #ffffff;
+  --popover-foreground: #122033;
+  --primary: #1479ff;
+  --primary-foreground: #ffffff;
+  --secondary: #eef4ff;
+  --secondary-foreground: #122033;
+  --muted: #f1f5f9;
+  --muted-foreground: #55657a;
+  --accent: #18b6a4;
+  --accent-foreground: #062a27;
+  --highlight: #f5b942;
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.88 0.02 240);
-  --input: oklch(0.88 0.02 240);
-  --ring: oklch(0.55 0.18 240);
-  --chart-1: oklch(0.55 0.18 240);
-  --chart-2: oklch(0.65 0.15 220);
-  --chart-3: oklch(0.45 0.12 260);
-  --chart-4: oklch(0.7 0.12 200);
-  --chart-5: oklch(0.6 0.14 180);
-  --sidebar: oklch(0.96 0.015 240);
-  --sidebar-foreground: oklch(0.15 0.02 240);
-  --sidebar-primary: oklch(0.55 0.18 240);
-  --sidebar-primary-foreground: oklch(0.98 0.01 240);
-  --sidebar-accent: oklch(0.92 0.03 240);
-  --sidebar-accent-foreground: oklch(0.2 0.02 240);
-  --sidebar-border: oklch(0.88 0.02 240);
-  --sidebar-ring: oklch(0.55 0.18 240);
+  --border: #dbe4ee;
+  --input: #dbe4ee;
+  --ring: #1479ff;
+  --chart-1: #1479ff;
+  --chart-2: #18b6a4;
+  --chart-3: #7c3aed;
+  --chart-4: #f5b942;
+  --chart-5: #0ea5e9;
+  --sidebar: #ffffff;
+  --sidebar-foreground: #122033;
+  --sidebar-primary: #1479ff;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #eef4ff;
+  --sidebar-accent-foreground: #122033;
+  --sidebar-border: #dbe4ee;
+  --sidebar-ring: #1479ff;
 }
 
 .dark {
@@ -127,46 +128,11 @@
 }
 
 @layer utilities {
-  /* Nuclear Command Center Enhancements */
-  .glow-primary {
-    box-shadow: 0 0 10px oklch(0.65 0.2 240 / 0.3),
-                0 0 20px oklch(0.65 0.2 240 / 0.2),
-                0 0 30px oklch(0.65 0.2 240 / 0.1);
-  }
-  
-  .glow-accent {
-    box-shadow: 0 0 8px oklch(0.65 0.15 220 / 0.3),
-                0 0 16px oklch(0.65 0.15 220 / 0.2);
-  }
-  
-  .text-glow {
-    text-shadow: 0 0 10px oklch(0.65 0.2 240 / 0.5),
-                 0 0 20px oklch(0.65 0.2 240 / 0.3);
-  }
-  
-  .border-glow {
-    border-color: oklch(0.65 0.2 240);
-    box-shadow: 0 0 5px oklch(0.65 0.2 240 / 0.4);
-  }
-  
-  .card-reactor {
-    background: linear-gradient(135deg, 
-                oklch(1 0.005 240) 0%, 
-                oklch(0.98 0.01 240) 100%);
-    border: 1px solid oklch(0.88 0.02 240);
-    transition: all 0.3s ease;
-  }
-  
-  .dark .card-reactor {
-    background: linear-gradient(135deg, 
-                oklch(0.16 0.025 240) 0%, 
-                oklch(0.14 0.03 240) 100%);
-    border: 1px solid oklch(0.3 0.04 240);
-  }
-  
-  .card-reactor:hover {
-    border-color: oklch(0.65 0.2 240);
-    box-shadow: 0 4px 20px oklch(0.65 0.2 240 / 0.2);
-    transform: translateY(-2px);
+  .hero-sky {
+    background:
+      radial-gradient(700px 240px at 15% 20%, rgba(20, 121, 255, 0.18), transparent 60%),
+      radial-gradient(520px 240px at 70% 0%, rgba(24, 182, 164, 0.14), transparent 55%),
+      radial-gradient(520px 240px at 85% 55%, rgba(245, 185, 66, 0.18), transparent 55%),
+      linear-gradient(180deg, #f7fafc 0%, #ffffff 60%, #f7fafc 100%);
   }
 }

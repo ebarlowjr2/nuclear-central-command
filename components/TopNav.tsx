@@ -19,7 +19,7 @@ export default function TopNav() {
   ];
 
   return (
-    <nav className="border-b bg-card">
+    <nav className="border-b bg-card/80 backdrop-blur">
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center gap-2 font-bold text-xl">
@@ -32,7 +32,7 @@ export default function TopNav() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-sm font-medium transition-colors hover:text-primary ${
+                className={`text-sm font-medium transition-colors hover:text-foreground ${
                   pathname === link.href
                     ? 'text-primary'
                     : 'text-muted-foreground'

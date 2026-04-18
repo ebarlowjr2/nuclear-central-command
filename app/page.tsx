@@ -116,20 +116,49 @@ export default function Home() {
   if (loading) {
     return (
       <div className="space-y-8">
-        <Skeleton className="h-32 w-full" />
+        <Skeleton className="h-40 w-full" />
         <Skeleton className="h-64 w-full" />
       </div>
     );
   }
 
   return (
-    <div className="space-y-8">
-      <div>
-        <h1 className="text-4xl font-bold mb-2">Nuclear Command Center</h1>
-        <p className="text-muted-foreground">
-          Global nuclear reactor tracking, statistics, and educational resources
-        </p>
-      </div>
+    <div className="space-y-10">
+      <section className="hero-sky rounded-2xl border overflow-hidden">
+        <div className="p-6 md:p-10">
+          <div className="max-w-3xl">
+            <div className="inline-flex items-center gap-2 rounded-full border bg-white/70 px-3 py-1 text-xs text-slate-700">
+              Education • Data • Deployment
+            </div>
+            <h1 className="mt-4 text-4xl md:text-5xl font-bold tracking-tight">
+              Nuclear energy, explained with real-world data.
+            </h1>
+            <p className="mt-3 text-muted-foreground text-lg">
+              Track reactors, follow credible news, and explore the companies building the next generation of clean power.
+            </p>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <Link
+                href="/map"
+                className="h-10 inline-flex items-center justify-center rounded-md bg-primary px-4 text-sm font-medium text-primary-foreground hover:opacity-95"
+              >
+                Explore the map
+              </Link>
+              <Link
+                href="/reactors"
+                className="h-10 inline-flex items-center justify-center rounded-md border bg-white px-4 text-sm font-medium hover:bg-slate-50"
+              >
+                Browse reactors
+              </Link>
+              <Link
+                href="/learn"
+                className="h-10 inline-flex items-center justify-center rounded-md border bg-white px-4 text-sm font-medium hover:bg-slate-50"
+              >
+                Learn Nuclear 101
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <TopCountryGauges />
 
