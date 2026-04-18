@@ -1,0 +1,147 @@
+[
+  {
+    "id": "edf",
+    "name": "EDF",
+    "category": "utilities",
+    "description": "French electric utility and one of the world's largest nuclear operators.",
+    "website": "https://www.edf.fr",
+    "socials": { "linkedin": "https://www.linkedin.com/company/edf/" }
+  },
+  {
+    "id": "southern-company",
+    "name": "Southern Company",
+    "category": "utilities",
+    "description": "U.S. energy company with nuclear generation via Southern Nuclear.",
+    "website": "https://www.southerncompany.com",
+    "socials": { "linkedin": "https://www.linkedin.com/company/southern-company/" }
+  },
+  {
+    "id": "tva",
+    "name": "Tennessee Valley Authority (TVA)",
+    "category": "utilities",
+    "description": "U.S. federally owned corporation operating nuclear plants in the TVA region.",
+    "website": "https://www.tva.com",
+    "socials": { "linkedin": "https://www.linkedin.com/company/tennessee-valley-authority/" }
+  },
+  {
+    "id": "exelon",
+    "name": "Exelon",
+    "category": "utilities",
+    "description": "U.S. energy company; nuclear generation experience through its historic fleet.",
+    "website": "https://www.exeloncorp.com",
+    "socials": { "linkedin": "https://www.linkedin.com/company/exelon/" }
+  },
+  {
+    "id": "rosatom",
+    "name": "Rosatom",
+    "category": "reactor_vendors",
+    "description": "Russian state corporation involved in nuclear power plant projects and the fuel cycle.",
+    "website": "https://www.rosatom.ru",
+    "socials": {}
+  },
+  {
+    "id": "westinghouse",
+    "name": "Westinghouse Electric Company",
+    "category": "reactor_vendors",
+    "description": "Nuclear technology company and reactor vendor (including AP1000).",
+    "website": "https://www.westinghousenuclear.com",
+    "socials": { "linkedin": "https://www.linkedin.com/company/westinghouse-electric-company/" }
+  },
+  {
+    "id": "framatome",
+    "name": "Framatome",
+    "category": "reactor_vendors",
+    "description": "Nuclear services and technology provider supporting reactor operations and new builds.",
+    "website": "https://www.framatome.com",
+    "socials": { "linkedin": "https://www.linkedin.com/company/framatome/" }
+  },
+  {
+    "id": "ge-hitachi",
+    "name": "GE Hitachi Nuclear Energy",
+    "category": "reactor_vendors",
+    "description": "Nuclear reactor vendor and services company (BWR/SMR designs including BWRX-300).",
+    "website": "https://nuclear.gepower.com",
+    "socials": { "linkedin": "https://www.linkedin.com/company/ge-hitachi-nuclear-energy/" }
+  },
+  {
+    "id": "rolls-royce-smr",
+    "name": "Rolls-Royce SMR",
+    "category": "smr_developers",
+    "description": "Developer of a UK-based small modular reactor program.",
+    "website": "https://www.rolls-royce.com/innovation/small-modular-reactors.aspx",
+    "socials": { "linkedin": "https://www.linkedin.com/company/rolls-royce-smr/" }
+  },
+  {
+    "id": "terrapower",
+    "name": "TerraPower",
+    "category": "smr_developers",
+    "description": "Advanced reactor developer pursuing next-generation designs.",
+    "website": "https://www.terrapower.com",
+    "socials": { "linkedin": "https://www.linkedin.com/company/terrapower/" }
+  },
+  {
+    "id": "x-energy",
+    "name": "X-energy",
+    "category": "smr_developers",
+    "description": "Advanced reactor developer focused on high-temperature gas-cooled reactor technology.",
+    "website": "https://x-energy.com",
+    "socials": { "linkedin": "https://www.linkedin.com/company/x-energy/" }
+  },
+  {
+    "id": "nuscale",
+    "name": "NuScale Power",
+    "category": "smr_developers",
+    "description": "SMR developer working on light-water small modular reactor technology.",
+    "website": "https://www.nuscalepower.com",
+    "socials": { "linkedin": "https://www.linkedin.com/company/nuscale-power-llc/" }
+  },
+  {
+    "id": "orano",
+    "name": "Orano",
+    "category": "uranium_fuel",
+    "description": "Nuclear fuel cycle company involved in mining, enrichment, and fuel services.",
+    "website": "https://www.orano.group",
+    "socials": { "linkedin": "https://www.linkedin.com/company/orano/" }
+  },
+  {
+    "id": "cameco",
+    "name": "Cameco",
+    "category": "uranium_fuel",
+    "description": "Uranium and fuel services company involved in mining and fuel supply.",
+    "website": "https://www.cameco.com",
+    "socials": { "linkedin": "https://www.linkedin.com/company/cameco-corporation/" }
+  },
+  {
+    "id": "bwxt",
+    "name": "BWX Technologies",
+    "category": "engineering",
+    "description": "Engineering and manufacturing for nuclear components and systems.",
+    "website": "https://www.bwxt.com",
+    "socials": { "linkedin": "https://www.linkedin.com/company/bwx-technologies-inc/" }
+  },
+  {
+    "id": "bechtel",
+    "name": "Bechtel",
+    "category": "engineering",
+    "description": "Engineering, procurement, and construction firm with energy project experience.",
+    "website": "https://www.bechtel.com",
+    "socials": { "linkedin": "https://www.linkedin.com/company/bechtel-corporation/" }
+  },
+  {
+    "id": "nei",
+    "name": "Nuclear Energy Institute (NEI)",
+    "category": "research_advocacy",
+    "description": "U.S. policy and advocacy organization for the nuclear energy industry.",
+    "website": "https://www.nei.org",
+    "socials": { "linkedin": "https://www.linkedin.com/company/nuclear-energy-institute/" }
+  },
+  {
+    "id": "ans",
+    "name": "American Nuclear Society (ANS)",
+    "category": "research_advocacy",
+    "description": "Professional society supporting nuclear science and engineering education and outreach.",
+    "website": "https://www.ans.org",
+    "socials": { "linkedin": "https://www.linkedin.com/company/american-nuclear-society/" }
+  }
+]
+
