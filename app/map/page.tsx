@@ -3,6 +3,7 @@
 import dynamic from 'next/dynamic';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Skeleton } from '@/components/ui/skeleton';
+import PageHeader from '@/components/layout/PageHeader';
 
 const MapComponent = dynamic(() => import('@/components/WorldMap'), {
   ssr: false,
@@ -12,12 +13,11 @@ const MapComponent = dynamic(() => import('@/components/WorldMap'), {
 export default function MapPage() {
   return (
     <div className="space-y-8">
-      <div>
-        <h1 className="text-4xl font-bold mb-2">Global Reactor Map</h1>
-        <p className="text-muted-foreground">
-          Interactive map of nuclear reactors worldwide
-        </p>
-      </div>
+      <PageHeader
+        eyebrow="Global • Interactive"
+        title="Global Reactor Map"
+        subtitle="Explore reactor locations worldwide, filter by status and type, and compare regions at a glance."
+      />
 
       <Card>
         <CardHeader>

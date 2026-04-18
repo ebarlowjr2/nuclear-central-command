@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
 import { Skeleton } from '@/components/ui/skeleton';
 import type { Reactor } from '@/lib/reactors/types';
+import PageHeader from '@/components/layout/PageHeader';
 
 type SortKey = 'name' | 'capacity' | 'status';
 type SortDir = 'asc' | 'desc';
@@ -140,12 +141,12 @@ export default function ReactorsPage() {
 
   return (
     <div className="space-y-8">
-      <div>
-        <h1 className="text-4xl font-bold mb-2">Reactor Directory</h1>
-        <p className="text-muted-foreground">
-          Search, filter, and sort nuclear reactors worldwide (data loads locally—no live third-party calls).
-        </p>
-      </div>
+      <PageHeader
+        eyebrow="Directory • Searchable"
+        title="Reactor Directory"
+        subtitle="Search, filter, and sort reactors worldwide. Data is ingested and stored locally (no third-party calls at page load)."
+        cta={{ href: '/map', label: 'Open map' }}
+      />
 
       {loading ? (
         <div className="space-y-3">
@@ -159,7 +160,7 @@ export default function ReactorsPage() {
         </div>
       ) : (
         <div className="space-y-4">
-          <div className="rounded-lg border bg-white p-4">
+          <div className="rounded-2xl border bg-white p-4 md:p-5">
             <div className="grid gap-3 md:grid-cols-6">
               <input
                 className="h-10 rounded-md border bg-white px-3 text-sm md:col-span-2"
@@ -264,7 +265,7 @@ export default function ReactorsPage() {
             </div>
           </div>
 
-          <div className="rounded-lg border bg-white overflow-hidden">
+          <div className="rounded-2xl border bg-white overflow-hidden">
             {filtered.length === 0 ? (
               <div className="p-10 text-center text-sm text-muted-foreground">
                 No reactors match these filters.

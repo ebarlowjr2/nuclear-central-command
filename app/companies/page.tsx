@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Skeleton } from '@/components/ui/skeleton';
 import type { Company, CompanyCategory } from '@/lib/companies/types';
+import PageHeader from '@/components/layout/PageHeader';
 
 type Filters = {
   q: string;
@@ -72,14 +73,14 @@ export default function CompaniesPage() {
 
   return (
     <div className="space-y-8">
-      <div>
-        <h1 className="text-4xl font-bold mb-2">Companies</h1>
-        <p className="text-muted-foreground">
-          Explore the nuclear ecosystem: utilities, SMR developers, vendors, fuel, engineering, and advocacy.
-        </p>
-      </div>
+      <PageHeader
+        eyebrow="Ecosystem • Explorer"
+        title="Companies"
+        subtitle="Explore the nuclear ecosystem: utilities, SMR developers, vendors, fuel, engineering, and advocacy."
+        cta={{ href: '/news', label: 'See latest news' }}
+      />
 
-      <Card>
+      <Card className="rounded-2xl">
         <CardHeader>
           <CardTitle>Search & Filters</CardTitle>
         </CardHeader>
@@ -130,7 +131,7 @@ export default function CompaniesPage() {
           {filtered.map((c) => {
             const latest = c.latestUpdate ? formatDate(c.latestUpdate) : null;
             return (
-              <Card key={c.id} className="hover:shadow-lg transition-shadow">
+              <Card key={c.id} className="rounded-2xl hover:shadow-lg transition-shadow">
                 <CardHeader>
                   <div className="flex items-start justify-between gap-3">
                     <div>

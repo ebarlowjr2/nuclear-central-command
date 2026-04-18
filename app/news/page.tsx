@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Skeleton } from '@/components/ui/skeleton';
 import type { NewsItem } from '@/lib/news/types';
+import PageHeader from '@/components/layout/PageHeader';
 
 type Filters = {
   q: string;
@@ -89,12 +90,13 @@ export default function NewsPage() {
 
   return (
     <div className="space-y-8">
-      <div>
-        <h1 className="text-4xl font-bold mb-2">Nuclear News</h1>
-        <p className="text-muted-foreground">Curated headlines from trusted nuclear and energy sources.</p>
-      </div>
+      <PageHeader
+        eyebrow="Local-first • RSS"
+        title="Nuclear News"
+        subtitle="Curated headlines from trusted nuclear and energy sources. Articles are ingested and stored locally."
+      />
 
-      <Card>
+      <Card className="rounded-2xl">
         <CardHeader>
           <CardTitle>Filters</CardTitle>
         </CardHeader>
@@ -158,7 +160,7 @@ export default function NewsPage() {
       ) : (
         <div className="space-y-6">
           {featured && (
-            <Card className="border-slate-200">
+            <Card className="border-slate-200 rounded-2xl">
               <CardHeader>
                 <CardTitle>Featured</CardTitle>
               </CardHeader>
@@ -190,7 +192,7 @@ export default function NewsPage() {
             </Card>
           )}
 
-          <div className="rounded-lg border bg-white overflow-hidden">
+          <div className="rounded-2xl border bg-white overflow-hidden">
             <div className="divide-y">
               {page.map((n) => (
                 <div key={n.id} className="p-4 hover:bg-slate-50 transition">
@@ -245,4 +247,3 @@ export default function NewsPage() {
     </div>
   );
 }
-
