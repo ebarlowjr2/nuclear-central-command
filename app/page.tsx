@@ -12,6 +12,7 @@ import type { Fact } from '@/types';
 import Link from 'next/link';
 import type { NewsItem } from '@/lib/news/types';
 import type { Company } from '@/lib/companies/types';
+import WorldMapPreview from '@/components/WorldMapPreview';
 
 export default function Home() {
   const [stats, setStats] = useState<any>(null);
@@ -210,6 +211,26 @@ export default function Home() {
           )}
         </div>
       </div>
+
+      <section className="space-y-4">
+        <div className="flex items-end justify-between gap-4">
+          <div>
+            <h2 className="text-2xl font-bold">Map Preview</h2>
+            <p className="text-muted-foreground">A quick look at the global reactor landscape.</p>
+          </div>
+          <Link className="text-sm text-primary hover:underline" href="/map">
+            Open full map
+          </Link>
+        </div>
+        <div className="rounded-2xl border bg-white overflow-hidden">
+          <div className="p-4 md:p-5">
+            <div className="text-xs text-muted-foreground mb-3">
+              Tip: Use filters and the synced list on the full map to explore by status, country, and reactor type.
+            </div>
+            <WorldMapPreview />
+          </div>
+        </div>
+      </section>
 
       <div>
         <h2 className="text-2xl font-bold mb-4">Did You Know?</h2>
