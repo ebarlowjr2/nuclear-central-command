@@ -6,8 +6,45 @@ import type { NewsItem } from './types';
 const DATA_PATH = path.join(process.cwd(), 'data', 'news.local.json');
 const MAX_ITEMS = 1000;
 
+export function canonicalizeUrl(input: string): string {
+  try {
+    const u = new URL(input);
+    // Drop common tracking params.
+    const drop = new Set([
+      'utm_source',
+      'utm_medium',
+      'utm_campaign',
+      'utm_term',
+      'utm_content',
+      'utm_id',
+      'utm_name',
+      'utm_reader',
+      'utm_viz_id',
+      'utm_pubreferrer',
+      'utm_swu',
+      'gclid',
+      'fbclid',
+      'mc_cid',
+      'mc_eid',
+      'ref',
+      'src',
+    ]);
+    for (const k of Array.from(u.searchParams.keys())) {
+      if (drop.has(k) || k.startsWith('utm_')) u.searchParams.delete(k);
+    }
+    u.hash = '';
+    // Normalize hostname casing and trailing slash.
+    u.hostname = u.hostname.toLowerCase();
+    const out = u.toString();
+    return out.endsWith('/') ? out.slice(0, -1) : out;
+  } catch {
+    return input.trim();
+  }
+}
+
 function stableId(source: string, url: string) {
-  return crypto.createHash('sha256').update(`${source}::${url}`).digest('hex').slice(0, 24);
+  const canon = canonicalizeUrl(url);
+  return crypto.createHash('sha256').update(`${source}::${canon}`).digest('hex').slice(0, 24);
 }
 
 function toIso(d: unknown): string {
@@ -24,11 +61,12 @@ export function buildNewsItem(input: {
   publishedAt?: unknown;
   tags?: string[];
 }): NewsItem {
+  const url = canonicalizeUrl(input.url);
   return {
-    id: stableId(input.source, input.url),
+    id: stableId(input.source, url),
     title: input.title.trim(),
     summary: input.summary.trim(),
-    url: input.url.trim(),
+    url,
     source: input.source,
     publishedAt: toIso(input.publishedAt),
     tags: Array.from(new Set((input.tags || []).map((t) => t.trim()).filter(Boolean))).slice(0, 20),
@@ -82,4 +120,3 @@ export async function upsertLocalNews(newItems: NewsItem[]): Promise<{
   await writeLocalNews(merged);
   return { total: Math.min(merged.length, MAX_ITEMS), inserted, updated };
 }
-

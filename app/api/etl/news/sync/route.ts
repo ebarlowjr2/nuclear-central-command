@@ -25,6 +25,12 @@ function stripHtml(s: string) {
   return s.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
 }
 
+function clampSummary(s: string) {
+  const t = stripHtml(s);
+  if (t.length <= 360) return t;
+  return t.slice(0, 360).replace(/\s+\S*$/, '').trim() + '…';
+}
+
 export async function POST(req: NextRequest) {
   if (!isAuthorized(req)) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
@@ -39,6 +45,7 @@ export async function POST(req: NextRequest) {
   const reactors = await getLocalReactors();
   const fetched: NewsItem[] = [];
   const results: Array<{ source: string; ok: boolean; count: number; error?: string }> = [];
+  const startedAt = new Date().toISOString();
 
   for (const src of NEWS_SOURCES) {
     try {
@@ -51,9 +58,9 @@ export async function POST(req: NextRequest) {
         if (!url || !title) continue;
 
         const summary =
-          stripHtml(String((it as any).contentSnippet || '')) ||
-          stripHtml(String((it as any).content || '')) ||
-          stripHtml(String((it as any).summary || '')) ||
+          clampSummary(String((it as any).contentSnippet || '')) ||
+          clampSummary(String((it as any).content || '')) ||
+          clampSummary(String((it as any).summary || '')) ||
           '';
 
         const publishedAt = (it as any).isoDate || (it as any).pubDate || undefined;
@@ -78,6 +85,8 @@ export async function POST(req: NextRequest) {
   const stats = await upsertLocalNews(fetched);
   return NextResponse.json({
     ok: true,
+    startedAt,
+    finishedAt: new Date().toISOString(),
     sources: results,
     fetched: fetched.length,
     ...stats,
