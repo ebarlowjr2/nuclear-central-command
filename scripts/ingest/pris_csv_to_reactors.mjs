@@ -5,6 +5,8 @@ import Papa from 'papaparse';
 
 // Usage:
 //   node scripts/ingest/pris_csv_to_reactors.mjs data/sources/pris.csv data/reactors.pris.json
+//   node scripts/ingest/pris_csv_to_reactors.mjs data/sources/2024_Table14.csv data/reactors.json
+//   node scripts/ingest/pris_csv_to_reactors.mjs data/sources/2024_Table13.csv data/reactors.json
 //
 // Notes:
 // - This intentionally produces the app's normalized Reactor shape.
@@ -51,6 +53,57 @@ function pick(row, keys) {
   return null;
 }
 
+function looksLikeRds2Table(rows) {
+  // RDS-2 tables have explicit columns like "Country", "Code", "Reactor Name".
+  if (!rows || rows.length < 8) return false;
+  const r = rows.find((x) => x && (x.Country || x['Reactor Name'] || x.Code));
+  return !!r;
+}
+
+function normalizeRds2Row(row) {
+  // Handles Table 13/14 layout.
+  // Expected columns:
+  // Country, Code, Reactor Name, Type, Model, Capacity [MW] Thermal/Gross/Net, Operator, NSSS, Start/Grid/Comm etc.
+  const plant = asString(pick(row, ['Reactor Name', 'ReactorName', 'reactor_name']));
+  const country = asString(pick(row, ['Country', 'country']));
+  const code = asString(pick(row, ['Code', 'code']));
+  const type = asString(pick(row, ['Type', 'type'])) || undefined;
+  const model = asString(pick(row, ['Model', 'model'])) || undefined;
+  const operator = asString(pick(row, ['Operator', 'operator'])) || undefined;
+
+  // For RDS-2, "Capacity [MW]" column is Thermal, and subsequent unnamed columns are Gross and Net.
+  // PapaParse names them "Capacity [MW]" (thermal), "" (gross), and "_1" (net).
+  const net = asNumber(pick(row, ['_1', 'Net', 'net']));
+  // Table 13/14 files don't include a status column; infer from the filename-derived context if present.
+  const status = row.__rds2_status || 'operating';
+
+  if (!plant || !country) return null;
+
+  // RDS-2 uses uppercase country names; normalize to title case for UI consistency.
+  const countryNorm = country
+    .toLowerCase()
+    .split(' ')
+    .filter(Boolean)
+    .map((w) => w[0]?.toUpperCase() + w.slice(1))
+    .join(' ');
+
+  const idKey = code || `${slug(country)}:${slug(plant)}`;
+  return {
+    id: stableId('rds2', idKey),
+    name: plant,
+    plant,
+    country: countryNorm,
+    lat: null,
+    lng: null,
+    status,
+    capacityMWe: net,
+    type: type || model || undefined,
+    operator,
+    source: 'IAEA RDS-2 (PRIS-derived CSV)',
+    lastUpdated: new Date().toISOString(),
+  };
+}
+
 async function main() {
   const [input, output] = process.argv.slice(2);
   if (!input || !output) {
@@ -59,7 +112,22 @@ async function main() {
   }
 
   const csv = await fs.readFile(path.resolve(input), 'utf8');
-  const parsed = Papa.parse(csv, { header: true, skipEmptyLines: true });
+
+  // RDS-2 tables have title rows before the real header.
+  // Detect by filename and start parsing at the header row (0-based index 4 for 2024 tables).
+  const isRds2File = /Table(12|13|14)\.csv$/i.test(path.basename(input)) || /Table(12|13|14)/i.test(input);
+  const rds2Status = /Table13/i.test(input)
+    ? 'under_construction'
+    : /Table12/i.test(input)
+      ? 'planned'
+      : /Table14/i.test(input)
+        ? 'operating'
+        : 'operating';
+  const parseOptions = isRds2File
+    ? { header: true, skipEmptyLines: true, beforeFirstChunk: (chunk) => chunk.split(/\r?\n/).slice(4).join('\n') }
+    : { header: true, skipEmptyLines: true };
+
+  const parsed = Papa.parse(csv, parseOptions);
   if (parsed.errors?.length) {
     console.error('CSV parse errors:', parsed.errors.slice(0, 5));
     process.exit(1);
@@ -68,8 +136,12 @@ async function main() {
   const rows = parsed.data || [];
   const nowIso = new Date().toISOString();
 
+  const isRds2 = looksLikeRds2Table(rows);
+
   const reactors = rows
     .map((row) => {
+      if (isRds2File) row.__rds2_status = rds2Status;
+      if (isRds2) return normalizeRds2Row(row);
       const plant = asString(pick(row, ['plant_name', 'PlantName', 'Plant', 'plant', 'Site']));
       const unit = asString(pick(row, ['unit_name', 'UnitName', 'Unit', 'unit']));
       const name = unit ? `${plant} ${unit}` : plant;
@@ -118,4 +190,3 @@ main().catch((e) => {
   console.error(e);
   process.exit(1);
 });
-
