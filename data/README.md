@@ -13,6 +13,10 @@ Notes:
 - To upgrade to a full PRIS export, place the PRIS CSV at `data/sources/pris.csv` and run:
   `node scripts/ingest/pris_csv_to_reactors.mjs data/sources/pris.csv data/reactors.json`
 
+Alternative (no local Node script):
+- POST a PRIS CSV to `/api/etl/pris/normalize` and download the returned JSON. This endpoint requires
+  `CRON_SECRET` and accepts `Authorization: Bearer <CRON_SECRET>` or `?secret=...`.
+
 ## News
 
 News is ingested on a schedule and stored locally in `data/news.local.json`.
