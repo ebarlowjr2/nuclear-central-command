@@ -4,6 +4,7 @@ import { NEWS_SOURCES } from '@/lib/news/sources';
 import { buildNewsItem, upsertLocalNews } from '@/lib/news/localStore';
 import { getLocalReactors } from '@/lib/reactors/localStore';
 import { tagNewsItem } from '@/lib/news/tagger';
+import { getCompaniesEnriched } from '@/lib/companies/localStore';
 import type { NewsItem } from '@/lib/news/types';
 
 export const dynamic = 'force-dynamic';
@@ -42,7 +43,7 @@ export async function POST(req: NextRequest) {
     headers: { 'User-Agent': 'NuclearCommandCenterBot/1.0 (+news ingestion)' },
   });
 
-  const reactors = await getLocalReactors();
+  const [reactors, companies] = await Promise.all([getLocalReactors(), getCompaniesEnriched()]);
   const fetched: NewsItem[] = [];
   const results: Array<{ source: string; ok: boolean; count: number; error?: string }> = [];
   const startedAt = new Date().toISOString();
@@ -72,7 +73,7 @@ export async function POST(req: NextRequest) {
           publishedAt,
           tags: [],
         });
-        fetched.push(tagNewsItem(base, reactors));
+        fetched.push(tagNewsItem(base, reactors, companies));
       }
 
       results.push({ source: src.name, ok: true, count: items.length });
