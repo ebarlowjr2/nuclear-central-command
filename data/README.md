@@ -17,6 +17,14 @@ Alternative (no local Node script):
 - POST a PRIS CSV to `/api/etl/pris/normalize` and download the returned JSON. This endpoint requires
   `CRON_SECRET` and accepts `Authorization: Bearer <CRON_SECRET>` or `?secret=...`.
 
+### Coordinates (lat/lng)
+
+RDS-2 tables often omit coordinates. To enrich coordinates offline:
+- Download the WRI Global Power Plant Database CSV and save it as `data/sources/global_power_plant_database.csv`
+- Run:
+  `node scripts/ingest/enrich_coords_from_wri_powerplants.mjs data/reactors.json data/sources/global_power_plant_database.csv data/reactors.json`
+- For manual fixes, edit `data/overrides/reactor_coords.overrides.json`
+
 ## News
 
 News is ingested on a schedule and stored locally in `data/news.local.json`.

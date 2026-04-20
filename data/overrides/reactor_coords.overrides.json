@@ -1,0 +1,5 @@
+{
+  "//": "Optional manual overrides for reactor coordinates. Keys are reactor.id, values are {lat,lng}.",
+  "pris-EXAMPLE": { "lat": 0, "lng": 0 }
+}
+
