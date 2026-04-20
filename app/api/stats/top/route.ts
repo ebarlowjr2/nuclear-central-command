@@ -1,16 +1,76 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getSupabaseAdmin } from '@/lib/supabaseServer';
+import { getLocalReactors } from '@/lib/reactors/localStore';
 
 export const dynamic = 'force-dynamic';
+export const runtime = 'nodejs';
 
 export async function GET(request: NextRequest) {
   try {
-    const supabase = getSupabaseAdmin();
     const searchParams = request.nextUrl.searchParams;
     const metric = searchParams.get('metric') || 'capacity';
     const scope = searchParams.get('scope') || 'country';
     const limit = parseInt(searchParams.get('limit') || '10');
 
+    // Local-first: avoid any upstream network calls at request time unless explicitly enabled.
+    if (process.env.USE_SUPABASE !== 'true') {
+      const reactors = await getLocalReactors();
+
+      if (scope === 'reactor') {
+        const data = reactors
+          .filter((r) => r.status === 'operating')
+          .slice()
+          .sort((a, b) => (b.capacityMWe ?? 0) - (a.capacityMWe ?? 0))
+          .slice(0, limit)
+          .map((r) => ({
+            id: r.id,
+            name: r.name,
+            plant: r.plant,
+            country: r.country,
+            status: r.status,
+            capacity_mwe: r.capacityMWe ?? 0,
+            type: r.type,
+            operator: r.operator,
+            source: r.source,
+          }));
+
+        return NextResponse.json({ data, source: 'local' });
+      }
+
+      const countryMap = new Map<
+        string,
+        { country_id: string; country_name: string; iso2?: string; total_capacity: number; reactor_count: number; operating_count: number }
+      >();
+
+      for (const r of reactors) {
+        const key = r.country;
+        if (!key) continue;
+        if (!countryMap.has(key)) {
+          countryMap.set(key, {
+            country_id: key.toLowerCase().replace(/[^a-z0-9]+/g, '-'),
+            country_name: key,
+            total_capacity: 0,
+            reactor_count: 0,
+            operating_count: 0,
+          });
+        }
+        const entry = countryMap.get(key)!;
+        entry.total_capacity += r.capacityMWe ?? 0;
+        entry.reactor_count += 1;
+        if (r.status === 'operating') entry.operating_count += 1;
+      }
+
+      const sorted = Array.from(countryMap.values())
+        .sort((a, b) => {
+          if (metric === 'capacity') return b.total_capacity - a.total_capacity;
+          return b.reactor_count - a.reactor_count;
+        })
+        .slice(0, limit);
+
+      return NextResponse.json({ data: sorted, source: 'local' });
+    }
+
+    const supabase = getSupabaseAdmin();
     if (scope === 'reactor') {
       const { data, error } = await supabase
         .from('reactors')
@@ -63,8 +123,9 @@ export async function GET(request: NextRequest) {
 
       return NextResponse.json({ data: sorted });
     }
-  } catch (e: any) {
-    return NextResponse.json({ error: e.message }, { status: 500 });
+  } catch (e: unknown) {
+    const message = e instanceof Error ? e.message : 'Unexpected error';
+    return NextResponse.json({ error: message }, { status: 500 });
   }
 }
 
