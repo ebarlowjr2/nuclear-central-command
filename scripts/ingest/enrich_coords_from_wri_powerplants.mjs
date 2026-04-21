@@ -33,6 +33,31 @@ function norm(s) {
     .trim();
 }
 
+function normCountry(s) {
+  const n = norm(s);
+  // Common WRI vs IAEA naming differences.
+  const aliases = new Map([
+    ['united states', 'united states of america'],
+    ['usa', 'united states of america'],
+    ['uk', 'united kingdom'],
+    ['russia', 'russian federation'],
+    ['south korea', 'korea republic of'],
+    ['north korea', 'korea democratic peoples republic of'],
+    ['iran', 'iran islamic republic of'],
+    ['laos', 'lao peoples democratic republic'],
+    ['syria', 'syrian arab republic'],
+    ['venezuela', 'venezuela bolivarian republic of'],
+    ['tanzania', 'tanzania united republic of'],
+    ['bolivia', 'bolivia plurinational state of'],
+    ['moldova', 'moldova republic of'],
+    ['vietnam', 'viet nam'],
+    ['brunei', 'brunei darussalam'],
+    ['czech republic', 'czechia'],
+    ['uae', 'united arab emirates'],
+  ]);
+  return aliases.get(n) || n;
+}
+
 function tokens(s) {
   return norm(s).split(' ').filter(Boolean);
 }
@@ -107,18 +132,25 @@ async function main() {
     if (typeof r.lat === 'number' && typeof r.lng === 'number') return r;
 
     const rt = tokens(r.plant || r.name);
-    const candidates = wriIndex.filter((p) => norm(p.country) === norm(r.country));
+    const rc = normCountry(r.country);
+    const candidates = wriIndex.filter((p) => normCountry(p.country) === rc);
     let best = null;
     let bestScore = 0;
+    let secondBest = 0;
     for (const c of candidates) {
       const s = scoreMatch(rt, c.t);
       if (s > bestScore) {
+        secondBest = bestScore;
         bestScore = s;
         best = c;
+      } else if (s > secondBest) {
+        secondBest = s;
       }
     }
 
-    if (best && bestScore >= 0.6 && best.lat != null && best.lng != null) {
+    // Avoid noisy matches: require a clear winner.
+    const isClearWinner = bestScore >= 0.5 && bestScore - secondBest >= 0.15;
+    if (best && isClearWinner && best.lat != null && best.lng != null) {
       filled++;
       return { ...r, lat: best.lat, lng: best.lng, source: `${r.source} + WRI GPPD (coords)` };
     }
@@ -137,4 +169,3 @@ main().catch((e) => {
   console.error(e);
   process.exit(1);
 });
-

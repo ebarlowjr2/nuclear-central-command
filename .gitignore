@@ -36,6 +36,10 @@ yarn-error.log*
 # vercel
 .vercel
 
+# local data sources (large downloads / exports)
+/data/sources/*.csv
+/data/sources/*.xlsx
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
