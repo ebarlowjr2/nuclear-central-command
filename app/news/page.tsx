@@ -66,7 +66,13 @@ export default function NewsPage() {
     for (const n of items) raw.push(...(n.tags || []));
     // Keep the UX focused: country/plant/type tags plus a small set of others.
     return uniq(
-      raw.filter((t) => t.startsWith('country:') || t.startsWith('plant:') || t.startsWith('type:'))
+      raw.filter(
+        (t) =>
+          t.startsWith('country:') ||
+          t.startsWith('plant:') ||
+          t.startsWith('type:') ||
+          t.startsWith('company:')
+      )
     );
   }, [items]);
 

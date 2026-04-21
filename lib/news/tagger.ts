@@ -6,6 +6,25 @@ function normalize(s: string) {
   return s.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
 }
 
+function canonicalCountryName(country: string) {
+  const key = normalize(country);
+  const map = new Map<string, string>([
+    ['usa', 'United States'],
+    ['united states', 'United States'],
+    ['uk', 'United Kingdom'],
+    ['uae', 'United Arab Emirates'],
+    ['korea rep of', 'South Korea'],
+    ['korea republic of', 'South Korea'],
+    ['korea rep', 'South Korea'],
+    ['iran isl rep', 'Iran'],
+    ['iran islamic republic of', 'Iran'],
+    ['taiwan china', 'Taiwan'],
+    ['czech rep', 'Czech Republic'],
+    ['turkiye', 'Turkey'],
+  ]);
+  return map.get(key) || country;
+}
+
 function tokenize(s: string) {
   return normalize(s).split(' ').filter(Boolean);
 }
@@ -59,19 +78,21 @@ export function tagNewsItem(item: NewsItem, reactors: Reactor[], companies: Comp
 
   // Reactor-based tags: match plant names and common unit strings.
   // Keep it conservative to avoid noisy tags.
+  let plantTags = 0;
   for (const r of reactors) {
     const plantTokens = tokenize(r.plant).filter((t) => t.length >= 5).slice(0, 4);
     if (plantTokens.length > 0 && hasAllTokens(hay, plantTokens)) {
       tags.add(`plant:${r.plant}`);
-      tags.add(`country:${r.country}`);
+      tags.add(`country:${canonicalCountryName(r.country)}`);
       if (r.type) tags.add(`type:${r.type}`);
-      // Keep going; an article may mention multiple plants.
+      plantTags++;
+      if (plantTags >= 3) break;
     }
   }
 
   // Country tags (best-effort).
   // Keep it to known reactor countries to avoid tagging every mention of "us".
-  const countrySet = new Set(reactors.map((r) => r.country));
+  const countrySet = new Set(reactors.map((r) => canonicalCountryName(r.country)));
   for (const c of countrySet) {
     const ct = tokenize(c).filter((t) => t.length >= 4);
     if (ct.length > 0 && hasAllTokens(hay, ct)) tags.add(`country:${c}`);
