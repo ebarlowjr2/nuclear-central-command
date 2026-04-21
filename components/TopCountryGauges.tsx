@@ -34,20 +34,28 @@ function formatNumber(n: number) {
   return Math.round(n).toLocaleString();
 }
 
+function formatPower(mw: number) {
+  if (!Number.isFinite(mw)) return '—';
+  if (mw >= 1000) return `${(mw / 1000).toFixed(1)} GW`;
+  return `${Math.round(mw).toLocaleString()} MW`;
+}
+
+function roundUp(n: number, step: number) {
+  return Math.ceil(n / step) * step;
+}
+
 function Gauge({
   label,
   value,
   max,
-  unit,
   trendPct,
-  accentClass,
+  accent,
 }: {
   label: string;
   value: number;
   max: number;
-  unit: string;
   trendPct: number;
-  accentClass: string;
+  accent: string;
 }) {
   const pct = clamp(value / max, 0, 1);
   const angle = -90 + pct * 180;
@@ -64,6 +72,12 @@ function Gauge({
 
       <div className="relative h-28 w-full">
         <svg viewBox="0 0 180 110" className="h-full w-full">
+          <defs>
+            <filter id="dialGlow" x="-50%" y="-50%" width="200%" height="200%">
+              <feDropShadow dx="0" dy="6" stdDeviation="6" floodColor={accent} floodOpacity="0.25" />
+              <feDropShadow dx="0" dy="0" stdDeviation="2" floodColor={accent} floodOpacity="0.35" />
+            </filter>
+          </defs>
           <path
             d="M 10 90 A 80 80 0 0 1 170 90"
             stroke="currentColor"
@@ -73,12 +87,13 @@ function Gauge({
           />
           <path
             d="M 10 90 A 80 80 0 0 1 170 90"
-            className={accentClass}
             strokeWidth="12"
             fill="none"
             pathLength={100}
             strokeDasharray={`${pct * 100} 100`}
             strokeLinecap="round"
+            stroke={accent}
+            filter="url(#dialGlow)"
           />
           <line
             x1="90"
@@ -99,13 +114,13 @@ function Gauge({
 
         <div className="absolute inset-x-0 bottom-0 flex items-center justify-between px-2 text-[10px] text-muted-foreground">
           <span>0</span>
-          <span>{formatNumber(max)} {unit}</span>
+          <span>{formatPower(max)}</span>
         </div>
       </div>
 
       <div className="flex items-center justify-between">
         <div className="text-2xl font-bold">
-          {formatNumber(value)} {unit}
+          {formatPower(value)}
         </div>
         <div className="flex items-center gap-1 text-xs text-muted-foreground">
           <TrendIcon className="h-3.5 w-3.5" />
@@ -191,9 +206,16 @@ export default function TopCountryGauges() {
   }, []);
 
   const accents = useMemo(
-    () => ['text-emerald-400', 'text-cyan-400', 'text-amber-400', 'text-fuchsia-400', 'text-blue-400'],
+    () => ['#18B6A4', '#1479FF', '#F5B942', '#7C3AED', '#0EA5E9'],
     []
   );
+
+  const sharedMaxMw = useMemo(() => {
+    const maxCap = items.reduce((m, x) => Math.max(m, x.total_capacity || 0), 0);
+    // Use a shared, rounded ceiling so all dials are comparable.
+    // 10 GW steps keeps the scale stable without feeling arbitrary.
+    return Math.max(10_000, roundUp(maxCap, 10_000));
+  }, [items]);
 
   if (loading) {
     return (
@@ -242,10 +264,9 @@ export default function TopCountryGauges() {
                 <Gauge
                   label={item.country_name || 'Unknown'}
                   value={item.outputMw}
-                  max={Math.max(item.total_capacity, 1)}
-                  unit="MW"
+                  max={sharedMaxMw}
                   trendPct={item.trendPct}
-                  accentClass={accents[idx % accents.length]}
+                  accent={accents[idx % accents.length]}
                 />
               </CardContent>
             </Card>
