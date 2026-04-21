@@ -61,10 +61,13 @@ function parseRds2Csv(csvText) {
 
 function convertRows(rows, status) {
   const nowIso = new Date().toISOString();
+  let lastCountry = '';
   return rows
     .map((row) => {
       const plant = asString(pick(row, ['Reactor Name']));
-      const country = asString(pick(row, ['Country']));
+      const countryRaw = asString(pick(row, ['Country']));
+      if (countryRaw) lastCountry = countryRaw;
+      const country = countryRaw || lastCountry;
       if (!plant || !country) return null;
 
       const code = asString(pick(row, ['Code']));
