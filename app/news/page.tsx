@@ -24,6 +24,7 @@ function formatDate(iso: string) {
 }
 
 export default function NewsPage() {
+  const [featuredItem, setFeaturedItem] = useState<NewsItem | null>(null);
   const [items, setItems] = useState<NewsItem[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -60,6 +61,29 @@ export default function NewsPage() {
     };
   }, []);
 
+  useEffect(() => {
+    let alive = true;
+    async function loadFeatured() {
+      try {
+        const res = await fetch('/api/news/list?featured=true');
+        if (!res.ok) return;
+        const data: unknown = await res.json();
+        const first = (() => {
+          if (!data || typeof data !== 'object') return null;
+          const maybe = (data as Record<string, unknown>).data;
+          return Array.isArray(maybe) ? ((maybe[0] as NewsItem) || null) : null;
+        })();
+        if (alive) setFeaturedItem(first);
+      } catch {
+        // ignore featured failures; page still works
+      }
+    }
+    loadFeatured();
+    return () => {
+      alive = false;
+    };
+  }, []);
+
   const sources = useMemo(() => uniq(items.map((n) => n.source).filter(Boolean)), [items]);
   const tags = useMemo(() => {
     const raw: string[] = [];
@@ -87,7 +111,7 @@ export default function NewsPage() {
     });
   }, [items, filters]);
 
-  const featured = filtered[0] || null;
+  const featured = featuredItem || filtered[0] || null;
   const page = filtered.slice(offset, offset + limit);
 
   useEffect(() => {

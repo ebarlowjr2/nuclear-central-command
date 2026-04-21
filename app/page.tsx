@@ -23,6 +23,7 @@ export default function Home() {
   const [facts, setFacts] = useState<Fact[]>([]);
   const [news, setNews] = useState<NewsItem[]>([]);
   const [newsError, setNewsError] = useState<string | null>(null);
+  const [featuredNews, setFeaturedNews] = useState<NewsItem | null>(null);
   const [companies, setCompanies] = useState<Company[]>([]);
   const [companiesError, setCompaniesError] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
@@ -55,6 +56,12 @@ export default function Home() {
         setTopReactors(topData?.data || []);
 
         try {
+          const featuredRes = await fetch('/api/news/list?featured=true');
+          if (featuredRes.ok) {
+            const featuredJson = await featuredRes.json();
+            setFeaturedNews(((featuredJson?.data || [])[0] as NewsItem) || null);
+          }
+
           const newsRes = await fetch('/api/news/list?limit=6&offset=0');
           const newsJson = await newsRes.json();
           if (!newsRes.ok || newsJson?.error) {
@@ -258,19 +265,24 @@ export default function Home() {
         {news.length > 0 ? (
           <div className="rounded-lg border bg-white overflow-hidden">
             <div className="divide-y">
-              {news.map((n, i) => (
-                <a
-                  key={n.id}
-                  className="block p-4 hover:bg-slate-50 transition"
-                  href={n.url}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <div className="font-medium">{i === 0 ? `Featured: ${n.title}` : n.title}</div>
-                  <div className="text-sm text-muted-foreground mt-1">{n.source}</div>
-                  {n.summary && <div className="text-sm mt-2">{n.summary}</div>}
-                </a>
-              ))}
+              {news.map((n, i) => {
+                const item = i === 0 && featuredNews ? featuredNews : n;
+                return (
+                  <a
+                    key={item.id}
+                    className="block p-4 hover:bg-slate-50 transition"
+                    href={item.url}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <div className="font-medium">
+                      {i === 0 ? `Featured: ${item.title}` : item.title}
+                    </div>
+                    <div className="text-sm text-muted-foreground mt-1">{item.source}</div>
+                    {item.summary && <div className="text-sm mt-2">{item.summary}</div>}
+                  </a>
+                );
+              })}
             </div>
           </div>
         ) : (
