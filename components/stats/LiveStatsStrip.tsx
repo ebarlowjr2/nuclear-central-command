@@ -20,6 +20,7 @@ export default function LiveStatsStrip() {
   const [reactors, setReactors] = useState<Reactor[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [nonce, setNonce] = useState(0);
 
   useEffect(() => {
     let alive = true;
@@ -47,7 +48,7 @@ export default function LiveStatsStrip() {
     return () => {
       alive = false;
     };
-  }, []);
+  }, [nonce]);
 
   const stats = useMemo<Stats>(() => {
     const byStatus: Stats['byStatus'] = {
@@ -81,8 +82,19 @@ export default function LiveStatsStrip() {
       {loading ? (
         <div className="text-sm text-muted-foreground">Loading live stats…</div>
       ) : error ? (
-        <div className="text-sm text-muted-foreground">
-          Live stats unavailable: {error}
+        <div className="flex flex-wrap items-center justify-between gap-3 text-sm">
+          <div className="text-muted-foreground">
+            Live stats are temporarily unavailable.
+            {process.env.NODE_ENV !== 'production' ? (
+              <span className="ml-2 text-xs text-muted-foreground/80">{error}</span>
+            ) : null}
+          </div>
+          <button
+            className="h-9 rounded-md border bg-white px-3 text-sm hover:bg-slate-50"
+            onClick={() => setNonce((n) => n + 1)}
+          >
+            Retry
+          </button>
         </div>
       ) : (
         <div className="flex flex-wrap items-center justify-between gap-3">
@@ -125,4 +137,3 @@ export default function LiveStatsStrip() {
     </div>
   );
 }
-
