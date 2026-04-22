@@ -26,6 +26,8 @@ const NEWS_SOURCES = [
 ];
 
 const MAX_ITEMS = 1000;
+const MAX_PER_SOURCE = 200;
+const MAX_AGE_DAYS = 365 * 2; // keep at most ~2 years to avoid ancient feed backfills
 
 function stripHtml(s) {
   return String(s || '').replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
@@ -74,6 +76,13 @@ function toIso(d) {
   const dt = d instanceof Date ? d : d ? new Date(String(d)) : null;
   const t = dt && !Number.isNaN(dt.getTime()) ? dt : new Date();
   return t.toISOString();
+}
+
+function isRecentEnough(iso) {
+  const t = new Date(iso).getTime();
+  if (!Number.isFinite(t)) return true;
+  const ageDays = (Date.now() - t) / 86400000;
+  return ageDays <= MAX_AGE_DAYS;
 }
 
 function normalize(s) {
@@ -125,6 +134,7 @@ async function readJson(p) {
 
 async function main() {
   const newsPath = path.join(process.cwd(), 'data', 'news.json');
+  const reportPath = path.join(process.cwd(), 'data', 'news.sync-report.json');
   const reactorsPath = path.join(process.cwd(), 'data', 'reactors.json');
   const companiesPath = path.join(process.cwd(), 'data', 'companies.seed.json');
 
@@ -142,15 +152,27 @@ async function main() {
 
   let inserted = 0;
   let updated = 0;
+  const perSource = [];
 
   for (const src of NEWS_SOURCES) {
     try {
       const feed = await parser.parseURL(src.rssUrl);
-      const items = (feed.items || []).slice(0, 120);
+      const items = (feed.items || []).slice(0, MAX_PER_SOURCE);
+      let kept = 0;
+      let skippedOld = 0;
+      let skippedNoUrl = 0;
+      let skippedNoTitle = 0;
       for (const it of items) {
         const url = String(it.link || '').trim();
         const title = String(it.title || '').trim();
-        if (!url || !title) continue;
+        if (!url) {
+          skippedNoUrl++;
+          continue;
+        }
+        if (!title) {
+          skippedNoTitle++;
+          continue;
+        }
 
         const summary =
           clampSummary(it.contentSnippet || '') ||
@@ -160,6 +182,12 @@ async function main() {
 
         const canonUrl = canonicalizeUrl(url);
         const id = stableId(src.name, canonUrl);
+        const publishedAt = toIso(it.isoDate || it.pubDate);
+        if (!isRecentEnough(publishedAt)) {
+          skippedOld++;
+          continue;
+        }
+
         const next = tagItem(
           {
             id,
@@ -167,7 +195,7 @@ async function main() {
             summary,
             url: canonUrl,
             source: src.name,
-            publishedAt: toIso(it.isoDate || it.pubDate),
+            publishedAt,
             tags: [],
           },
           Array.isArray(reactors) ? reactors : [],
@@ -182,9 +210,20 @@ async function main() {
           byId.set(id, { ...prev, ...next });
           updated++;
         }
+        kept++;
       }
+      perSource.push({
+        source: src.name,
+        ok: true,
+        fetched: items.length,
+        kept,
+        skippedOld,
+        skippedNoUrl,
+        skippedNoTitle,
+      });
     } catch (e) {
       console.error(`[${src.name}] failed:`, e?.message || e);
+      perSource.push({ source: src.name, ok: false, error: e?.message || String(e) });
     }
   }
 
@@ -193,6 +232,16 @@ async function main() {
     .slice(0, MAX_ITEMS);
 
   await fs.writeFile(newsPath, JSON.stringify(merged, null, 2) + '\n', 'utf8');
+  const report = {
+    ok: true,
+    ranAt: new Date().toISOString(),
+    total: merged.length,
+    inserted,
+    updated,
+    sources: perSource,
+  };
+  await fs.writeFile(reportPath, JSON.stringify(report, null, 2) + '\n', 'utf8');
+
   console.log(`news.json updated: total=${merged.length} inserted=${inserted} updated=${updated}`);
 }
 
@@ -200,4 +249,3 @@ main().catch((e) => {
   console.error(e);
   process.exit(1);
 });
-
