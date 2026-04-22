@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import Parser from 'rss-parser';
 import { NEWS_SOURCES } from '@/lib/news/sources';
-import { buildNewsItem, upsertLocalNews } from '@/lib/news/localStore';
+import { buildNewsItem, readLocalNews, upsertNews } from '@/lib/news/localStore';
 import { getLocalReactors } from '@/lib/reactors/localStore';
 import { tagNewsItem } from '@/lib/news/tagger';
 import { getCompaniesEnriched } from '@/lib/companies/localStore';
@@ -36,6 +36,11 @@ export async function POST(req: NextRequest) {
   if (!isAuthorized(req)) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   }
+
+  // Vercel/serverless filesystems are not a durable place to store data.
+  // This endpoint is still useful for debugging fetches, but persistence is handled by offline sync
+  // (e.g. GitHub Actions) that commits `data/news.json`.
+  const canPersist = false;
 
   const parser = new Parser({
     timeout: 20_000,
@@ -83,14 +88,21 @@ export async function POST(req: NextRequest) {
     }
   }
 
-  const stats = await upsertLocalNews(fetched);
+  const existing = await readLocalNews();
+  const stats = upsertNews(existing, fetched);
   return NextResponse.json({
     ok: true,
     startedAt,
     finishedAt: new Date().toISOString(),
     sources: results,
     fetched: fetched.length,
-    ...stats,
+    total: stats.total,
+    inserted: stats.inserted,
+    updated: stats.updated,
+    persisted: canPersist,
+    note: canPersist
+      ? 'Persistence is not implemented for serverless writes. Use offline sync to commit data/news.json.'
+      : 'Run offline sync (GitHub Actions) to commit data/news.json for deployments.',
   });
 }
 

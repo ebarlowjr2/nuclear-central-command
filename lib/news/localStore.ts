@@ -1,9 +1,7 @@
-import fs from 'node:fs/promises';
-import path from 'node:path';
 import crypto from 'node:crypto';
 import type { NewsItem } from './types';
+import { LOCAL_NEWS } from './localData';
 
-const DATA_PATH = path.join(process.cwd(), 'data', 'news.local.json');
 const MAX_ITEMS = 1000;
 
 export function canonicalizeUrl(input: string): string {
@@ -74,29 +72,17 @@ export function buildNewsItem(input: {
 }
 
 export async function readLocalNews(): Promise<NewsItem[]> {
-  try {
-    const raw = await fs.readFile(DATA_PATH, 'utf8');
-    const parsed = JSON.parse(raw) as NewsItem[];
-    return Array.isArray(parsed) ? parsed : [];
-  } catch {
-    return [];
-  }
+  return Array.isArray(LOCAL_NEWS) ? LOCAL_NEWS : [];
 }
 
-export async function writeLocalNews(items: NewsItem[]): Promise<void> {
-  const sorted = items
-    .slice()
-    .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt))
-    .slice(0, MAX_ITEMS);
-  await fs.writeFile(DATA_PATH, JSON.stringify(sorted, null, 2) + '\n', 'utf8');
-}
-
-export async function upsertLocalNews(newItems: NewsItem[]): Promise<{
+// Note: In serverless environments, writing to the repo filesystem is not reliable.
+// We keep upsert logic in a pure form for offline scripts (GitHub Actions) to write `data/news.json`.
+export function upsertNews(existing: NewsItem[], newItems: NewsItem[]): {
   total: number;
   inserted: number;
   updated: number;
-}> {
-  const existing = await readLocalNews();
+  items: NewsItem[];
+} {
   const byId = new Map(existing.map((n) => [n.id, n]));
 
   let inserted = 0;
@@ -116,7 +102,10 @@ export async function upsertLocalNews(newItems: NewsItem[]): Promise<{
     updated++;
   }
 
-  const merged = Array.from(byId.values());
-  await writeLocalNews(merged);
-  return { total: Math.min(merged.length, MAX_ITEMS), inserted, updated };
+  const merged = Array.from(byId.values())
+    .slice()
+    .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt))
+    .slice(0, MAX_ITEMS);
+
+  return { total: merged.length, inserted, updated, items: merged };
 }

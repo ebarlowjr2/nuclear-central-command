@@ -27,9 +27,10 @@ RDS-2 tables often omit coordinates. To enrich coordinates offline:
 
 ## News
 
-News is ingested on a schedule and stored locally in `data/news.local.json`.
+News is stored locally in `data/news.json` and served at page load without third-party calls.
 
-Vercel Cron hits `/api/etl/news/sync` every ~3 hours (see `vercel.json`).
-
-To lock down ingestion in production, set `CRON_SECRET`. Vercel Cron will send it in an
-`Authorization: Bearer <CRON_SECRET>` header.
+In production, the recommended workflow is an offline sync (GitHub Actions) that:
+- fetches RSS feeds
+- dedupes + tags
+- writes `data/news.json`
+- commits the update so Vercel deploys the fresh data
