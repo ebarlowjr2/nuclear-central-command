@@ -1,1 +1,3305 @@
-[]
+[
+  {
+    "id": "7c2dd5d61b86d8e83cd8723c",
+    "title": "Chernobyl at 40: The accident, its impact and how it changed the world's nuclear energy industry",
+    "summary": "What we know now about the causes of the 1986 Chernobyl accident and the effect it had on people's health, plus the story of how the alarm was raised internationally at a nuclear power plant in Sweden. And how the lessons learned led to a global safety culture which has underpinned the widespread plans for new nuclear capacity.",
+    "url": "https://www.world-nuclear-news.org//articles/chernobyl-at-40-the-accident-its-impact-and-how-it-changed-the-worlds-nuclear-energy-industry",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-04-22T12:43:28.000Z",
+    "tags": [
+      "country:Sweden",
+      "company:ge-hitachi",
+      "company:x-energy",
+      "company:nei"
+    ]
+  },
+  {
+    "id": "e28bbb296b04afcdef1b1a5d",
+    "title": "Wolf Creek 1 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/wc.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.793Z",
+    "tags": [
+      "plant:HOPE CREEK-1",
+      "type:BWR",
+      "plant:WOLF CREEK",
+      "type:PWR"
+    ]
+  },
+  {
+    "id": "09396f2466624ab27a055d84",
+    "title": "Watts Bar 1 - 0% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/wb1.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.792Z",
+    "tags": [
+      "plant:WATTS BAR-1",
+      "type:PWR",
+      "plant:WATTS BAR-2"
+    ]
+  },
+  {
+    "id": "6bb654ec4ff688f1f4aa1d47",
+    "title": "Watts Bar 2 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/wb2.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.792Z",
+    "tags": [
+      "plant:WATTS BAR-1",
+      "type:PWR",
+      "plant:WATTS BAR-2"
+    ]
+  },
+  {
+    "id": "6d7add67dd0b63ebfd11ec05",
+    "title": "Vogtle 3 - 0% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/new-reactors/large-lwr/col-holder/vog3.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.791Z",
+    "tags": [
+      "plant:VOGTLE-1",
+      "type:PWR",
+      "plant:VOGTLE-2",
+      "plant:VOGTLE-3"
+    ]
+  },
+  {
+    "id": "66b01cdb0a8fbfd8bd8b387d",
+    "title": "Vogtle 4 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/new-reactors/large-lwr/col-holder/vog4.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.791Z",
+    "tags": [
+      "plant:VOGTLE-1",
+      "type:PWR",
+      "plant:VOGTLE-2",
+      "plant:VOGTLE-3"
+    ]
+  },
+  {
+    "id": "6b0d5ddb923740e68730ac9d",
+    "title": "Waterford 3 - 94% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/wat3.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.791Z",
+    "tags": [
+      "plant:WATERFORD-3",
+      "type:PWR"
+    ]
+  },
+  {
+    "id": "972daa2096633a8fe4551354",
+    "title": "Turkey Point 4 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/tp4.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.790Z",
+    "tags": [
+      "plant:NINE MILE POINT-1",
+      "type:BWR",
+      "plant:NINE MILE POINT-2",
+      "plant:TURKEY POINT-3",
+      "type:PWR"
+    ]
+  },
+  {
+    "id": "3bb223450d3efbf1dcfa4257",
+    "title": "Vogtle 1 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/vog1.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.790Z",
+    "tags": [
+      "plant:VOGTLE-1",
+      "type:PWR",
+      "plant:VOGTLE-2",
+      "plant:VOGTLE-3"
+    ]
+  },
+  {
+    "id": "2df84bd4f7a1e82dfbaf47c8",
+    "title": "Vogtle 2 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/vog2.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.790Z",
+    "tags": [
+      "plant:VOGTLE-1",
+      "type:PWR",
+      "plant:VOGTLE-2",
+      "plant:VOGTLE-3"
+    ]
+  },
+  {
+    "id": "bbcbc0324736b914d5706ace",
+    "title": "Susquehanna 1 - 0% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/susq1.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.789Z",
+    "tags": [
+      "plant:SUSQUEHANNA-1",
+      "type:BWR",
+      "plant:SUSQUEHANNA-2"
+    ]
+  },
+  {
+    "id": "dbee4a1167099565052c8bc6",
+    "title": "Susquehanna 2 - 98% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/susq2.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.789Z",
+    "tags": [
+      "plant:SUSQUEHANNA-1",
+      "type:BWR",
+      "plant:SUSQUEHANNA-2"
+    ]
+  },
+  {
+    "id": "1828b27bf963208c56b63526",
+    "title": "Three Mile Island 1 - 0% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/tmi1.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.789Z",
+    "tags": []
+  },
+  {
+    "id": "5e7c3dd694638b2e5a69f9ae",
+    "title": "Turkey Point 3 - 0% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/tp3.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.789Z",
+    "tags": [
+      "plant:NINE MILE POINT-1",
+      "type:BWR",
+      "plant:NINE MILE POINT-2",
+      "plant:TURKEY POINT-3",
+      "type:PWR"
+    ]
+  },
+  {
+    "id": "1752b0bfeaeb7f1622c3fcda",
+    "title": "Surry 1 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/sur1.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.788Z",
+    "tags": [
+      "plant:SURRY-1",
+      "type:PWR",
+      "plant:SURRY-2"
+    ]
+  },
+  {
+    "id": "89ca7cee49eba3e4ecdffdbf",
+    "title": "Surry 2 - 0% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/sur2.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.788Z",
+    "tags": [
+      "plant:SURRY-1",
+      "type:PWR",
+      "plant:SURRY-2"
+    ]
+  },
+  {
+    "id": "6ce2a48ba088d1e291585754",
+    "title": "South Texas 1 - 0% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/stp1.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.787Z",
+    "tags": [
+      "plant:SOUTH TEXAS-1",
+      "type:PWR",
+      "plant:SOUTH TEXAS-2"
+    ]
+  },
+  {
+    "id": "2360a6df005f1fa9e4edeb87",
+    "title": "South Texas 2 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/stp2.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.787Z",
+    "tags": [
+      "plant:SOUTH TEXAS-1",
+      "type:PWR",
+      "plant:SOUTH TEXAS-2"
+    ]
+  },
+  {
+    "id": "10463735d0d29a06b593f697",
+    "title": "Summer - 97% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/sum.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.787Z",
+    "tags": [
+      "plant:SUMMER-1",
+      "type:PWR"
+    ]
+  },
+  {
+    "id": "b203a95d6028e08eccb0641e",
+    "title": "Seabrook 1 - 0% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/seab1.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.786Z",
+    "tags": [
+      "plant:SEABROOK-1",
+      "type:PWR"
+    ]
+  },
+  {
+    "id": "f75f9ed596f2c612e8b73a2a",
+    "title": "Sequoyah 1 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/seq1.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.786Z",
+    "tags": [
+      "plant:SEQUOYAH-1",
+      "type:PWR",
+      "plant:SEQUOYAH-2"
+    ]
+  },
+  {
+    "id": "6d7b059ae209a4de7ea21908",
+    "title": "Sequoyah 2 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/seq2.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.786Z",
+    "tags": [
+      "plant:SEQUOYAH-1",
+      "type:PWR",
+      "plant:SEQUOYAH-2"
+    ]
+  },
+  {
+    "id": "eb13c2bd519abcb8fdf2b3ed",
+    "title": "Saint Lucie 2 - 0% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/stl2.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.785Z",
+    "tags": [
+      "plant:ST. LUCIE-1",
+      "type:PWR",
+      "plant:ST. LUCIE-2"
+    ]
+  },
+  {
+    "id": "7cf2c3c186e2d1046b30f019",
+    "title": "Salem 1 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/salm1.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.785Z",
+    "tags": [
+      "plant:SALEM-1",
+      "type:PWR",
+      "plant:SALEM-2"
+    ]
+  },
+  {
+    "id": "13c693b155ef3255ac561f38",
+    "title": "Salem 2 - 0% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/salm2.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.785Z",
+    "tags": [
+      "plant:SALEM-1",
+      "type:PWR",
+      "plant:SALEM-2"
+    ]
+  },
+  {
+    "id": "90c44176fd9fd9ab491056f9",
+    "title": "Robinson 2 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/rob2.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.784Z",
+    "tags": [
+      "plant:ROBINSON-2",
+      "type:PWR"
+    ]
+  },
+  {
+    "id": "6e76f1bbe20f097ad366166d",
+    "title": "Saint Lucie 1 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/stl1.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.784Z",
+    "tags": [
+      "plant:ST. LUCIE-1",
+      "type:PWR",
+      "plant:ST. LUCIE-2"
+    ]
+  },
+  {
+    "id": "f5e226263c40c5f64254eb28",
+    "title": "Quad Cities 1 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/quad1.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.783Z",
+    "tags": [
+      "plant:QUAD CITIES-1",
+      "type:BWR",
+      "plant:QUAD CITIES-2"
+    ]
+  },
+  {
+    "id": "064a6f8b58a5cc50648fb938",
+    "title": "Quad Cities 2 - 0% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/quad2.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.783Z",
+    "tags": [
+      "plant:QUAD CITIES-1",
+      "type:BWR",
+      "plant:QUAD CITIES-2"
+    ]
+  },
+  {
+    "id": "c1d29ed0846eaaef1d28c0b9",
+    "title": "River Bend Station 1 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/rbs1.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.783Z",
+    "tags": [
+      "plant:RIVER BEND-1",
+      "type:BWR"
+    ]
+  },
+  {
+    "id": "c2e0bb6b23357c095fb8fad6",
+    "title": "Point Beach 2 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/poin2.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.782Z",
+    "tags": [
+      "plant:NINE MILE POINT-1",
+      "type:BWR",
+      "plant:NINE MILE POINT-2",
+      "plant:POINT BEACH-1",
+      "type:PWR"
+    ]
+  },
+  {
+    "id": "d4e6ab674193cebf07a252f2",
+    "title": "Prairie Island 1 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/prai1.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.782Z",
+    "tags": [
+      "plant:PRAIRIE ISLAND-1",
+      "type:PWR",
+      "plant:PRAIRIE ISLAND-2"
+    ]
+  },
+  {
+    "id": "416412aa6e9cff2551a326a8",
+    "title": "Prairie Island 2 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/prai2.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.782Z",
+    "tags": [
+      "plant:PRAIRIE ISLAND-1",
+      "type:PWR",
+      "plant:PRAIRIE ISLAND-2"
+    ]
+  },
+  {
+    "id": "cf997b73a570b080989877d9",
+    "title": "Peach Bottom 3 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/pb3.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.781Z",
+    "tags": [
+      "plant:PEACH BOTTOM-2",
+      "type:BWR",
+      "plant:PEACH BOTTOM-3"
+    ]
+  },
+  {
+    "id": "b1c405af8c0acf61d24adc48",
+    "title": "Perry 1 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/perr1.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.781Z",
+    "tags": [
+      "plant:PERRY-1",
+      "type:BWR"
+    ]
+  },
+  {
+    "id": "a75fa25367dacda67d13855d",
+    "title": "Point Beach 1 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/poin1.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.781Z",
+    "tags": [
+      "plant:NINE MILE POINT-1",
+      "type:BWR",
+      "plant:NINE MILE POINT-2",
+      "plant:POINT BEACH-1",
+      "type:PWR"
+    ]
+  },
+  {
+    "id": "3737bebc223a209bab6ae31b",
+    "title": "Palo Verde 3 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/palo3.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.780Z",
+    "tags": [
+      "plant:PALO VERDE-1",
+      "type:PWR",
+      "plant:PALO VERDE-2",
+      "plant:PALO VERDE-3"
+    ]
+  },
+  {
+    "id": "4afa1fab26d5b6f21e3ef519",
+    "title": "Peach Bottom 2 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/pb2.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.780Z",
+    "tags": [
+      "plant:PEACH BOTTOM-2",
+      "type:BWR",
+      "plant:PEACH BOTTOM-3"
+    ]
+  },
+  {
+    "id": "eb732bb58208b370582c6c83",
+    "title": "Palisades - 0% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/pali.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.779Z",
+    "tags": []
+  },
+  {
+    "id": "5102eebd81a4e264d220b9ff",
+    "title": "Palo Verde 1 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/palo1.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.779Z",
+    "tags": [
+      "plant:PALO VERDE-1",
+      "type:PWR",
+      "plant:PALO VERDE-2",
+      "plant:PALO VERDE-3"
+    ]
+  },
+  {
+    "id": "6eea422c93669fe37f963017",
+    "title": "Palo Verde 2 - 0% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/palo2.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.779Z",
+    "tags": [
+      "plant:PALO VERDE-1",
+      "type:PWR",
+      "plant:PALO VERDE-2",
+      "plant:PALO VERDE-3"
+    ]
+  },
+  {
+    "id": "65f3e78d68dcc5480f1be2b0",
+    "title": "Oconee 1 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/oco1.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.778Z",
+    "tags": [
+      "plant:OCONEE-1",
+      "type:PWR",
+      "plant:OCONEE-2",
+      "plant:OCONEE-3"
+    ]
+  },
+  {
+    "id": "1fb395a3b30cb33df22311d6",
+    "title": "Oconee 2 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/oco2.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.778Z",
+    "tags": [
+      "plant:OCONEE-1",
+      "type:PWR",
+      "plant:OCONEE-2",
+      "plant:OCONEE-3"
+    ]
+  },
+  {
+    "id": "0511506c68862a58a1fb6010",
+    "title": "Oconee 3 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/oco3.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.778Z",
+    "tags": [
+      "plant:OCONEE-1",
+      "type:PWR",
+      "plant:OCONEE-2",
+      "plant:OCONEE-3"
+    ]
+  },
+  {
+    "id": "e11530984f9bf83e1f5c0197",
+    "title": "Nine Mile Point 2 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/nmp2.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.777Z",
+    "tags": [
+      "plant:NINE MILE POINT-1",
+      "type:BWR",
+      "plant:NINE MILE POINT-2"
+    ]
+  },
+  {
+    "id": "63c4a746c7a91cac0af6c68d",
+    "title": "North Anna 1 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/na1.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.777Z",
+    "tags": [
+      "plant:NORTH ANNA-1",
+      "type:PWR",
+      "plant:NORTH ANNA-2"
+    ]
+  },
+  {
+    "id": "630ce5f86503304e0c6eb658",
+    "title": "North Anna 2 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/na2.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.777Z",
+    "tags": [
+      "plant:NORTH ANNA-1",
+      "type:PWR",
+      "plant:NORTH ANNA-2"
+    ]
+  },
+  {
+    "id": "93f618573e784ec4c734cd06",
+    "title": "Monticello - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/mont.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.776Z",
+    "tags": [
+      "plant:MONTICELLO",
+      "type:BWR"
+    ]
+  },
+  {
+    "id": "336b88d310bcd011312910b2",
+    "title": "Nine Mile Point 1 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/nmp1.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.776Z",
+    "tags": [
+      "plant:NINE MILE POINT-1",
+      "type:BWR",
+      "plant:NINE MILE POINT-2"
+    ]
+  },
+  {
+    "id": "0113f5a17678621e6d096b75",
+    "title": "McGuire 2 - 45% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/mcg2.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.775Z",
+    "tags": [
+      "plant:MCGUIRE-1",
+      "type:PWR",
+      "plant:MCGUIRE-2"
+    ]
+  },
+  {
+    "id": "701341d01ac9c14eded84263",
+    "title": "Millstone 2 - 0% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/mill2.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.775Z",
+    "tags": [
+      "plant:MILLSTONE-2",
+      "type:PWR",
+      "plant:MILLSTONE-3"
+    ]
+  },
+  {
+    "id": "377b8e908400023fea1c3ac6",
+    "title": "Millstone 3 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/mill3.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.775Z",
+    "tags": [
+      "plant:MILLSTONE-2",
+      "type:PWR",
+      "plant:MILLSTONE-3"
+    ]
+  },
+  {
+    "id": "4b2dc39155af7fd9b909021a",
+    "title": "Limerick 1 - 85% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/lim1.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.774Z",
+    "tags": [
+      "plant:LIMERICK-1",
+      "type:BWR",
+      "plant:LIMERICK-2"
+    ]
+  },
+  {
+    "id": "0b85aafbc79b761389b56935",
+    "title": "Limerick 2 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/lim2.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.774Z",
+    "tags": [
+      "plant:LIMERICK-1",
+      "type:BWR",
+      "plant:LIMERICK-2"
+    ]
+  },
+  {
+    "id": "977cb6087961c27bb2cd39d4",
+    "title": "McGuire 1 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/mcg1.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.774Z",
+    "tags": [
+      "plant:MCGUIRE-1",
+      "type:PWR",
+      "plant:MCGUIRE-2"
+    ]
+  },
+  {
+    "id": "c76b30cb386c883fced00545",
+    "title": "Indian Point 3 - 79% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/ip3.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.773Z",
+    "tags": [
+      "country:India",
+      "plant:NINE MILE POINT-1",
+      "type:BWR",
+      "plant:NINE MILE POINT-2"
+    ]
+  },
+  {
+    "id": "b8287186d8930a4762418193",
+    "title": "LaSalle 1 - 85% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/lasa1.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.773Z",
+    "tags": [
+      "plant:LASALLE-1",
+      "type:BWR",
+      "plant:LASALLE-2"
+    ]
+  },
+  {
+    "id": "284bc4a2aa891f2ef5149dfc",
+    "title": "LaSalle 2 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/lasa2.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.773Z",
+    "tags": [
+      "plant:LASALLE-1",
+      "type:BWR",
+      "plant:LASALLE-2"
+    ]
+  },
+  {
+    "id": "d4751a8fc406481d1bf026ce",
+    "title": "Hatch 2 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/hat2.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.772Z",
+    "tags": [
+      "plant:HATCH-1",
+      "type:BWR",
+      "plant:HATCH-2"
+    ]
+  },
+  {
+    "id": "4ea0138ea3e5ef66a935afe9",
+    "title": "Hope Creek 1 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/hope.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.772Z",
+    "tags": [
+      "plant:HOPE CREEK-1",
+      "type:BWR",
+      "plant:WOLF CREEK",
+      "type:PWR"
+    ]
+  },
+  {
+    "id": "1c7e4b28bda0daad4bf73a4f",
+    "title": "Indian Point 2 - 0% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/ip2.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.772Z",
+    "tags": [
+      "country:India",
+      "plant:NINE MILE POINT-1",
+      "type:BWR",
+      "plant:NINE MILE POINT-2"
+    ]
+  },
+  {
+    "id": "699c99cb9f30196ac1fc5467",
+    "title": "Harris 1 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/har1.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.771Z",
+    "tags": [
+      "plant:HARRIS-1",
+      "type:PWR"
+    ]
+  },
+  {
+    "id": "e3f6d9ce1cfdb50ab7b68764",
+    "title": "Hatch 1 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/hat1.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.771Z",
+    "tags": [
+      "plant:HATCH-1",
+      "type:BWR",
+      "plant:HATCH-2"
+    ]
+  },
+  {
+    "id": "a5083c1a0cf89a4f317606a8",
+    "title": "FitzPatrick - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/fitz.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.770Z",
+    "tags": [
+      "plant:FITZPATRICK",
+      "type:BWR"
+    ]
+  },
+  {
+    "id": "239009f76f0ece2e849da2ed",
+    "title": "Ginna - 0% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/ginn.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.770Z",
+    "tags": [
+      "plant:GINNA",
+      "type:PWR"
+    ]
+  },
+  {
+    "id": "62e49a967c80fbef468c1a2c",
+    "title": "Grand Gulf 1 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/gg1.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.770Z",
+    "tags": [
+      "plant:GRAND GULF-1",
+      "type:BWR"
+    ]
+  },
+  {
+    "id": "826c12f792edee66e9cafe3b",
+    "title": "Farley 1 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/far1.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.769Z",
+    "tags": [
+      "plant:FARLEY-1",
+      "type:PWR",
+      "plant:FARLEY-2"
+    ]
+  },
+  {
+    "id": "efc6b58962998ecdb674c557",
+    "title": "Farley 2 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/far2.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.769Z",
+    "tags": [
+      "plant:FARLEY-1",
+      "type:PWR",
+      "plant:FARLEY-2"
+    ]
+  },
+  {
+    "id": "08e96e3b0b800bef3108d26a",
+    "title": "Fermi 2 - 0% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/ferm2.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.769Z",
+    "tags": [
+      "plant:FERMI-2",
+      "type:BWR"
+    ]
+  },
+  {
+    "id": "17f82594b7bbd19629a76547",
+    "title": "Dresden 2 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/dres2.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.768Z",
+    "tags": [
+      "plant:DRESDEN-2",
+      "type:BWR",
+      "plant:DRESDEN-3"
+    ]
+  },
+  {
+    "id": "16c4fff94d4c03b84ca71deb",
+    "title": "Dresden 3 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/dres3.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.768Z",
+    "tags": [
+      "plant:DRESDEN-2",
+      "type:BWR",
+      "plant:DRESDEN-3"
+    ]
+  },
+  {
+    "id": "cfadc0bdbd6cbb9b8557685d",
+    "title": "Duane Arnold - 0% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/duan.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.768Z",
+    "tags": []
+  },
+  {
+    "id": "c4b1e2036757d97674abb641",
+    "title": "Diablo Canyon 1 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/diab1.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.767Z",
+    "tags": [
+      "plant:DIABLO CANYON-1",
+      "type:PWR",
+      "plant:DIABLO CANYON-2"
+    ]
+  },
+  {
+    "id": "701a3f61cf7203b06e1e75bf",
+    "title": "Diablo Canyon 2 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/diab2.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.767Z",
+    "tags": [
+      "plant:DIABLO CANYON-1",
+      "type:PWR",
+      "plant:DIABLO CANYON-2"
+    ]
+  },
+  {
+    "id": "a7f9e3efff4a71bc5b846141",
+    "title": "D.C. Cook 1 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/cook1.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.766Z",
+    "tags": []
+  },
+  {
+    "id": "afc47d9f6379b6c3c58ce04e",
+    "title": "D.C. Cook 2 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/cook2.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.766Z",
+    "tags": []
+  },
+  {
+    "id": "f6b4955ece5dac8335201b2a",
+    "title": "Davis-Besse - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/davi.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.766Z",
+    "tags": [
+      "plant:DAVIS BESSE-1",
+      "type:PWR"
+    ]
+  },
+  {
+    "id": "e981ff9b0da2f1120d02fce0",
+    "title": "Comanche Peak 1 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/cp1.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.765Z",
+    "tags": [
+      "plant:COMANCHE PEAK-1",
+      "type:PWR",
+      "plant:COMANCHE PEAK-2"
+    ]
+  },
+  {
+    "id": "f974df2d2b950728259d6ea9",
+    "title": "Comanche Peak 2 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/cp2.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.765Z",
+    "tags": [
+      "plant:COMANCHE PEAK-1",
+      "type:PWR",
+      "plant:COMANCHE PEAK-2"
+    ]
+  },
+  {
+    "id": "a86934aae9ff163f9a153a62",
+    "title": "Cooper - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/cns.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.765Z",
+    "tags": [
+      "plant:COOPER",
+      "type:BWR"
+    ]
+  },
+  {
+    "id": "7b4731a5e1f225b0f2e83324",
+    "title": "Clinton - 99% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/clin.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.764Z",
+    "tags": [
+      "plant:CLINTON-1",
+      "type:BWR"
+    ]
+  },
+  {
+    "id": "4a0412c62114e893f0a72079",
+    "title": "Columbia Generating Station - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/wash2.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.764Z",
+    "tags": [
+      "plant:COLUMBIA",
+      "type:BWR"
+    ]
+  },
+  {
+    "id": "7ff73a0b6abe009c37d2a4b4",
+    "title": "Catawba 1 - 0% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/cat1.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.763Z",
+    "tags": [
+      "plant:CATAWBA-1",
+      "type:PWR",
+      "plant:CATAWBA-2"
+    ]
+  },
+  {
+    "id": "6bcf79433d295e7ec2645261",
+    "title": "Catawba 2 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/cat2.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.763Z",
+    "tags": [
+      "plant:CATAWBA-1",
+      "type:PWR",
+      "plant:CATAWBA-2"
+    ]
+  },
+  {
+    "id": "05788823d30011fbdc453706",
+    "title": "Callaway - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/call.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.762Z",
+    "tags": [
+      "plant:CALLAWAY-1",
+      "type:PWR"
+    ]
+  },
+  {
+    "id": "e178ff0246a049638e1fbc3a",
+    "title": "Calvert Cliffs 1 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/calv1.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.762Z",
+    "tags": [
+      "plant:CALVERT CLIFFS-1",
+      "type:PWR",
+      "plant:CALVERT CLIFFS-2"
+    ]
+  },
+  {
+    "id": "fa4795e0ab3673e0f87a9ae2",
+    "title": "Calvert Cliffs 2 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/calv2.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.762Z",
+    "tags": [
+      "plant:CALVERT CLIFFS-1",
+      "type:PWR",
+      "plant:CALVERT CLIFFS-2"
+    ]
+  },
+  {
+    "id": "2e20c5f8f060b57f1bc1df08",
+    "title": "Brunswick 2 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/bru2.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.761Z",
+    "tags": [
+      "plant:BRUNSWICK-1",
+      "type:BWR",
+      "plant:BRUNSWICK-2"
+    ]
+  },
+  {
+    "id": "c3b7e70bc9175a1d8b6e2afb",
+    "title": "Byron 1 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/byro1.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.761Z",
+    "tags": [
+      "plant:BYRON-1",
+      "type:PWR",
+      "plant:BYRON-2"
+    ]
+  },
+  {
+    "id": "c1334008d67ce3018583fef9",
+    "title": "Byron 2 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/byro2.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.761Z",
+    "tags": [
+      "plant:BYRON-1",
+      "type:PWR",
+      "plant:BYRON-2"
+    ]
+  },
+  {
+    "id": "181f6672c8c4fa21c03815fb",
+    "title": "Browns Ferry 2 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/bf2.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.760Z",
+    "tags": [
+      "plant:BROWNS FERRY-1",
+      "type:BWR",
+      "plant:BROWNS FERRY-2",
+      "plant:BROWNS FERRY-3"
+    ]
+  },
+  {
+    "id": "09c3900edf72a1e51f8c74fc",
+    "title": "Browns Ferry 3 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/bf3.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.760Z",
+    "tags": [
+      "plant:BROWNS FERRY-1",
+      "type:BWR",
+      "plant:BROWNS FERRY-2",
+      "plant:BROWNS FERRY-3"
+    ]
+  },
+  {
+    "id": "27f9a0938b1b69604667ef68",
+    "title": "Brunswick 1 - 92% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/bru1.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.760Z",
+    "tags": [
+      "plant:BRUNSWICK-1",
+      "type:BWR",
+      "plant:BRUNSWICK-2"
+    ]
+  },
+  {
+    "id": "fbde2bc54dec52cfa37dd0c9",
+    "title": "Braidwood 2 - 0% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/brai2.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.759Z",
+    "tags": [
+      "plant:BRAIDWOOD-1",
+      "type:PWR",
+      "plant:BRAIDWOOD-2"
+    ]
+  },
+  {
+    "id": "421a3c6468b906d72757d4a9",
+    "title": "Browns Ferry 1 - 0% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/bf1.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.759Z",
+    "tags": [
+      "plant:BROWNS FERRY-1",
+      "type:BWR",
+      "plant:BROWNS FERRY-2",
+      "plant:BROWNS FERRY-3"
+    ]
+  },
+  {
+    "id": "6eaa22d0cd09666a3e63fd53",
+    "title": "Beaver Valley 1 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/bv1.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.758Z",
+    "tags": [
+      "plant:BEAVER VALLEY-1",
+      "type:PWR",
+      "plant:BEAVER VALLEY-2"
+    ]
+  },
+  {
+    "id": "5ebe29b33a3593dc06e39e8e",
+    "title": "Beaver Valley 2 - 0% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/bv2.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.758Z",
+    "tags": [
+      "plant:BEAVER VALLEY-1",
+      "type:PWR",
+      "plant:BEAVER VALLEY-2"
+    ]
+  },
+  {
+    "id": "2a2c13dd8782060aaacc6171",
+    "title": "Braidwood 1 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/brai1.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.758Z",
+    "tags": [
+      "plant:BRAIDWOOD-1",
+      "type:PWR",
+      "plant:BRAIDWOOD-2"
+    ]
+  },
+  {
+    "id": "d8d2626d90fa713a8c42b875",
+    "title": "Arkansas Nuclear 1 - 100% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/ano1.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.757Z",
+    "tags": []
+  },
+  {
+    "id": "2edfce6e087db6993e763d03",
+    "title": "Arkansas Nuclear 2 - 0% power",
+    "summary": "",
+    "url": "https://www.nrc.gov/reactors/ano2.html",
+    "source": "NRC Power Reactor Status",
+    "publishedAt": "2026-04-22T12:06:26.757Z",
+    "tags": []
+  },
+  {
+    "id": "98a380294c363439834324b8",
+    "title": "NRC to Hold Virtual Meeting to Discuss Duke Energy’s Nuclear Plant Performance",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-002-ii.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-04-21T19:55:00.000Z",
+    "tags": [
+      "company:ge-hitachi",
+      "company:x-energy",
+      "company:nei"
+    ]
+  },
+  {
+    "id": "ec09e96038db5b847a3bf27f",
+    "title": "The POWER Interview: Advantages of Geothermal Deployment",
+    "summary": "Geothermal offers a variety of benefits when compared with other renewable energy resources. The post The POWER Interview: Advantages of Geothermal Deployment appeared first on POWER Magazine.",
+    "url": "https://www.powermag.com/the-power-interview-advantages-of-geothermal-deployment",
+    "source": "POWER Magazine",
+    "publishedAt": "2026-04-21T18:54:28.000Z",
+    "tags": [
+      "company:x-energy"
+    ]
+  },
+  {
+    "id": "718774c7a39b05e2aca3b5bc",
+    "title": "Reprocessing Gamble Could Drain Nuclear Waste Fund, Raise Electricity Prices",
+    "summary": "Electricity bills keep climbing, with Americans paying on average 32% more than five years ago. One of the key dynamics contributing to higher prices is electricity supply is not keeping up with surging demand. Demand growth is a positive marker of American economic expansion and innovation, but consumers can’t keep footing rising costs. The U.S. […] The…",
+    "url": "https://www.powermag.com/reprocessing-gamble-could-drain-nuclear-waste-fund-raise-electricity-prices",
+    "source": "POWER Magazine",
+    "publishedAt": "2026-04-21T17:12:26.000Z",
+    "tags": [
+      "company:ans"
+    ]
+  },
+  {
+    "id": "8c069e9301c3a1f417e1ca14",
+    "title": "Solx, Caelux Partner to Scale Solar Energy Technology",
+    "summary": "Solx, a U.S.-based solar manufacturer, and Caelux, a U.S.-based leader in perovskite solar technology, announced a five-year, 3-GW strategic partnership and unveiled their breakthrough U.S.-made high-performance solar module. The post Solx, Caelux Partner to Scale Solar Energy Technology appeared first on POWER Magazine.",
+    "url": "https://www.powermag.com/solx-caelux-partner-to-scale-solar-energy-technology",
+    "source": "POWER Magazine",
+    "publishedAt": "2026-04-21T16:54:44.000Z",
+    "tags": [
+      "company:x-energy"
+    ]
+  },
+  {
+    "id": "97d9ed88d4e5a2480ff4977a",
+    "title": "Meta Secures Power From Noon Energy to Serve Data Centers",
+    "summary": "Ultra-long duration energy storage group Noon Energy announced an agreement with technology company Meta Platforms to reserve up to 1 GW/100 GWh of energy storage capacity. Noon on April 21 said the initial phase of the deal will be for a 25-MW/2.5-GWh project, set for completion by 2028. The post Meta Secures Power From Noon Energy to Serve Data Centers…",
+    "url": "https://www.powermag.com/meta-secures-power-from-noon-energy-to-serve-data-centers",
+    "source": "POWER Magazine",
+    "publishedAt": "2026-04-21T16:41:19.000Z",
+    "tags": [
+      "company:x-energy"
+    ]
+  },
+  {
+    "id": "a825bca73e86fdde2ea7610b",
+    "title": "Grants allocated for Swedish feasibility studies",
+    "summary": "The Swedish Environmental Protection Agency has distributed SEK19.8 million (USD2.2 million) to nine municipalities that have applied to carry out feasibility studies for new nuclear power.",
+    "url": "https://www.world-nuclear-news.org//articles/grants-allocated-for-swedish-feasibility-studies",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-04-21T13:50:03.000Z",
+    "tags": []
+  },
+  {
+    "id": "3c471d95626974990f8bd5d8",
+    "title": "Adani launches nuclear subsidiary",
+    "summary": "India's largest private thermal power producer has incorporated a new subsidiary to generate, transmit, and distribute power from nuclear energy.",
+    "url": "https://www.world-nuclear-news.org//articles/adani-launches-nuclear-subsidiary",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-04-21T11:21:59.000Z",
+    "tags": [
+      "country:India",
+      "company:ge-hitachi",
+      "company:x-energy",
+      "company:nei"
+    ]
+  },
+  {
+    "id": "fba05b4ba57167ec7d37080d",
+    "title": "First new Kursk unit 'ready for commercial operation'",
+    "summary": "The first VVER-TOI unit at the Kursk II Nuclear Power Plant in Russia has successfully completed pilot operation and is ready for commercial operation, Rosatom says.",
+    "url": "https://www.world-nuclear-news.org//articles/first-new-kursk-unit-ready-for-commercial-operation",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-04-21T10:47:13.000Z",
+    "tags": [
+      "country:Russia",
+      "plant:KURSK 2-1",
+      "type:PWR",
+      "plant:KURSK 2-2",
+      "plant:KURSK-3",
+      "type:LWGR",
+      "company:rosatom"
+    ]
+  },
+  {
+    "id": "70d3a30c9a2c4a604bedc475",
+    "title": "Bruce Power to share nuclear knowledge with Energy Alberta",
+    "summary": "Bruce Power has entered into a collaboration agreement with Energy Alberta, under which Bruce Power will share its nuclear energy experience, high‑level frameworks and lessons learned.",
+    "url": "https://www.world-nuclear-news.org//articles/bruce-power-to-share-nuclear-knowledge-with-energy-alberta",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-04-21T10:21:04.000Z",
+    "tags": [
+      "plant:BRUCE-1",
+      "type:PHWR",
+      "plant:BRUCE-2",
+      "plant:BRUCE-3",
+      "company:ge-hitachi",
+      "company:x-energy",
+      "company:nei"
+    ]
+  },
+  {
+    "id": "de60f7afd8cf643bdc6cef98",
+    "title": "Electric Cooperative Leaders Advocate for Federal Policies Essential to Maintaining Affordable, Reliable Power",
+    "summary": "Next week, roughly 1,500 electric cooperative leaders will gather in Washington, D.C., to meet with lawmakers and federal agencies at a pivotal moment for the nation’s energy future. They represent not-for-profit utilities that power 42 million Americans—many in rural communities—and they are coming with a clear message: smart energy policies are urgently…",
+    "url": "https://www.powermag.com/electric-cooperative-leaders-advocate-for-federal-policies-essential-to-maintaining-affordable-reliable-power",
+    "source": "POWER Magazine",
+    "publishedAt": "2026-04-20T20:38:53.000Z",
+    "tags": [
+      "plant:COOPER",
+      "type:BWR",
+      "company:x-energy"
+    ]
+  },
+  {
+    "id": "c0d30732e71b9ffd84b3c110",
+    "title": "NRC to Discuss Wolf Creek Nuclear Power Plant Performance",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-003-iv.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-04-20T18:55:00.000Z",
+    "tags": [
+      "plant:HOPE CREEK-1",
+      "type:BWR",
+      "plant:WOLF CREEK",
+      "type:PWR"
+    ]
+  },
+  {
+    "id": "3c6dc026ae8049096fb86431",
+    "title": "China Restarting Massive Coal-to-Gas Project After Decade-Long Pause",
+    "summary": "Chinese officials have said they will revive a multibillion-dollar coal gasification project, in part due to global gas supply disruptions caused by the U.S. and Isreal's war with Iran. The post China Restarting Massive Coal-to-Gas Project After Decade-Long Pause appeared first on POWER Magazine.",
+    "url": "https://www.powermag.com/china-restarting-massive-coal-to-gas-project-after-decade-long-pause",
+    "source": "POWER Magazine",
+    "publishedAt": "2026-04-20T17:57:12.000Z",
+    "tags": [
+      "country:China",
+      "country:Iran,isl.rep"
+    ]
+  },
+  {
+    "id": "64615cb7aca8dd0e3207e214",
+    "title": "First Taipingling unit enters commercial operation",
+    "summary": "Unit 1 of the Taipingling nuclear power plant has entered commercial operation, China General Nuclear announced. The unit is the first of six Hualong One (HPR1000) reactors planned for the site in Guangdong province.",
+    "url": "https://www.world-nuclear-news.org//articles/first-taipingling-unit-enters-commercial-operation",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-04-20T16:31:01.000Z",
+    "tags": [
+      "country:China",
+      "plant:TAIPINGLING-1",
+      "type:PWR",
+      "plant:TAIPINGLING-2",
+      "plant:TAIPINGLING-3"
+    ]
+  },
+  {
+    "id": "b117c15a0c1e4e0c446cebe1",
+    "title": "Kazakhstan strategy considers four nuclear power plants",
+    "summary": "The strategy for the Development of the Nuclear Industry in Kazakhstan sees at least three nuclear power plants operating by 2050, with a project for a fourth one possible.",
+    "url": "https://www.world-nuclear-news.org//articles/kazakhstan-strategy-considers-four-nuclear-power-plants",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-04-20T15:11:36.000Z",
+    "tags": []
+  },
+  {
+    "id": "1964c7c1f45b47baed222faf",
+    "title": "Kairos breaks ground for Hermes 2 reactor",
+    "summary": "The Hermes 2 Demonstration Plant in Oak Ridge, Tennessee, will be the company's first commercial-scale reactor and is the first power-producing Gen IV reactor to receive a construction permit from the US regulator.",
+    "url": "https://www.world-nuclear-news.org//articles/kairos-breaks-ground-for-hermes-2-reactor",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-04-20T14:22:45.000Z",
+    "tags": []
+  },
+  {
+    "id": "1c2eea031468954a00c4d30a",
+    "title": "OSGE and development agency sign agreement for Polish SMR project",
+    "summary": "Poland's Orlen Synthos Green Energy has signed a letter of intent with the country's Industrial Development Agency to collaborate on the preparation for the construction and operation of small modular reactors at the Strategic Investment Park in Stalowa Wola.",
+    "url": "https://www.world-nuclear-news.org//articles/osge-and-development-agency-sign-agreement-for-polish-smr-project",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-04-20T14:15:39.000Z",
+    "tags": [
+      "company:x-energy"
+    ]
+  },
+  {
+    "id": "8536fdcdb9c817034b15b147",
+    "title": "EC to examine Romanian plans for funding reactor refurbishment",
+    "summary": "The European Commission has opened an in-depth investigation to assess whether public support that Romania plans to grant for the refurbishment and lifetime extension of unit 1 at the Cernavoda nuclear power plant is in line with EU state aid rules.",
+    "url": "https://www.world-nuclear-news.org//articles/ec-to-examine-romanian-plans-for-funding-reactor-refurbishment",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-04-20T12:53:04.000Z",
+    "tags": [
+      "country:Romania",
+      "plant:CERNAVODA-1",
+      "type:PHWR",
+      "plant:CERNAVODA-2"
+    ]
+  },
+  {
+    "id": "65d5fbdb2017bd83031161ea",
+    "title": "Japanese Group Proposes $2-Billion Gas-Fired Power Plant for Hawaii",
+    "summary": "Japan's largest power generation company has made a proposal to invest $2 billion for construction of a 500-MW combined-cycle and simple-cycle natural gas-fired power plant on the Hawaiian island of Oahu. The post Japanese Group Proposes $2-Billion Gas-Fired Power Plant for Hawaii appeared first on POWER Magazine.",
+    "url": "https://www.powermag.com/japanese-group-proposes-2-billion-gas-fired-power-plant-for-hawaii",
+    "source": "POWER Magazine",
+    "publishedAt": "2026-04-19T15:44:52.000Z",
+    "tags": [
+      "country:Japan"
+    ]
+  },
+  {
+    "id": "51a242e1fcce2bd4080d2877",
+    "title": "Dutch agreement paves way for construction of commercial MSR",
+    "summary": "A memorandum of understanding has been signed for the construction of a non-nuclear demonstrator Thorizon molten-salt reactor in the Dutch province of Zeeland, a nuclear demonstrator at Petten, Noord-Holland, followed by the first commercial unit in Zeeland.",
+    "url": "https://www.world-nuclear-news.org//articles/dutch-agreement-paves-way-for-construction-of-commercial-msr",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-04-17T13:44:04.000Z",
+    "tags": []
+  },
+  {
+    "id": "a8f3cdfdbc5cf5718bd19462",
+    "title": "ConverDyn considering building Metropolis 2.0 plant, conference told",
+    "summary": "ConverDyn has said it is looking into building a sister plant to its Metropolis conversion facility, in addition to recently announced plans to expand the existing plant.",
+    "url": "https://www.world-nuclear-news.org//articles/converdyn-considering-building-metropolis-20-plant-conference-told",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-04-17T13:06:11.000Z",
+    "tags": []
+  },
+  {
+    "id": "cceee3522d0f1446e1916f69",
+    "title": "UK awards GBP100 million in contracts for prototype fusion plant",
+    "summary": "Britain's Tokamak Energy has been named magnet systems partner for the UK's STEP Fusion programme, while France's Dassault Systèmes has been contracted to expand STEP's product lifecycle management capability.",
+    "url": "https://www.world-nuclear-news.org//articles/uk-awards-gbp100-million-in-contracts-for-prototype-fusion-plant",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-04-17T12:05:02.000Z",
+    "tags": [
+      "country:France",
+      "company:x-energy"
+    ]
+  },
+  {
+    "id": "11e221ecb9af1f7f72c56c80",
+    "title": "CNL to produce demonstration ANEEL fuel bundles",
+    "summary": "Nuclear fuel company Clean Core Thorium Energy has signed an agreement with Canadian Nuclear Laboratories for the manufacture of demonstration irradiation bundles of its patented ANEEL thorium and high-assay low-enriched uranium fuel.",
+    "url": "https://www.world-nuclear-news.org//articles/cnl-to-produce-demonstration-aneel-fuel-bundles",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-04-17T07:58:37.000Z",
+    "tags": [
+      "company:ge-hitachi",
+      "company:x-energy",
+      "company:nei"
+    ]
+  },
+  {
+    "id": "7b59a3325f9fa2b7f5325bb9",
+    "title": "Making Solar Truly Sustainable: The Case for Recycling End of Life Panels",
+    "summary": "Leading corporations are advancing their sustainability goals by investing in renewable energy, particularly through community solar credits that support both environmental and social impact. This trend follows the ever-growing solar market, driven by new production contracted by these large companies and utilities, businesses, and residential solar panel…",
+    "url": "https://www.powermag.com/making-solar-truly-sustainable-the-case-for-recycling-end-of-life-panels",
+    "source": "POWER Magazine",
+    "publishedAt": "2026-04-16T21:40:13.000Z",
+    "tags": [
+      "company:x-energy"
+    ]
+  },
+  {
+    "id": "57d06869c1a581494f9c8ae2",
+    "title": "FERC Sets June Deadline to Rewrite Large-Load Grid Rules for AI-Era Power Demand",
+    "summary": "The Federal Energy Regulatory Commission (FERC) has set a June 2026 deadline to act in a high-stakes rulemaking that could redefine how massive new power users—including AI-driven data centers—connect to the U.S. interstate transmission system. In an April 16 order in its “Interconnection of Large Loads to the Interstate Transmission System” docket…",
+    "url": "https://www.powermag.com/ferc-sets-june-deadline-to-rewrite-large-load-grid-rules-for-ai-era-power-demand",
+    "source": "POWER Magazine",
+    "publishedAt": "2026-04-16T21:22:20.000Z",
+    "tags": [
+      "company:x-energy"
+    ]
+  },
+  {
+    "id": "77564ce9795ebc041166f358",
+    "title": "Rural Co-ops Navigate a New Era of Load Growth, Rising Costs, and Policy Pressure",
+    "summary": "After decades of relatively flat electricity demand, the U.S. power sector is suddenly racing to keep up—and rural electric cooperatives, which serve 42 million people across 54% of the nation’s land mass, are feeling the squeeze as acutely as anyone. As a guest on The POWER Podcast, Jim Matheson, CEO of the National Rural Electric […] The post Rural Co-ops…",
+    "url": "https://www.powermag.com/rural-co-ops-navigate-a-new-era-of-load-growth-rising-costs-and-policy-pressure",
+    "source": "POWER Magazine",
+    "publishedAt": "2026-04-16T21:11:37.000Z",
+    "tags": [
+      "plant:COOPER",
+      "type:BWR"
+    ]
+  },
+  {
+    "id": "34ce9fbf949a58af2a2da770",
+    "title": "Bruce Power to share large reactor experience with SaskPower",
+    "summary": "Bruce Power has signed a memorandum of understanding with SaskPower to share its expertise in nuclear generation, project development, and long-term operations as Saskatchewan evaluates large nuclear technologies for potential use in the Canadian province.",
+    "url": "https://www.world-nuclear-news.org//articles/bruce-power-to-share-large-reactor-experience-with-saskpower",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-04-16T14:22:08.000Z",
+    "tags": [
+      "plant:BRUCE-1",
+      "type:PHWR",
+      "plant:BRUCE-2",
+      "plant:BRUCE-3",
+      "company:bwxt"
+    ]
+  },
+  {
+    "id": "d946842444f41b4265db7bf2",
+    "title": "Growing recognition of nuclear fuel cycle's importance, WNFC hears",
+    "summary": "This is a significant time of change for the nuclear energy sector - and existing nuclear capacity is the bedrock for nuclear growth that could be unprecedented, according to nuclear industry leaders at the World Nuclear Fuel Cycle 2026 conference in Monaco.",
+    "url": "https://www.world-nuclear-news.org//articles/growing-recognition-nuclear-fuel-cycle-importance-wnfc-hears",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-04-16T13:39:40.000Z",
+    "tags": [
+      "company:ge-hitachi",
+      "company:x-energy",
+      "company:nei"
+    ]
+  },
+  {
+    "id": "6ad5a90096fc309638d7ab59",
+    "title": "Kashiwazaki-Kariwa 6 resumes commercial operation",
+    "summary": "Unit 6 of the Kashiwazaki-Kariwa nuclear power plant has resumed commercial operation, becoming the first reactor owned by Tokyo Electric Power Company to do so since the accident at its Fukushima Daiichi plant.",
+    "url": "https://www.world-nuclear-news.org//articles/kashiwazaki-kariwa-6-resumes-commercial-operation",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-04-16T13:24:52.000Z",
+    "tags": [
+      "company:westinghouse"
+    ]
+  },
+  {
+    "id": "ffb77ee9b836177d179cf57e",
+    "title": "Application lodged to build microreactor at US university",
+    "summary": "The US Nuclear Regulatory Commission announced it has received an application from the University of Illinois to construct the first research KRONOS micro modular reactor on the university's campus.",
+    "url": "https://www.world-nuclear-news.org//articles/application-lodged-to-build-microreactor-at-us-university",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-04-16T10:44:07.000Z",
+    "tags": []
+  },
+  {
+    "id": "e62e08491da57be4df6cb71e",
+    "title": "Poland moves on BWRX-300 fuel supply",
+    "summary": "SGE has signed agreements with ENUSA and GENUSA to strengthen nuclear fuel supply chains supporting deployment of the BWRX-300 SMR across Europe. The post Poland moves on BWRX-300 fuel supply appeared first on Nuclear Engineering International.",
+    "url": "https://www.neimagazine.com/news/poland-moves-on-bwrx-300-fuel-supply",
+    "source": "Nuclear Engineering International",
+    "publishedAt": "2026-04-16T10:31:32.000Z",
+    "tags": []
+  },
+  {
+    "id": "d07880f89aabeabdce0ecc1b",
+    "title": "What is Happening in the Nordic Nuclear Industry?",
+    "summary": "The post What is Happening in the Nordic Nuclear Industry? appeared first on Nuclear Engineering International.",
+    "url": "https://www.neimagazine.com/news/what-is-happening-in-the-nordic-nuclear-industry",
+    "source": "Nuclear Engineering International",
+    "publishedAt": "2026-04-16T10:20:22.000Z",
+    "tags": []
+  },
+  {
+    "id": "da059baaaa933eb57b195939",
+    "title": "UKAEA unveils fusion roadmap",
+    "summary": "The UKAEA has launched its 2026–2030 strategy to support delivery of STEP Fusion and expand the country’s global fusion leadership. The post UKAEA unveils fusion roadmap appeared first on Nuclear Engineering International.",
+    "url": "https://www.neimagazine.com/news/uk-launches-new-fusion-strategy",
+    "source": "Nuclear Engineering International",
+    "publishedAt": "2026-04-16T10:18:52.000Z",
+    "tags": []
+  },
+  {
+    "id": "6197b83b0ac81940f75aa603",
+    "title": "Grohnde NPP is defueled",
+    "summary": "Germany’s Grohnde NPP has completed defueling, marking a major milestone in the dismantling process led by PreussenElektra. The post Grohnde NPP is defueled appeared first on Nuclear Engineering International.",
+    "url": "https://www.neimagazine.com/news/grohnde-completes-defueling",
+    "source": "Nuclear Engineering International",
+    "publishedAt": "2026-04-16T10:03:26.000Z",
+    "tags": []
+  },
+  {
+    "id": "928614d65f7a3b7ca1cb8844",
+    "title": "Bulgaria launches LLW/ILW repository",
+    "summary": "Bulgaria has inaugurated its National Repository for Radioactive Waste near Kozloduy NPP to manage low- and intermediate-level waste. The post Bulgaria launches LLW/ILW repository appeared first on Nuclear Engineering International.",
+    "url": "https://www.neimagazine.com/news/bulgaria-inaugurates-radwaste-facility",
+    "source": "Nuclear Engineering International",
+    "publishedAt": "2026-04-16T09:51:44.000Z",
+    "tags": [
+      "country:Bulgaria",
+      "plant:KOZLODUY-5",
+      "type:PWR",
+      "plant:KOZLODUY-6"
+    ]
+  },
+  {
+    "id": "da5baa51c3eaaed736bd3925",
+    "title": "Saeul 3 set for criticality",
+    "summary": "Saeul NPP Unit 3 has completed mandatory pre-criticality inspections, clearing the way for the reactor’s next commissioning stage. The post Saeul 3 set for criticality appeared first on Nuclear Engineering International.",
+    "url": "https://www.neimagazine.com/news/saeul-3-cleared-for-criticality",
+    "source": "Nuclear Engineering International",
+    "publishedAt": "2026-04-16T09:35:22.000Z",
+    "tags": [
+      "plant:SAEUL-1",
+      "type:PWR",
+      "plant:SAEUL-2",
+      "plant:SAEUL-3"
+    ]
+  },
+  {
+    "id": "b6fb15ae0ccec69498bd7238",
+    "title": "Bulgarian minister wants fixed price for Kozloduy 7 and 8",
+    "summary": "Minister of Energy Traycho Traykov has said Bulgaria wants its proposed new nuclear power units at the Kozloduy plant to be built at fixed prices.",
+    "url": "https://www.world-nuclear-news.org//articles/bulgarian-minister-wants-fixed-price-for-kozloduy-7-and-8",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-04-16T07:19:23.000Z",
+    "tags": [
+      "country:Bulgaria",
+      "plant:KOZLODUY-5",
+      "type:PWR",
+      "plant:KOZLODUY-6",
+      "company:ge-hitachi",
+      "company:x-energy",
+      "company:nei"
+    ]
+  },
+  {
+    "id": "45de2f2b338d29ab802dbca6",
+    "title": "Spent fuel solutions",
+    "summary": "A new study has shed light on the different approaches to best manage the spent nuclear fuel challenge. The post Spent fuel solutions appeared first on Nuclear Engineering International.",
+    "url": "https://www.neimagazine.com/analysis/decommissioning-wastemanagement/spent-fuel-solutions",
+    "source": "Nuclear Engineering International",
+    "publishedAt": "2026-04-16T07:01:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "4cf7a8236446ca6effd16b7f",
+    "title": "Media Advisory: NRC to Hold Public Meeting of the Advisory Committee on the Medical Uses of Isotopes",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-006-a.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-04-15T22:45:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "db331b4a0759b06a1bc0a8cb",
+    "title": "NRC Schedules Open House to Discuss Byron Power Plant Performance",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-002-iii.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-04-15T21:30:00.000Z",
+    "tags": [
+      "plant:BYRON-1",
+      "type:PWR",
+      "plant:BYRON-2"
+    ]
+  },
+  {
+    "id": "e0275988df43aa04140d9134",
+    "title": "NRC Receives Application for Advanced Microreactor at University of Illinois",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-043.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-04-15T19:15:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "4cd226848f3566ba19b747c3",
+    "title": "Rosatom completes Rossiya simulator",
+    "summary": "Specialists at OKBM Afrikantov have completed an advanced on-board simulator for the Project 10510 nuclear icebreaker Rossiya. The post Rosatom completes Rossiya simulator appeared first on Nuclear Engineering International.",
+    "url": "https://www.neimagazine.com/news/rosatom-completes-rossiya-simulator",
+    "source": "Nuclear Engineering International",
+    "publishedAt": "2026-04-15T15:00:00.000Z",
+    "tags": [
+      "company:rosatom"
+    ]
+  },
+  {
+    "id": "93045e3ad86661b433a6f521",
+    "title": "Grohnde nuclear fuel transfer completed",
+    "summary": "All the used nuclear fuel assemblies in the storage pool at Germany's Grohnde nuclear power plant have been transferred to an on-site interim storage facility, PreussenElektra announced.",
+    "url": "https://www.world-nuclear-news.org//articles/grohnde-nuclear-fuel-transfer-completed",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-04-15T13:37:43.000Z",
+    "tags": []
+  },
+  {
+    "id": "caa868e1744e3dface8e5d92",
+    "title": "Funding fusion milestones",
+    "summary": "Private investment being ploughed into fusion development is yielding results. Will the 2030s see the first fusion power plants? The post Funding fusion milestones appeared first on Nuclear Engineering International.",
+    "url": "https://www.neimagazine.com/analysis/advanced-reactorsfusion/funding-fusion-milestones",
+    "source": "Nuclear Engineering International",
+    "publishedAt": "2026-04-15T12:30:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "b4bd96adfa0cb588c61a23de",
+    "title": "NRC finalises NEPA streamlining rules",
+    "summary": "The US NRC has finalised two regulatory rules aimed at modernising environmental review processes under the National Environmental Policy Act. The post NRC finalises NEPA streamlining rules appeared first on Nuclear Engineering International.",
+    "url": "https://www.neimagazine.com/news/nrc-finalises-nepa-streamlining-rules",
+    "source": "Nuclear Engineering International",
+    "publishedAt": "2026-04-15T11:48:47.000Z",
+    "tags": []
+  },
+  {
+    "id": "24689e3a23070c7bbebce562",
+    "title": "Outer dome installed at Changjiang unit 4",
+    "summary": "The outer steel dome has been installed at unit 4 of the Changjiang nuclear power plant in China's Hainan province, China National Nuclear Corporation has announced.",
+    "url": "https://www.world-nuclear-news.org//articles/outer-dome-installed-at-changjiang-unit-4",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-04-15T11:25:04.000Z",
+    "tags": [
+      "country:China",
+      "plant:CHANGJIANG-1",
+      "type:PWR",
+      "plant:CHANGJIANG-2",
+      "plant:CHANGJIANG-3"
+    ]
+  },
+  {
+    "id": "eb22c4d2b2d93d062aa74766",
+    "title": "Bulgarian repository officially opened",
+    "summary": "Bulgaria's national repository for low- and intermediate-level radioactive waste has been officially opened. It is expected to be filled over the next 60 years, and then closed and its contents closely monitored for more than 300 years.",
+    "url": "https://www.world-nuclear-news.org//articles/bulgarian-repository-officially-opened",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-04-15T09:50:45.000Z",
+    "tags": [
+      "country:Bulgaria"
+    ]
+  },
+  {
+    "id": "29c3db57664822a4a19b8702",
+    "title": "UKAEA sets out fusion strategy for coming years",
+    "summary": "The United Kingdom Atomic Energy Authority has released its 2026–2030 organisational strategy, setting out the national laboratory's role to deliver foundational research, technology and innovation in support of the UK fusion sector. UKAEA subsidiary UK Fusion Energy Ltd has also released its latest strategy, setting out how the UK will deliver its…",
+    "url": "https://www.world-nuclear-news.org//articles/ukaea-sets-out-fusion-strategy-for-coming-years",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-04-15T09:19:19.000Z",
+    "tags": [
+      "company:x-energy"
+    ]
+  },
+  {
+    "id": "d3439f27fd909b7e0e3ba161",
+    "title": "Rosatom 'ready to answer all Paks II questions'",
+    "summary": "Rosatom Director General Alexei Likhachev has said they are ready to discuss any questions the incoming Hungarian government has about the Paks II nuclear power plant project.",
+    "url": "https://www.world-nuclear-news.org//articles/rosatom-ready-to-answer-all-paks-2-questions",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-04-15T05:34:51.000Z",
+    "tags": [
+      "company:rosatom"
+    ]
+  },
+  {
+    "id": "3f91cb658b34515842ceac85",
+    "title": "Media Advisory: NRC to Hold Public Webinar to Discuss NRC Website Modernization",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-005-a.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-04-14T22:40:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "e98088d211ac2a3bc81e72c5",
+    "title": "Swedish state to take stake in nuclear development firm",
+    "summary": "The Swedish government said it plans to take a majority stake in nuclear project development company Videberg Kraft AB and to take a role in financing the future system for the disposal of radioactive waste and used nuclear fuel.",
+    "url": "https://www.world-nuclear-news.org//articles/swedish-state-to-take-stake-in-nuclear-development-firm",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-04-14T14:12:38.000Z",
+    "tags": []
+  },
+  {
+    "id": "dd5bc88da0a5520aeaaa6b8e",
+    "title": "SGE to cooperate with Spanish fuel manufacturers",
+    "summary": "Poland's SGE has signed cooperation agreements with Spanish nuclear fuel manufacturers Enusa Industrias Avanzadas SA and GNF Enusa Nuclear Fuel SA to support the deployment of BWRX-300 small modular reactors across Europe.",
+    "url": "https://www.world-nuclear-news.org//articles/sge-to-cooperate-with-spanish-fuel-manufacturers",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-04-14T13:16:54.000Z",
+    "tags": [
+      "plant:COOPER",
+      "type:BWR"
+    ]
+  },
+  {
+    "id": "3647a0016ef212f61a051cb5",
+    "title": "US Air Force names potential SMR hosts",
+    "summary": "Buckley Space Force Base in Colorado and Malmstrom Air Force Base in Montana have been selected by the US Department of the Air Force as potential locations to site microreactors under the Advanced Nuclear Power for Installations programme.",
+    "url": "https://www.world-nuclear-news.org//articles/us-air-force-names-potential-smr-hosts",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-04-14T09:16:58.000Z",
+    "tags": []
+  },
+  {
+    "id": "34c7b5d656f62c00524ee670",
+    "title": "Dutch nuclear new-build partnership announced",
+    "summary": "Dutch heavy lifting and transport specialist Mammoet and nuclear development company ULC-Energy have signed a cooperation agreement to streamline the construction of new nuclear power facilities in the Netherlands.",
+    "url": "https://www.world-nuclear-news.org//articles/dutch-nuclear-new-build-partnership-announced",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-04-14T09:01:19.000Z",
+    "tags": [
+      "country:Netherlands",
+      "plant:COOPER",
+      "type:BWR",
+      "company:ge-hitachi",
+      "company:x-energy",
+      "company:nei"
+    ]
+  },
+  {
+    "id": "83e7f444096cfbdcc4757df3",
+    "title": "Conditional funding announced for US fusion-based isotope facility",
+    "summary": "The award to SHINE Chrysalis LLC, through the Department of Energy's Office of Energy Dominance Financing, is dependent on the company satisfying technical, legal, environmental, and financial conditions.",
+    "url": "https://www.world-nuclear-news.org//articles/conditional-funding-announced-for-us-fusion-based-isotope-facility",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-04-14T08:14:07.000Z",
+    "tags": [
+      "company:x-energy"
+    ]
+  },
+  {
+    "id": "0986ae93d6f73a40e4b89ee9",
+    "title": "NRC Streamlines Environmental Reviews with Two New Rules",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-042.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-04-13T23:00:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "478af163e7fdea0ba42c8c63",
+    "title": "Third unit at Korea's Saeul plant starts up",
+    "summary": "Unit 3 at the Saeul nuclear power plant has attained a sustained chain reaction for the first time, Korea Hydro & Nuclear Power announced. It is the third of four APR-1400 reactors that have begun operating at the site.",
+    "url": "https://www.world-nuclear-news.org//articles/third-unit-at-koreas-saeul-plant-starts-up",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-04-13T15:02:34.000Z",
+    "tags": [
+      "country:Korea,rep.of",
+      "plant:SAEUL-1",
+      "type:PWR",
+      "plant:SAEUL-2",
+      "plant:SAEUL-3"
+    ]
+  },
+  {
+    "id": "2b4b557df04c1734e319aa47",
+    "title": "Contract signed for delivery of UK's first SMRs",
+    "summary": "Rolls-Royce SMR and Great British Energy - Nuclear have signed a contract that enables work to start immediately on the delivery of three Rolls-Royce small modular reactors at Wylfa, on the island of Anglesey, North Wales. In addition, the National Wealth Fund is committing up to GBP599 million (USD805 million) to Rolls-Royce SMR to support the development…",
+    "url": "https://www.world-nuclear-news.org//articles/contract-signed-for-delivery-of-uks-first-smrs",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-04-13T11:55:04.000Z",
+    "tags": [
+      "plant:NORTH ANNA-1",
+      "type:PWR",
+      "plant:NORTH ANNA-2",
+      "company:ge-hitachi",
+      "company:rolls-royce-smr",
+      "company:x-energy",
+      "company:nei"
+    ]
+  },
+  {
+    "id": "377712bf2f80102c291d233e",
+    "title": "Podcast: China's ambitious plans for new nuclear capacity",
+    "summary": "China is leading the way in building new nuclear energy capacity but what are the plans for the future? François Morin, China Director at World Nuclear Association, sets out the scale of the country's ambitions.",
+    "url": "https://www.world-nuclear-news.org//articles/podcast-chinas-plans-for-new-nuclear-capacity",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-04-13T11:10:39.000Z",
+    "tags": [
+      "country:China",
+      "company:ge-hitachi",
+      "company:x-energy",
+      "company:nei"
+    ]
+  },
+  {
+    "id": "9233331a4bcd86b5a0432e0f",
+    "title": "First-of-a-kind microreactor test bed open for business",
+    "summary": "The Demonstration of Microreactor Experiments test bed - built from the repurposed Experimental Breeder Reactor-II facility at Idaho National Laboratory - is now ready to host its first fuelled microreactor test campaign.",
+    "url": "https://www.world-nuclear-news.org//articles/first-of-a-kind-microreactor-test-bed-open-for-business",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-04-13T10:18:50.000Z",
+    "tags": []
+  },
+  {
+    "id": "7caf6bae13465d7fbf70f2b0",
+    "title": "Three US states pave way for new nuclear",
+    "summary": "Legislation lifting a long-standing nuclear moratorium has been signed in New Jersey; legislation to incentivise nuclear construction has been signed in Kentucky; and in Texas, applications have opened for USD350 million of funding appropriated by the state to boost advanced nuclear construction.",
+    "url": "https://www.world-nuclear-news.org//articles/three-us-states-pave-way-for-new-nuclear",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-04-10T15:27:41.000Z",
+    "tags": []
+  },
+  {
+    "id": "a592924950843c8167b9d679",
+    "title": "Dismantling of reactor channels to begin at second Ignalina unit",
+    "summary": "With the dismantling of the reactor channels of unit 1 at Lithuania's Ignalina nuclear power plant complete, the country's nuclear regulator has now issued a permit for dismantling and decontamination works on the upper and lower zone equipment of the reactor channels of unit 2.",
+    "url": "https://www.world-nuclear-news.org//articles/dismantling-of-reactor-channels-to-begin-at-second-ignalina-unit",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-04-10T15:02:30.000Z",
+    "tags": []
+  },
+  {
+    "id": "e37fb47c89bb188b3a52cca0",
+    "title": "ČEZ eyeing 80-year operation of Dukovany units",
+    "summary": "Czech energy group ČEZ announced it has started a preparatory process to enable the long-term operation of the four reactors at its Dukovany nuclear power plant. It is also considering extending the operation of the two reactors at its Temelín plant.",
+    "url": "https://www.world-nuclear-news.org//articles/cez-eyeing-80-year-operation-of-dukovany-units",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-04-10T13:50:23.000Z",
+    "tags": [
+      "country:Czech Rep.",
+      "plant:DUKOVANY-1",
+      "type:PWR",
+      "plant:DUKOVANY-2",
+      "plant:DUKOVANY-3",
+      "company:ge-hitachi",
+      "company:x-energy",
+      "company:nei"
+    ]
+  },
+  {
+    "id": "a568827c9e6be7758d6750ba",
+    "title": "New Korean reactor cleared for start up",
+    "summary": "South Korea's Nuclear Safety and Security Commission said it has completed all nine inspections required to be performed prior to the reactor's initial criticality during the pre-operation inspection of Saeul unit 3.",
+    "url": "https://www.world-nuclear-news.org//articles/new-korean-reactor-cleared-for-start-up",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-04-10T11:15:07.000Z",
+    "tags": [
+      "country:Korea,rep.of",
+      "plant:SAEUL-1",
+      "type:PWR",
+      "plant:SAEUL-2",
+      "plant:SAEUL-3"
+    ]
+  },
+  {
+    "id": "186a6fd360762bd99a9b25c6",
+    "title": "Production begins at US uranium project",
+    "summary": "Uranium Energy Corp's Burke Hollow in Texas is the first new in-situ recovery operation to start up in the USA in over a decade.",
+    "url": "https://www.world-nuclear-news.org//articles/production-begins-at-us-uranium-project",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-04-09T16:27:59.000Z",
+    "tags": [
+      "company:x-energy"
+    ]
+  },
+  {
+    "id": "2193d6bf1981a7e8b608cac2",
+    "title": "EDF, NTPC sign MoU to explore new Indian nuclear projects",
+    "summary": "The non-binding Memorandum of Understanding sees India's largest integrated power utility come together with the French international energy company to explore cooperation in developing new nuclear power projects in India.",
+    "url": "https://www.world-nuclear-news.org//articles/edf-ntpc-sign-mou-to-explore-new-indian-nuclear-projects",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-04-09T15:29:34.000Z",
+    "tags": [
+      "country:India",
+      "plant:COOPER",
+      "type:BWR",
+      "company:ge-hitachi",
+      "company:x-energy",
+      "company:nei"
+    ]
+  },
+  {
+    "id": "b7f1e3d85f749059261fa346",
+    "title": "Study highlights opportunities for Dutch nuclear supply chain",
+    "summary": "With the Dutch province of Zeeland under consideration as the location for two new nuclear power plants, a new report says local businesses could capture up to EUR4.6 billion (USD5.4 billion) in direct economic value during the 12-year construction period.",
+    "url": "https://www.world-nuclear-news.org//articles/study-highlights-opportunities-for-dutch-nuclear-supply-chain",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-04-09T14:18:25.000Z",
+    "tags": []
+  },
+  {
+    "id": "a999366eb9c2d08b281de0a1",
+    "title": "Framatome signs VVER-440 fuel agreement with EU utilities",
+    "summary": "France's Framatome has signed an agreement with four European energy companies - ČEZ, Fortum, MVM Paks NPP and Slovenské elektrárne - to further develop a fully European fuel for VVER-type nuclear power plants.",
+    "url": "https://www.world-nuclear-news.org//articles/framatome-signs-vver-440-fuel-agreement-with-eu-utilities",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-04-09T11:51:43.000Z",
+    "tags": [
+      "country:France",
+      "company:framatome",
+      "company:ge-hitachi",
+      "company:x-energy",
+      "company:nei"
+    ]
+  },
+  {
+    "id": "db98eee503d78b95c4d9ea10",
+    "title": "Avalanche Energy contracted to develop radioisotope power technology",
+    "summary": "Fusion energy startup Avalanche Energy has been awarded a USD5.2 million contract from the US Defense Advanced Research Projects Agency's Rads to Watts programme to develop next-generation technology for compact, resilient, nuclear batteries.",
+    "url": "https://www.world-nuclear-news.org//articles/avalanche-energy-contracted-to-develop-radioisotope-power-technology",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-04-09T10:16:48.000Z",
+    "tags": [
+      "plant:WATTS BAR-1",
+      "type:PWR",
+      "plant:WATTS BAR-2",
+      "company:ge-hitachi",
+      "company:x-energy",
+      "company:nei"
+    ]
+  },
+  {
+    "id": "5c701d9c8a5b8e79b7338f77",
+    "title": "NRC to Hold Virtual Meeting to Discuss Vogtle and Hatch Nuclear Power Plants Safety Performance",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-001-ii.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-04-08T19:00:00.000Z",
+    "tags": [
+      "plant:HATCH-1",
+      "type:BWR",
+      "plant:HATCH-2",
+      "plant:VOGTLE-1",
+      "type:PWR"
+    ]
+  },
+  {
+    "id": "ab00873ba79e121f72cfba28",
+    "title": "Westinghouse sets standards to support fleet-scale AP1000 deployment",
+    "summary": "Westinghouse Electric Company's submittal to the US Nuclear Regulatory Commission seeks to incorporate lessons learned from the construction of Vogtle units 3 and 4 into the design control document and establishes Vogtle 4 as the standard AP1000 reference plant for deployment in the USA.",
+    "url": "https://www.world-nuclear-news.org//articles/westinghouse-sets-standards-to-support-fleet-scale-ap1000-deployment",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-04-08T15:24:56.000Z",
+    "tags": [
+      "plant:VOGTLE-1",
+      "type:PWR",
+      "plant:VOGTLE-2",
+      "plant:VOGTLE-3",
+      "company:westinghouse"
+    ]
+  },
+  {
+    "id": "b7cd0d8b927c5923f4104004",
+    "title": "Testing of innovative VVER fuel begins",
+    "summary": "Unit 1 of Russia's Balakovo nuclear power plant has begun pilot operation using accident-tolerant MOX fuel assemblies.",
+    "url": "https://www.world-nuclear-news.org//articles/testing-of-innovative-vver-fuel-begins",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-04-08T15:11:35.000Z",
+    "tags": [
+      "country:Russia",
+      "plant:BALAKOVO-1",
+      "type:PWR",
+      "plant:BALAKOVO-2",
+      "plant:BALAKOVO-3"
+    ]
+  },
+  {
+    "id": "e3ea40f8566e8f50e294c82b",
+    "title": "Commission calls for Norway to prepare for nuclear energy",
+    "summary": "The Norwegian Nuclear Commission has recommended that the government does not start a process for nuclear power development in the country at this stage, but says it should prepare for its possible future use.",
+    "url": "https://www.world-nuclear-news.org//articles/commission-calls-for-norway-to-prepare-for-nuclear-energy",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-04-08T14:11:57.000Z",
+    "tags": [
+      "company:ge-hitachi",
+      "company:x-energy",
+      "company:nei"
+    ]
+  },
+  {
+    "id": "ef171f3bb9d9d0a8308474fc",
+    "title": "Deep Isolation selected for new US federal support",
+    "summary": "The award under the ARPA-E SCALEUP Ready programme will enable full-scale field testing of Deep Isolation's Universal Canister System.",
+    "url": "https://www.world-nuclear-news.org//articles/deep-isolation-selected-for-new-us-federal-support",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-04-08T13:26:44.000Z",
+    "tags": []
+  },
+  {
+    "id": "5ae4536616b97f2facbd9b90",
+    "title": "NRC Schedules Public Outreach to Discuss Comanche Peak Nuclear Power Plant Performance",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-002-iv.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-04-07T22:00:00.000Z",
+    "tags": [
+      "plant:COMANCHE PEAK-1",
+      "type:PWR",
+      "plant:COMANCHE PEAK-2"
+    ]
+  },
+  {
+    "id": "ea3a1d25a5e74011592eda91",
+    "title": "NRC Receives Westinghouse Application to Update AP1000 Design Certification",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-041.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-04-06T23:15:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "8387921b7cffb6cf947c0b94",
+    "title": "NRC Unveils Plans to Streamline Reactor Reviews with DOE/DOW Data",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-040.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-04-06T21:30:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "6fcc70b2a0c511aa0d71d628",
+    "title": "NRC Issues 100th Renewed License with Diablo Canyon Approvals",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-039.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-04-02T22:52:39.000Z",
+    "tags": [
+      "plant:DIABLO CANYON-1",
+      "type:PWR",
+      "plant:DIABLO CANYON-2"
+    ]
+  },
+  {
+    "id": "571b9d21a5203cf74f10aaaf",
+    "title": "NRC Schedules Public Outreach to Discuss Arkansas Nuclear One Power Plant Performance",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-001-iv.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-04-02T20:38:02.000Z",
+    "tags": []
+  },
+  {
+    "id": "2e56a553c99170b856c4ab0b",
+    "title": "NRC Makes Nine Mile Point Subsequent License Renewal Application Available",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-038.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-04-02T18:32:41.000Z",
+    "tags": [
+      "plant:NINE MILE POINT-1",
+      "type:BWR",
+      "plant:NINE MILE POINT-2"
+    ]
+  },
+  {
+    "id": "0971c58c7889fe93c8305978",
+    "title": "Media Advisory: NRC to Hold a Public Meeting on Proposed Rule and Related ASME Codes",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/documents/26-004-a.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-04-01T23:00:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "8a4010e80d753d677743459e",
+    "title": "NRC Appoints New General Counsel and Research Director",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-037.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-04-01T22:00:00.000Z",
+    "tags": [
+      "plant:NINE MILE POINT-1",
+      "type:BWR",
+      "plant:NINE MILE POINT-2"
+    ]
+  },
+  {
+    "id": "e63184cf3f6d3908031fab9f",
+    "title": "NRC Proposes $18,000 Civil Penalty Against Indiana-Based Company",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-001-iii.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-03-27T22:02:00.000Z",
+    "tags": [
+      "country:India"
+    ]
+  },
+  {
+    "id": "6e0fb8a83942649cc2cb3e9f",
+    "title": "NRC Adopts Leaner, More Risk-Focused Reactor Oversight Process",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-036.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-03-26T20:52:30.000Z",
+    "tags": []
+  },
+  {
+    "id": "733b6fe76e1be7f3eae98134",
+    "title": "NRC Unveils First New Reactor Licensing Process in Decades to Speed Deployment While Maintaining Safety",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-035.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-03-26T00:30:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "327394a9ecb64325ab9ad6dc",
+    "title": "Media Advisory: NRC Chairman Nieh to Speak at CERAWeek",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/documents/26-003-a.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-03-24T23:00:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "c64ab2c405366f7789eaf27e",
+    "title": "NRC Launches Faster, Smarter Environmental Review Program Saving Time and Resources",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-034.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-03-23T22:00:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "03bc2d9678dcdbbe48eb6e26",
+    "title": "NRC Seeks Industry Input on Future New Reactor Licensing Plans",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-033.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-03-16T19:30:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "33b4e08c901093c2658b9830",
+    "title": "Media Advisory: NRC to Hold Two Public Meetings on Fusion Machines Proposed Rule",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/documents/26-002-a.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-03-13T23:00:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "3394c9b239aea3246c622e24",
+    "title": "NRC Issues Annual Assessments for Nation’s Nuclear Plants",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-032.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-03-13T19:30:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "04de401b2aad7b0ee1db9d53",
+    "title": "NRC Proposes Caps to Signal Predictability to Incentivize Industry, Spur Innovation",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-031.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-03-12T23:00:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "9d1fede8eacda166e61183cf",
+    "title": "NRC Announces Opportunity to Request a Hearing on Paducah Laser Enrichment Facility License Application",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-030.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-03-07T00:15:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "d3d443f06708bb7281177551",
+    "title": "Media Advisory: NRC to Hold Public Meeting on Proposed Changes to Contested Hearings",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-001-a.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-03-06T01:00:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "e33a5a139dc9ec3e3fd6fd6f",
+    "title": "NRC Names Anna Bradford as New NRR Office Director",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-029.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-03-05T22:25:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "af7cd4c19db675164dde2dd1",
+    "title": "NRC Issues First Commercial Reactor Construction Approval in 10 Years For TerraPower in Wyoming",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-028.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-03-04T21:30:00.000Z",
+    "tags": [
+      "company:terrapower"
+    ]
+  },
+  {
+    "id": "9c34039017e8d69ce948a3ac",
+    "title": "NRC Begins Special Inspection at Hope Creek Nuclear Power Plant",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-002-i.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-03-04T00:36:00.000Z",
+    "tags": [
+      "plant:HOPE CREEK-1",
+      "type:BWR",
+      "plant:WOLF CREEK",
+      "type:PWR"
+    ]
+  },
+  {
+    "id": "7dd8c8b67e68361c4377b8fd",
+    "title": "NRC Proposes Significantly Restructured Hearing Timeline to Minimize Delays",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-027.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-03-03T20:45:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "0419af23532bea9f76e25012",
+    "title": "NRC Taps Jeremy Bowen to Lead New Office for Advanced Reactors",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-026.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-03-02T18:30:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "5f2a6b50f0fe9b4c58fa525d",
+    "title": "NRC Announces Opportunity to Request a Hearing on Holtec’s Limited Work Authorization Application at Palisades",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-025.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-02-27T21:30:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "fee3b297be803f322e728111",
+    "title": "NRC to Hold First Public Meeting on Executive Order 14300 RulemakingsNRC to Hold First Public Meeting on Executive Order 14300 Rulemakings",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-024.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-02-27T02:15:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "70415ef35d51ea2910b4321f",
+    "title": "NRC Kickstarts Process for Creating Regulatory Framework for Fusion Machines: 90-Day Comment Period Begins",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-023.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-02-26T23:30:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "53b2b3ef0bde3c5673460bfe",
+    "title": "NRC Announces Opportunity to Request Hearing for Crane Clean Energy Center Restart License Amendments",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-021.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-02-24T23:00:00.000Z",
+    "tags": [
+      "company:x-energy"
+    ]
+  },
+  {
+    "id": "cefd5ce9bfc1aa53278723f9",
+    "title": "NRC Atomic Safety and Licensing Board to Hold Oral Argument on Long Mott Construction Permit Application",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-020.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-02-18T23:30:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "caa0680147df207a3239363a",
+    "title": "NRC Licenses TRISO-X LLC Fuel Fabrication Facility in Tennessee",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-019.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-02-14T00:30:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "6c4de317a61facea6ee7b8f4",
+    "title": "NRC Proposes $9,000 Fine Against Puerto Rico Medical Facility for Loss of Radioactive Material",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-001-i.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-02-11T02:30:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "cb73eb7a151b6eaeb499bfed",
+    "title": "NRC Announces Opportunity to Request a Hearing on Duke Energy Carolinas’ Belews Creek Early Site Permit Application",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-018.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-02-09T21:15:00.000Z",
+    "tags": [
+      "plant:HOPE CREEK-1",
+      "type:BWR",
+      "plant:WOLF CREEK",
+      "type:PWR",
+      "company:x-energy"
+    ]
+  },
+  {
+    "id": "e291b458ca13e9e672f720b6",
+    "title": "NRC Major Reorganization Supports Efficiency, Innovation",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-017.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-02-04T23:30:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "94bae84e2578715d998addb6",
+    "title": "NRC Considering Wyoming’s Request to Amend State Agreement",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-016.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-02-03T21:10:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "43514fd509286738e3d35d95",
+    "title": "NRC Announces Opportunity to Request Hearing for Grand Gulf Early Site Permit Renewal",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-015.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-02-03T00:15:00.000Z",
+    "tags": [
+      "plant:GRAND GULF-1",
+      "type:BWR"
+    ]
+  },
+  {
+    "id": "627f2bd15724eae3ec8b73e8",
+    "title": "NRC to Host Public Symposium on Artificial Intelligence",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-014.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-02-02T23:30:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "35d95d2a47acf97f661a84ea",
+    "title": "NRC to Hold Public Meeting on Development of 2026-2030 Strategic Plan and Agency Priority Questions",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-013.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-01-30T21:30:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "a1dd3a3d98704cec2e7608b4",
+    "title": "NRC Announces Opportunity to Request Hearing for Duane Arnold Energy Center License Transfer",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-012.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-01-29T22:30:00.000Z",
+    "tags": [
+      "company:x-energy"
+    ]
+  },
+  {
+    "id": "2829a122d58de319ebe18475",
+    "title": "Registration Open for NRC’s 38th Annual Regulatory Information Conference",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-011.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-01-27T20:30:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "d663593effe7c6eb086a3da9",
+    "title": "NRC Names Christopher Carroll as Chief Financial Officer",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-010.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-01-27T00:15:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "64ca010a7e8f19574ddc84dc",
+    "title": "NRC to Hold Public Meeting to Discuss Progress on Potential Restart of Crane Clean Energy Center",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-009.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-01-23T01:15:00.000Z",
+    "tags": [
+      "company:x-energy"
+    ]
+  },
+  {
+    "id": "160a3186f124c62a264cbeb6",
+    "title": "NRC Releases Partial Holtec Application for Small Modular Reactor Construction Permit at Palisades",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-008.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-01-13T21:30:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "32073fa2b386dcf3b94385a2",
+    "title": "Registration Open for NRC Jan. 28 Standards Forum",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-007.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-01-12T22:00:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "e4bf4b21c8ba010e9cc896d6",
+    "title": "NRC Makes Belews Creek Early Site Permit Application Available for Public Review",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-006.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-01-10T02:45:00.000Z",
+    "tags": [
+      "plant:HOPE CREEK-1",
+      "type:BWR",
+      "plant:WOLF CREEK",
+      "type:PWR"
+    ]
+  },
+  {
+    "id": "8c7df134f1a229d61df857ac",
+    "title": "Ho Nieh Named 20th NRC Chairman",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-005.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-01-09T03:00:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "8a23cafec9cd79ef9c4ef0d1",
+    "title": "NRC Staff Guidance Shapes Collaboration with Interagency Partners on Reactor Designs",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-004.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-01-08T19:45:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "3095407e720e55a198b9bc8e",
+    "title": "NRC Announces Headquarters Leadership Appointments",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-003.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-01-07T02:00:00.000Z",
+    "tags": [
+      "plant:NINE MILE POINT-1",
+      "type:BWR",
+      "plant:NINE MILE POINT-2"
+    ]
+  },
+  {
+    "id": "7bac6cf21e594f690a8106c5",
+    "title": "NRC Approves Major Digital Upgrade for Commercial Reactor Safety System Controls at Limerick",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-002.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-01-05T23:30:00.000Z",
+    "tags": [
+      "plant:LIMERICK-1",
+      "type:BWR",
+      "plant:LIMERICK-2"
+    ]
+  },
+  {
+    "id": "c2001b95920f3ba5e6cc6f6d",
+    "title": "NRC’s ACRS Elects 2026 Leadership, Announces New Member and Confirms Meeting Schedule",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-001.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-01-05T21:45:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "a7aa85a8b204de9b7e745f37",
+    "title": "NRC Reflects on 2025 Successes",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2025/25-071.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-12-29T21:15:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "c28c972d91b9fa24f9051c9d",
+    "title": "Doug Weaver Sworn in as NRC Commissioner",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2025/25-070.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-12-22T20:00:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "a751e565ef6810b0d410d375",
+    "title": "‌NRC Names Mike King as Executive Director for Operations",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2025/25-069.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-12-20T02:15:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "7ced94276c7818ab985e4437",
+    "title": "NRC Schedules Public Workshop on Probabilistic Risk Assessment",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2025/25-068.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-12-20T01:00:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "62ce44000faaf1317766cc2e",
+    "title": "‌NRC Approves License Amendment for Homestake Mining Company",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2025/25-067.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-12-20T01:00:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "6baaea47c6d46bb3d0bebba5",
+    "title": "NRC Proposes $72,000 Civil Penalty Against Missouri-based Company",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2025/25-026-iii.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-12-19T20:30:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "ed0ffa8a198ff4df337e3022",
+    "title": "NRC Renews Clinton and Dresden Operating Licenses",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2025/25-066.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-12-17T19:10:00.000Z",
+    "tags": [
+      "plant:CLINTON-1",
+      "type:BWR",
+      "plant:DRESDEN-2",
+      "plant:DRESDEN-3"
+    ]
+  },
+  {
+    "id": "66d7572eabda10da9fb6ba73",
+    "title": "NRC Renews Browns Ferry Operating License",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2025/25-065.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-12-13T00:30:00.000Z",
+    "tags": [
+      "plant:BROWNS FERRY-1",
+      "type:BWR",
+      "plant:BROWNS FERRY-2",
+      "plant:BROWNS FERRY-3"
+    ]
+  },
+  {
+    "id": "ee487300b4e5d2142684eb8c",
+    "title": "‌Ho Nieh Sworn in as NRC Commissioner",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2025/25-064.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-12-04T23:45:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "f64ecb816a6e3e15bd181960",
+    "title": "NRC Completes Safety Review of Construction Permit Application For Kemmerer Power Station in Wyoming",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2025/25-063.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-12-02T00:00:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "8ff1b03f06acfe134cd7f475",
+    "title": "NRC Makes Available Partial Atomic Alchemy Construction Permit Application",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2025/25-062.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-11-21T21:00:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "47159912680220a1b71cad9d",
+    "title": "‌NRC Atomic Safety and Licensing Board Reschedules Oral Argument on Long Mott Construction Permit Application‌",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2025/25-061.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-11-21T01:00:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "6b12bcd3633293c29ad17dea",
+    "title": "NRC Approves License for Disa Technologies Inc. ‌Ahead of Anticipated Schedule",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2025/25-060.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-09-30T23:30:00.000Z",
+    "tags": [
+      "company:bwxt"
+    ]
+  },
+  {
+    "id": "d3193f2530f82718c1727e93",
+    "title": "NRC Names Andrea Kock as New NMSS Office Director",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2025/25-059.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-09-30T19:14:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "a9c4a187d754f2314cb142ee",
+    "title": "NRC Renews Point Beach Operating Licenses",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2025/25-058.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-09-29T23:15:00.000Z",
+    "tags": [
+      "plant:NINE MILE POINT-1",
+      "type:BWR",
+      "plant:NINE MILE POINT-2",
+      "plant:POINT BEACH-1",
+      "type:PWR"
+    ]
+  },
+  {
+    "id": "5c6ec6759764c32d4910d0a7",
+    "title": "*Updated* Connecticut Becomes 40th NRC Agreement State",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2025/25-057_1.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-09-25T21:00:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "a5b76cd0f6a60acf3f262046",
+    "title": "U.S., U.K. Nuclear Regulators Renew, Expand Cooperation to Speed Advanced Reactor Technical Reviews",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2025/25-056.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-09-19T01:25:00.000Z",
+    "tags": [
+      "plant:COOPER",
+      "type:BWR"
+    ]
+  },
+  {
+    "id": "ef3cf6c18422849d64fc0c06",
+    "title": "NRC To Hold 6th Annual Artificial Intelligence Workshop",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2025/25-055.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-09-17T22:15:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "af431046fbe8ac06cc0f432f",
+    "title": "NRC Atomic Safety and Licensing Board to Hold Oral Argument on Long Mott Construction Permit Application",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2025/25-054.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-09-17T18:00:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "7806eab5a75515efcfbb14fd",
+    "title": "NRC to Host 2-Day Public Hybrid Workshop on Improving Realism in Probabilistic Risk Assessment",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2025/25-053.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-09-11T08:00:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "61389e6911bf0e49ad63c605",
+    "title": "NRC Announces Senior Management Selection for Office of Nuclear Regulatory Research",
+    "summary": "",
+    "url": "https://www.nrc.gov/cdn/doc-collection-news/2025/25-052.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-09-10T20:40:51.000Z",
+    "tags": []
+  },
+  {
+    "id": "6c375d83e481937ca3dee959",
+    "title": "NRC Accepts Partial Fermi America Combined License Application",
+    "summary": "",
+    "url": "https://www.nrc.gov/cdn/doc-collection-news/2025/25-051.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-09-08T22:40:27.000Z",
+    "tags": [
+      "plant:FERMI-2",
+      "type:BWR"
+    ]
+  },
+  {
+    "id": "a1a3864751d9b99d8b30f3dc",
+    "title": "‌NRC Chairman Wright Sworn in for Third Term",
+    "summary": "",
+    "url": "https://www.nrc.gov/cdn/doc-collection-news/2025/25-050.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-09-08T21:27:07.000Z",
+    "tags": []
+  },
+  {
+    "id": "1cf8fdaefc010dc2b29d9556",
+    "title": "NRC to Discuss Apparent Violations by Holtec International at Pre-Decisional Enforcement Conference",
+    "summary": "",
+    "url": "https://www.nrc.gov/cdn/doc-collection-news/2025/25-049.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-08-25T18:57:55.000Z",
+    "tags": []
+  },
+  {
+    "id": "0e4eb73f1784ae838e538401",
+    "title": "NRC, DOE Partner on Commercial HALEU Fuel and Transport",
+    "summary": "",
+    "url": "https://www.nrc.gov/cdn/doc-collection-news/2025/25-048.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-08-20T19:43:21.000Z",
+    "tags": []
+  },
+  {
+    "id": "231865641bd9911e8bd87e90",
+    "title": "NRC to Discuss Oyster Creek License Termination Plan, Gather Public Comments during Sept. 17 Meeting",
+    "summary": "",
+    "url": "https://www.nrc.gov/cdn/doc-collection-news/2025/25-047.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-08-15T19:31:01.000Z",
+    "tags": [
+      "plant:HOPE CREEK-1",
+      "type:BWR",
+      "plant:WOLF CREEK",
+      "type:PWR"
+    ]
+  },
+  {
+    "id": "5cdd39436d5b5b4bf3257808",
+    "title": "NRC Issues Confirmatory Order to Quad Cities Nuclear Plant",
+    "summary": "",
+    "url": "https://www.nrc.gov/cdn/doc-collection-news/2025/25-025-iii.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-07-31T23:23:15.000Z",
+    "tags": [
+      "plant:QUAD CITIES-1",
+      "type:BWR",
+      "plant:QUAD CITIES-2"
+    ]
+  },
+  {
+    "id": "9e64b9a97b5d64ec317f3b80",
+    "title": "‌NRC Proposes $36,000 Civil Penalty Against Metro Cardiovascular Diagnostics‌",
+    "summary": "",
+    "url": "https://www.nrc.gov/cdn/doc-collection-news/2025/25-024-iii.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-07-30T18:41:30.000Z",
+    "tags": []
+  },
+  {
+    "id": "286d94b887db78043f7a7446",
+    "title": "NRC Proposes $9,000 Civil Penalty Against Aluminum Manufacturer Alcoa",
+    "summary": "",
+    "url": "https://www.nrc.gov/cdn/doc-collection-news/2025/25-023-iii.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-07-25T18:21:15.000Z",
+    "tags": []
+  },
+  {
+    "id": "52b0f53107839aeb0906973b",
+    "title": "NRC Approves Major Licensing Actions Required for Restart of Palisades NPP",
+    "summary": "",
+    "url": "https://www.nrc.gov/cdn/doc-collection-news/2025/25-046.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-07-24T23:28:33.000Z",
+    "tags": []
+  },
+  {
+    "id": "a86dc19cdb4c19a4f25db75b",
+    "title": "NRC Announces Opportunity to Request a Hearing on TVA Clinch River Construction Permit Application",
+    "summary": "",
+    "url": "https://www.nrc.gov/cdn/doc-collection-news/2025/25-045.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-07-22T23:17:55.000Z",
+    "tags": [
+      "plant:RIVER BEND-1",
+      "type:BWR"
+    ]
+  },
+  {
+    "id": "58f96e7da9638c3880347676",
+    "title": "NRC Pilots Risk-informed Inspection Changes",
+    "summary": "",
+    "url": "https://www.nrc.gov/cdn/doc-collection-news/2025/25-044.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-07-21T22:58:40.000Z",
+    "tags": []
+  },
+  {
+    "id": "0cad22222c210640fffa09f7",
+    "title": "‌NRC Will Hold Public Meetings to Discuss Potential Restart of Crane Clean Energy Center‌",
+    "summary": "",
+    "url": "https://www.nrc.gov/cdn/doc-collection-news/2025/25-043.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-07-21T18:36:52.000Z",
+    "tags": [
+      "company:x-energy"
+    ]
+  },
+  {
+    "id": "1f9da6b0a85e29969d3ce6b2",
+    "title": "Nuclear Regulatory Commission Statement to Stakeholders",
+    "summary": "",
+    "url": "https://www.nrc.gov/cdn/doc-collection-news/2025/25-042.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-07-14T23:27:13.000Z",
+    "tags": []
+  },
+  {
+    "id": "cffb034b1e655b86a13efe97",
+    "title": "NRC Renews Perry Nuclear Power Plant Operating License",
+    "summary": "",
+    "url": "https://www.nrc.gov/cdn/doc-collection-news/2025/25-041.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-07-07T23:19:51.000Z",
+    "tags": [
+      "plant:PERRY-1",
+      "type:BWR"
+    ]
+  },
+  {
+    "id": "be3dcd705cb88869c331de62",
+    "title": "NRC to Discuss 2024 Performance of Donald C. Cook Nuclear Power Plant",
+    "summary": "",
+    "url": "https://www.nrc.gov/cdn/doc-collection-news/2025/25-022-iii.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-07-03T18:13:10.000Z",
+    "tags": []
+  },
+  {
+    "id": "c8ee00717444583e793e4df9",
+    "title": "NRC Accelerates Review of Kemmerer Power Station Construction Permit",
+    "summary": "",
+    "url": "https://www.nrc.gov/cdn/doc-collection-news/2025/25-040.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-07-02T21:47:35.000Z",
+    "tags": []
+  },
+  {
+    "id": "e55aae3929c1e8d69a17ad58",
+    "title": "NRC Renews V.C. Summer Operating License",
+    "summary": "",
+    "url": "https://www.nrc.gov/cdn/doc-collection-news/2025/25-039.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-07-01T00:27:06.000Z",
+    "tags": [
+      "plant:SUMMER-1",
+      "type:PWR"
+    ]
+  },
+  {
+    "id": "7168ef55babb1cb7a7cf5ac0",
+    "title": "NRC Reduces Hourly Rate for Advanced Nuclear Reactor Applicants and Pre-Applicants",
+    "summary": "",
+    "url": "https://www.nrc.gov/cdn/doc-collection-news/2025/25-038.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-06-24T23:03:20.000Z",
+    "tags": []
+  },
+  {
+    "id": "077e1e86baf7c19e7c9a8d03",
+    "title": "NRC Announces Opportunity to Request a Hearing on the Hatch Subsequent License Renewal Application",
+    "summary": "",
+    "url": "https://www.nrc.gov/cdn/doc-collection-news/2025/25-037.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-06-20T19:22:12.000Z",
+    "tags": [
+      "plant:HATCH-1",
+      "type:BWR",
+      "plant:HATCH-2"
+    ]
+  },
+  {
+    "id": "9f2c54fd7f9555def0d1de71",
+    "title": "NRC Advances Factory-Built Microreactor Policy",
+    "summary": "",
+    "url": "https://www.nrc.gov/cdn/doc-collection-news/2025/25-036.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-06-18T21:06:02.000Z",
+    "tags": []
+  },
+  {
+    "id": "554e487a8f79cbdd0bf0e8ac",
+    "title": "NRC to Hold Open House to Discuss 2024 Performance of Perry Nuclear Power Plant",
+    "summary": "",
+    "url": "https://www.nrc.gov/cdn/doc-collection-news/2025/25-021-iii.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-06-17T19:12:05.000Z",
+    "tags": [
+      "plant:PERRY-1",
+      "type:BWR"
+    ]
+  },
+  {
+    "id": "f724395e53dc85e7f9699065",
+    "title": "NRC to Hold Open House to Discuss 2024 Performance of Point Beach Nuclear Power Plant",
+    "summary": "",
+    "url": "https://www.nrc.gov/cdn/doc-collection-news/2025/25-020-iii.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-06-12T19:55:23.000Z",
+    "tags": [
+      "plant:NINE MILE POINT-1",
+      "type:BWR",
+      "plant:NINE MILE POINT-2",
+      "plant:POINT BEACH-1",
+      "type:PWR"
+    ]
+  },
+  {
+    "id": "83ed07ef0fdda7d31de463ec",
+    "title": "NRC Proposes $9,000 Civil Penalty to Snyder and Associates Inc.",
+    "summary": "",
+    "url": "https://www.nrc.gov/cdn/doc-collection-news/2025/25-019-iii.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-06-11T18:45:07.000Z",
+    "tags": []
+  },
+  {
+    "id": "53b173679789a980eff5d222",
+    "title": "NRC Announces Opportunity to Request a Hearing on Long Mott Generating Station Construction Permit Application",
+    "summary": "",
+    "url": "https://www.nrc.gov/cdn/doc-collection-news/2025/25-035.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-06-10T18:00:43.000Z",
+    "tags": []
+  },
+  {
+    "id": "710e8d88223e66fca417c9cd",
+    "title": "NRC to Discuss 2024 Performance of Clinton Nuclear Power Plant",
+    "summary": "",
+    "url": "https://www.nrc.gov/cdn/doc-collection-news/2025/25-018-iii.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-06-05T18:46:53.000Z",
+    "tags": [
+      "plant:CLINTON-1",
+      "type:BWR"
+    ]
+  },
+  {
+    "id": "354ce19d19932e1058f0e485",
+    "title": "NRC to Hold Open House to Discuss 2024 Performance of  Monticello Nuclear Power Plan",
+    "summary": "",
+    "url": "https://www.nrc.gov/cdn/doc-collection-news/2025/25-017-iii.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-06-04T21:40:05.000Z",
+    "tags": [
+      "plant:MONTICELLO",
+      "type:BWR"
+    ]
+  },
+  {
+    "id": "95fccb4f5cc2f7df1008a95e",
+    "title": "NRC to Hold Open House to Discuss 2024 Performance of Prairie Island Nuclear Power Plant",
+    "summary": "",
+    "url": "https://www.nrc.gov/cdn/doc-collection-news/2025/25-016-iii.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-06-03T22:14:12.000Z",
+    "tags": [
+      "plant:PRAIRIE ISLAND-1",
+      "type:PWR",
+      "plant:PRAIRIE ISLAND-2"
+    ]
+  },
+  {
+    "id": "33200660057d7b0c1e06d845",
+    "title": "NRC Begins Special Inspection at Quad Cities Nuclear Power Plant",
+    "summary": "",
+    "url": "https://www.nrc.gov/cdn/doc-collection-news/2025/25-015-iii.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-06-03T18:45:27.000Z",
+    "tags": [
+      "plant:QUAD CITIES-1",
+      "type:BWR",
+      "plant:QUAD CITIES-2"
+    ]
+  },
+  {
+    "id": "e9d332f0c0724940cd2704cf",
+    "title": "NRC Issues Final Environmental Assessment for Palisades Nuclear Plant Restart Application",
+    "summary": "",
+    "url": "https://www.nrc.gov/cdn/doc-collection-news/2025/25-034.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-05-30T16:24:28.000Z",
+    "tags": []
+  },
+  {
+    "id": "43c3f84fd941b9481c76a123",
+    "title": "NRC Approves Standard Design for NuScale US460 Small Modular Reactor",
+    "summary": "",
+    "url": "https://www.nrc.gov/cdn/doc-collection-news/2025/25-033.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-05-29T20:45:50.000Z",
+    "tags": []
+  },
+  {
+    "id": "1e6c12a32918f10e040994ff",
+    "title": "NRC Makes Available Hatch Nuclear Power Plant’s Subsequent License Renewal Application",
+    "summary": "",
+    "url": "https://www.nrc.gov/cdn/doc-collection-news/2025/25-032.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-05-22T16:38:28.000Z",
+    "tags": [
+      "plant:HATCH-1",
+      "type:BWR",
+      "plant:HATCH-2"
+    ]
+  },
+  {
+    "id": "2b789d67ae7cc7a4b70117aa",
+    "title": "NRC Begins Special Inspection at Curium",
+    "summary": "",
+    "url": "https://www.nrc.gov/cdn/doc-collection-news/2025/25-014-iii.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-05-19T22:11:37.000Z",
+    "tags": []
+  },
+  {
+    "id": "a25b9624bd698fd2f398197e",
+    "title": "NRC to Hold Virtual Meeting to Discuss Safety Performance at Operating Nuclear Plants in Maryland, New Jersey, New York and Pennsylvania",
+    "summary": "",
+    "url": "https://www.nrc.gov/cdn/doc-collection-news/2025/25-006-i.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-05-14T21:25:39.000Z",
+    "tags": []
+  },
+  {
+    "id": "72b434e85e5907413d0e7432",
+    "title": "NRC to Hold a Regulatory Conference with Entergy Operations May 21 to Discuss a Proposed Violation",
+    "summary": "",
+    "url": "https://www.nrc.gov/cdn/doc-collection-news/2025/25-002-iv.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-05-13T21:32:43.000Z",
+    "tags": []
+  },
+  {
+    "id": "4247b63f15e351e201126a87",
+    "title": "NRC Accepts for Review Construction Permit Application for Long Mott Generating Station",
+    "summary": "",
+    "url": "https://www.nrc.gov/cdn/doc-collection-news/2025/25-031.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-05-13T19:39:31.000Z",
+    "tags": []
+  },
+  {
+    "id": "f8b2b02d60d3da03150225d6",
+    "title": "NRC Begins Special Inspection at Quad Cities Nuclear Power Plant",
+    "summary": "",
+    "url": "https://www.nrc.gov/cdn/doc-collection-news/2025/25-013-iii.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-05-12T21:01:57.000Z",
+    "tags": [
+      "plant:QUAD CITIES-1",
+      "type:BWR",
+      "plant:QUAD CITIES-2"
+    ]
+  },
+  {
+    "id": "8f5138a8aad73867e6df8885",
+    "title": "NRC Announces Opportunity to Request a Hearing on Disa License Application",
+    "summary": "",
+    "url": "https://www.nrc.gov/cdn/doc-collection-news/2025/25-030.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-05-12T19:26:44.000Z",
+    "tags": []
+  },
+  {
+    "id": "e640823f89e42394bd2cf25d",
+    "title": "NRC Issues Final Environmental Impact Statement for V.C. Summer Nuclear Station Subsequent License Renewal",
+    "summary": "",
+    "url": "https://www.nrc.gov/cdn/doc-collection-news/2025/25-029.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-05-12T17:30:18.000Z",
+    "tags": [
+      "plant:SUMMER-1",
+      "type:PWR"
+    ]
+  },
+  {
+    "id": "e05010df797a9a9fdfeb3cc3",
+    "title": "NRC Announces Opportunity to Request Hearing for the Robinson Subsequent License Renewal Application",
+    "summary": "",
+    "url": "https://www.nrc.gov/cdn/doc-collection-news/2025/25-028.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-05-08T20:18:20.000Z",
+    "tags": [
+      "plant:ROBINSON-2",
+      "type:PWR"
+    ]
+  },
+  {
+    "id": "ffe89b9d1237d13181ff73ba",
+    "title": "NRC Schedules Open House to Discuss Vogtle Nuclear Power Plant Performance",
+    "summary": "",
+    "url": "https://www.nrc.gov/cdn/doc-collection-news/2025/25-016-ii.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-05-08T19:02:10.000Z",
+    "tags": [
+      "plant:VOGTLE-1",
+      "type:PWR",
+      "plant:VOGTLE-2",
+      "plant:VOGTLE-3"
+    ]
+  },
+  {
+    "id": "dcabd461fd4191853196ce9d",
+    "title": "NRC Issues Exemption for Proposed Kemmerer Power Station Unit 1 Project",
+    "summary": "",
+    "url": "https://www.nrc.gov/cdn/doc-collection-news/2025/25-027.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2025-05-08T17:30:53.000Z",
+    "tags": []
+  },
+  {
+    "id": "e010c0a9178614e7382ec377",
+    "title": "Energy Secretary Chris Wright to Speak at NRC’s 38th Regulatory Information Conference",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-022.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2023-02-26T21:40:00.000Z",
+    "tags": [
+      "company:x-energy"
+    ]
+  }
+]
