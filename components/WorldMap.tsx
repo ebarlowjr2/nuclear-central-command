@@ -1,7 +1,8 @@
 'use client';
 
 import * as React from 'react';
-import * as reactorModule from '../lib/reactors/localData';
+import { LOCAL_REACTORS } from '../lib/reactors/localData';
+import type { Reactor } from '../lib/reactors/types';
 
 type ReactorLike = Record<string, unknown>;
 
@@ -56,7 +57,7 @@ function WorldMap({ compact = false }: WorldMapProps) {
   const rotationRef = React.useRef<Rotation>({ yaw: 0.2, pitch: -0.12 });
   const dragRef = React.useRef({ dragging: false, x: 0, y: 0 });
   const sizeRef = React.useRef({ width: 0, height: 0, dpr: 1 });
-  const points = React.useMemo(() => normalizeReactorPoints(reactorModule as Record<string, unknown>), []);
+  const points = React.useMemo(() => normalizeReactorPoints(LOCAL_REACTORS), []);
   const stars = React.useMemo(() => buildStars(180), []);
 
   React.useEffect(() => {
@@ -267,6 +268,29 @@ function WorldMap({ compact = false }: WorldMapProps) {
         <LegendDot color={STATUS_COLORS.shutdown} label="Shutdown" />
         <span style={{ opacity: 0.7 }}>Total capacity: {formatPower(summary.totalMw)}</span>
       </div>
+
+      {points.length === 0 ? (
+        <div
+          style={{
+            position: 'absolute',
+            inset: 0,
+            display: 'grid',
+            placeItems: 'center',
+            color: '#e2e8f0',
+            textAlign: 'center',
+            pointerEvents: 'none',
+            padding: 24,
+          }}
+        >
+          <div style={{ maxWidth: 420 }}>
+            <div style={{ fontSize: 18, fontWeight: 700, marginBottom: 8 }}>No plotted reactor coordinates yet</div>
+            <div style={{ fontSize: 14, lineHeight: 1.6, color: '#cbd5e1' }}>
+              The globe loads, but the current dataset does not include enough latitude/longitude data to place any
+              visible markers.
+            </div>
+          </div>
+        </div>
+      ) : null}
     </div>
   );
 }
@@ -525,83 +549,28 @@ function rotatePoint(lat: number, lng: number, yaw: number, pitch: number) {
   return { x, y, depth: (z + 1) / 2 };
 }
 
-function normalizeReactorPoints(mod: Record<string, unknown>): GlobePoint[] {
-  const rawItems = findDataArray(mod);
-  return rawItems
+function normalizeReactorPoints(items: Reactor[]): GlobePoint[] {
+  return items
     .map((item, index) => normalizeReactorPoint(item, index))
     .filter((point): point is GlobePoint => Boolean(point));
 }
 
-function findDataArray(mod: Record<string, unknown>): ReactorLike[] {
-  const seen = new Set<unknown>();
-  const arrays: ReactorLike[][] = [];
-  const functionsToTry = ['getReactors', 'loadReactors', 'getReactorData', 'reactors', 'default'];
-
-  const visit = (value: unknown, depth = 0) => {
-    if (!value || seen.has(value) || depth > 3) return;
-    seen.add(value);
-
-    if (Array.isArray(value)) {
-      arrays.push(value as ReactorLike[]);
-      return;
-    }
-
-    if (typeof value === 'function') {
-      try {
-        visit((value as () => unknown)(), depth + 1);
-      } catch {
-        // Ignore helper functions that need arguments or browser state.
-      }
-      return;
-    }
-
-    if (typeof value === 'object') {
-      for (const key of functionsToTry) {
-        if (key in (value as Record<string, unknown>)) {
-          visit((value as Record<string, unknown>)[key], depth + 1);
-        }
-      }
-
-      for (const nested of Object.values(value as Record<string, unknown>)) {
-        if (Array.isArray(nested)) {
-          arrays.push(nested as ReactorLike[]);
-        }
-      }
-    }
-  };
-
-  visit(mod);
-
-  const ranked = arrays
-    .map((array) => ({ array, score: array.reduce((sum, item) => sum + (isPointLike(item) ? 1 : 0), 0) }))
-    .filter((entry) => entry.score > 0)
-    .sort((a, b) => b.score - a.score);
-
-  return ranked[0]?.array ?? [];
-}
-
-function isPointLike(item: unknown) {
-  if (!item || typeof item !== 'object') return false;
-  const record = item as Record<string, unknown>;
-  return NUMBER_KEYS.some((key) => typeof toNumber(record[key]) === 'number') && LNG_KEYS.some((key) => typeof toNumber(record[key]) === 'number');
-}
-
-function normalizeReactorPoint(item: ReactorLike, index: number): GlobePoint | null {
-  const lat = readNumber(item, NUMBER_KEYS);
-  const lng = readNumber(item, LNG_KEYS);
+function normalizeReactorPoint(item: Reactor, index: number): GlobePoint | null {
+  const lat = item.lat;
+  const lng = item.lng;
 
   if (lat === null || lng === null) {
     return null;
   }
 
-  const title = readText(item, NAME_KEYS) ?? `Reactor ${index + 1}`;
-  const status = readText(item, STATUS_KEYS) ?? 'operating';
-  const country = readText(item, COUNTRY_KEYS) ?? 'Unknown';
-  const powerMw = readNumber(item, POWER_KEYS);
+  const title = item.name?.trim() || item.plant?.trim() || `Reactor ${index + 1}`;
+  const status = item.status || 'operating';
+  const country = item.country || 'Unknown';
+  const powerMw = item.capacityMWe;
   const color = resolveStatusColor(status);
 
   return {
-    id: readText(item, ['id', 'reactorId', 'plantId', 'code']) ?? `${title}-${index}`,
+    id: item.id || `${title}-${index}`,
     title,
     lat,
     lng,
@@ -610,47 +579,6 @@ function normalizeReactorPoint(item: ReactorLike, index: number): GlobePoint | n
     powerMw,
     color,
   };
-}
-
-function readText(item: ReactorLike, keys: string[]): string | null {
-  for (const key of keys) {
-    const value = item[key];
-    if (typeof value === 'string' && value.trim()) {
-      return value.trim();
-    }
-    if (typeof value === 'number' && Number.isFinite(value)) {
-      return String(value);
-    }
-  }
-
-  return null;
-}
-
-function readNumber(item: ReactorLike, keys: string[]): number | null {
-  for (const key of keys) {
-    const value = item[key];
-    const number = toNumber(value);
-    if (number !== null) {
-      return number;
-    }
-  }
-
-  return null;
-}
-
-function toNumber(value: unknown): number | null {
-  if (typeof value === 'number' && Number.isFinite(value)) {
-    return value;
-  }
-
-  if (typeof value === 'string') {
-    const parsed = Number.parseFloat(value.replace(/,/g, ''));
-    if (Number.isFinite(parsed)) {
-      return parsed;
-    }
-  }
-
-  return null;
 }
 
 function resolveStatusColor(status: string) {
