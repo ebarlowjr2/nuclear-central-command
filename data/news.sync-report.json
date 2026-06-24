@@ -1,9 +1,84 @@
 {
   "ok": true,
-  "ranAt": null,
-  "total": 0,
-  "inserted": 0,
-  "updated": 0,
-  "sources": []
+  "ranAt": "2026-06-24T09:37:15.748Z",
+  "total": 416,
+  "inserted": 131,
+  "updated": 195,
+  "sources": [
+    {
+      "source": "World Nuclear News",
+      "ok": true,
+      "fetched": 45,
+      "kept": 45,
+      "skippedOld": 0,
+      "skippedNoUrl": 0,
+      "skippedNoTitle": 0
+    },
+    {
+      "source": "Nuclear Engineering International",
+      "ok": true,
+      "fetched": 10,
+      "kept": 10,
+      "skippedOld": 0,
+      "skippedNoUrl": 0,
+      "skippedNoTitle": 0
+    },
+    {
+      "source": "IAEA News",
+      "ok": false,
+      "error": "Status code 403"
+    },
+    {
+      "source": "American Nuclear Society",
+      "ok": false,
+      "error": "Status code 404"
+    },
+    {
+      "source": "World Nuclear Association",
+      "ok": false,
+      "error": "Status code 404"
+    },
+    {
+      "source": "DOE Office of Nuclear Energy",
+      "ok": false,
+      "error": "Status code 404"
+    },
+    {
+      "source": "POWER Magazine",
+      "ok": true,
+      "fetched": 10,
+      "kept": 10,
+      "skippedOld": 0,
+      "skippedNoUrl": 0,
+      "skippedNoTitle": 0
+    },
+    {
+      "source": "NRC News Releases",
+      "ok": true,
+      "fetched": 163,
+      "kept": 162,
+      "skippedOld": 1,
+      "skippedNoUrl": 0,
+      "skippedNoTitle": 0
+    },
+    {
+      "source": "NRC Power Reactor Status",
+      "ok": true,
+      "fetched": 99,
+      "kept": 99,
+      "skippedOld": 0,
+      "skippedNoUrl": 0,
+      "skippedNoTitle": 0
+    },
+    {
+      "source": "Nuclear Innovation Alliance",
+      "ok": false,
+      "error": "Status code 404"
+    },
+    {
+      "source": "Nuclear Energy Institute",
+      "ok": false,
+      "error": "Status code 403"
+    }
+  ]
 }
-
