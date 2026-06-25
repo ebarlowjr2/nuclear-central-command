@@ -4,82 +4,83 @@ import * as React from 'react';
 import { LOCAL_REACTORS } from '../lib/reactors/localData';
 import type { Reactor } from '../lib/reactors/types';
 
-type ReactorLike = Record<string, unknown>;
-
-type GlobePoint = {
+type GlobeMarker = {
   id: string;
-  title: string;
   lat: number;
   lng: number;
-  status: string;
-  country: string;
-  powerMw: number | null;
-  color: string;
+  label?: string;
+  color?: string;
 };
 
 type WorldMapProps = {
   compact?: boolean;
+  markers?: GlobeMarker[];
 };
 
-type Rotation = {
-  yaw: number;
-  pitch: number;
+type Size = {
+  width: number;
+  height: number;
+  dpr: number;
 };
 
-type Star = {
+type Point3D = {
   x: number;
   y: number;
-  radius: number;
-  alpha: number;
+  z: number;
 };
 
-const STATUS_COLORS: Record<string, string> = {
-  operating: '#34d399',
-  active: '#34d399',
-  operational: '#34d399',
-  planned: '#fbbf24',
-  underConstruction: '#f59e0b',
-  shutdown: '#94a3b8',
-  retired: '#94a3b8',
-  default: '#7dd3fc',
+type ScreenPoint = {
+  x: number;
+  y: number;
+  z: number;
 };
 
-const NUMBER_KEYS = ['lat', 'latitude', 'latDeg', 'y'];
-const LNG_KEYS = ['lng', 'lon', 'long', 'longitude', 'lngDeg', 'x'];
-const NAME_KEYS = ['name', 'plantName', 'reactor', 'title', 'site', 'facility', 'unit'];
-const COUNTRY_KEYS = ['country', 'nation', 'region'];
-const STATUS_KEYS = ['status', 'operatingStatus', 'operationalStatus', 'state'];
-const POWER_KEYS = ['powerMw', 'capacity', 'capacityMw', 'mwe', 'netCapacity', 'grossCapacity'];
+const GRID_COLOR = 'rgba(125, 211, 252, 0.16)';
+const GRID_COLOR_MINOR = 'rgba(148, 163, 184, 0.10)';
+const POINT_COLOR = '#fbbf24';
+const ARC_COLOR = 'rgba(56, 189, 248, 0.26)';
+const ARC_COLOR_SOFT = 'rgba(59, 130, 246, 0.16)';
 
-function WorldMap({ compact = false }: WorldMapProps) {
+const DEFAULT_MARKERS: GlobeMarker[] = [];
+
+const STAR_COUNT = 160;
+
+function WorldMap({ compact = false, markers = DEFAULT_MARKERS }: WorldMapProps) {
   const canvasRef = React.useRef<HTMLCanvasElement | null>(null);
   const containerRef = React.useRef<HTMLDivElement | null>(null);
-  const rotationRef = React.useRef<Rotation>({ yaw: 0.2, pitch: -0.12 });
+  const sizeRef = React.useRef<Size>({ width: 0, height: 0, dpr: 1 });
+  const rotationRef = React.useRef({ yaw: 0.2, pitch: -0.15 });
   const dragRef = React.useRef({ dragging: false, x: 0, y: 0 });
-  const sizeRef = React.useRef({ width: 0, height: 0, dpr: 1 });
-  const points = React.useMemo(() => normalizeReactorPoints(LOCAL_REACTORS), []);
-  const stars = React.useMemo(() => buildStars(180), []);
+  const hoveredRef = React.useRef(false);
+  const stars = React.useMemo(() => createStars(STAR_COUNT), []);
+  const reactorMarkers = React.useMemo(() => normalizeReactorMarkers(LOCAL_REACTORS), []);
+  const visibleMarkers = React.useMemo(() => (markers.length ? markers : reactorMarkers), [markers, reactorMarkers]);
+  const arcs = React.useMemo(() => buildArcs(visibleMarkers), [visibleMarkers]);
 
   React.useEffect(() => {
     const canvas = canvasRef.current;
     const container = containerRef.current;
-    if (!canvas || !container) return;
+
+    if (!canvas || !container) {
+      return;
+    }
 
     const context = canvas.getContext('2d');
-    if (!context) return;
+    if (!context) {
+      return;
+    }
 
     const resize = () => {
       const rect = container.getBoundingClientRect();
       const dpr = Math.min(window.devicePixelRatio || 1, 2);
-      sizeRef.current = {
-        width: Math.max(320, rect.width),
-        height: Math.max(440, rect.height),
-        dpr,
-      };
-      canvas.width = Math.floor(sizeRef.current.width * dpr);
-      canvas.height = Math.floor(sizeRef.current.height * dpr);
-      canvas.style.width = `${sizeRef.current.width}px`;
-      canvas.style.height = `${sizeRef.current.height}px`;
+      const width = Math.max(320, rect.width);
+      const height = Math.max(compact ? 480 : 720, rect.height);
+
+      sizeRef.current = { width, height, dpr };
+      canvas.width = Math.floor(width * dpr);
+      canvas.height = Math.floor(height * dpr);
+      canvas.style.width = `${width}px`;
+      canvas.style.height = `${height}px`;
       context.setTransform(dpr, 0, 0, dpr, 0, 0);
     };
 
@@ -89,57 +90,54 @@ function WorldMap({ compact = false }: WorldMapProps) {
     observer.observe(container);
 
     let frame = 0;
-    let animationFrame = 0;
+    let raf = 0;
 
     const render = () => {
       const { width, height } = sizeRef.current;
       const ctx = context;
-      const centerX = width / 2;
-      const centerY = height / 2;
-      const globeRadius = Math.min(width, height) * (compact ? 0.31 : 0.34);
+      const cx = width / 2;
+      const cy = height / 2;
+      const radius = Math.min(width, height) * (compact ? 0.30 : 0.35);
       const yaw = rotationRef.current.yaw;
       const pitch = rotationRef.current.pitch;
 
       ctx.clearRect(0, 0, width, height);
 
-      const background = ctx.createRadialGradient(centerX * 0.95, centerY * 0.9, 20, centerX, centerY, Math.max(width, height));
-      background.addColorStop(0, '#10233b');
-      background.addColorStop(0.55, '#081220');
-      background.addColorStop(1, '#030712');
-      ctx.fillStyle = background;
-      ctx.fillRect(0, 0, width, height);
-
-      drawStars(ctx, stars, width, height, frame);
-      drawGlow(ctx, centerX, centerY, globeRadius);
+      drawBackground(ctx, width, height, stars, frame);
+      drawHalo(ctx, cx, cy, radius);
 
       ctx.save();
       ctx.beginPath();
-      ctx.arc(centerX, centerY, globeRadius, 0, Math.PI * 2);
+      ctx.arc(cx, cy, radius, 0, Math.PI * 2);
       ctx.clip();
 
-      drawOcean(ctx, centerX, centerY, globeRadius);
-      drawGraticule(ctx, centerX, centerY, globeRadius, yaw, pitch);
-      drawPoints(ctx, points, centerX, centerY, globeRadius, yaw, pitch, frame);
+      drawOcean(ctx, cx, cy, radius);
+      drawAtmosphere(ctx, cx, cy, radius);
+      drawGraticule(ctx, cx, cy, radius, yaw, pitch);
+      drawLandmasses(ctx, cx, cy, radius);
+      drawArcs(ctx, arcs, cx, cy, radius, yaw, pitch, frame);
+      drawMarkers(ctx, visibleMarkers, cx, cy, radius, yaw, pitch, frame);
 
       ctx.restore();
 
-      drawRim(ctx, centerX, centerY, globeRadius);
-      drawCaption(ctx, width, height, points.length);
+      drawRim(ctx, cx, cy, radius);
+      drawCaption(ctx, width, height, visibleMarkers.length);
 
       frame += 1;
-      if (!dragRef.current.dragging) {
+      if (!dragRef.current.dragging && !hoveredRef.current) {
         rotationRef.current.yaw += 0.0012;
       }
-      animationFrame = window.requestAnimationFrame(render);
+      raf = window.requestAnimationFrame(render);
     };
 
-    animationFrame = window.requestAnimationFrame(render);
+    raf = window.requestAnimationFrame(render);
 
     const onPointerDown = (event: PointerEvent) => {
       dragRef.current.dragging = true;
       dragRef.current.x = event.clientX;
       dragRef.current.y = event.clientY;
       container.setPointerCapture(event.pointerId);
+      container.style.cursor = 'grabbing';
     };
 
     const onPointerMove = (event: PointerEvent) => {
@@ -154,44 +152,42 @@ function WorldMap({ compact = false }: WorldMapProps) {
 
     const onPointerUp = (event: PointerEvent) => {
       dragRef.current.dragging = false;
+      container.style.cursor = 'grab';
       try {
         container.releasePointerCapture(event.pointerId);
       } catch {
-        // Ignore release errors when capture has already been cleared.
+        // Pointer capture may already be gone on some browsers.
       }
     };
 
+    const onPointerEnter = () => {
+      hoveredRef.current = true;
+    };
+
     const onPointerLeave = () => {
+      hoveredRef.current = false;
       dragRef.current.dragging = false;
+      container.style.cursor = 'grab';
     };
 
     container.addEventListener('pointerdown', onPointerDown);
     container.addEventListener('pointermove', onPointerMove);
     container.addEventListener('pointerup', onPointerUp);
     container.addEventListener('pointercancel', onPointerUp);
+    container.addEventListener('pointerenter', onPointerEnter);
     container.addEventListener('pointerleave', onPointerLeave);
 
     return () => {
       observer.disconnect();
-      window.cancelAnimationFrame(animationFrame);
+      window.cancelAnimationFrame(raf);
       container.removeEventListener('pointerdown', onPointerDown);
       container.removeEventListener('pointermove', onPointerMove);
       container.removeEventListener('pointerup', onPointerUp);
       container.removeEventListener('pointercancel', onPointerUp);
+      container.removeEventListener('pointerenter', onPointerEnter);
       container.removeEventListener('pointerleave', onPointerLeave);
     };
-  }, [compact, points, stars]);
-
-  const summary = React.useMemo(() => {
-    const countries = new Set(points.map((point) => point.country || 'Unknown'));
-    const totalMw = points.reduce((sum, point) => sum + (point.powerMw || 0), 0);
-
-    return {
-      countries: countries.size,
-      totalMw,
-      operating: points.filter((point) => /oper|active/i.test(point.status)).length,
-    };
-  }, [points]);
+  }, [arcs, compact, stars, visibleMarkers]);
 
   return (
     <div
@@ -199,12 +195,12 @@ function WorldMap({ compact = false }: WorldMapProps) {
       style={{
         position: 'relative',
         width: '100%',
-        minHeight: compact ? 440 : 720,
+        minHeight: compact ? 520 : 760,
         borderRadius: 28,
         overflow: 'hidden',
-        border: '1px solid rgba(148, 163, 184, 0.2)',
-        boxShadow: '0 30px 90px rgba(2, 6, 23, 0.45)',
-        background: 'linear-gradient(180deg, #08101c 0%, #02060d 100%)',
+        border: '1px solid rgba(148, 163, 184, 0.18)',
+        boxShadow: '0 30px 90px rgba(2, 6, 23, 0.52)',
+        background: 'linear-gradient(180deg, #060c18 0%, #02050b 100%)',
         cursor: 'grab',
       }}
     >
@@ -213,11 +209,24 @@ function WorldMap({ compact = false }: WorldMapProps) {
       <div
         style={{
           position: 'absolute',
-          left: 22,
-          top: 22,
-          maxWidth: 360,
+          inset: '10%',
+          borderRadius: '50%',
+          background:
+            'radial-gradient(circle at 32% 28%, rgba(255,255,255,0.20) 0%, rgba(255,255,255,0.08) 10%, rgba(255,255,255,0.02) 20%, rgba(255,255,255,0) 45%)',
+          pointerEvents: 'none',
+          mixBlendMode: 'screen',
+          filter: 'blur(3px)',
+        }}
+      />
+
+      <div
+        style={{
+          position: 'absolute',
+          left: 28,
+          top: 28,
+          maxWidth: 440,
           color: '#f8fafc',
-          textShadow: '0 1px 2px rgba(0, 0, 0, 0.5)',
+          textShadow: '0 1px 2px rgba(0, 0, 0, 0.45)',
           pointerEvents: 'none',
         }}
       >
@@ -225,108 +234,41 @@ function WorldMap({ compact = false }: WorldMapProps) {
           Reactor globe
         </div>
         <h2 style={{ margin: '10px 0 8px', fontSize: compact ? 26 : 34, lineHeight: 1.05 }}>
-          Command centers mapped on a rotating Earth.
+          Globe view first, reactor locations next.
         </h2>
         <p style={{ margin: 0, fontSize: 14, lineHeight: 1.6, color: '#cbd5e1' }}>
-          Drag to rotate. Reactor locations are projected directly from your existing dataset.
+          This is the globe surface we can build on. We’ll add reactor sites once the view is stable.
         </p>
       </div>
 
       <div
         style={{
           position: 'absolute',
-          right: 18,
-          bottom: 18,
-          display: 'grid',
+          left: 28,
+          bottom: 24,
+          display: 'inline-flex',
           gap: 10,
-          gridTemplateColumns: compact ? '1fr' : 'repeat(3, minmax(92px, 1fr))',
-          color: '#e2e8f0',
-          pointerEvents: 'none',
-        }}
-      >
-        <StatCard label="Sites" value={points.length.toString()} />
-        <StatCard label="Countries" value={summary.countries.toString()} />
-        <StatCard label="Operating" value={summary.operating.toString()} />
-      </div>
-
-      <div
-        style={{
-          position: 'absolute',
-          left: 22,
-          bottom: 18,
-          display: 'flex',
-          gap: 12,
-          flexWrap: 'wrap',
           alignItems: 'center',
-          pointerEvents: 'none',
+          padding: '10px 14px',
+          borderRadius: 999,
+          background: 'rgba(15, 23, 42, 0.72)',
+          border: '1px solid rgba(148, 163, 184, 0.18)',
           color: '#dbeafe',
           fontSize: 12,
+          pointerEvents: 'none',
         }}
       >
-        <LegendDot color={STATUS_COLORS.operating} label="Operating" />
-        <LegendDot color={STATUS_COLORS.planned} label="Planned" />
-        <LegendDot color={STATUS_COLORS.shutdown} label="Shutdown" />
-        <span style={{ opacity: 0.7 }}>Total capacity: {formatPower(summary.totalMw)}</span>
+        <span style={{ width: 8, height: 8, borderRadius: 999, background: '#34d399', boxShadow: '0 0 10px #34d399' }} />
+        Drag to rotate the globe
       </div>
-
-      {points.length === 0 ? (
-        <div
-          style={{
-            position: 'absolute',
-            inset: 0,
-            display: 'grid',
-            placeItems: 'center',
-            color: '#e2e8f0',
-            textAlign: 'center',
-            pointerEvents: 'none',
-            padding: 24,
-          }}
-        >
-          <div style={{ maxWidth: 420 }}>
-            <div style={{ fontSize: 18, fontWeight: 700, marginBottom: 8 }}>No plotted reactor coordinates yet</div>
-            <div style={{ fontSize: 14, lineHeight: 1.6, color: '#cbd5e1' }}>
-              The globe loads, but the current dataset does not include enough latitude/longitude data to place any
-              visible markers.
-            </div>
-          </div>
-        </div>
-      ) : null}
     </div>
   );
 }
 
-function StatCard({ label, value }: { label: string; value: string }) {
-  return (
-    <div
-      style={{
-        minWidth: 92,
-        padding: '10px 12px',
-        borderRadius: 16,
-        background: 'rgba(15, 23, 42, 0.72)',
-        border: '1px solid rgba(148, 163, 184, 0.18)',
-        backdropFilter: 'blur(12px)',
-      }}
-    >
-      <div style={{ fontSize: 11, textTransform: 'uppercase', letterSpacing: '0.12em', color: '#94a3b8' }}>
-        {label}
-      </div>
-      <div style={{ marginTop: 4, fontSize: 22, fontWeight: 700 }}>{value}</div>
-    </div>
-  );
-}
-
-function LegendDot({ color, label }: { color: string; label: string }) {
-  return (
-    <div style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}>
-      <span style={{ width: 9, height: 9, borderRadius: 999, background: color, boxShadow: `0 0 10px ${color}` }} />
-      <span>{label}</span>
-    </div>
-  );
-}
-
-function buildStars(count: number): Star[] {
-  const stars: Star[] = [];
+function createStars(count: number) {
+  const stars: Array<{ x: number; y: number; radius: number; alpha: number }> = [];
   let seed = 1337;
+
   const random = () => {
     seed = (seed * 16807) % 2147483647;
     return (seed - 1) / 2147483646;
@@ -344,75 +286,133 @@ function buildStars(count: number): Star[] {
   return stars;
 }
 
-function drawStars(ctx: CanvasRenderingContext2D, stars: Star[], width: number, height: number, frame: number) {
+function drawBackground(
+  ctx: CanvasRenderingContext2D,
+  width: number,
+  height: number,
+  stars: Array<{ x: number; y: number; radius: number; alpha: number }>,
+  frame: number,
+) {
+  const cx = width / 2;
+  const cy = height / 2;
+
+  const background = ctx.createRadialGradient(cx * 0.95, cy * 0.88, 20, cx, cy, Math.max(width, height));
+  background.addColorStop(0, '#17385c');
+  background.addColorStop(0.42, '#07131f');
+  background.addColorStop(1, '#02050b');
+  ctx.fillStyle = background;
+  ctx.fillRect(0, 0, width, height);
+
   ctx.save();
-  ctx.fillStyle = '#ffffff';
-  stars.forEach((star, index) => {
+  ctx.fillStyle = '#fff';
+  for (const [index, star] of stars.entries()) {
     const x = (star.x * width + Math.sin((frame + index) * 0.003) * 4) % width;
     const y = (star.y * height + Math.cos((frame + index) * 0.004) * 3) % height;
     ctx.globalAlpha = star.alpha;
     ctx.beginPath();
     ctx.arc(x < 0 ? x + width : x, y < 0 ? y + height : y, star.radius, 0, Math.PI * 2);
     ctx.fill();
-  });
+  }
   ctx.restore();
 }
 
-function drawGlow(ctx: CanvasRenderingContext2D, x: number, y: number, radius: number) {
-  const glow = ctx.createRadialGradient(x, y, radius * 0.1, x, y, radius * 1.55);
-  glow.addColorStop(0, 'rgba(56, 189, 248, 0.18)');
-  glow.addColorStop(0.45, 'rgba(59, 130, 246, 0.10)');
-  glow.addColorStop(1, 'rgba(15, 23, 42, 0)');
-  ctx.fillStyle = glow;
-  ctx.fillRect(x - radius * 1.6, y - radius * 1.6, radius * 3.2, radius * 3.2);
+function drawHalo(ctx: CanvasRenderingContext2D, x: number, y: number, radius: number) {
+  const halo = ctx.createRadialGradient(x, y, radius * 0.18, x, y, radius * 1.95);
+  halo.addColorStop(0, 'rgba(56, 189, 248, 0.16)');
+  halo.addColorStop(0.28, 'rgba(59, 130, 246, 0.12)');
+  halo.addColorStop(0.62, 'rgba(37, 99, 235, 0.06)');
+  halo.addColorStop(1, 'rgba(15, 23, 42, 0)');
+  ctx.fillStyle = halo;
+  ctx.fillRect(x - radius * 2, y - radius * 2, radius * 4, radius * 4);
 }
 
 function drawOcean(ctx: CanvasRenderingContext2D, x: number, y: number, radius: number) {
-  const ocean = ctx.createRadialGradient(x - radius * 0.25, y - radius * 0.3, radius * 0.1, x, y, radius);
-  ocean.addColorStop(0, '#102a43');
-  ocean.addColorStop(0.55, '#0b1b2f');
-  ocean.addColorStop(1, '#06111f');
+  const ocean = ctx.createRadialGradient(x - radius * 0.28, y - radius * 0.34, radius * 0.08, x, y, radius);
+  ocean.addColorStop(0, '#1c4775');
+  ocean.addColorStop(0.45, '#102b47');
+  ocean.addColorStop(0.78, '#081625');
+  ocean.addColorStop(1, '#04101b');
   ctx.fillStyle = ocean;
   ctx.fillRect(x - radius, y - radius, radius * 2, radius * 2);
+}
+
+function drawAtmosphere(ctx: CanvasRenderingContext2D, x: number, y: number, radius: number) {
+  const sheen = ctx.createRadialGradient(x - radius * 0.38, y - radius * 0.44, radius * 0.06, x, y, radius);
+  sheen.addColorStop(0, 'rgba(255, 255, 255, 0.20)');
+  sheen.addColorStop(0.18, 'rgba(255, 255, 255, 0.10)');
+  sheen.addColorStop(0.38, 'rgba(255, 255, 255, 0.04)');
+  sheen.addColorStop(1, 'rgba(255, 255, 255, 0)');
+  ctx.fillStyle = sheen;
+  ctx.fillRect(x - radius, y - radius, radius * 2, radius * 2);
+
+  const limb = ctx.createRadialGradient(x, y, radius * 0.82, x, y, radius * 1.04);
+  limb.addColorStop(0.78, 'rgba(125, 211, 252, 0)');
+  limb.addColorStop(0.95, 'rgba(125, 211, 252, 0.10)');
+  limb.addColorStop(1, 'rgba(125, 211, 252, 0.22)');
+  ctx.strokeStyle = limb;
+  ctx.lineWidth = 2;
+  ctx.beginPath();
+  ctx.arc(x, y, radius * 0.99, 0, Math.PI * 2);
+  ctx.stroke();
+}
+
+function drawLandmasses(ctx: CanvasRenderingContext2D, x: number, y: number, radius: number) {
+  const patches = [
+    { dx: -0.28, dy: -0.06, rx: 0.24, ry: 0.15, rot: -0.24, alpha: 0.16 },
+    { dx: -0.16, dy: 0.20, rx: 0.12, ry: 0.18, rot: 0.42, alpha: 0.11 },
+    { dx: 0.05, dy: -0.01, rx: 0.31, ry: 0.17, rot: 0.10, alpha: 0.13 },
+    { dx: 0.29, dy: -0.05, rx: 0.17, ry: 0.10, rot: -0.1, alpha: 0.09 },
+    { dx: 0.29, dy: 0.28, rx: 0.08, ry: 0.07, rot: 0.28, alpha: 0.08 },
+  ];
+
+  ctx.save();
+  ctx.fillStyle = '#96b86b';
+  ctx.shadowColor = 'rgba(147, 197, 114, 0.5)';
+  ctx.shadowBlur = 12;
+  for (const patch of patches) {
+    ctx.globalAlpha = patch.alpha;
+    ctx.beginPath();
+    ellipsePath(ctx, x + patch.dx * radius, y + patch.dy * radius, radius * patch.rx, radius * patch.ry, patch.rot);
+    ctx.fill();
+  }
+  ctx.globalAlpha = 0.07;
+  ctx.fillStyle = '#d9f99d';
+  ctx.beginPath();
+  ellipsePath(ctx, x - radius * 0.18, y - radius * 0.22, radius * 0.11, radius * 0.06, -0.22);
+  ctx.fill();
+  ctx.restore();
 }
 
 function drawRim(ctx: CanvasRenderingContext2D, x: number, y: number, radius: number) {
   ctx.save();
   ctx.beginPath();
   ctx.arc(x, y, radius, 0, Math.PI * 2);
-  ctx.strokeStyle = 'rgba(148, 163, 184, 0.25)';
-  ctx.lineWidth = 2;
+  ctx.strokeStyle = 'rgba(148, 163, 184, 0.20)';
+  ctx.lineWidth = 1.5;
   ctx.stroke();
   ctx.restore();
-
-  const highlight = ctx.createRadialGradient(x - radius * 0.35, y - radius * 0.45, radius * 0.1, x, y, radius);
-  highlight.addColorStop(0, 'rgba(255, 255, 255, 0.18)');
-  highlight.addColorStop(0.3, 'rgba(255, 255, 255, 0.05)');
-  highlight.addColorStop(1, 'rgba(255, 255, 255, 0)');
-  ctx.fillStyle = highlight;
-  ctx.beginPath();
-  ctx.arc(x, y, radius, 0, Math.PI * 2);
-  ctx.fill();
 }
 
-function drawCaption(ctx: CanvasRenderingContext2D, width: number, height: number, count: number) {
+function drawCaption(ctx: CanvasRenderingContext2D, width: number, height: number, markerCount: number) {
   ctx.save();
+  const boxWidth = Math.min(360, width - 32);
+  const boxHeight = 58;
+  const x = width / 2 - boxWidth / 2;
+  const y = height - boxHeight - 20;
+
   ctx.fillStyle = 'rgba(15, 23, 42, 0.88)';
   ctx.strokeStyle = 'rgba(148, 163, 184, 0.18)';
   ctx.lineWidth = 1;
-  const boxWidth = Math.min(330, width - 28);
-  const boxHeight = 56;
-  const x = width / 2 - boxWidth / 2;
-  const y = height - boxHeight - 20;
   roundRect(ctx, x, y, boxWidth, boxHeight, 18);
   ctx.fill();
   ctx.stroke();
+
   ctx.fillStyle = '#f8fafc';
   ctx.font = '600 14px Inter, system-ui, sans-serif';
-  ctx.fillText(`${count} reactor sites placed on a globe`, x + 16, y + 23);
+  ctx.fillText(`${markerCount} reactor sites ready to add`, x + 16, y + 24);
   ctx.fillStyle = '#94a3b8';
   ctx.font = '12px Inter, system-ui, sans-serif';
-  ctx.fillText('Drag to spin and inspect the reactor distribution worldwide.', x + 16, y + 42);
+  ctx.fillText('We can map reactor locations onto this globe next.', x + 16, y + 43);
   ctx.restore();
 }
 
@@ -426,20 +426,21 @@ function drawGraticule(
 ) {
   ctx.save();
   ctx.lineWidth = 1;
+
   for (let lat = -60; lat <= 60; lat += 30) {
-    const segments = sampleCircle(lat, yaw, pitch, 72);
-    strokeProjectedSegments(ctx, segments, centerX, centerY, radius, 'rgba(148, 163, 184, 0.16)');
+    strokeProjectedSegments(ctx, sampleCircle(lat, yaw, pitch, 72), centerX, centerY, radius, GRID_COLOR_MINOR);
   }
+
   for (let lng = -180; lng < 180; lng += 30) {
-    const segments = sampleMeridian(lng, yaw, pitch, 72);
-    strokeProjectedSegments(ctx, segments, centerX, centerY, radius, 'rgba(125, 211, 252, 0.12)');
+    strokeProjectedSegments(ctx, sampleMeridian(lng, yaw, pitch, 72), centerX, centerY, radius, GRID_COLOR);
   }
+
   ctx.restore();
 }
 
-function drawPoints(
+function drawMarkers(
   ctx: CanvasRenderingContext2D,
-  points: GlobePoint[],
+  markers: GlobeMarker[],
   centerX: number,
   centerY: number,
   radius: number,
@@ -447,61 +448,80 @@ function drawPoints(
   pitch: number,
   frame: number,
 ) {
-  const projected = points
-    .map((point) => {
-      const rotated = rotatePoint(point.lat, point.lng, yaw, pitch);
-      return { ...point, ...rotated };
-    })
-    .sort((a, b) => a.depth - b.depth);
+  if (!markers.length) return;
 
-  for (const point of projected) {
-    if (point.depth <= 0) continue;
+  const projected = markers
+    .map((marker) => ({ marker, point: rotatePoint(marker.lat, marker.lng, yaw, pitch) }))
+    .filter(({ point }) => point.z > 0)
+    .sort((a, b) => a.point.z - b.point.z);
 
+  for (const [index, { marker, point }] of projected.entries()) {
     const x = centerX + point.x * radius;
     const y = centerY - point.y * radius;
-    const pulse = 0.6 + 0.4 * Math.sin((frame + point.id.length) * 0.08);
-    const pointRadius = 1.8 + Math.min(3.8, Math.log10((point.powerMw || 0) + 10) * 0.8) * pulse;
+    const markerRadius = 2.2 + Math.max(0, Math.min(5, Math.log10((marker.label?.length || 8) + 10)));
+    const color = marker.color || POINT_COLOR;
+    const pulse = 0.75 + 0.25 * Math.sin((frame + index * 7) * 0.08);
 
     ctx.save();
-    ctx.globalAlpha = clamp(0.28 + point.depth * 0.72, 0.2, 1);
-    ctx.shadowColor = point.color;
-    ctx.shadowBlur = 10;
-    ctx.fillStyle = point.color;
+    ctx.shadowColor = color;
+    ctx.shadowBlur = 14;
+    ctx.globalAlpha = 0.85;
+    ctx.fillStyle = color;
     ctx.beginPath();
-    ctx.arc(x, y, pointRadius, 0, Math.PI * 2);
+    ctx.arc(x, y, markerRadius * pulse, 0, Math.PI * 2);
     ctx.fill();
 
-    ctx.globalAlpha = 0.65 * point.depth;
-    ctx.lineWidth = 1.4;
-    ctx.strokeStyle = 'rgba(255,255,255,0.9)';
+    ctx.globalAlpha = 0.35;
+    ctx.lineWidth = 1;
+    ctx.strokeStyle = 'rgba(255,255,255,0.85)';
     ctx.beginPath();
-    ctx.arc(x, y, pointRadius + 3, 0, Math.PI * 2);
+    ctx.arc(x, y, markerRadius * pulse + 2.8, 0, Math.PI * 2);
     ctx.stroke();
     ctx.restore();
   }
 }
 
-function sampleCircle(lat: number, yaw: number, pitch: number, steps: number) {
-  const samples: Array<{ x: number; y: number; depth: number }> = [];
-  for (let step = 0; step <= steps; step += 1) {
-    const lng = -180 + (360 * step) / steps;
-    samples.push(rotatePoint(lat, lng, yaw, pitch));
-  }
-  return samples;
-}
+function drawArcs(
+  ctx: CanvasRenderingContext2D,
+  arcs: ArcLink[],
+  centerX: number,
+  centerY: number,
+  radius: number,
+  yaw: number,
+  pitch: number,
+  frame: number,
+) {
+  if (!arcs.length) return;
 
-function sampleMeridian(lng: number, yaw: number, pitch: number, steps: number) {
-  const samples: Array<{ x: number; y: number; depth: number }> = [];
-  for (let step = 0; step <= steps; step += 1) {
-    const lat = -90 + (180 * step) / steps;
-    samples.push(rotatePoint(lat, lng, yaw, pitch));
+  const visibleArcs = arcs.slice(0, 22);
+  for (const [index, arc] of visibleArcs.entries()) {
+    const samples = sampleGreatCircle(arc.from.lat, arc.from.lng, arc.to.lat, arc.to.lng, 28, yaw, pitch);
+    ctx.save();
+    ctx.beginPath();
+    let started = false;
+    for (const sample of samples) {
+      const px = centerX + sample.x * radius;
+      const py = centerY - sample.y * radius;
+      if (!started) {
+        ctx.moveTo(px, py);
+        started = true;
+      } else {
+        ctx.lineTo(px, py);
+      }
+    }
+    ctx.globalAlpha = 0.11 + 0.08 * Math.sin((frame + index * 9) * 0.03);
+    ctx.strokeStyle = index % 2 === 0 ? ARC_COLOR : ARC_COLOR_SOFT;
+    ctx.lineWidth = 1.25;
+    ctx.shadowColor = 'rgba(56, 189, 248, 0.2)';
+    ctx.shadowBlur = 10;
+    ctx.stroke();
+    ctx.restore();
   }
-  return samples;
 }
 
 function strokeProjectedSegments(
   ctx: CanvasRenderingContext2D,
-  points: Array<{ x: number; y: number; depth: number }>,
+  points: ScreenPoint[],
   centerX: number,
   centerY: number,
   radius: number,
@@ -510,7 +530,8 @@ function strokeProjectedSegments(
   for (let index = 0; index < points.length - 1; index += 1) {
     const a = points[index];
     const b = points[index + 1];
-    const alpha = clamp(((a.depth + b.depth) / 2) * 0.85 + 0.08, 0.05, 0.5);
+    const alpha = clamp(((a.z + b.z) / 2) * 0.62 + 0.06, 0.03, 0.35);
+
     ctx.save();
     ctx.beginPath();
     ctx.moveTo(centerX + a.x * radius, centerY - a.y * radius);
@@ -522,14 +543,60 @@ function strokeProjectedSegments(
   }
 }
 
-function rotatePoint(lat: number, lng: number, yaw: number, pitch: number) {
-  const phi = degToRad(90 - lat);
-  const theta = degToRad(lng + 180);
+function sampleCircle(lat: number, yaw: number, pitch: number, steps: number) {
+  const points: ScreenPoint[] = [];
+  for (let step = 0; step <= steps; step += 1) {
+    const lng = -180 + (360 * step) / steps;
+    points.push(rotatePoint(lat, lng, yaw, pitch));
+  }
+  return points;
+}
 
-  let x = Math.sin(phi) * Math.cos(theta);
-  let y = Math.cos(phi);
-  let z = Math.sin(phi) * Math.sin(theta);
+function sampleMeridian(lng: number, yaw: number, pitch: number, steps: number) {
+  const points: ScreenPoint[] = [];
+  for (let step = 0; step <= steps; step += 1) {
+    const lat = -90 + (180 * step) / steps;
+    points.push(rotatePoint(lat, lng, yaw, pitch));
+  }
+  return points;
+}
 
+function sampleGreatCircle(
+  lat1: number,
+  lng1: number,
+  lat2: number,
+  lng2: number,
+  steps: number,
+  yaw: number,
+  pitch: number,
+) {
+  const start = latLngToVector(lat1, lng1);
+  const end = latLngToVector(lat2, lng2);
+  const angle = Math.acos(clamp(dot(start, end), -1, 1));
+  const points: ScreenPoint[] = [];
+
+  for (let step = 0; step <= steps; step += 1) {
+    const t = step / steps;
+    const sinTotal = Math.sin(angle);
+    const scaleA = sinTotal === 0 ? 1 - t : Math.sin((1 - t) * angle) / sinTotal;
+    const scaleB = sinTotal === 0 ? t : Math.sin(t * angle) / sinTotal;
+    const x = start.x * scaleA + end.x * scaleB;
+    const y = start.y * scaleA + end.y * scaleB;
+    const z = start.z * scaleA + end.z * scaleB;
+    const rotated = rotateVector({ x, y, z }, yaw, pitch);
+    points.push({ x: rotated.x, y: rotated.y, z: (rotated.z + 1) / 2 });
+  }
+
+  return points;
+}
+
+function rotatePoint(lat: number, lng: number, yaw: number, pitch: number): ScreenPoint {
+  const rotated = rotateVector(latLngToVector(lat, lng), yaw, pitch);
+  return { x: rotated.x, y: rotated.y, z: (rotated.z + 1) / 2 };
+}
+
+function rotateVector(vector: Point3D, yaw: number, pitch: number) {
+  let { x, y, z } = vector;
   const yawCos = Math.cos(yaw);
   const yawSin = Math.sin(yaw);
   const pitchCos = Math.cos(pitch);
@@ -546,48 +613,17 @@ function rotatePoint(lat: number, lng: number, yaw: number, pitch: number) {
   y = y2;
   z = z2;
 
-  return { x, y, depth: (z + 1) / 2 };
+  return { x, y, z };
 }
 
-function normalizeReactorPoints(items: Reactor[]): GlobePoint[] {
-  return items
-    .map((item, index) => normalizeReactorPoint(item, index))
-    .filter((point): point is GlobePoint => Boolean(point));
-}
-
-function normalizeReactorPoint(item: Reactor, index: number): GlobePoint | null {
-  const lat = item.lat;
-  const lng = item.lng;
-
-  if (lat === null || lng === null) {
-    return null;
-  }
-
-  const title = item.name?.trim() || item.plant?.trim() || `Reactor ${index + 1}`;
-  const status = item.status || 'operating';
-  const country = item.country || 'Unknown';
-  const powerMw = item.capacityMWe;
-  const color = resolveStatusColor(status);
-
+function latLngToVector(lat: number, lng: number): Point3D {
+  const phi = degToRad(90 - lat);
+  const theta = degToRad(lng + 180);
   return {
-    id: item.id || `${title}-${index}`,
-    title,
-    lat,
-    lng,
-    status,
-    country,
-    powerMw,
-    color,
+    x: Math.sin(phi) * Math.cos(theta),
+    y: Math.cos(phi),
+    z: Math.sin(phi) * Math.sin(theta),
   };
-}
-
-function resolveStatusColor(status: string) {
-  const normalized = status.toLowerCase().replace(/\s+/g, '');
-  if (normalized.includes('operat') || normalized.includes('active')) return STATUS_COLORS.operating;
-  if (normalized.includes('plan')) return STATUS_COLORS.planned;
-  if (normalized.includes('constr')) return STATUS_COLORS.underConstruction;
-  if (normalized.includes('shut') || normalized.includes('retir')) return STATUS_COLORS.shutdown;
-  return STATUS_COLORS.default;
 }
 
 function degToRad(value: number) {
@@ -598,20 +634,68 @@ function clamp(value: number, min: number, max: number) {
   return Math.min(max, Math.max(min, value));
 }
 
-function formatPower(value: number) {
-  if (!value) return 'n/a';
-  if (value >= 1000) return `${(value / 1000).toFixed(1)} GW`;
-  return `${Math.round(value)} MW`;
+function dot(a: Point3D, b: Point3D) {
+  return a.x * b.x + a.y * b.y + a.z * b.z;
 }
 
-function hexToRgba(color: string, alpha: number) {
-  const hex = color.replace('#', '');
-  const normalized = hex.length === 3 ? hex.split('').map((char) => char + char).join('') : hex;
-  const numeric = Number.parseInt(normalized, 16);
-  const r = (numeric >> 16) & 255;
-  const g = (numeric >> 8) & 255;
-  const b = numeric & 255;
-  return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+function ellipsePath(ctx: CanvasRenderingContext2D, x: number, y: number, rx: number, ry: number, rotation: number) {
+  const segments = 40;
+  for (let step = 0; step <= segments; step += 1) {
+    const angle = (Math.PI * 2 * step) / segments;
+    const px = x + Math.cos(angle) * rx * Math.cos(rotation) - Math.sin(angle) * ry * Math.sin(rotation);
+    const py = y + Math.cos(angle) * rx * Math.sin(rotation) + Math.sin(angle) * ry * Math.cos(rotation);
+    if (step === 0) {
+      ctx.moveTo(px, py);
+    } else {
+      ctx.lineTo(px, py);
+    }
+  }
+}
+
+type ArcLink = {
+  from: GlobeMarker;
+  to: GlobeMarker;
+};
+
+function normalizeReactorMarkers(reactors: Reactor[]): GlobeMarker[] {
+  return reactors
+    .filter((reactor) => reactor.lat !== null && reactor.lng !== null)
+    .map((reactor) => ({
+      id: reactor.id,
+      lat: reactor.lat as number,
+      lng: reactor.lng as number,
+      label: reactor.name || reactor.plant,
+      color: reactorColor(reactor.status),
+    }));
+}
+
+function reactorColor(status: Reactor['status']) {
+  switch (status) {
+    case 'operating':
+      return '#34d399';
+    case 'under_construction':
+      return '#f59e0b';
+    case 'planned':
+      return '#fbbf24';
+    case 'suspended':
+    case 'shutdown':
+    default:
+      return '#7dd3fc';
+  }
+}
+
+function buildArcs(markers: GlobeMarker[]) {
+  if (markers.length < 2) {
+    return [];
+  }
+
+  const sorted = [...markers].sort((a, b) => a.id.localeCompare(b.id));
+  const arcs: ArcLink[] = [];
+  for (let index = 0; index < Math.min(sorted.length - 1, 34); index += 1) {
+    arcs.push({ from: sorted[index], to: sorted[(index + 1) % sorted.length] });
+  }
+
+  return arcs;
 }
 
 function roundRect(ctx: CanvasRenderingContext2D, x: number, y: number, width: number, height: number, radius: number) {
