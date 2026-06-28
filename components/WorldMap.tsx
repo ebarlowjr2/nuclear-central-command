@@ -9,14 +9,14 @@ type GlobeMarker = {
   lat: number;
   lng: number;
   label?: string;
+  plant?: string;
+  country?: string;
+  status?: Reactor['status'];
+  capacityMWe?: number | null;
+  reactorType?: string;
+  operator?: string;
+  source?: string;
   color?: string;
-};
-
-type ArcLink = {
-  from: GlobeMarker;
-  to: GlobeMarker;
-  color: string;
-  altitude: number;
 };
 
 type WorldMapProps = {
@@ -30,10 +30,10 @@ function WorldMap({ compact = false, markers = DEFAULT_MARKERS }: WorldMapProps)
   const hostRef = React.useRef<HTMLDivElement | null>(null);
   const globeRef = React.useRef<any>(null);
   const resizeObserverRef = React.useRef<ResizeObserver | null>(null);
+  const [selectedMarker, setSelectedMarker] = React.useState<GlobeMarker | null>(null);
 
   const reactorMarkers = React.useMemo(() => normalizeReactorMarkers(LOCAL_REACTORS), []);
   const visibleMarkers = React.useMemo(() => (markers.length ? markers : reactorMarkers), [markers, reactorMarkers]);
-  const arcs = React.useMemo(() => buildArcs(visibleMarkers), [visibleMarkers]);
 
   React.useEffect(() => {
     let cancelled = false;
@@ -70,7 +70,8 @@ function WorldMap({ compact = false, markers = DEFAULT_MARKERS }: WorldMapProps)
         .pointAltitude(0.02)
         .pointRadius(0.26)
         .pointColor((d: any) => d.color || '#fbbf24')
-        .pointLabel((d: any) => d.label || d.id)
+        .pointLabel((d: any) => markerTooltip(d))
+        .onPointClick((d: any) => setSelectedMarker(d as GlobeMarker))
         .pointsData(visibleMarkers)
         .pointsTransitionDuration(0)
         .labelLat((d: any) => d.lat)
@@ -83,18 +84,8 @@ function WorldMap({ compact = false, markers = DEFAULT_MARKERS }: WorldMapProps)
         .labelResolution(2)
         .labelsTransitionDuration(0)
         .labelsData(visibleMarkers)
-        .arcStartLat(((d: ArcLink) => d.from.lat) as any)
-        .arcStartLng(((d: ArcLink) => d.from.lng) as any)
-        .arcEndLat(((d: ArcLink) => d.to.lat) as any)
-        .arcEndLng(((d: ArcLink) => d.to.lng) as any)
-        .arcColor(((d: ArcLink) => d.color) as any)
-        .arcAltitude(((d: ArcLink) => d.altitude) as any)
-        .arcStroke(0.75)
-        .arcDashLength(0.42)
-        .arcDashGap(1.6)
-        .arcDashAnimateTime(3200)
-        .arcsTransitionDuration(0)
-        .arcsData(arcs)
+        .onLabelClick((d: any) => setSelectedMarker(d as GlobeMarker))
+        .arcsData([])
         .pointOfView({ lat: 20, lng: -25, altitude: 2.15 }, 0);
 
       const controls = globe.controls();
@@ -134,8 +125,8 @@ function WorldMap({ compact = false, markers = DEFAULT_MARKERS }: WorldMapProps)
     if (!globeRef.current) return;
     globeRef.current.pointsData(visibleMarkers);
     globeRef.current.labelsData(visibleMarkers);
-    globeRef.current.arcsData(arcs);
-  }, [arcs, visibleMarkers]);
+    globeRef.current.arcsData([]);
+  }, [visibleMarkers]);
 
   return (
     <div
@@ -186,10 +177,105 @@ function WorldMap({ compact = false, markers = DEFAULT_MARKERS }: WorldMapProps)
           Globe surface is live.
         </h2>
         <p style={{ margin: 0, fontSize: 14, lineHeight: 1.6, color: '#cbd5e1' }}>
-          We are using the globe.gl renderer now, so we can keep the reactor data on a proper globe and add the sites
-          back in as the next layer.
+          Reactor sites are plotted from the local dataset. Click a site marker or label to inspect plant details.
         </p>
       </div>
+
+      {selectedMarker && (
+        <aside
+          style={{
+            position: 'absolute',
+            right: 24,
+            top: 24,
+            width: 'min(360px, calc(100% - 48px))',
+            borderRadius: 18,
+            border: '1px solid rgba(203, 213, 225, 0.22)',
+            background: 'rgba(8, 13, 24, 0.88)',
+            boxShadow: '0 24px 70px rgba(0, 0, 0, 0.44)',
+            color: '#f8fafc',
+            padding: 18,
+            backdropFilter: 'blur(14px)',
+          }}
+        >
+          <button
+            type="button"
+            aria-label="Close reactor details"
+            onClick={() => setSelectedMarker(null)}
+            style={{
+              position: 'absolute',
+              right: 14,
+              top: 12,
+              width: 30,
+              height: 30,
+              border: '1px solid rgba(148, 163, 184, 0.2)',
+              borderRadius: 999,
+              background: 'rgba(15, 23, 42, 0.74)',
+              color: '#cbd5e1',
+              cursor: 'pointer',
+              fontSize: 18,
+              lineHeight: '26px',
+            }}
+          >
+            ×
+          </button>
+
+          <div style={{ paddingRight: 36 }}>
+            <div
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: 8,
+                marginBottom: 12,
+                color: selectedMarker.color || '#34d399',
+                fontSize: 12,
+                fontWeight: 700,
+                letterSpacing: '0.12em',
+                textTransform: 'uppercase',
+              }}
+            >
+              <span
+                style={{
+                  width: 9,
+                  height: 9,
+                  borderRadius: 999,
+                  background: selectedMarker.color || '#34d399',
+                  boxShadow: `0 0 12px ${selectedMarker.color || '#34d399'}`,
+                }}
+              />
+              {formatStatus(selectedMarker.status)}
+            </div>
+
+            <h3 style={{ margin: '0 0 6px', fontSize: 24, lineHeight: 1.15 }}>{selectedMarker.label}</h3>
+            <p style={{ margin: '0 0 16px', color: '#cbd5e1', fontSize: 14 }}>{selectedMarker.plant}</p>
+          </div>
+
+          <dl style={{ display: 'grid', gap: 10, margin: 0 }}>
+            <DetailRow label="Country" value={selectedMarker.country} />
+            <DetailRow label="Capacity" value={formatCapacity(selectedMarker.capacityMWe)} />
+            <DetailRow label="Type" value={selectedMarker.reactorType} />
+            <DetailRow label="Operator" value={selectedMarker.operator} />
+            <DetailRow label="Coordinates" value={`${selectedMarker.lat.toFixed(3)}, ${selectedMarker.lng.toFixed(3)}`} />
+          </dl>
+
+          {selectedMarker.source && (
+            <a
+              href={selectedMarker.source}
+              target="_blank"
+              rel="noreferrer"
+              style={{
+                display: 'inline-flex',
+                marginTop: 16,
+                color: '#93c5fd',
+                fontSize: 13,
+                fontWeight: 700,
+                textDecoration: 'none',
+              }}
+            >
+              View source
+            </a>
+          )}
+        </aside>
+      )}
 
       <div
         style={{
@@ -209,8 +295,26 @@ function WorldMap({ compact = false, markers = DEFAULT_MARKERS }: WorldMapProps)
         }}
       >
         <span style={{ width: 8, height: 8, borderRadius: 999, background: '#34d399', boxShadow: '0 0 10px #34d399' }} />
-        Drag to rotate the globe
+        {visibleMarkers.length} reactor sites
       </div>
+    </div>
+  );
+}
+
+function DetailRow({ label, value }: { label: string; value?: React.ReactNode }) {
+  return (
+    <div
+      style={{
+        display: 'grid',
+        gridTemplateColumns: '110px minmax(0, 1fr)',
+        gap: 12,
+        alignItems: 'baseline',
+        borderTop: '1px solid rgba(148, 163, 184, 0.14)',
+        paddingTop: 10,
+      }}
+    >
+      <dt style={{ color: '#94a3b8', fontSize: 12, textTransform: 'uppercase' }}>{label}</dt>
+      <dd style={{ margin: 0, color: '#e2e8f0', fontSize: 14, overflowWrap: 'anywhere' }}>{value || 'Unknown'}</dd>
     </div>
   );
 }
@@ -223,6 +327,13 @@ function normalizeReactorMarkers(reactors: Reactor[]): GlobeMarker[] {
       lat: reactor.lat as number,
       lng: reactor.lng as number,
       label: reactor.name || reactor.plant,
+      plant: reactor.plant,
+      country: reactor.country,
+      status: reactor.status,
+      capacityMWe: reactor.capacityMWe,
+      reactorType: reactor.type,
+      operator: reactor.operator,
+      source: reactor.source,
       color: reactorColor(reactor.status),
     }));
 }
@@ -242,26 +353,32 @@ function reactorColor(status: Reactor['status']) {
   }
 }
 
-function buildArcs(markers: GlobeMarker[]) {
-  if (markers.length < 2) {
-    return [];
-  }
+function markerTooltip(marker: GlobeMarker) {
+  return `
+    <div style="font-family: Inter, system-ui, sans-serif; max-width: 260px;">
+      <strong style="display:block; margin-bottom: 4px;">${escapeHtml(marker.label || marker.id)}</strong>
+      <span style="display:block; color:#cbd5e1;">${escapeHtml(marker.plant || 'Unknown plant')}</span>
+      <span style="display:block; margin-top: 6px; color:${marker.color || '#34d399'};">${escapeHtml(formatStatus(marker.status))}</span>
+    </div>
+  `;
+}
 
-  const sorted = [...markers].sort((a, b) => a.id.localeCompare(b.id));
-  const arcs: ArcLink[] = [];
+function formatStatus(status?: Reactor['status']) {
+  if (!status) return 'Unknown';
+  return status.replace(/_/g, ' ');
+}
 
-  for (let index = 0; index < Math.min(sorted.length - 1, 34); index += 1) {
-    const from = sorted[index];
-    const to = sorted[(index + 1) % sorted.length];
-    arcs.push({
-      from,
-      to,
-      color: index % 2 === 0 ? 'rgba(56, 189, 248, 0.28)' : 'rgba(59, 130, 246, 0.20)',
-      altitude: 0.12 + (index % 5) * 0.018,
-    });
-  }
+function formatCapacity(capacityMWe?: number | null) {
+  return typeof capacityMWe === 'number' ? `${capacityMWe.toLocaleString()} MWe` : undefined;
+}
 
-  return arcs;
+function escapeHtml(value: string) {
+  return value
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
 }
 
 export default WorldMap;
