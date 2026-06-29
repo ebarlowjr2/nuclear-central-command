@@ -21,12 +21,13 @@ type GlobeMarker = {
 
 type WorldMapProps = {
   compact?: boolean;
+  fullScreen?: boolean;
   markers?: GlobeMarker[];
 };
 
 const DEFAULT_MARKERS: GlobeMarker[] = [];
 
-function WorldMap({ compact = false, markers = DEFAULT_MARKERS }: WorldMapProps) {
+function WorldMap({ compact = false, fullScreen = false, markers = DEFAULT_MARKERS }: WorldMapProps) {
   const hostRef = React.useRef<HTMLDivElement | null>(null);
   const globeRef = React.useRef<any>(null);
   const resizeObserverRef = React.useRef<ResizeObserver | null>(null);
@@ -130,17 +131,21 @@ function WorldMap({ compact = false, markers = DEFAULT_MARKERS }: WorldMapProps)
 
   return (
     <div
-      style={{
-        position: 'relative',
-        width: '100%',
-        minHeight: compact ? 520 : 760,
-        borderRadius: 28,
-        overflow: 'hidden',
-        border: '1px solid rgba(148, 163, 184, 0.18)',
-        boxShadow: '0 30px 90px rgba(2, 6, 23, 0.52)',
-        background:
-          'radial-gradient(circle at 30% 24%, rgba(56, 189, 248, 0.16) 0%, rgba(15, 23, 42, 0) 38%), linear-gradient(180deg, #070e1a 0%, #02050b 100%)',
-      }}
+      style={
+        fullScreen
+          ? { position: 'absolute', inset: 0, overflow: 'hidden', background: '#020617' }
+          : {
+              position: 'relative',
+              width: '100%',
+              minHeight: compact ? 520 : 760,
+              borderRadius: 28,
+              overflow: 'hidden',
+              border: '1px solid rgba(148, 163, 184, 0.18)',
+              boxShadow: '0 30px 90px rgba(2, 6, 23, 0.52)',
+              background:
+                'radial-gradient(circle at 30% 24%, rgba(56, 189, 248, 0.16) 0%, rgba(15, 23, 42, 0) 38%), linear-gradient(180deg, #070e1a 0%, #02050b 100%)',
+            }
+      }
     >
       <div ref={hostRef} style={{ position: 'absolute', inset: 0 }} />
 
