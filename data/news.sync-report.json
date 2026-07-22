@@ -1,9 +1,9 @@
 {
   "ok": true,
-  "ranAt": "2026-07-21T19:35:25.167Z",
-  "total": 597,
-  "inserted": 4,
-  "updated": 325,
+  "ranAt": "2026-07-22T02:52:52.693Z",
+  "total": 599,
+  "inserted": 2,
+  "updated": 328,
   "sources": [
     {
       "source": "World Nuclear News",
@@ -55,8 +55,8 @@
     {
       "source": "NRC News Releases",
       "ok": true,
-      "fetched": 166,
-      "kept": 165,
+      "fetched": 167,
+      "kept": 166,
       "skippedOld": 1,
       "skippedNoUrl": 0,
       "skippedNoTitle": 0
