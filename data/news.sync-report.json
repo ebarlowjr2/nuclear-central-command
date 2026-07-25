@@ -1,8 +1,8 @@
 {
   "ok": true,
-  "ranAt": "2026-07-24T19:28:26.696Z",
-  "total": 662,
-  "inserted": 2,
+  "ranAt": "2026-07-25T08:10:30.816Z",
+  "total": 663,
+  "inserted": 1,
   "updated": 328,
   "sources": [
     {
@@ -55,8 +55,8 @@
     {
       "source": "NRC News Releases",
       "ok": true,
-      "fetched": 167,
-      "kept": 166,
+      "fetched": 166,
+      "kept": 165,
       "skippedOld": 1,
       "skippedNoUrl": 0,
       "skippedNoTitle": 0
