@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "ranAt": "2026-08-08T06:58:34.047Z",
+  "ranAt": "2026-08-08T12:54:06.269Z",
   "total": 749,
   "inserted": 0,
   "updated": 331,
@@ -31,7 +31,7 @@
     {
       "source": "American Nuclear Society",
       "ok": false,
-      "error": "Request timed out after 20000ms"
+      "error": "Status code 404"
     },
     {
       "source": "World Nuclear Association",
