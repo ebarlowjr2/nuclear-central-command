@@ -1,15 +1,15 @@
 {
   "ok": true,
-  "ranAt": "2026-08-10T13:14:52.945Z",
-  "total": 749,
-  "inserted": 0,
-  "updated": 329,
+  "ranAt": "2026-08-10T19:01:22.913Z",
+  "total": 757,
+  "inserted": 8,
+  "updated": 323,
   "sources": [
     {
       "source": "World Nuclear News",
       "ok": true,
-      "fetched": 45,
-      "kept": 45,
+      "fetched": 47,
+      "kept": 47,
       "skippedOld": 0,
       "skippedNoUrl": 0,
       "skippedNoTitle": 0
@@ -31,7 +31,7 @@
     {
       "source": "American Nuclear Society",
       "ok": false,
-      "error": "Status code 404"
+      "error": "Request timed out after 20000ms"
     },
     {
       "source": "World Nuclear Association",
