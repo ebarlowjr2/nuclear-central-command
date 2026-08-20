@@ -1,15 +1,15 @@
 {
   "ok": true,
-  "ranAt": "2026-08-20T12:54:36.156Z",
-  "total": 795,
-  "inserted": 2,
-  "updated": 323,
+  "ranAt": "2026-08-20T18:42:26.838Z",
+  "total": 800,
+  "inserted": 5,
+  "updated": 319,
   "sources": [
     {
       "source": "World Nuclear News",
       "ok": true,
-      "fetched": 41,
-      "kept": 41,
+      "fetched": 40,
+      "kept": 40,
       "skippedOld": 0,
       "skippedNoUrl": 0,
       "skippedNoTitle": 0
