@@ -1,15 +1,15 @@
 {
   "ok": true,
-  "ranAt": "2026-09-01T16:17:17.595Z",
-  "total": 856,
-  "inserted": 5,
-  "updated": 320,
+  "ranAt": "2026-09-01T20:46:06.703Z",
+  "total": 857,
+  "inserted": 1,
+  "updated": 324,
   "sources": [
     {
       "source": "World Nuclear News",
       "ok": true,
-      "fetched": 43,
-      "kept": 43,
+      "fetched": 42,
+      "kept": 42,
       "skippedOld": 0,
       "skippedNoUrl": 0,
       "skippedNoTitle": 0
@@ -55,8 +55,8 @@
     {
       "source": "NRC News Releases",
       "ok": true,
-      "fetched": 164,
-      "kept": 163,
+      "fetched": 165,
+      "kept": 164,
       "skippedOld": 1,
       "skippedNoUrl": 0,
       "skippedNoTitle": 0
