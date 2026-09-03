@@ -5,7 +5,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/wc.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.759Z",
+    "publishedAt": "2026-09-03T16:03:03.303Z",
     "tags": [
       "plant:HOPE CREEK-1",
       "type:BWR",
@@ -19,7 +19,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/wb2.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.759Z",
+    "publishedAt": "2026-09-03T16:03:03.303Z",
     "tags": [
       "plant:WATTS BAR-1",
       "type:PWR",
@@ -32,7 +32,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/wb1.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.758Z",
+    "publishedAt": "2026-09-03T16:03:03.303Z",
     "tags": [
       "plant:WATTS BAR-1",
       "type:PWR",
@@ -45,7 +45,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/wat3.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.758Z",
+    "publishedAt": "2026-09-03T16:03:03.303Z",
     "tags": [
       "plant:WATERFORD-3",
       "type:PWR"
@@ -53,11 +53,11 @@
   },
   {
     "id": "66b01cdb0a8fbfd8bd8b387d",
-    "title": "Vogtle 4 - 84% power",
+    "title": "Vogtle 4 - 100% power",
     "summary": "",
     "url": "https://www.nrc.gov/new-reactors/large-lwr/col-holder/vog4.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.758Z",
+    "publishedAt": "2026-09-03T16:03:03.303Z",
     "tags": [
       "plant:VOGTLE-1",
       "type:PWR",
@@ -71,7 +71,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/new-reactors/large-lwr/col-holder/vog3.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.757Z",
+    "publishedAt": "2026-09-03T16:03:03.303Z",
     "tags": [
       "plant:VOGTLE-1",
       "type:PWR",
@@ -81,11 +81,11 @@
   },
   {
     "id": "2df84bd4f7a1e82dfbaf47c8",
-    "title": "Vogtle 2 - 87% power",
+    "title": "Vogtle 2 - 84% power",
     "summary": "",
     "url": "https://www.nrc.gov/reactors/vog2.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.757Z",
+    "publishedAt": "2026-09-03T16:03:03.303Z",
     "tags": [
       "plant:VOGTLE-1",
       "type:PWR",
@@ -99,7 +99,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/vog1.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.757Z",
+    "publishedAt": "2026-09-03T16:03:03.302Z",
     "tags": [
       "plant:VOGTLE-1",
       "type:PWR",
@@ -113,7 +113,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/tp4.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.757Z",
+    "publishedAt": "2026-09-03T16:03:03.302Z",
     "tags": [
       "plant:NINE MILE POINT-1",
       "type:BWR",
@@ -128,7 +128,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/tp3.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.756Z",
+    "publishedAt": "2026-09-03T16:03:03.302Z",
     "tags": [
       "plant:NINE MILE POINT-1",
       "type:BWR",
@@ -143,7 +143,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/tmi1.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.756Z",
+    "publishedAt": "2026-09-03T16:03:03.302Z",
     "tags": []
   },
   {
@@ -152,7 +152,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/susq2.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.756Z",
+    "publishedAt": "2026-09-03T16:03:03.302Z",
     "tags": [
       "plant:SUSQUEHANNA-1",
       "type:BWR",
@@ -165,7 +165,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/susq1.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.755Z",
+    "publishedAt": "2026-09-03T16:03:03.302Z",
     "tags": [
       "plant:SUSQUEHANNA-1",
       "type:BWR",
@@ -178,7 +178,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/sur2.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.755Z",
+    "publishedAt": "2026-09-03T16:03:03.301Z",
     "tags": [
       "plant:SURRY-1",
       "type:PWR",
@@ -191,7 +191,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/sur1.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.755Z",
+    "publishedAt": "2026-09-03T16:03:03.301Z",
     "tags": [
       "plant:SURRY-1",
       "type:PWR",
@@ -204,7 +204,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/sum.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.755Z",
+    "publishedAt": "2026-09-03T16:03:03.301Z",
     "tags": [
       "plant:SUMMER-1",
       "type:PWR"
@@ -216,7 +216,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/stp2.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.754Z",
+    "publishedAt": "2026-09-03T16:03:03.301Z",
     "tags": [
       "plant:SOUTH TEXAS-1",
       "type:PWR",
@@ -229,7 +229,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/stp1.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.754Z",
+    "publishedAt": "2026-09-03T16:03:03.301Z",
     "tags": [
       "plant:SOUTH TEXAS-1",
       "type:PWR",
@@ -242,7 +242,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/seq2.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.754Z",
+    "publishedAt": "2026-09-03T16:03:03.301Z",
     "tags": [
       "plant:SEQUOYAH-1",
       "type:PWR",
@@ -255,7 +255,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/seq1.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.753Z",
+    "publishedAt": "2026-09-03T16:03:03.300Z",
     "tags": [
       "plant:SEQUOYAH-1",
       "type:PWR",
@@ -268,7 +268,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/seab1.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.753Z",
+    "publishedAt": "2026-09-03T16:03:03.300Z",
     "tags": [
       "plant:SEABROOK-1",
       "type:PWR"
@@ -280,7 +280,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/salm2.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.753Z",
+    "publishedAt": "2026-09-03T16:03:03.300Z",
     "tags": [
       "plant:SALEM-1",
       "type:PWR",
@@ -293,7 +293,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/salm1.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.752Z",
+    "publishedAt": "2026-09-03T16:03:03.300Z",
     "tags": [
       "plant:SALEM-1",
       "type:PWR",
@@ -306,7 +306,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/stl2.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.752Z",
+    "publishedAt": "2026-09-03T16:03:03.300Z",
     "tags": [
       "plant:ST. LUCIE-1",
       "type:PWR",
@@ -319,7 +319,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/stl1.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.752Z",
+    "publishedAt": "2026-09-03T16:03:03.300Z",
     "tags": [
       "plant:ST. LUCIE-1",
       "type:PWR",
@@ -332,7 +332,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/rob2.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.752Z",
+    "publishedAt": "2026-09-03T16:03:03.299Z",
     "tags": [
       "plant:ROBINSON-2",
       "type:PWR"
@@ -344,7 +344,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/rbs1.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.751Z",
+    "publishedAt": "2026-09-03T16:03:03.299Z",
     "tags": [
       "plant:RIVER BEND-1",
       "type:BWR"
@@ -356,7 +356,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/quad2.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.751Z",
+    "publishedAt": "2026-09-03T16:03:03.299Z",
     "tags": [
       "plant:QUAD CITIES-1",
       "type:BWR",
@@ -369,7 +369,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/quad1.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.751Z",
+    "publishedAt": "2026-09-03T16:03:03.299Z",
     "tags": [
       "plant:QUAD CITIES-1",
       "type:BWR",
@@ -382,7 +382,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/prai2.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.750Z",
+    "publishedAt": "2026-09-03T16:03:03.299Z",
     "tags": [
       "plant:PRAIRIE ISLAND-1",
       "type:PWR",
@@ -395,7 +395,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/prai1.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.750Z",
+    "publishedAt": "2026-09-03T16:03:03.299Z",
     "tags": [
       "plant:PRAIRIE ISLAND-1",
       "type:PWR",
@@ -408,7 +408,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/poin2.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.750Z",
+    "publishedAt": "2026-09-03T16:03:03.298Z",
     "tags": [
       "plant:NINE MILE POINT-1",
       "type:BWR",
@@ -423,7 +423,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/poin1.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.749Z",
+    "publishedAt": "2026-09-03T16:03:03.298Z",
     "tags": [
       "plant:NINE MILE POINT-1",
       "type:BWR",
@@ -434,11 +434,11 @@
   },
   {
     "id": "b1c405af8c0acf61d24adc48",
-    "title": "Perry 1 - 90% power",
+    "title": "Perry 1 - 92% power",
     "summary": "",
     "url": "https://www.nrc.gov/reactors/perr1.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.749Z",
+    "publishedAt": "2026-09-03T16:03:03.298Z",
     "tags": [
       "plant:PERRY-1",
       "type:BWR"
@@ -450,7 +450,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/pb3.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.749Z",
+    "publishedAt": "2026-09-03T16:03:03.298Z",
     "tags": [
       "plant:PEACH BOTTOM-2",
       "type:BWR",
@@ -459,11 +459,11 @@
   },
   {
     "id": "4afa1fab26d5b6f21e3ef519",
-    "title": "Peach Bottom 2 - 100% power",
+    "title": "Peach Bottom 2 - 99% power",
     "summary": "",
     "url": "https://www.nrc.gov/reactors/pb2.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.749Z",
+    "publishedAt": "2026-09-03T16:03:03.298Z",
     "tags": [
       "plant:PEACH BOTTOM-2",
       "type:BWR",
@@ -476,7 +476,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/palo3.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.748Z",
+    "publishedAt": "2026-09-03T16:03:03.298Z",
     "tags": [
       "plant:PALO VERDE-1",
       "type:PWR",
@@ -490,7 +490,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/palo2.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.748Z",
+    "publishedAt": "2026-09-03T16:03:03.298Z",
     "tags": [
       "plant:PALO VERDE-1",
       "type:PWR",
@@ -504,7 +504,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/palo1.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.748Z",
+    "publishedAt": "2026-09-03T16:03:03.297Z",
     "tags": [
       "plant:PALO VERDE-1",
       "type:PWR",
@@ -518,7 +518,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/pali.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.748Z",
+    "publishedAt": "2026-09-03T16:03:03.297Z",
     "tags": []
   },
   {
@@ -527,7 +527,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/oco3.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.747Z",
+    "publishedAt": "2026-09-03T16:03:03.297Z",
     "tags": [
       "plant:OCONEE-1",
       "type:PWR",
@@ -541,7 +541,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/oco2.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.747Z",
+    "publishedAt": "2026-09-03T16:03:03.297Z",
     "tags": [
       "plant:OCONEE-1",
       "type:PWR",
@@ -555,7 +555,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/oco1.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.747Z",
+    "publishedAt": "2026-09-03T16:03:03.297Z",
     "tags": [
       "plant:OCONEE-1",
       "type:PWR",
@@ -569,7 +569,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/na2.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.746Z",
+    "publishedAt": "2026-09-03T16:03:03.297Z",
     "tags": [
       "plant:NORTH ANNA-1",
       "type:PWR",
@@ -582,7 +582,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/na1.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.746Z",
+    "publishedAt": "2026-09-03T16:03:03.296Z",
     "tags": [
       "plant:NORTH ANNA-1",
       "type:PWR",
@@ -595,7 +595,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/nmp2.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.746Z",
+    "publishedAt": "2026-09-03T16:03:03.296Z",
     "tags": [
       "plant:NINE MILE POINT-1",
       "type:BWR",
@@ -608,7 +608,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/nmp1.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.745Z",
+    "publishedAt": "2026-09-03T16:03:03.296Z",
     "tags": [
       "plant:NINE MILE POINT-1",
       "type:BWR",
@@ -621,7 +621,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/mont.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.745Z",
+    "publishedAt": "2026-09-03T16:03:03.296Z",
     "tags": [
       "plant:MONTICELLO",
       "type:BWR"
@@ -633,7 +633,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/mill3.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.745Z",
+    "publishedAt": "2026-09-03T16:03:03.296Z",
     "tags": [
       "plant:MILLSTONE-2",
       "type:PWR",
@@ -646,7 +646,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/mill2.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.745Z",
+    "publishedAt": "2026-09-03T16:03:03.296Z",
     "tags": [
       "plant:MILLSTONE-2",
       "type:PWR",
@@ -659,7 +659,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/mcg2.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.744Z",
+    "publishedAt": "2026-09-03T16:03:03.296Z",
     "tags": [
       "plant:MCGUIRE-1",
       "type:PWR",
@@ -672,7 +672,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/mcg1.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.744Z",
+    "publishedAt": "2026-09-03T16:03:03.295Z",
     "tags": [
       "plant:MCGUIRE-1",
       "type:PWR",
@@ -685,7 +685,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/lim2.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.744Z",
+    "publishedAt": "2026-09-03T16:03:03.295Z",
     "tags": [
       "plant:LIMERICK-1",
       "type:BWR",
@@ -698,7 +698,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/lim1.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.743Z",
+    "publishedAt": "2026-09-03T16:03:03.295Z",
     "tags": [
       "plant:LIMERICK-1",
       "type:BWR",
@@ -711,7 +711,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/lasa2.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.743Z",
+    "publishedAt": "2026-09-03T16:03:03.295Z",
     "tags": [
       "plant:LASALLE-1",
       "type:BWR",
@@ -724,7 +724,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/lasa1.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.743Z",
+    "publishedAt": "2026-09-03T16:03:03.295Z",
     "tags": [
       "plant:LASALLE-1",
       "type:BWR",
@@ -737,7 +737,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/ip3.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.742Z",
+    "publishedAt": "2026-09-03T16:03:03.295Z",
     "tags": [
       "country:India",
       "plant:NINE MILE POINT-1",
@@ -751,7 +751,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/ip2.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.742Z",
+    "publishedAt": "2026-09-03T16:03:03.294Z",
     "tags": [
       "country:India",
       "plant:NINE MILE POINT-1",
@@ -765,7 +765,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/hope.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.742Z",
+    "publishedAt": "2026-09-03T16:03:03.294Z",
     "tags": [
       "plant:HOPE CREEK-1",
       "type:BWR",
@@ -779,7 +779,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/hat2.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.742Z",
+    "publishedAt": "2026-09-03T16:03:03.294Z",
     "tags": [
       "plant:HATCH-1",
       "type:BWR",
@@ -792,7 +792,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/hat1.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.741Z",
+    "publishedAt": "2026-09-03T16:03:03.294Z",
     "tags": [
       "plant:HATCH-1",
       "type:BWR",
@@ -805,7 +805,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/har1.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.741Z",
+    "publishedAt": "2026-09-03T16:03:03.294Z",
     "tags": [
       "plant:HARRIS-1",
       "type:PWR"
@@ -817,7 +817,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/gg1.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.741Z",
+    "publishedAt": "2026-09-03T16:03:03.294Z",
     "tags": [
       "plant:GRAND GULF-1",
       "type:BWR"
@@ -829,7 +829,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/ginn.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.740Z",
+    "publishedAt": "2026-09-03T16:03:03.293Z",
     "tags": [
       "plant:GINNA",
       "type:PWR"
@@ -837,11 +837,11 @@
   },
   {
     "id": "a5083c1a0cf89a4f317606a8",
-    "title": "FitzPatrick - 86% power",
+    "title": "FitzPatrick - 85% power",
     "summary": "",
     "url": "https://www.nrc.gov/reactors/fitz.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.740Z",
+    "publishedAt": "2026-09-03T16:03:03.293Z",
     "tags": [
       "plant:FITZPATRICK",
       "type:BWR"
@@ -853,7 +853,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/ferm2.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.740Z",
+    "publishedAt": "2026-09-03T16:03:03.293Z",
     "tags": [
       "plant:FERMI-2",
       "type:BWR"
@@ -865,7 +865,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/far2.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.739Z",
+    "publishedAt": "2026-09-03T16:03:03.293Z",
     "tags": [
       "plant:FARLEY-1",
       "type:PWR",
@@ -878,7 +878,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/far1.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.739Z",
+    "publishedAt": "2026-09-03T16:03:03.293Z",
     "tags": [
       "plant:FARLEY-1",
       "type:PWR",
@@ -891,7 +891,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/duan.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.739Z",
+    "publishedAt": "2026-09-03T16:03:03.293Z",
     "tags": []
   },
   {
@@ -900,7 +900,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/dres3.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.739Z",
+    "publishedAt": "2026-09-03T16:03:03.292Z",
     "tags": [
       "plant:DRESDEN-2",
       "type:BWR",
@@ -913,7 +913,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/dres2.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.738Z",
+    "publishedAt": "2026-09-03T16:03:03.292Z",
     "tags": [
       "plant:DRESDEN-2",
       "type:BWR",
@@ -926,7 +926,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/diab2.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.738Z",
+    "publishedAt": "2026-09-03T16:03:03.292Z",
     "tags": [
       "plant:DIABLO CANYON-1",
       "type:PWR",
@@ -939,7 +939,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/diab1.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.738Z",
+    "publishedAt": "2026-09-03T16:03:03.292Z",
     "tags": [
       "plant:DIABLO CANYON-1",
       "type:PWR",
@@ -952,7 +952,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/davi.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.737Z",
+    "publishedAt": "2026-09-03T16:03:03.292Z",
     "tags": [
       "plant:DAVIS BESSE-1",
       "type:PWR"
@@ -964,7 +964,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/cook2.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.737Z",
+    "publishedAt": "2026-09-03T16:03:03.292Z",
     "tags": []
   },
   {
@@ -973,7 +973,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/cook1.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.737Z",
+    "publishedAt": "2026-09-03T16:03:03.291Z",
     "tags": []
   },
   {
@@ -982,7 +982,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/cns.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.736Z",
+    "publishedAt": "2026-09-03T16:03:03.291Z",
     "tags": [
       "plant:COOPER",
       "type:BWR"
@@ -994,7 +994,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/cp2.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.736Z",
+    "publishedAt": "2026-09-03T16:03:03.291Z",
     "tags": [
       "plant:COMANCHE PEAK-1",
       "type:PWR",
@@ -1007,7 +1007,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/cp1.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.736Z",
+    "publishedAt": "2026-09-03T16:03:03.291Z",
     "tags": [
       "plant:COMANCHE PEAK-1",
       "type:PWR",
@@ -1020,7 +1020,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/wash2.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.735Z",
+    "publishedAt": "2026-09-03T16:03:03.291Z",
     "tags": [
       "plant:COLUMBIA",
       "type:BWR"
@@ -1032,7 +1032,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/clin.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.735Z",
+    "publishedAt": "2026-09-03T16:03:03.290Z",
     "tags": [
       "plant:CLINTON-1",
       "type:BWR"
@@ -1044,7 +1044,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/cat2.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.734Z",
+    "publishedAt": "2026-09-03T16:03:03.290Z",
     "tags": [
       "plant:CATAWBA-1",
       "type:PWR",
@@ -1057,7 +1057,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/cat1.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.733Z",
+    "publishedAt": "2026-09-03T16:03:03.290Z",
     "tags": [
       "plant:CATAWBA-1",
       "type:PWR",
@@ -1070,7 +1070,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/calv2.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.733Z",
+    "publishedAt": "2026-09-03T16:03:03.290Z",
     "tags": [
       "plant:CALVERT CLIFFS-1",
       "type:PWR",
@@ -1083,7 +1083,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/calv1.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.733Z",
+    "publishedAt": "2026-09-03T16:03:03.290Z",
     "tags": [
       "plant:CALVERT CLIFFS-1",
       "type:PWR",
@@ -1096,7 +1096,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/call.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.732Z",
+    "publishedAt": "2026-09-03T16:03:03.290Z",
     "tags": [
       "plant:CALLAWAY-1",
       "type:PWR"
@@ -1108,7 +1108,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/byro2.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.732Z",
+    "publishedAt": "2026-09-03T16:03:03.290Z",
     "tags": [
       "plant:BYRON-1",
       "type:PWR",
@@ -1121,7 +1121,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/byro1.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.732Z",
+    "publishedAt": "2026-09-03T16:03:03.289Z",
     "tags": [
       "plant:BYRON-1",
       "type:PWR",
@@ -1134,7 +1134,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/bru2.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.731Z",
+    "publishedAt": "2026-09-03T16:03:03.289Z",
     "tags": [
       "plant:BRUNSWICK-1",
       "type:BWR",
@@ -1147,7 +1147,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/bru1.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.731Z",
+    "publishedAt": "2026-09-03T16:03:03.289Z",
     "tags": [
       "plant:BRUNSWICK-1",
       "type:BWR",
@@ -1160,7 +1160,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/bf3.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.731Z",
+    "publishedAt": "2026-09-03T16:03:03.289Z",
     "tags": [
       "plant:BROWNS FERRY-1",
       "type:BWR",
@@ -1170,11 +1170,11 @@
   },
   {
     "id": "181f6672c8c4fa21c03815fb",
-    "title": "Browns Ferry 2 - 79% power",
+    "title": "Browns Ferry 2 - 100% power",
     "summary": "",
     "url": "https://www.nrc.gov/reactors/bf2.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.730Z",
+    "publishedAt": "2026-09-03T16:03:03.289Z",
     "tags": [
       "plant:BROWNS FERRY-1",
       "type:BWR",
@@ -1184,11 +1184,11 @@
   },
   {
     "id": "421a3c6468b906d72757d4a9",
-    "title": "Browns Ferry 1 - 97% power",
+    "title": "Browns Ferry 1 - 99% power",
     "summary": "",
     "url": "https://www.nrc.gov/reactors/bf1.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.730Z",
+    "publishedAt": "2026-09-03T16:03:03.288Z",
     "tags": [
       "plant:BROWNS FERRY-1",
       "type:BWR",
@@ -1202,7 +1202,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/brai2.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.729Z",
+    "publishedAt": "2026-09-03T16:03:03.288Z",
     "tags": [
       "plant:BRAIDWOOD-1",
       "type:PWR",
@@ -1215,7 +1215,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/brai1.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.729Z",
+    "publishedAt": "2026-09-03T16:03:03.288Z",
     "tags": [
       "plant:BRAIDWOOD-1",
       "type:PWR",
@@ -1228,7 +1228,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/bv2.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.728Z",
+    "publishedAt": "2026-09-03T16:03:03.288Z",
     "tags": [
       "plant:BEAVER VALLEY-1",
       "type:PWR",
@@ -1241,7 +1241,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/bv1.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.727Z",
+    "publishedAt": "2026-09-03T16:03:03.288Z",
     "tags": [
       "plant:BEAVER VALLEY-1",
       "type:PWR",
@@ -1254,7 +1254,7 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/ano2.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.727Z",
+    "publishedAt": "2026-09-03T16:03:03.288Z",
     "tags": []
   },
   {
@@ -1263,7 +1263,101 @@
     "summary": "",
     "url": "https://www.nrc.gov/reactors/ano1.html",
     "source": "NRC Power Reactor Status",
-    "publishedAt": "2026-09-03T10:53:37.726Z",
+    "publishedAt": "2026-09-03T16:03:03.287Z",
+    "tags": []
+  },
+  {
+    "id": "458aee87e423620c742c8782",
+    "title": "Consortium formed for Swedish SMR project",
+    "summary": "Studsvik has selected GE Vernova Hitachi Nuclear Energy and Samsung C&T as its strategic partners for an initial four-unit BWRX-300 small modular reactor project, either at its existing licensed nuclear site in Nyköping or at the Målma site in Valdemarsvik.",
+    "url": "https://www.world-nuclear-news.org/articles/consortium-formed-for-swedish-smr-project",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-09-03T15:43:40.000Z",
+    "tags": [
+      "company:ge-hitachi",
+      "company:x-energy",
+      "company:nei"
+    ]
+  },
+  {
+    "id": "2863796f8e173858cf09e928",
+    "title": "NextEra, Santee Cooper Point to Real Dollar Savings From AI Deployments",
+    "summary": "NextEra Energy says an artificial intelligence (AI)–driven dispatch and outage-scheduling tool has saved its customers more than $20 million so far this year. Santee Cooper expects a custom AI weather-forecasting model to help it avoid spot-market purchases that can cost $100,000 an hour during extreme weather. Both utilities say the tools moved from…",
+    "url": "https://www.powermag.com/nextera-santee-cooper-point-to-real-dollar-savings-from-ai-deployments",
+    "source": "POWER Magazine",
+    "publishedAt": "2026-09-03T15:31:36.000Z",
+    "tags": [
+      "plant:COOPER",
+      "type:BWR",
+      "plant:NINE MILE POINT-1",
+      "plant:NINE MILE POINT-2",
+      "company:x-energy"
+    ]
+  },
+  {
+    "id": "12876abe4cbcb1ca770bb000",
+    "title": "Three Questions Every Utility Should Ask About Advanced Reactors",
+    "summary": "The U.S. power grid is entering a period unlike any it has experienced in decades. Rapid electrification, domestic manufacturing, and the exponential growth of artificial intelligence are reshaping electricity demand. A recent report from Lawrence Berkeley National Laboratory, supported by the U.S. Department of Energy, projects that data centers alone…",
+    "url": "https://www.powermag.com/three-questions-every-utility-should-ask-about-advanced-reactors",
+    "source": "POWER Magazine",
+    "publishedAt": "2026-09-03T14:05:02.000Z",
+    "tags": [
+      "company:x-energy"
+    ]
+  },
+  {
+    "id": "1ed77392fbbcc272f9d43459",
+    "title": "Project to consider trans-Atlantic nuclear-powered cargo ships",
+    "summary": "UK-based classification society and professional advisory service Lloyd's Register, Danish global shipping company AP Moller-Maersk, the USA's Port of Charleston and the UK's Port of Felixstowe are partnering to examine the security and safeguarding requirements for the theoretical trans-Atlantic deployment of nuclear-powered container ships.",
+    "url": "https://www.world-nuclear-news.org/articles/project-to-consider-trans-atlantic-nuclear-powered-cargo-ships",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-09-03T14:04:10.000Z",
+    "tags": [
+      "company:ans"
+    ]
+  },
+  {
+    "id": "221d3933afb3966151df1578",
+    "title": "Energy Management Goes Beyond Monitoring to Decision-Making",
+    "summary": "Utilities and independent power producers have spent years adding sensors to their generating fleets and creating dashboards to view what they relay. But visibility into how a plant is operating isn’t the same as knowing what to do about it—and that gap is where Siemens Energy’s Omnivise Energy Management System is increasingly shedding light, explained […]…",
+    "url": "https://www.powermag.com/energy-management-goes-beyond-monitoring-to-decision-making",
+    "source": "POWER Magazine",
+    "publishedAt": "2026-09-03T12:47:55.000Z",
+    "tags": [
+      "company:x-energy"
+    ]
+  },
+  {
+    "id": "2a8023eaaf9312e9c66b8953",
+    "title": "Studsvik Selects GE Vernova Hitachi, Samsung C&T for 1.2-GW Swedish BWRX-300 Project",
+    "summary": "Following a competitive evaluation, Swedish nuclear technology company Studsvik AB has selected GE Vernova Hitachi Nuclear Energy and Samsung C&T as strategic collaborators for a proposed four-unit BWRX-300 project totaling about 1,200 MWe. The project is planned for either Studsvik’s licensed nuclear site in Nyköping or Målma in Valdemarsvik, and the first…",
+    "url": "https://www.powermag.com/studsvik-selects-ge-vernova-hitachi-samsung-ct-for-1-2-gw-swedish-bwrx-300-project",
+    "source": "POWER Magazine",
+    "publishedAt": "2026-09-03T12:34:51.000Z",
+    "tags": [
+      "company:ge-hitachi",
+      "company:x-energy",
+      "company:nei"
+    ]
+  },
+  {
+    "id": "dfde169d9fbb3094421d281f",
+    "title": "Rosatom signs EPC contract for Kazakhstan nuclear plant",
+    "summary": "An engineering, procurement and construction contract for Kazakhstan's proposed Balkhash Nuclear Power Plant has been signed by Rosatom and Kazakhstan Nuclear Power Plants.",
+    "url": "https://www.world-nuclear-news.org/articles/rosatom-signs-epc-contract-for-kazakhstan-nuclear-plant",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-09-03T11:53:53.000Z",
+    "tags": [
+      "company:rosatom"
+    ]
+  },
+  {
+    "id": "254a71a3b952c299f1965f3f",
+    "title": "Industrial zone plan to boost localisation for Uzbek nuclear project",
+    "summary": "Uzbekistan President Shavkat Mirziyoyev has said there should be an increase in localisation of work as he reviewed the construction and infrastructure plans for the country's first nuclear power plant.",
+    "url": "https://www.world-nuclear-news.org/articles/uzbekistan-aims-to-boost-localisation-in-nuclear-plant-construction-work",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-09-03T11:39:13.000Z",
     "tags": []
   },
   {
