@@ -1,15 +1,15 @@
 {
   "ok": true,
-  "ranAt": "2026-09-17T04:06:34.138Z",
-  "total": 947,
-  "inserted": 1,
-  "updated": 335,
+  "ranAt": "2026-09-17T11:15:52.521Z",
+  "total": 950,
+  "inserted": 3,
+  "updated": 336,
   "sources": [
     {
       "source": "World Nuclear News",
       "ok": true,
-      "fetched": 51,
-      "kept": 51,
+      "fetched": 54,
+      "kept": 54,
       "skippedOld": 0,
       "skippedNoUrl": 0,
       "skippedNoTitle": 0
@@ -41,7 +41,7 @@
     {
       "source": "DOE Office of Nuclear Energy",
       "ok": false,
-      "error": "Request timed out after 20000ms"
+      "error": "Status code 503"
     },
     {
       "source": "POWER Magazine",
