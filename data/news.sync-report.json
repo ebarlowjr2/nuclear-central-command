@@ -1,15 +1,15 @@
 {
   "ok": true,
-  "ranAt": "2026-09-17T11:15:52.521Z",
-  "total": 950,
-  "inserted": 3,
-  "updated": 336,
+  "ranAt": "2026-09-17T21:05:28.794Z",
+  "total": 955,
+  "inserted": 5,
+  "updated": 330,
   "sources": [
     {
       "source": "World Nuclear News",
       "ok": true,
-      "fetched": 54,
-      "kept": 54,
+      "fetched": 52,
+      "kept": 52,
       "skippedOld": 0,
       "skippedNoUrl": 0,
       "skippedNoTitle": 0
@@ -41,7 +41,7 @@
     {
       "source": "DOE Office of Nuclear Energy",
       "ok": false,
-      "error": "Status code 503"
+      "error": "Status code 404"
     },
     {
       "source": "POWER Magazine",
@@ -55,8 +55,8 @@
     {
       "source": "NRC News Releases",
       "ok": true,
-      "fetched": 167,
-      "kept": 166,
+      "fetched": 165,
+      "kept": 164,
       "skippedOld": 1,
       "skippedNoUrl": 0,
       "skippedNoTitle": 0
