@@ -1,9 +1,9 @@
 {
   "ok": true,
-  "ranAt": "2026-09-16T16:27:01.551Z",
-  "total": 946,
-  "inserted": 5,
-  "updated": 331,
+  "ranAt": "2026-09-17T04:06:34.138Z",
+  "total": 947,
+  "inserted": 1,
+  "updated": 335,
   "sources": [
     {
       "source": "World Nuclear News",
@@ -41,7 +41,7 @@
     {
       "source": "DOE Office of Nuclear Energy",
       "ok": false,
-      "error": "Status code 404"
+      "error": "Request timed out after 20000ms"
     },
     {
       "source": "POWER Magazine",
