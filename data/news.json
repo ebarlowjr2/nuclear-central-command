@@ -1,5 +1,44 @@
 [
   {
+    "id": "6bb570fbafe2d165a1253b7b",
+    "title": "Army Selects Three Developers for Commercial Power Projects at Six Installations",
+    "summary": "The U.S. Army has conditionally selected three private developers to negotiate long-term leases for commercial power generation at six installations in a new Strategic Capital Initiatives round that could bring battery storage, natural gas, and nuclear generation onto Army land. On Sept. 18, the Army conditionally selected Ameresco, a Massachusetts-based…",
+    "url": "https://www.powermag.com/army-selects-three-developers-for-commercial-power-projects-at-six-installations",
+    "source": "POWER Magazine",
+    "publishedAt": "2026-09-23T19:48:13.000Z",
+    "tags": []
+  },
+  {
+    "id": "f2f1347da0f1c6b1032576d1",
+    "title": "Bechtel-Westinghouse Group, PEJ Agree on Terms for Poland’s First Nuclear Power Plant",
+    "summary": "Poland's state-owned nuclear power company and a consortium led by Bechtel and Westinghouse have agreed on the main commercial terms of a deal to build that country's first nuclear power plant. The post Bechtel-Westinghouse Group, PEJ Agree on Terms for Poland’s First Nuclear Power Plant appeared first on POWER Magazine.",
+    "url": "https://www.powermag.com/bechtel-westinghouse-group-pej-agree-on-terms-for-polands-first-nuclear-power-plant",
+    "source": "POWER Magazine",
+    "publishedAt": "2026-09-23T18:57:05.000Z",
+    "tags": [
+      "company:westinghouse",
+      "company:bechtel"
+    ]
+  },
+  {
+    "id": "b5bf59ec5417428f896cdf99",
+    "title": "What Does Fleetwide AI Actually Mean for the U.S. Nuclear Industry?",
+    "summary": "Nuclear plants have accumulated decades of operating experience, technical research, regulatory guidance, and other industry knowledge. Finding the right information, however, can mean searching several separate systems and then piecing the relevant material together. To address that search burden, Atomic Canyon, a company developing artificial intelligence…",
+    "url": "https://www.powermag.com/what-does-fleetwide-ai-actually-mean-for-the-u-s-nuclear-industry",
+    "source": "POWER Magazine",
+    "publishedAt": "2026-09-23T17:54:44.000Z",
+    "tags": []
+  },
+  {
+    "id": "01822d2eb302fbfe0d72428c",
+    "title": "Purdue Nuclear Reactor Test Demonstrates Remote, Automated Power Control",
+    "summary": "Engineers at Purdue University have, for the first time in the U.S., adjusted a nuclear reactor’s power experimentally, remotely and automatically in real time—a demonstration they say offers an early The post Purdue Nuclear Reactor Test Demonstrates Remote, Automated Power Control appeared first on POWER Magazine.",
+    "url": "https://www.powermag.com/purdue-nuclear-reactor-test-demonstrates-remote-automated-power-control",
+    "source": "POWER Magazine",
+    "publishedAt": "2026-09-23T16:27:15.000Z",
+    "tags": []
+  },
+  {
     "id": "e28bbb296b04afcdef1b1a5d",
     "title": "Wolf Creek 1 - 100% power",
     "summary": "",
@@ -1292,7 +1331,7 @@
   {
     "id": "0b072963ceabea860320d189",
     "title": "Škoda JS to supply control rod drives for Rolls-Royce SMR's reactors",
-    "summary": "Czech company Škoda JS has been chosen as sole supplier of control rod drive mechanisms for all Rolls-Royce SMR's future reactors.",
+    "summary": "Czech company Škoda JS has been chosen as sole supplier of control rod drive mechanisms for Rolls-Royce SMR's future small modular reactors.",
     "url": "https://www.world-nuclear-news.org/articles/skoda-js-to-supply-control-rod-drives-for-rolls-royce-smrs",
     "source": "World Nuclear News",
     "publishedAt": "2026-09-23T12:36:30.000Z",
