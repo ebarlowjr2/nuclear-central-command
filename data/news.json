@@ -1,5 +1,35 @@
 [
   {
+    "id": "e3c6216f77c2d3f92866189e",
+    "title": "Community Impact Award Finalist: Philippine Coal Plants’ Scholarship Program",
+    "summary": "Just hours before his flight back to work on Aug. 24, 2026, seafarer John Cris Tropicales watched his younger brother graduate with a bachelor’s degree in criminology, reported Ulysses “Chuckie” Rivera, community relations manager for Quezon Power (Philippines) Ltd. Co. (QPL) and San Buenaventura Power Ltd. Co. (SBPL). It was a milestone that the Tropicales…",
+    "url": "https://www.powermag.com/community-impact-award-finalist-philippine-coal-plants-scholarship-program",
+    "source": "POWER Magazine",
+    "publishedAt": "2026-09-30T20:42:15.000Z",
+    "tags": [
+      "plant:RIVER BEND-1",
+      "type:BWR"
+    ]
+  },
+  {
+    "id": "ec6b9a7bee9ab8fd21d50035",
+    "title": "Redesigning Steam Turbines for the SMR Era",
+    "summary": "Small modular reactors (SMRs) borrow steam turbine engineering from both coal-fired and nuclear plants, but the resulting “wet steam” problem, with exhaust moisture topping 15%, demands a fresh set of The post Redesigning Steam Turbines for the SMR Era appeared first on POWER Magazine.",
+    "url": "https://www.powermag.com/redesigning-steam-turbines-for-the-smr-era",
+    "source": "POWER Magazine",
+    "publishedAt": "2026-09-30T19:00:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "d0d20cab26a1735cd358c0f7",
+    "title": "WA Parish Integrates Thermal Evaporation to Tackle FGD Wastewater",
+    "summary": "POWER’s 2026 Water Award winner—WA Parish Unit 8 in Texas—integrated commercial-scale thermal evaporation into an operating coal plant, pairing verified performance with a retrofit that leveraged The post WA Parish Integrates Thermal Evaporation to Tackle FGD Wastewater appeared first on POWER Magazine.",
+    "url": "https://www.powermag.com/wa-parish-integrates-thermal-evaporation-to-tackle-fgd-wastewater",
+    "source": "POWER Magazine",
+    "publishedAt": "2026-09-30T17:00:00.000Z",
+    "tags": []
+  },
+  {
     "id": "17d749f2c230559f53546b89",
     "title": "First construction permit issued for BWRX-300 SMR in the US",
     "summary": "The US Nuclear Regulatory Commission has issued a construction permit for the Tennessee Valley Authority's planned GE Vernova Hitachi BWRX‑300 small modular reactor at the Clinch River site.",
@@ -11,6 +41,65 @@
       "type:BWR",
       "company:tva",
       "company:ge-hitachi"
+    ]
+  },
+  {
+    "id": "987dc67af3ec88197dcef543",
+    "title": "Saskatchewan firms up nuclear power ambitions",
+    "summary": "The Government of Saskatchewan has released a plan that establishes a goal of having at least 2,600 MWe of nuclear generating capacity online in the Canadian province by 2050.",
+    "url": "https://www.world-nuclear-news.org/articles/saskatchewan-firms-up-nuclear-power-ambitions",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-09-30T14:59:31.000Z",
+    "tags": []
+  },
+  {
+    "id": "2242fa026e400a789dc50283",
+    "title": "Executive Leadership Award Finalist: Westinghouse CTO Dr. Lou Martinez Sancho",
+    "summary": "At the inaugural Pennsylvania Energy and Innovation Summit, hosted by Sen. Dave McCormick at Carnegie Mellon University on July 15, 2025, Westinghouse Electric Co. put a live proof of concept on display: an artificial intelligence (AI) system aimed at reducing the cost and schedule risk of building new AP1000 reactors. According to Westinghouse, the…",
+    "url": "https://www.powermag.com/executive-leadership-award-finalist-westinghouse-cto-dr-lou-martinez-sancho",
+    "source": "POWER Magazine",
+    "publishedAt": "2026-09-30T14:39:37.000Z",
+    "tags": [
+      "company:westinghouse",
+      "company:x-energy"
+    ]
+  },
+  {
+    "id": "e8fbca492ff9f6f6daebdbd0",
+    "title": "ArcLight Completes Acquisition of 50% Stake in 5.4-GW Diversified Power Infrastructure Portfolio",
+    "summary": "ArcLight Capital Partners, an investor in power and energy infrastructure, said its fund has completed the acquisition of a 50% stake in IATP, a large-scale, 5.4-GW power portfolio comprising 11 power infrastructure assets located across North America. Invenergy will retain its existing 50% ownership interest and operational role in IATP. IATP combines a…",
+    "url": "https://www.powermag.com/arclight-completes-acquisition-of-50-stake-in-5-4-gw-diversified-power-infrastructure-portfolio",
+    "source": "POWER Magazine",
+    "publishedAt": "2026-09-30T14:24:59.000Z",
+    "tags": [
+      "plant:NORTH ANNA-1",
+      "type:PWR",
+      "plant:NORTH ANNA-2",
+      "company:x-energy"
+    ]
+  },
+  {
+    "id": "8ff03976107def071612bafb",
+    "title": "Sellafield selects partners for asset care framework",
+    "summary": "The successful partners have been identified for a new delivery framework, valued at up to GBP3.6 billion (USD4.8 billion), for asset care and asset creation activities at the UK's Sellafield site in Cumbria, in northwest England.",
+    "url": "https://www.world-nuclear-news.org/articles/sellafield-selects-partners-for-asset-care-framework",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-09-30T14:11:29.000Z",
+    "tags": [
+      "plant:NORTH ANNA-1",
+      "type:PWR",
+      "plant:NORTH ANNA-2"
+    ]
+  },
+  {
+    "id": "bd3df1e184b71eccb40eca1a",
+    "title": "POWER Honors Bloom Energy’s KR Sridhar with 2026 Executive Leadership Award",
+    "summary": "For nearly 25 years, KR Sridhar has argued that large electricity users should not have to wait for the grid to reach them. The proposition once sounded ahead of its time, then specialized, then useful to hospitals, campuses, retailers, telecom networks and data centers that wanted power close to the load. By 2025, as artificial […] The post POWER Honors…",
+    "url": "https://www.powermag.com/power-honors-bloom-energys-kr-sridhar-with-2026-executive-leadership-award",
+    "source": "POWER Magazine",
+    "publishedAt": "2026-09-30T13:06:00.000Z",
+    "tags": [
+      "company:x-energy"
     ]
   },
   {
@@ -11608,87 +11697,5 @@
     "tags": [
       "company:x-energy"
     ]
-  },
-  {
-    "id": "1f9da6b0a85e29969d3ce6b2",
-    "title": "Nuclear Regulatory Commission Statement to Stakeholders",
-    "summary": "",
-    "url": "https://www.nrc.gov/cdn/doc-collection-news/2025/25-042.pdf",
-    "source": "NRC News Releases",
-    "publishedAt": "2025-07-14T23:27:13.000Z",
-    "tags": []
-  },
-  {
-    "id": "cffb034b1e655b86a13efe97",
-    "title": "NRC Renews Perry Nuclear Power Plant Operating License",
-    "summary": "",
-    "url": "https://www.nrc.gov/cdn/doc-collection-news/2025/25-041.pdf",
-    "source": "NRC News Releases",
-    "publishedAt": "2025-07-07T23:19:51.000Z",
-    "tags": [
-      "plant:PERRY-1",
-      "type:BWR"
-    ]
-  },
-  {
-    "id": "be3dcd705cb88869c331de62",
-    "title": "NRC to Discuss 2024 Performance of Donald C. Cook Nuclear Power Plant",
-    "summary": "",
-    "url": "https://www.nrc.gov/cdn/doc-collection-news/2025/25-022-iii.pdf",
-    "source": "NRC News Releases",
-    "publishedAt": "2025-07-03T18:13:10.000Z",
-    "tags": []
-  },
-  {
-    "id": "c8ee00717444583e793e4df9",
-    "title": "NRC Accelerates Review of Kemmerer Power Station Construction Permit",
-    "summary": "",
-    "url": "https://www.nrc.gov/cdn/doc-collection-news/2025/25-040.pdf",
-    "source": "NRC News Releases",
-    "publishedAt": "2025-07-02T21:47:35.000Z",
-    "tags": []
-  },
-  {
-    "id": "e55aae3929c1e8d69a17ad58",
-    "title": "NRC Renews V.C. Summer Operating License",
-    "summary": "",
-    "url": "https://www.nrc.gov/cdn/doc-collection-news/2025/25-039.pdf",
-    "source": "NRC News Releases",
-    "publishedAt": "2025-07-01T00:27:06.000Z",
-    "tags": [
-      "plant:SUMMER-1",
-      "type:PWR"
-    ]
-  },
-  {
-    "id": "7168ef55babb1cb7a7cf5ac0",
-    "title": "NRC Reduces Hourly Rate for Advanced Nuclear Reactor Applicants and Pre-Applicants",
-    "summary": "",
-    "url": "https://www.nrc.gov/cdn/doc-collection-news/2025/25-038.pdf",
-    "source": "NRC News Releases",
-    "publishedAt": "2025-06-24T23:03:20.000Z",
-    "tags": []
-  },
-  {
-    "id": "077e1e86baf7c19e7c9a8d03",
-    "title": "NRC Announces Opportunity to Request a Hearing on the Hatch Subsequent License Renewal Application",
-    "summary": "",
-    "url": "https://www.nrc.gov/cdn/doc-collection-news/2025/25-037.pdf",
-    "source": "NRC News Releases",
-    "publishedAt": "2025-06-20T19:22:12.000Z",
-    "tags": [
-      "plant:HATCH-1",
-      "type:BWR",
-      "plant:HATCH-2"
-    ]
-  },
-  {
-    "id": "9f2c54fd7f9555def0d1de71",
-    "title": "NRC Advances Factory-Built Microreactor Policy",
-    "summary": "",
-    "url": "https://www.nrc.gov/cdn/doc-collection-news/2025/25-036.pdf",
-    "source": "NRC News Releases",
-    "publishedAt": "2025-06-18T21:06:02.000Z",
-    "tags": []
   }
 ]
