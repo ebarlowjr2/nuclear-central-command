@@ -1,5 +1,17 @@
 [
   {
+    "id": "1a857dfb9adf7ca4befb9114",
+    "title": "Orano inaugurates lead-212 production facility",
+    "summary": "An opening ceremony has been held for Europe's first industrial-scale facility for the production of lead-212-based targeted alpha therapies, the Alpha Therapy Laboratory in Valenciennes, France.",
+    "url": "https://www.world-nuclear-news.org/articles/orano-inaugurates-lead-212-production-facility",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-10-05T12:45:19.000Z",
+    "tags": [
+      "country:France",
+      "company:orano"
+    ]
+  },
+  {
     "id": "e28bbb296b04afcdef1b1a5d",
     "title": "Wolf Creek 1 - 100% power",
     "summary": "",
@@ -11725,17 +11737,5 @@
     "source": "NRC News Releases",
     "publishedAt": "2025-09-25T21:00:00.000Z",
     "tags": []
-  },
-  {
-    "id": "a5b76cd0f6a60acf3f262046",
-    "title": "U.S., U.K. Nuclear Regulators Renew, Expand Cooperation to Speed Advanced Reactor Technical Reviews",
-    "summary": "",
-    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2025/25-056.pdf",
-    "source": "NRC News Releases",
-    "publishedAt": "2025-09-19T01:25:00.000Z",
-    "tags": [
-      "plant:COOPER",
-      "type:BWR"
-    ]
   }
 ]
