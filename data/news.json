@@ -1,5 +1,125 @@
 [
   {
+    "id": "8b62fc0fc046694a2349fa58",
+    "title": "Hydraulic tests completed at Turkey's Akkuyu 1",
+    "summary": "Hydraulic tests to check the primary circuit systems and equipment at unit 1 of Turkey's Akkuyu nuclear power plant have been successfully completed, paving the way for hot functional tests to begin.",
+    "url": "https://www.world-nuclear-news.org/articles/hydraulic-tests-completed-at-turkeys-akkuyu-1",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-10-09T12:31:45.000Z",
+    "tags": [
+      "plant:AKKUYU-1",
+      "type:PWR",
+      "plant:AKKUYU-2",
+      "plant:AKKUYU-3"
+    ]
+  },
+  {
+    "id": "2383b87686f83e639b2bd5e2",
+    "title": "Framatome to continue maintaining Sizewell B plant",
+    "summary": "Framatome and EDF have renewed their long-term service agreement covering a comprehensive range of maintenance and outage services to support the long-term operation strategy of the Sizewell B nuclear power plant in Suffolk, England.",
+    "url": "https://www.world-nuclear-news.org/articles/framatome-to-continue-maintaining-sizewell-b-plant",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-10-09T09:58:19.000Z",
+    "tags": [
+      "plant:SIZEWELL B",
+      "type:PWR",
+      "company:framatome"
+    ]
+  },
+  {
+    "id": "ee67ab6caf58c77e02d3204e",
+    "title": "Podcast: World Nuclear Symposium 2026",
+    "summary": "More than 1,300 people from 65 countries gathered in London in September for the 2026 World Nuclear Symposium. The World Nuclear News team was there and bring you reports from a range of the discussions and speeches which took place.",
+    "url": "https://www.world-nuclear-news.org/articles/podcast-world-nuclear-symposium-2026",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-10-09T09:29:22.000Z",
+    "tags": []
+  },
+  {
+    "id": "27d8378a1ef16e3691cfe3f5",
+    "title": "Data Centers, Gas, and Who Pays: Power Association Leaders Find Common Ground",
+    "summary": "When the heads of three of the power sector’s biggest trade associations shared a stage at Experience POWER on Sept. 30, the most notable thing was how little they disagreed. Whether the question was data center backlash, grid security, or what to do about gas-plant emissions rules, the answer came back to the same point: […] The post Data Centers, Gas, and…",
+    "url": "https://www.powermag.com/data-centers-gas-and-who-pays-power-association-leaders-find-common-ground",
+    "source": "POWER Magazine",
+    "publishedAt": "2026-10-08T16:39:30.000Z",
+    "tags": [
+      "plant:NINE MILE POINT-1",
+      "type:BWR",
+      "plant:NINE MILE POINT-2"
+    ]
+  },
+  {
+    "id": "34d810b8781935b594d72b78",
+    "title": "Poland begins ordering long-lead components for first AP1000",
+    "summary": "Polskie Elektrownie Jądrowe has commissioned Westinghouse to begin ordering long-lead items for the first unit of Poland's planned first nuclear power plant, which will comprise three AP1000 reactors.",
+    "url": "https://www.world-nuclear-news.org/articles/poland-begins-ordering-long-lead-components-for-first-ap1000",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-10-08T16:16:41.000Z",
+    "tags": []
+  },
+  {
+    "id": "ffa9fdf773ee8d84a66521f8",
+    "title": "China's Tianwan 7 connected to the grid",
+    "summary": "Tianwan Nuclear Power Plant's unit 7 has been successfully connected to the grid, China National Nuclear Corporation has announced.",
+    "url": "https://www.world-nuclear-news.org/articles/chinas-tianwan-7-connected-to-the-grid",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-10-08T14:59:17.000Z",
+    "tags": [
+      "country:China",
+      "plant:TIANWAN-1",
+      "type:PWR",
+      "plant:TIANWAN-2",
+      "plant:TIANWAN-3"
+    ]
+  },
+  {
+    "id": "7080bcdedf7a2c562f2a66b4",
+    "title": "Last Energy's Texas micro-modular reactor clears safety analysis",
+    "summary": "The Department of Energy's approval of the Documented Safety Analysis clears Last Energy's planned pilot reactor at Texas A&M-RELLIS to move into the readiness review, the final step before authorisation for criticality and reactor operations.",
+    "url": "https://www.world-nuclear-news.org/articles/last-energy-texas-micro-modular-reactor-clears-safety-analysis",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-10-08T14:45:38.000Z",
+    "tags": [
+      "company:x-energy"
+    ]
+  },
+  {
+    "id": "9ba4ec733c8b16d95e251fcd",
+    "title": "Thorizon, Urenco to cooperate on MSR fuel cycle",
+    "summary": "A memorandum of understanding with the molten salt reactor developer Thorizon will examine Urenco's potential role in the molten salt fuel supply chain and how depleted uranium could become a fuel resource for advanced nuclear.",
+    "url": "https://www.world-nuclear-news.org/articles/thorizon-urenco-to-cooperate-on-msr-fuel-cycle",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-10-08T12:47:19.000Z",
+    "tags": [
+      "plant:COOPER",
+      "type:BWR"
+    ]
+  },
+  {
+    "id": "e2777065a745413b2e4c9c61",
+    "title": "Slovakia buys out Czech stake in new nuclear project company",
+    "summary": "ČEZ has sold its 49% stake in JESS, the company formed to develop new nuclear capacity in Slovakia, for EUR189 million (USD211 million).",
+    "url": "https://www.world-nuclear-news.org/articles/slovakia-buys-out-czech-stake-in-new-nuclear-project",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-10-08T11:48:24.000Z",
+    "tags": [
+      "country:Czech Rep.",
+      "country:Slovakia"
+    ]
+  },
+  {
+    "id": "0d4104c3f31b916eaea94cce",
+    "title": "Westinghouse teams up with Hyundai E&C for Dutch FEED studies",
+    "summary": "South Korea's Hyundai Engineering & Construction has been contracted by Westinghouse to carry out basic design studies for the construction of two large nuclear power plants in the Netherlands based on Westinghouse's AP1000 design.",
+    "url": "https://www.world-nuclear-news.org/articles/westinghouse-teams-up-with-hyundai-ec-for-dutch-feed-studies",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-10-08T11:04:41.000Z",
+    "tags": [
+      "country:Korea,rep.of",
+      "country:Netherlands"
+    ]
+  },
+  {
     "id": "e28bbb296b04afcdef1b1a5d",
     "title": "Wolf Creek 1 - 100% power",
     "summary": "",
@@ -11687,107 +11807,6 @@
     "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-020.pdf",
     "source": "NRC News Releases",
     "publishedAt": "2026-02-18T23:30:00.000Z",
-    "tags": []
-  },
-  {
-    "id": "caa0680147df207a3239363a",
-    "title": "NRC Licenses TRISO-X LLC Fuel Fabrication Facility in Tennessee",
-    "summary": "",
-    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-019.pdf",
-    "source": "NRC News Releases",
-    "publishedAt": "2026-02-14T00:30:00.000Z",
-    "tags": []
-  },
-  {
-    "id": "6c4de317a61facea6ee7b8f4",
-    "title": "NRC Proposes $9,000 Fine Against Puerto Rico Medical Facility for Loss of Radioactive Material",
-    "summary": "",
-    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-001-i.pdf",
-    "source": "NRC News Releases",
-    "publishedAt": "2026-02-11T02:30:00.000Z",
-    "tags": []
-  },
-  {
-    "id": "cb73eb7a151b6eaeb499bfed",
-    "title": "NRC Announces Opportunity to Request a Hearing on Duke Energy Carolinas’ Belews Creek Early Site Permit Application",
-    "summary": "",
-    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-018.pdf",
-    "source": "NRC News Releases",
-    "publishedAt": "2026-02-09T21:15:00.000Z",
-    "tags": [
-      "plant:HOPE CREEK-1",
-      "type:BWR",
-      "plant:WOLF CREEK",
-      "type:PWR",
-      "company:x-energy"
-    ]
-  },
-  {
-    "id": "e291b458ca13e9e672f720b6",
-    "title": "NRC Major Reorganization Supports Efficiency, Innovation",
-    "summary": "",
-    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-017.pdf",
-    "source": "NRC News Releases",
-    "publishedAt": "2026-02-04T23:30:00.000Z",
-    "tags": []
-  },
-  {
-    "id": "94bae84e2578715d998addb6",
-    "title": "NRC Considering Wyoming’s Request to Amend State Agreement",
-    "summary": "",
-    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-016.pdf",
-    "source": "NRC News Releases",
-    "publishedAt": "2026-02-03T21:10:00.000Z",
-    "tags": []
-  },
-  {
-    "id": "43514fd509286738e3d35d95",
-    "title": "NRC Announces Opportunity to Request Hearing for Grand Gulf Early Site Permit Renewal",
-    "summary": "",
-    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-015.pdf",
-    "source": "NRC News Releases",
-    "publishedAt": "2026-02-03T00:15:00.000Z",
-    "tags": [
-      "plant:GRAND GULF-1",
-      "type:BWR"
-    ]
-  },
-  {
-    "id": "627f2bd15724eae3ec8b73e8",
-    "title": "NRC to Host Public Symposium on Artificial Intelligence",
-    "summary": "",
-    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-014.pdf",
-    "source": "NRC News Releases",
-    "publishedAt": "2026-02-02T23:30:00.000Z",
-    "tags": []
-  },
-  {
-    "id": "35d95d2a47acf97f661a84ea",
-    "title": "NRC to Hold Public Meeting on Development of 2026-2030 Strategic Plan and Agency Priority Questions",
-    "summary": "",
-    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-013.pdf",
-    "source": "NRC News Releases",
-    "publishedAt": "2026-01-30T21:30:00.000Z",
-    "tags": []
-  },
-  {
-    "id": "a1dd3a3d98704cec2e7608b4",
-    "title": "NRC Announces Opportunity to Request Hearing for Duane Arnold Energy Center License Transfer",
-    "summary": "",
-    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-012.pdf",
-    "source": "NRC News Releases",
-    "publishedAt": "2026-01-29T22:30:00.000Z",
-    "tags": [
-      "company:x-energy"
-    ]
-  },
-  {
-    "id": "2829a122d58de319ebe18475",
-    "title": "Registration Open for NRC’s 38th Annual Regulatory Information Conference",
-    "summary": "",
-    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-011.pdf",
-    "source": "NRC News Releases",
-    "publishedAt": "2026-01-27T20:30:00.000Z",
     "tags": []
   }
 ]
