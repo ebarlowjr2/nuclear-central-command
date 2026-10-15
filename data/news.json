@@ -1,5 +1,70 @@
 [
   {
+    "id": "11fcd7e11e01f7aa4c9be604",
+    "title": "MHI delivers replacement steam generators for French reactor",
+    "summary": "Japan's Mitsubishi Heavy Industries has delivered a further three replacement steam generators to EDF. They are scheduled to be installed in unit 2 of its Cruas nuclear power plant in southeastern France.",
+    "url": "https://www.world-nuclear-news.org/articles/mhi-delivers-replacement-steam-generators-for-french-reactor",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-10-15T14:18:36.000Z",
+    "tags": [
+      "country:France",
+      "country:Japan",
+      "plant:CRUAS-1",
+      "type:PWR",
+      "plant:CRUAS-2",
+      "plant:CRUAS-3"
+    ]
+  },
+  {
+    "id": "eeac2f3d9dd5c97a78c9fc87",
+    "title": "Milestone for Bruce 4 refurbishment",
+    "summary": "Installation of the unit's 480 calandria tubes was completed faster than at Bruce 3 as the team carrying out the Major Component Replacement project continues to set new records for CANDU refurbishment.",
+    "url": "https://www.world-nuclear-news.org/articles/milestone-for-bruce-4-refurbishment",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-10-15T13:52:40.000Z",
+    "tags": [
+      "plant:BRUCE-1",
+      "type:PHWR",
+      "plant:BRUCE-2",
+      "plant:BRUCE-3"
+    ]
+  },
+  {
+    "id": "cb77fdd847a73850ba895a20",
+    "title": "US DOE funding to accelerate molten salt reactor development",
+    "summary": "The Molten Chloride Reactor Experiment aims to achieve first criticality in 2027, with the US Department of Energy approving cost-shared funding under its Advanced Reactor Demonstration Program.",
+    "url": "https://www.world-nuclear-news.org/articles/us-doe-funding-to-accelerate-molten-chloride-reactor-development",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-10-15T13:13:36.000Z",
+    "tags": [
+      "company:x-energy"
+    ]
+  },
+  {
+    "id": "2171d31d940a0f9c28fc7313",
+    "title": "Joint venture formed for six-unit SMR plant in Poland",
+    "summary": "Poland's SGE and ZE Pak have agreed to establish a joint venture to develop a nuclear power plant in Pątnów which will feature up to six BWRX-300 small modular reactors.",
+    "url": "https://www.world-nuclear-news.org/articles/joint-venture-formed-for-six-unit-smr-plant-in-poland",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-10-15T12:39:52.000Z",
+    "tags": []
+  },
+  {
+    "id": "5ddb5fc27716999cb590fb7d",
+    "title": "Newcleo opens MOX fuel development centre",
+    "summary": "Innovative nuclear energy company Newcleo has inaugurated its EUR10 million (USD11 million) advanced nuclear fuel engineering, testing and training centre located in Chusclan, in the Gard department in southern France.",
+    "url": "https://www.world-nuclear-news.org/articles/newcleo-opens-mox-fuel-development-centre",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-10-15T11:55:28.000Z",
+    "tags": [
+      "country:France",
+      "company:southern-company",
+      "company:ge-hitachi",
+      "company:x-energy",
+      "company:nei"
+    ]
+  },
+  {
     "id": "e28bbb296b04afcdef1b1a5d",
     "title": "Wolf Creek 1 - 100% power",
     "summary": "",
@@ -11802,65 +11867,5 @@
     "source": "Nuclear Engineering International",
     "publishedAt": "2026-03-20T14:00:00.000Z",
     "tags": []
-  },
-  {
-    "id": "4656fa9dc82628417ce24289",
-    "title": "Studsvik targets SMR development",
-    "summary": "Studsvik has acquired Kärnfull Next to expand into SMR project development, strengthening its role in Nordic nuclear growth and energy security. The post Studsvik targets SMR development appeared first on Nuclear Engineering International.",
-    "url": "https://www.neimagazine.com/news/studsvik-targets-smr-development",
-    "source": "Nuclear Engineering International",
-    "publishedAt": "2026-03-20T12:00:00.000Z",
-    "tags": [
-      "company:ge-hitachi",
-      "company:x-energy",
-      "company:nei"
-    ]
-  },
-  {
-    "id": "0a4d214f35e04d15f122c724",
-    "title": "Kinectrics joins UK fusion project",
-    "summary": "UKAEA and Eni have partnered with Kinectrics to design the H3AT Tritium Loop Facility, advancing tritium fuel cycle technologies for fusion power by 2030. The post Kinectrics joins UK fusion project appeared first on Nuclear Engineering International.",
-    "url": "https://www.neimagazine.com/news/kinectrics-joins-uk-fusion-project",
-    "source": "Nuclear Engineering International",
-    "publishedAt": "2026-03-20T10:00:00.000Z",
-    "tags": [
-      "company:bwxt"
-    ]
-  },
-  {
-    "id": "2fdcb4d9a632851e8535b660",
-    "title": "Thorizon and Hyundai back MSR",
-    "summary": "Thorizon and Hyundai E&C are developing the Thorizon One MSR, targeting industrial decarbonisation in Europe with commercial deployment by 2032. The post Thorizon and Hyundai back MSR appeared first on Nuclear Engineering International.",
-    "url": "https://www.neimagazine.com/news/thorizon-and-hyundai-back-msr",
-    "source": "Nuclear Engineering International",
-    "publishedAt": "2026-03-19T11:44:00.000Z",
-    "tags": []
-  },
-  {
-    "id": "ebce743aafc0621b5dc6fa55",
-    "title": "VVER ATF completes pilot",
-    "summary": "Rostov NPP has successfully completed pilot operations of VVER accident-tolerant fuel, paving the way for large-scale industrial use. The post VVER ATF completes pilot appeared first on Nuclear Engineering International.",
-    "url": "https://www.neimagazine.com/news/vver-atf-completes-pilot",
-    "source": "Nuclear Engineering International",
-    "publishedAt": "2026-03-19T11:28:14.000Z",
-    "tags": [
-      "plant:ROSTOV-1",
-      "type:PWR",
-      "plant:ROSTOV-2",
-      "plant:ROSTOV-3"
-    ]
-  },
-  {
-    "id": "373cb2e929428ac7469ebd7d",
-    "title": "AI boost for enrichment",
-    "summary": "Centrus Energy has partnered with Palantir to use AI-driven software to accelerate uranium enrichment expansion in Ohio. The post AI boost for enrichment appeared first on Nuclear Engineering International.",
-    "url": "https://www.neimagazine.com/news/ai-boost-for-enrichment",
-    "source": "Nuclear Engineering International",
-    "publishedAt": "2026-03-19T11:18:54.000Z",
-    "tags": [
-      "company:ge-hitachi",
-      "company:x-energy",
-      "company:nei"
-    ]
   }
 ]
