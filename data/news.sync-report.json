@@ -1,9 +1,9 @@
 {
   "ok": true,
-  "ranAt": "2026-10-16T16:19:58.914Z",
+  "ranAt": "2026-10-16T20:42:30.778Z",
   "total": 1000,
   "inserted": 59,
-  "updated": 272,
+  "updated": 173,
   "sources": [
     {
       "source": "World Nuclear News",
@@ -63,12 +63,8 @@
     },
     {
       "source": "NRC Power Reactor Status",
-      "ok": true,
-      "fetched": 99,
-      "kept": 99,
-      "skippedOld": 0,
-      "skippedNoUrl": 0,
-      "skippedNoTitle": 0
+      "ok": false,
+      "error": "Status code 403"
     },
     {
       "source": "Nuclear Innovation Alliance",
