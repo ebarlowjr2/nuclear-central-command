@@ -1,5 +1,124 @@
 [
   {
+    "id": "01a666a457c0fb7bf27303e2",
+    "title": "Maintaining Uninterrupted Operations Amid Persistent Drastic Weather Conditions",
+    "summary": "Severe weather conditions have become constant. Cyclones, storms, heatwaves, floods, and droughts continue to put critical infrastructure, homes, livelihoods, and lives at risk in the U.S. and around the world. Heat waves and droughts are the second-deadliest weather category, causing critical infrastructure instability, power line inefficiency, thermal…",
+    "url": "https://www.powermag.com/maintaining-uninterrupted-operations-amid-persistent-drastic-weather-conditions",
+    "source": "POWER Magazine",
+    "publishedAt": "2026-10-19T22:06:39.000Z",
+    "tags": []
+  },
+  {
+    "id": "97ceb70d4da1688630f9ab6d",
+    "title": "India’s Largest Utility Signs PPA With Virginia-Based Solar Group, Will Use Advanced CSP Technology",
+    "summary": "NTPC Limited, India’s largest electric utility, has signed a power purchase agreement with 247 Solar and will deploy that company’s Concentrated Solar Power (CSP) technology as part of its energy strategy. The companies on October 15 said it will mark the first commercial project for 247 Solar and its solar thermal tech. The Virginia-based company […] The…",
+    "url": "https://www.powermag.com/indias-largest-utility-signs-ppa-with-virginia-based-solar-group-will-use-advanced-csp-technology",
+    "source": "POWER Magazine",
+    "publishedAt": "2026-10-19T20:41:41.000Z",
+    "tags": [
+      "country:India",
+      "company:westinghouse",
+      "company:x-energy"
+    ]
+  },
+  {
+    "id": "ca4cbe524d5e50ed401aa74b",
+    "title": "Captona Closes Equity Investment With Nexamp in Large Community Solar Portfolio",
+    "summary": "Captona LLC, a North American investment firm, has announced its latest preferred equity investment in partnership with Nexamp, a fully-integrated distributed generation and community solar company. The investment announced October 13 support the financing of 55 MW of solar generation and 5 MWh of battery storage capacity across 10 projects in four states…",
+    "url": "https://www.powermag.com/captona-closes-equity-investment-with-nexamp-in-large-community-solar-portfolio",
+    "source": "POWER Magazine",
+    "publishedAt": "2026-10-19T19:56:14.000Z",
+    "tags": [
+      "plant:NORTH ANNA-1",
+      "type:PWR",
+      "plant:NORTH ANNA-2"
+    ]
+  },
+  {
+    "id": "f2a4c6fa24370f55e9b79264",
+    "title": "Reducing Performance Losses in Utility-Scale Solar Plants: An O&M Approach",
+    "summary": "Utility-scale solar plants can lose energy without experiencing a complete equipment failure. Dust accumulation can reduce module output, inverter derating can constrain power conversion, tracker faults can leave arrays at suboptimal angles, and communication problems can prevent operators from recognizing underperformance promptly. Some losses are…",
+    "url": "https://www.powermag.com/reducing-performance-losses-in-utility-scale-solar-plants-an-om-approach",
+    "source": "POWER Magazine",
+    "publishedAt": "2026-10-19T19:43:22.000Z",
+    "tags": [
+      "company:x-energy"
+    ]
+  },
+  {
+    "id": "bff31b9303f5531fc720c69a",
+    "title": "AEP, X-energy Eye 960-MW Nuclear Plant at Retired Indiana Coal Site, Backed by Amazon",
+    "summary": "American Electric Power (AEP) and X-energy have agreed to evaluate a 960-MW small modular reactor (SMR) project in Indiana, backed by Amazon development funding and a proposed long-term power purchase agreement designed to protect existing utility customers from project costs. The 12-reactor project would be the second deployment under Amazon and X-energy’s…",
+    "url": "https://www.powermag.com/aep-x-energy-eye-960-mw-nuclear-plant-at-retired-indiana-coal-site-backed-by-amazon",
+    "source": "POWER Magazine",
+    "publishedAt": "2026-10-19T13:59:58.000Z",
+    "tags": [
+      "country:India",
+      "company:ge-hitachi",
+      "company:x-energy",
+      "company:nei",
+      "company:ans"
+    ]
+  },
+  {
+    "id": "fac9b233f6adcfeb9755f457",
+    "title": "Joint venture to produce HALEU in South Africa",
+    "summary": "A joint venture between ASP Isotopes Inc subsidiary Quantum Leap Energy and South African state-owned nuclear energy corporation Necsa will develop, finance, build and operate a test bench and commercial-scale facility for the production of high-assay low-enriched uranium at Necsa's Pelindaba site.",
+    "url": "https://www.world-nuclear-news.org/articles/joint-ventureto-produce-haleu-in-south-africa",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-10-19T13:59:40.000Z",
+    "tags": [
+      "country:South Africa",
+      "company:ge-hitachi",
+      "company:x-energy",
+      "company:nei"
+    ]
+  },
+  {
+    "id": "4deb90836fcf438b6e0388c7",
+    "title": "AEP, Amazon and X-energy planning 12-SMR plant",
+    "summary": "US utility American Electric Power and X-energy have signed a joint development agreement to evaluate a potential 960 MW project at a former coal plant site in Sullivan County, Indiana.",
+    "url": "https://www.world-nuclear-news.org/articles/aep-amazon-and-x-energy-plan-12-smr-plant",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-10-19T13:35:54.000Z",
+    "tags": [
+      "country:India",
+      "company:x-energy"
+    ]
+  },
+  {
+    "id": "4c9f6117088308b70aea6d78",
+    "title": "Building a Successful Large-Scale Utility Energy Efficiency Program: How Early Lessons Continue to Shape PSE&G’s Approach",
+    "summary": "This article draws on lessons from the first triennium of PSE&G’s Energy Efficiency (EE) program and how those experiences have helped shape our approach as the program has progressed. Intended for energy companies, industry peers and others involved in shaping or advancing energy efficiency efforts, the article shares insights on program management and…",
+    "url": "https://www.powermag.com/building-a-successful-large-scale-utility-energy-efficiency-program-how-early-lessons-continue-to-shape-psegs-approach",
+    "source": "POWER Magazine",
+    "publishedAt": "2026-10-19T13:22:50.000Z",
+    "tags": [
+      "company:x-energy"
+    ]
+  },
+  {
+    "id": "db48c1a916e102f34e385bc5",
+    "title": "Rosatom signs floating nuclear power deal for Indonesia",
+    "summary": "Electricity generated by floating nuclear power plants will be provided to an East Indonesian island, according to an agreement signed by Rosatom and Indonesian company PT Pembangkit Listrik Nuklir.",
+    "url": "https://www.world-nuclear-news.org/articles/rosatom-signs-floating-nuclear-power-deal-for-indonesia",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-10-19T11:40:56.000Z",
+    "tags": [
+      "company:rosatom",
+      "company:westinghouse"
+    ]
+  },
+  {
+    "id": "b8c8158abf184bafe98b159e",
+    "title": "Oklo plans isotope facility under US Launch Pad initiative",
+    "summary": "Oklo says the Groves-2 Forge isotope production and processing pilot facility will build on the deployment of its Groves Isotope Test Reactor, which reached criticality earlier this year.",
+    "url": "https://www.world-nuclear-news.org/articles/oklo-plans-isotope-facility-under-us-launch-pad-initiative",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-10-19T09:24:42.000Z",
+    "tags": []
+  },
+  {
     "id": "a2aa4e741523dba724dd1ef8",
     "title": "Pivot Energy Closes $173-Million Loan for 135 MW of Solar Capacity",
     "summary": "Pivot Energy, an impact-focused independent power producer of distributed-scale solar and energy storage, announced the closing of a $173-million term loan facility for a portfolio of 51 community-scale solar projects totaling 135 MW across six states. Long-time financial partners First Citizens Bank, Huntington Bank, and BankUnited provided the takeout…",
@@ -11766,125 +11885,5 @@
       "company:x-energy",
       "company:nei"
     ]
-  },
-  {
-    "id": "5c701d9c8a5b8e79b7338f77",
-    "title": "NRC to Hold Virtual Meeting to Discuss Vogtle and Hatch Nuclear Power Plants Safety Performance",
-    "summary": "",
-    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-001-ii.pdf",
-    "source": "NRC News Releases",
-    "publishedAt": "2026-04-08T19:00:00.000Z",
-    "tags": [
-      "plant:HATCH-1",
-      "type:BWR",
-      "plant:HATCH-2",
-      "plant:VOGTLE-1",
-      "type:PWR"
-    ]
-  },
-  {
-    "id": "ab00873ba79e121f72cfba28",
-    "title": "Westinghouse sets standards to support fleet-scale AP1000 deployment",
-    "summary": "Westinghouse Electric Company's submittal to the US Nuclear Regulatory Commission seeks to incorporate lessons learned from the construction of Vogtle units 3 and 4 into the design control document and establishes Vogtle 4 as the standard AP1000 reference plant for deployment in the USA.",
-    "url": "https://www.world-nuclear-news.org//articles/westinghouse-sets-standards-to-support-fleet-scale-ap1000-deployment",
-    "source": "World Nuclear News",
-    "publishedAt": "2026-04-08T15:24:56.000Z",
-    "tags": [
-      "plant:VOGTLE-1",
-      "type:PWR",
-      "plant:VOGTLE-2",
-      "plant:VOGTLE-3",
-      "company:westinghouse"
-    ]
-  },
-  {
-    "id": "b7cd0d8b927c5923f4104004",
-    "title": "Testing of innovative VVER fuel begins",
-    "summary": "Unit 1 of Russia's Balakovo nuclear power plant has begun pilot operation using accident-tolerant MOX fuel assemblies.",
-    "url": "https://www.world-nuclear-news.org//articles/testing-of-innovative-vver-fuel-begins",
-    "source": "World Nuclear News",
-    "publishedAt": "2026-04-08T15:11:35.000Z",
-    "tags": [
-      "country:Russia",
-      "plant:BALAKOVO-1",
-      "type:PWR",
-      "plant:BALAKOVO-2",
-      "plant:BALAKOVO-3"
-    ]
-  },
-  {
-    "id": "e3ea40f8566e8f50e294c82b",
-    "title": "Commission calls for Norway to prepare for nuclear energy",
-    "summary": "The Norwegian Nuclear Commission has recommended that the government does not start a process for nuclear power development in the country at this stage, but says it should prepare for its possible future use.",
-    "url": "https://www.world-nuclear-news.org//articles/commission-calls-for-norway-to-prepare-for-nuclear-energy",
-    "source": "World Nuclear News",
-    "publishedAt": "2026-04-08T14:11:57.000Z",
-    "tags": [
-      "company:ge-hitachi",
-      "company:x-energy",
-      "company:nei"
-    ]
-  },
-  {
-    "id": "ef171f3bb9d9d0a8308474fc",
-    "title": "Deep Isolation selected for new US federal support",
-    "summary": "The award under the ARPA-E SCALEUP Ready programme will enable full-scale field testing of Deep Isolation's Universal Canister System.",
-    "url": "https://www.world-nuclear-news.org//articles/deep-isolation-selected-for-new-us-federal-support",
-    "source": "World Nuclear News",
-    "publishedAt": "2026-04-08T13:26:44.000Z",
-    "tags": []
-  },
-  {
-    "id": "5ae4536616b97f2facbd9b90",
-    "title": "NRC Schedules Public Outreach to Discuss Comanche Peak Nuclear Power Plant Performance",
-    "summary": "",
-    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-002-iv.pdf",
-    "source": "NRC News Releases",
-    "publishedAt": "2026-04-07T22:00:00.000Z",
-    "tags": [
-      "plant:COMANCHE PEAK-1",
-      "type:PWR",
-      "plant:COMANCHE PEAK-2"
-    ]
-  },
-  {
-    "id": "ea3a1d25a5e74011592eda91",
-    "title": "NRC Receives Westinghouse Application to Update AP1000 Design Certification",
-    "summary": "",
-    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-041.pdf",
-    "source": "NRC News Releases",
-    "publishedAt": "2026-04-06T23:15:00.000Z",
-    "tags": []
-  },
-  {
-    "id": "8387921b7cffb6cf947c0b94",
-    "title": "NRC Unveils Plans to Streamline Reactor Reviews with DOE/DOW Data",
-    "summary": "",
-    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-040.pdf",
-    "source": "NRC News Releases",
-    "publishedAt": "2026-04-06T21:30:00.000Z",
-    "tags": []
-  },
-  {
-    "id": "6fcc70b2a0c511aa0d71d628",
-    "title": "NRC Issues 100th Renewed License with Diablo Canyon Approvals",
-    "summary": "",
-    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-039.pdf",
-    "source": "NRC News Releases",
-    "publishedAt": "2026-04-02T22:52:39.000Z",
-    "tags": [
-      "plant:DIABLO CANYON-1",
-      "type:PWR",
-      "plant:DIABLO CANYON-2"
-    ]
-  },
-  {
-    "id": "571b9d21a5203cf74f10aaaf",
-    "title": "NRC Schedules Public Outreach to Discuss Arkansas Nuclear One Power Plant Performance",
-    "summary": "",
-    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-001-iv.pdf",
-    "source": "NRC News Releases",
-    "publishedAt": "2026-04-02T20:38:02.000Z",
-    "tags": []
   }
 ]
