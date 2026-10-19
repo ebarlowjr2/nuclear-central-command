@@ -1,5 +1,16 @@
 [
   {
+    "id": "a2aa4e741523dba724dd1ef8",
+    "title": "Pivot Energy Closes $173-Million Loan for 135 MW of Solar Capacity",
+    "summary": "Pivot Energy, an impact-focused independent power producer of distributed-scale solar and energy storage, announced the closing of a $173-million term loan facility for a portfolio of 51 community-scale solar projects totaling 135 MW across six states. Long-time financial partners First Citizens Bank, Huntington Bank, and BankUnited provided the takeout…",
+    "url": "https://www.powermag.com/pivot-energy-closes-173-million-loan-for-135-mw-of-solar-capacity",
+    "source": "POWER Magazine",
+    "publishedAt": "2026-10-18T20:28:24.000Z",
+    "tags": [
+      "company:x-energy"
+    ]
+  },
+  {
     "id": "e28bbb296b04afcdef1b1a5d",
     "title": "Wolf Creek 1 - 100% power",
     "summary": "",
@@ -11875,18 +11886,5 @@
     "source": "NRC News Releases",
     "publishedAt": "2026-04-02T20:38:02.000Z",
     "tags": []
-  },
-  {
-    "id": "2e56a553c99170b856c4ab0b",
-    "title": "NRC Makes Nine Mile Point Subsequent License Renewal Application Available",
-    "summary": "",
-    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-038.pdf",
-    "source": "NRC News Releases",
-    "publishedAt": "2026-04-02T18:32:41.000Z",
-    "tags": [
-      "plant:NINE MILE POINT-1",
-      "type:BWR",
-      "plant:NINE MILE POINT-2"
-    ]
   }
 ]
