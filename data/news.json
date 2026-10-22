@@ -1,5 +1,29 @@
 [
   {
+    "id": "d279a9f8f0c510db9fd054d4",
+    "title": "Radiant microreactor selected for deployment by US Navy",
+    "summary": "The US Navy has selected Radiant's Kaleidos microreactor for deployment at Naval Weapons Station Crane, Indiana.",
+    "url": "https://www.world-nuclear-news.org/articles/radiant-microreactor-selected-for-deployment-by-us-navy",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-10-22T11:00:53.000Z",
+    "tags": [
+      "country:India"
+    ]
+  },
+  {
+    "id": "569213f8bf573e35522b19f9",
+    "title": "The challenge of securing uranium from seawater - podcast",
+    "summary": "Supercritical Materials has an exclusive licence from the US Department of Energy for a patented system to extract uranium from the world's oceans. Founder and CEO Canon Bryan outlined the company's plans to the World Nuclear News podcast.",
+    "url": "https://www.world-nuclear-news.org/articles/the-challenge-of-securing-uranium-from-seawater---podcast",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-10-22T10:52:23.000Z",
+    "tags": [
+      "company:ge-hitachi",
+      "company:x-energy",
+      "company:nei"
+    ]
+  },
+  {
     "id": "e28bbb296b04afcdef1b1a5d",
     "title": "Wolf Creek 1 - 100% power",
     "summary": "",
@@ -11867,25 +11891,5 @@
       "company:x-energy",
       "company:nei"
     ]
-  },
-  {
-    "id": "83e7f444096cfbdcc4757df3",
-    "title": "Conditional funding announced for US fusion-based isotope facility",
-    "summary": "The award to SHINE Chrysalis LLC, through the Department of Energy's Office of Energy Dominance Financing, is dependent on the company satisfying technical, legal, environmental, and financial conditions.",
-    "url": "https://www.world-nuclear-news.org//articles/conditional-funding-announced-for-us-fusion-based-isotope-facility",
-    "source": "World Nuclear News",
-    "publishedAt": "2026-04-14T08:14:07.000Z",
-    "tags": [
-      "company:x-energy"
-    ]
-  },
-  {
-    "id": "0986ae93d6f73a40e4b89ee9",
-    "title": "NRC Streamlines Environmental Reviews with Two New Rules",
-    "summary": "",
-    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-042.pdf",
-    "source": "NRC News Releases",
-    "publishedAt": "2026-04-13T23:00:00.000Z",
-    "tags": []
   }
 ]
