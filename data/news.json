@@ -1,5 +1,80 @@
 [
   {
+    "id": "f9fe96a3c98e31247f6dd58c",
+    "title": "Antares Secures BWXT Fuel Agreement, Advances DOE Review for Electricity-Producing Mark-1",
+    "summary": "Antares Nuclear has secured a multi-year agreement with BWX Technologies (BWXT) for advanced nuclear fuel fabrication and received initial Department of Energy (DOE) safety approval for its Mark-1 microreactor, advancing two key requirements for the company’s planned transition from reactor testing to electricity production and military deployments. The…",
+    "url": "https://www.powermag.com/antares-secures-bwxt-fuel-agreement-advances-doe-review-for-electricity-producing-mark-1",
+    "source": "POWER Magazine",
+    "publishedAt": "2026-10-27T14:29:52.000Z",
+    "tags": [
+      "company:westinghouse",
+      "company:ge-hitachi",
+      "company:x-energy",
+      "company:bwxt",
+      "company:nei"
+    ]
+  },
+  {
+    "id": "313a30bc240b2c576ef61b87",
+    "title": "Korea's Kori 3 and 4 set for restarts in 2027",
+    "summary": "Korea Hydro & Nuclear Power has been given approval by South Korea's Nuclear Safety and Security Commission to continue operating Kori Nuclear Power Plant’s unit 3 and 4 for a further 10 years.",
+    "url": "https://www.world-nuclear-news.org/articles/koreas-kori-3-and-4-get-go-ahead-to-restart",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-10-27T14:18:24.000Z",
+    "tags": [
+      "country:Korea,rep.of"
+    ]
+  },
+  {
+    "id": "076be12c81df93392c9a1e5e",
+    "title": "Data Centers Can Have Both: Reliability and Sustainability Are Not Tradeoffs",
+    "summary": "The data center buildout underway across North America is charging ahead at full speed and may even surpass original forecasts. Facility owners are no longer planning incremental expansions. The demand for data, driven by the rapid adoption and maturation of artificial intelligence (AI), now has them planning in gigawatts. Demand has increased; expectations…",
+    "url": "https://www.powermag.com/data-centers-can-have-both-reliability-and-sustainability-are-not-tradeoffs",
+    "source": "POWER Magazine",
+    "publishedAt": "2026-10-27T13:18:42.000Z",
+    "tags": [
+      "plant:NORTH ANNA-1",
+      "type:PWR",
+      "plant:NORTH ANNA-2",
+      "plant:WATTS BAR-1"
+    ]
+  },
+  {
+    "id": "ce85ef130fe5c70c70bb7986",
+    "title": "NVIDIA to consider data centres at former German nuclear sites",
+    "summary": "Germany's PreussenElektra and multinational technology company NVIDIA are to explore whether PreussenElektra's former nuclear power plant sites are suitable for the construction of so-called AI factories.",
+    "url": "https://www.world-nuclear-news.org/articles/nvidia-to-consider-data-centres-at-former-german-nuclear-sites",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-10-27T12:14:46.000Z",
+    "tags": []
+  },
+  {
+    "id": "6dac1523644c1adb8b957578",
+    "title": "Singapore looks to develop nuclear energy expertise",
+    "summary": "The Ministry of Energy, Trade and Industry and the Energy Market Authority of Singapore have launched schemes to develop \"a strong pipeline of local expertise in nuclear energy\".",
+    "url": "https://www.world-nuclear-news.org/articles/singapore-looks-to-develop-nuclear-energy-workforce",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-10-27T11:54:37.000Z",
+    "tags": [
+      "company:ge-hitachi",
+      "company:x-energy",
+      "company:nei"
+    ]
+  },
+  {
+    "id": "5c077b4f096bd4b0d734855d",
+    "title": "Cross-party interest in Australian nuclear future, poll suggests",
+    "summary": "A YouGov poll commissioned by grassroots organisation Nuclear for Australia suggests that almost two-thirds of Australians believe nuclear should be considered as part of the nation's energy future.",
+    "url": "https://www.world-nuclear-news.org/articles/cross-party-interest-in-australian-nuclear-future-poll-suggests",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-10-27T08:59:46.000Z",
+    "tags": [
+      "company:ge-hitachi",
+      "company:x-energy",
+      "company:nei"
+    ]
+  },
+  {
     "id": "e28bbb296b04afcdef1b1a5d",
     "title": "Wolf Creek 1 - 100% power",
     "summary": "",
@@ -11824,77 +11899,5 @@
     "source": "Nuclear Engineering International",
     "publishedAt": "2026-04-16T10:31:32.000Z",
     "tags": []
-  },
-  {
-    "id": "d07880f89aabeabdce0ecc1b",
-    "title": "What is Happening in the Nordic Nuclear Industry?",
-    "summary": "The post What is Happening in the Nordic Nuclear Industry? appeared first on Nuclear Engineering International.",
-    "url": "https://www.neimagazine.com/news/what-is-happening-in-the-nordic-nuclear-industry",
-    "source": "Nuclear Engineering International",
-    "publishedAt": "2026-04-16T10:20:22.000Z",
-    "tags": []
-  },
-  {
-    "id": "da059baaaa933eb57b195939",
-    "title": "UKAEA unveils fusion roadmap",
-    "summary": "The UKAEA has launched its 2026–2030 strategy to support delivery of STEP Fusion and expand the country’s global fusion leadership. The post UKAEA unveils fusion roadmap appeared first on Nuclear Engineering International.",
-    "url": "https://www.neimagazine.com/news/uk-launches-new-fusion-strategy",
-    "source": "Nuclear Engineering International",
-    "publishedAt": "2026-04-16T10:18:52.000Z",
-    "tags": []
-  },
-  {
-    "id": "6197b83b0ac81940f75aa603",
-    "title": "Grohnde NPP is defueled",
-    "summary": "Germany’s Grohnde NPP has completed defueling, marking a major milestone in the dismantling process led by PreussenElektra. The post Grohnde NPP is defueled appeared first on Nuclear Engineering International.",
-    "url": "https://www.neimagazine.com/news/grohnde-completes-defueling",
-    "source": "Nuclear Engineering International",
-    "publishedAt": "2026-04-16T10:03:26.000Z",
-    "tags": []
-  },
-  {
-    "id": "928614d65f7a3b7ca1cb8844",
-    "title": "Bulgaria launches LLW/ILW repository",
-    "summary": "Bulgaria has inaugurated its National Repository for Radioactive Waste near Kozloduy NPP to manage low- and intermediate-level waste. The post Bulgaria launches LLW/ILW repository appeared first on Nuclear Engineering International.",
-    "url": "https://www.neimagazine.com/news/bulgaria-inaugurates-radwaste-facility",
-    "source": "Nuclear Engineering International",
-    "publishedAt": "2026-04-16T09:51:44.000Z",
-    "tags": [
-      "country:Bulgaria",
-      "plant:KOZLODUY-5",
-      "type:PWR",
-      "plant:KOZLODUY-6"
-    ]
-  },
-  {
-    "id": "da5baa51c3eaaed736bd3925",
-    "title": "Saeul 3 set for criticality",
-    "summary": "Saeul NPP Unit 3 has completed mandatory pre-criticality inspections, clearing the way for the reactor’s next commissioning stage. The post Saeul 3 set for criticality appeared first on Nuclear Engineering International.",
-    "url": "https://www.neimagazine.com/news/saeul-3-cleared-for-criticality",
-    "source": "Nuclear Engineering International",
-    "publishedAt": "2026-04-16T09:35:22.000Z",
-    "tags": [
-      "plant:SAEUL-1",
-      "type:PWR",
-      "plant:SAEUL-2",
-      "plant:SAEUL-3"
-    ]
-  },
-  {
-    "id": "b6fb15ae0ccec69498bd7238",
-    "title": "Bulgarian minister wants fixed price for Kozloduy 7 and 8",
-    "summary": "Minister of Energy Traycho Traykov has said Bulgaria wants its proposed new nuclear power units at the Kozloduy plant to be built at fixed prices.",
-    "url": "https://www.world-nuclear-news.org//articles/bulgarian-minister-wants-fixed-price-for-kozloduy-7-and-8",
-    "source": "World Nuclear News",
-    "publishedAt": "2026-04-16T07:19:23.000Z",
-    "tags": [
-      "country:Bulgaria",
-      "plant:KOZLODUY-5",
-      "type:PWR",
-      "plant:KOZLODUY-6",
-      "company:ge-hitachi",
-      "company:x-energy",
-      "company:nei"
-    ]
   }
 ]
