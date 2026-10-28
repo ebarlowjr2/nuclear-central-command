@@ -1,5 +1,31 @@
 [
   {
+    "id": "609c1bacd339356fa129c6a4",
+    "title": "Nuclear is Ethiopia's next chapter, PM says",
+    "summary": "Ethiopia's next chapter is about transforming its immense potential and abundant natural resources into tangible development, technological advancement, and shared prosperity, the country's Prime Minister Abiy Ahmed Ali said as he visited the Ethiopian Nuclear Energy Commission.",
+    "url": "https://www.world-nuclear-news.org/articles/nuclear-is-ethiopias-next-chapter-pm-says",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-10-28T10:29:34.000Z",
+    "tags": [
+      "company:ge-hitachi",
+      "company:x-energy",
+      "company:nei"
+    ]
+  },
+  {
+    "id": "6899869866ed34e930fa422c",
+    "title": "DOE Offers Constellation Up to $5B Loan for 1.1 GW of Nuclear Uprates at Eight Plants",
+    "summary": "The Department of Energy (DOE) has offered Constellation Energy a conditional loan commitment of up to $5 billion to finance nuclear power uprates and modernization at eight plants in Illinois, Maryland, and Pennsylvania. The proposed investments could add nearly 1.1 GW of generating capacity to the nation’s existing nuclear fleet. The commitment marks the…",
+    "url": "https://www.powermag.com/doe-offers-constellation-up-to-5b-loan-for-1-1-gw-of-nuclear-uprates-at-eight-plants",
+    "source": "POWER Magazine",
+    "publishedAt": "2026-10-27T23:43:23.000Z",
+    "tags": [
+      "company:ge-hitachi",
+      "company:x-energy",
+      "company:nei"
+    ]
+  },
+  {
     "id": "e28bbb296b04afcdef1b1a5d",
     "title": "Wolf Creek 1 - 100% power",
     "summary": "",
@@ -11882,25 +11908,5 @@
       "company:x-energy",
       "company:nei"
     ]
-  },
-  {
-    "id": "6ad5a90096fc309638d7ab59",
-    "title": "Kashiwazaki-Kariwa 6 resumes commercial operation",
-    "summary": "Unit 6 of the Kashiwazaki-Kariwa nuclear power plant has resumed commercial operation, becoming the first reactor owned by Tokyo Electric Power Company to do so since the accident at its Fukushima Daiichi plant.",
-    "url": "https://www.world-nuclear-news.org//articles/kashiwazaki-kariwa-6-resumes-commercial-operation",
-    "source": "World Nuclear News",
-    "publishedAt": "2026-04-16T13:24:52.000Z",
-    "tags": [
-      "company:westinghouse"
-    ]
-  },
-  {
-    "id": "ffb77ee9b836177d179cf57e",
-    "title": "Application lodged to build microreactor at US university",
-    "summary": "The US Nuclear Regulatory Commission announced it has received an application from the University of Illinois to construct the first research KRONOS micro modular reactor on the university's campus.",
-    "url": "https://www.world-nuclear-news.org//articles/application-lodged-to-build-microreactor-at-us-university",
-    "source": "World Nuclear News",
-    "publishedAt": "2026-04-16T10:44:07.000Z",
-    "tags": []
   }
 ]
