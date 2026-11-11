@@ -1,5 +1,14 @@
 [
   {
+    "id": "cb0c7c4638314c5af541d176",
+    "title": "Study analyses economic impact of Greek nuclear power plant",
+    "summary": "The construction of a 1,600 MW nuclear power plant could contribute about EUR4.5 billion (USD5 billion) to Greece's gross domestic product over the full construction period, according to a new study.",
+    "url": "https://www.world-nuclear-news.org/articles/study-analyses-economic-impact-of-greek-nuclear-power-plant",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-11-11T11:17:00.000Z",
+    "tags": []
+  },
+  {
     "id": "e28bbb296b04afcdef1b1a5d",
     "title": "Wolf Creek 1 - 100% power",
     "summary": "",
@@ -11870,19 +11879,6 @@
     "tags": [
       "plant:CALLAWAY-1",
       "type:PWR"
-    ]
-  },
-  {
-    "id": "8c7367c9985a6f70734eff6e",
-    "title": "NRC Schedules Open House to Discuss LaSalle Power Plant Performance",
-    "summary": "",
-    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-012-iii.pdf",
-    "source": "NRC News Releases",
-    "publishedAt": "2026-06-01T21:00:00.000Z",
-    "tags": [
-      "plant:LASALLE-1",
-      "type:BWR",
-      "plant:LASALLE-2"
     ]
   }
 ]
