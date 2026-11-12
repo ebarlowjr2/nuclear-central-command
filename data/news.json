@@ -1,13 +1,40 @@
 [
   {
-    "id": "72ea1403e07707218056ba98",
-    "title": "Dome installed at Pakistan's Chashma unit 5",
-    "summary": "The inner safety dome has been installed on the containment building of unit 5 at the Chashma nuclear power plant site in Pakistan.",
-    "url": "https://www.world-nuclear-news.org/articles/dome-installed-at-pakistans-chashma-unit-5",
+    "id": "b6a3ddaa152641f92160f6fc",
+    "title": "AtkinsRéalis producing study for six-unit Candu plant in Turkey",
+    "summary": "AtkinsRéalis's Candu Energy Inc and state-owned Türkiye Nükleer Enerji Anonim Şirketi have signed a memorandum of agreement which includes a feasibility study for a potential 4.5 GW plant featuring up to six Candu reactors.",
+    "url": "https://www.world-nuclear-news.org/articles/atkinsrealis-producing-study-for-six-unit-candu-plant-in-turkey",
     "source": "World Nuclear News",
-    "publishedAt": "2026-11-16T14:38:25.000Z",
+    "publishedAt": "2026-11-12T12:05:57.000Z",
     "tags": [
-      "country:Pakistan"
+      "country:Türkiye",
+      "company:x-energy"
+    ]
+  },
+  {
+    "id": "662cf80f0e22d46946a5189f",
+    "title": "First steam generator installed at Lufeng unit 1",
+    "summary": "The first of two steam generators has been installed at unit 1 of the Lufeng nuclear power plant in China's Guangdong province, China Nuclear Industry 23 Construction Company Limited has announced.",
+    "url": "https://www.world-nuclear-news.org/articles/first-steam-generator-installed-at-lufeng-unit-1",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-11-12T12:03:39.000Z",
+    "tags": [
+      "country:China",
+      "plant:LUFENG-1",
+      "type:PWR",
+      "plant:LUFENG-2",
+      "plant:LUFENG-5"
+    ]
+  },
+  {
+    "id": "51e9c2fb757bd79934559ef9",
+    "title": "US test reactor cleared for operations",
+    "summary": "Oklo's Groves Isotope Test Reactor has been cleared for unrestricted operations by the US Department of Energy.",
+    "url": "https://www.world-nuclear-news.org/articles/us-test-reactor-cleared-for-operations",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-11-12T11:30:09.000Z",
+    "tags": [
+      "company:x-energy"
     ]
   },
   {
@@ -1285,6 +1312,17 @@
     "source": "POWER Magazine",
     "publishedAt": "2026-11-11T23:22:41.000Z",
     "tags": []
+  },
+  {
+    "id": "72ea1403e07707218056ba98",
+    "title": "Dome installed at Pakistan's Chashma unit 5",
+    "summary": "The inner safety dome has been installed on the containment building of unit 5 at the Chashma nuclear power plant site in Pakistan.",
+    "url": "https://www.world-nuclear-news.org/articles/dome-installed-at-pakistans-chashma-unit-5",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-11-11T16:38:25.000Z",
+    "tags": [
+      "country:Pakistan"
+    ]
   },
   {
     "id": "85a019dec1c5e25a84dd1dd4",
@@ -11847,41 +11885,6 @@
     "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-013-a.pdf",
     "source": "NRC News Releases",
     "publishedAt": "2026-06-04T18:00:00.000Z",
-    "tags": []
-  },
-  {
-    "id": "8767fcb50fad49c78089fec5",
-    "title": "Urenco in US enrichment expansion",
-    "summary": "Urenco is planning to expand its Eunice, New Mexico enrichment plant to add 2.1 million SWU and strengthen US uranium supply security. The post Urenco in US enrichment expansion appeared first on Nuclear Engineering International.",
-    "url": "https://www.neimagazine.com/news/urenco-in-us-enrichment-expansion",
-    "source": "Nuclear Engineering International",
-    "publishedAt": "2026-06-04T10:49:39.000Z",
-    "tags": [
-      "country:Mexico"
-    ]
-  },
-  {
-    "id": "bdf383ba1a271dcc99e895a3",
-    "title": "HPC unit 2 RPV installed",
-    "summary": "The reactor pressure vessel has been installed at unit 2 of Hinkley Point C in Somerset; another major milestone for the UK’s largest nuclear project. The post HPC unit 2 RPV installed appeared first on Nuclear Engineering International.",
-    "url": "https://www.neimagazine.com/news/hpc-unit-2-rpv-installed",
-    "source": "Nuclear Engineering International",
-    "publishedAt": "2026-06-04T10:40:51.000Z",
-    "tags": [
-      "plant:HINKLEY POINT C-1",
-      "type:PWR",
-      "plant:HINKLEY POINT C-2",
-      "plant:NINE MILE POINT-1",
-      "type:BWR"
-    ]
-  },
-  {
-    "id": "ec41e314a445bce28f389b18",
-    "title": "ZNPP loses offsite power",
-    "summary": "The Zaporizhia nuclear plant briefly lost offsite power after a drone strike hit a substation, with emergency generators supplying backup electricity. The post ZNPP loses offsite power appeared first on Nuclear Engineering International.",
-    "url": "https://www.neimagazine.com/news/znpp-loses-offsite-power",
-    "source": "Nuclear Engineering International",
-    "publishedAt": "2026-06-04T09:00:00.000Z",
     "tags": []
   }
 ]
