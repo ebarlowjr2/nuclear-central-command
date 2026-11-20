@@ -1,14 +1,57 @@
 [
   {
+    "id": "f2cc04c215fe28f5bc4540dc",
+    "title": "AMPERA, Berto Will Combine in Multimillion-Dollar Deal",
+    "summary": "Nuclear power group AMPERA and Berto Acquisition Corp. jointly announced that the companies have entered into a definitive agreement for a business combination. The transaction implies an equity value for AMPERA of about $900 million on a pre-money equity. AMPERA develops scalable power solutions for data center, defense, industrial, and maritime…",
+    "url": "https://www.powermag.com/ampera-berto-will-combine-in-multimillion-dollar-deal",
+    "source": "POWER Magazine",
+    "publishedAt": "2026-11-20T18:25:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "522375486513f5bfa2a2cad8",
+    "title": "New Mexico Agency Backs Pacific Fusion Radioactive Materials License",
+    "summary": "Pacific Fusion said the New Mexico Environment Department (NMED) has approved the company’s radioactive materials license. The move announced November 20 will enable Pacific Fusion to operate a fusion machine and supports the group’s efforts to commercialize fusion energy in the state. The license authorizes Pacific Fusion to possess and use tritium fuel…",
+    "url": "https://www.powermag.com/new-mexico-agency-backs-pacific-fusion-radioactive-materials-license",
+    "source": "POWER Magazine",
+    "publishedAt": "2026-11-20T17:50:16.000Z",
+    "tags": [
+      "country:Mexico",
+      "company:x-energy"
+    ]
+  },
+  {
     "id": "d3e7590f58b3a12a79fa5a31",
     "title": "Lloyd's Register approves new rules for nuclear for maritime",
     "summary": "UK-based classification society and professional advisory service Lloyd's Register has approved Rules for the Classification of Ships and Offshore Units Integrated with Nuclear Power, providing a common classification framework to support the assessment of nuclear technologies for maritime use.",
     "url": "https://www.world-nuclear-news.org/articles/lloyds-register-approves-new-rules-for-nuclear-for-maritime",
     "source": "World Nuclear News",
-    "publishedAt": "2026-11-20T14:15:21.000Z",
+    "publishedAt": "2026-11-20T16:45:21.000Z",
     "tags": [
       "company:bwxt",
       "company:ans"
+    ]
+  },
+  {
+    "id": "d6e10617016697226e95d664",
+    "title": "Partners prepare to procure next batch of equipment for Polish plant",
+    "summary": "Polskie Elektrownie Jądrowe has signed a letter of intent with the Westinghouse-Bechtel consortium concerning the extension of the scope of the Engineering Development Agreement to cover activities related to the procurement of long lead items for the initial unit of Poland's planned first nuclear power plant.",
+    "url": "https://www.world-nuclear-news.org/articles/partners-prepare-to-procure-next-batch-of-equipment-for-polish-plant",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-11-20T16:00:58.000Z",
+    "tags": [
+      "company:bechtel"
+    ]
+  },
+  {
+    "id": "fad15d011f3ed73415dbf115",
+    "title": "Pacific Fusion secures key licence for New Mexico campus",
+    "summary": "The New Mexico Environment Department has approved the radioactive materials licence for pulsed magnetic fusion system developer Pacific Fusion's Research and Manufacturing Campus in Albuquerque, enabling the company to operate a fusion machine.",
+    "url": "https://www.world-nuclear-news.org/articles/pacific-fusion-secures-key-licence-for-new-mexico-campus",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-11-20T15:22:03.000Z",
+    "tags": [
+      "country:Mexico"
     ]
   },
   {
@@ -17,13 +60,22 @@
     "summary": "Energy Minister Kgosientsho Ramokgopa has said his department is preparing to put the case for an additional 5.2 GW of nuclear capacity in South Africa \"before the public and will consider submissions on their merits\".",
     "url": "https://www.world-nuclear-news.org/articles/south-africa-moving-ahead-on-new-nuclear-plans",
     "source": "World Nuclear News",
-    "publishedAt": "2026-11-20T13:04:09.000Z",
+    "publishedAt": "2026-11-20T14:11:09.000Z",
     "tags": [
       "country:South Africa",
       "company:ge-hitachi",
       "company:x-energy",
       "company:nei"
     ]
+  },
+  {
+    "id": "eca90231cd063a4b1f47ccd6",
+    "title": "Radiant expands facilities to support microreactor deployment",
+    "summary": "The multimillion-dollar expansion of Radiant's US manufacturing footprint includes a new headquarters and manufacturing facility in California, where its first commercial reactors will be assembled, as well as continued development of its campus in Tennessee.",
+    "url": "https://www.world-nuclear-news.org/articles/radiant-expands-facilities-to-support-microreactor-deployment",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-11-20T14:00:28.000Z",
+    "tags": []
   },
   {
     "id": "4ba2127ed5f9525edbbc87e3",
@@ -1462,6 +1514,15 @@
     "url": "https://www.world-nuclear-news.org/articles/nuclear-manda-deals-total-10.3-billion-in-first-nine-months-of-2026",
     "source": "World Nuclear News",
     "publishedAt": "2026-11-18T08:53:02.000Z",
+    "tags": []
+  },
+  {
+    "id": "e09e6de6a0924be2086b5a50",
+    "title": "The POWER Podcast",
+    "summary": "The POWER Podcast is available through Apple Podcasts, Spotify, YouTube, YouTube Music, Amazon Music, iHeart, TuneIn, SoundCloud, and some other podcast apps. Follow the links below to subscribe via your favorite platform: Apple Podcasts Spotify YouTube YouTube Music Amazon Music iHeart TuneIn SoundCloud The POWER Podcast Archive: Spiky AI Loads Are Forcing…",
+    "url": "https://www.powermag.com/the-power-podcast",
+    "source": "POWER Magazine",
+    "publishedAt": "2026-11-18T05:00:00.000Z",
     "tags": []
   },
   {
@@ -11774,77 +11835,6 @@
       "company:ge-hitachi",
       "company:x-energy",
       "company:nei"
-    ]
-  },
-  {
-    "id": "c24dd29d80c2ff7573ae4fbd",
-    "title": "World's oldest operating nuclear units back on India's grid",
-    "summary": "Nuclear Power Corporation of India Limited says that following extensive modernisation and refurbishment the first two units at India's oldest nuclear power plant, Tarapur Atomic Power Station, are now back delivering power.",
-    "url": "https://www.world-nuclear-news.org//articles/worlds-oldest-operating-nuclear-units-back-on-indias-grid",
-    "source": "World Nuclear News",
-    "publishedAt": "2026-06-19T10:26:41.000Z",
-    "tags": [
-      "country:India",
-      "plant:TARAPUR-3",
-      "type:PHWR",
-      "plant:TARAPUR-4"
-    ]
-  },
-  {
-    "id": "52540efc47523f19a22cc60f",
-    "title": "Concrete poured for reactor shaft at Leningrad's eighth unit",
-    "summary": "The pouring of concrete has begun for the reactor shaft at what will be the eighth unit at the Leningrad nuclear power plant. The reinforced concrete structure will ultimately stand 34 metres tall.",
-    "url": "https://www.world-nuclear-news.org//articles/concrete-poured-for-reactor-shaft-at-leningrads-eighth-unit",
-    "source": "World Nuclear News",
-    "publishedAt": "2026-06-19T08:56:10.000Z",
-    "tags": [
-      "plant:LENINGRAD 2-1",
-      "type:PWR",
-      "plant:LENINGRAD 2-2",
-      "plant:LENINGRAD 2-3"
-    ]
-  },
-  {
-    "id": "1f1ebd5419d426fcc6cd6953",
-    "title": "Valar Atomic’s Ward 250 Becomes Second Reactor to Go Critical Under DOE Pilot Program",
-    "summary": "Valar Atomics has achieved self-sustaining criticality and completed zero-power testing at Ward 250, its Gen IV tri-structural isotropic (TRISO)-fueled modular high-temperature gas reactor (HTGR), at the Utah San Rafael Energy Lab in Emery County. The project is the second advanced reactor to go critical under the Department of Energy’s (DOE’s) Reactor…",
-    "url": "https://www.powermag.com/valar-atomics-ward-250-becomes-second-reactor-to-go-critical-under-doe-pilot-program",
-    "source": "POWER Magazine",
-    "publishedAt": "2026-06-19T05:00:06.000Z",
-    "tags": [
-      "company:x-energy"
-    ]
-  },
-  {
-    "id": "4c99bb8eefd9ee59064a33e9",
-    "title": "NRC Proposes Rule Changes to Accelerate Advanced Nuclear Fuel Infrastructure",
-    "summary": "",
-    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-067.pdf",
-    "source": "NRC News Releases",
-    "publishedAt": "2026-06-19T00:05:00.000Z",
-    "tags": []
-  },
-  {
-    "id": "72adca193cf2ac6c270e5fb8",
-    "title": "NRC Schedules Public Outreach to Discuss Columbia Generating Station Performance",
-    "summary": "",
-    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-011-iv.pdf",
-    "source": "NRC News Releases",
-    "publishedAt": "2026-06-18T22:15:00.000Z",
-    "tags": [
-      "plant:COLUMBIA",
-      "type:BWR"
-    ]
-  },
-  {
-    "id": "001b3ecb5b1b9a849715d1b5",
-    "title": "FERC Orders All Six Regional Grid Operators to Justify or Rewrite Large-Load Tariffs",
-    "summary": "The Federal Energy Regulatory Commission (FERC) has voted unanimously to issue tailored show-cause orders under Section 206 of the Federal Power Act to each of the six regional transmission organizations (RTOs) and independent system operators (ISOs) under its jurisdiction, directing them to either defend or reform tariff rules governing how data centers,…",
-    "url": "https://www.powermag.com/ferc-orders-all-six-regional-grid-operators-to-justify-or-rewrite-large-load-tariffs",
-    "source": "POWER Magazine",
-    "publishedAt": "2026-06-18T21:20:56.000Z",
-    "tags": [
-      "company:x-energy"
     ]
   }
 ]
