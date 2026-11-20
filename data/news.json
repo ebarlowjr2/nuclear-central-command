@@ -1,5 +1,60 @@
 [
   {
+    "id": "4d1e5294640a426c2b50b941",
+    "title": "Blykalla Secures World’s First HALEU Enrichment Contract for a Commercial Lead-Cooled Reactor",
+    "summary": "Swedish advanced nuclear developer Blykalla has signed an agreement with Urenco that the companies describe as the world’s first high-assay low-enriched uranium (HALEU) enrichment contract for a commercial lead-cooled reactor. The agreement covers Blykalla’s first commercial 55-MWe Swedish Advanced Lead Reactor (SEALER), which the company plans to deploy in…",
+    "url": "https://www.powermag.com/blykalla-secures-worlds-first-haleu-enrichment-contract-for-a-commercial-lead-cooled-reactor",
+    "source": "POWER Magazine",
+    "publishedAt": "2026-11-19T21:50:24.000Z",
+    "tags": []
+  },
+  {
+    "id": "110cff549a4022eaa3c17226",
+    "title": "DOE Offers $2.8B Conditional Loan for 1.8-GW Wyoming Link Between Eastern and Western Grids",
+    "summary": "The U.S. Department of Energy (DOE) has offered up to $2.8 billion in conditional financing for Wyoming Intertie, a proposed 106-mile transmission project in southeastern Wyoming that could more than double existing power transfer capacity between the Eastern and Western Interconnections, the nation’s two largest synchronous grids. The federal loan, which…",
+    "url": "https://www.powermag.com/doe-offers-2-8b-conditional-loan-for-1-8-gw-wyoming-link-between-eastern-and-western-grids",
+    "source": "POWER Magazine",
+    "publishedAt": "2026-11-19T21:42:41.000Z",
+    "tags": [
+      "company:x-energy"
+    ]
+  },
+  {
+    "id": "00d3807bee9ae3ed5e65641f",
+    "title": "Five Grid Operators Respond to FERC With Distinct Plans for Large-Load Integration",
+    "summary": "Five U.S. regional grid operators have submitted sweeping tariff reforms to the Federal Energy Regulatory Commission (FERC) that could fundamentally change how data centers and other large electricity consumers connect to the transmission system, secure access to generating capacity, and pay for the necessary infrastructure. The proposals, filed Nov. 13 and…",
+    "url": "https://www.powermag.com/five-grid-operators-respond-to-ferc-with-distinct-plans-for-large-load-integration",
+    "source": "POWER Magazine",
+    "publishedAt": "2026-11-19T21:05:45.000Z",
+    "tags": [
+      "company:x-energy"
+    ]
+  },
+  {
+    "id": "4fe78ec5acdfdb9ab2f608f6",
+    "title": "Energy crisis reinforces comeback of nuclear power, says IEA",
+    "summary": "Unprecedented disruption in the energy world - primarily resulting from the war in the Middle East - is set to reinforce the comeback of nuclear power, according to the International Energy Agency's latest World Energy Outlook, which has revised its forecast for nuclear upwards.",
+    "url": "https://www.world-nuclear-news.org/articles/energy-crisis-reinforces-comeback-of-nuclear-power-says-iea",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-11-19T16:39:51.000Z",
+    "tags": [
+      "company:ge-hitachi",
+      "company:x-energy",
+      "company:nei"
+    ]
+  },
+  {
+    "id": "d07e38a099a90ec8686cbc29",
+    "title": "Samsung, Tesser to collaborate on nuclear-powered LNG carrier",
+    "summary": "South Korean shipbuilder Samsung Heavy Industries and US nuclear technology company Tesser Atomics have entered into an exclusive strategic collaboration on a demonstration project for a transatlantic nuclear-powered liquefied natural gas carrier.",
+    "url": "https://www.world-nuclear-news.org/articles/samsung-tesser-to-collaborate-on-nuclear-power-lng-carrier",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-11-19T15:31:29.000Z",
+    "tags": [
+      "country:Korea,rep.of"
+    ]
+  },
+  {
     "id": "e28bbb296b04afcdef1b1a5d",
     "title": "Wolf Creek 1 - 100% power",
     "summary": "",
@@ -1267,30 +1322,43 @@
     "tags": []
   },
   {
-    "id": "4fe78ec5acdfdb9ab2f608f6",
-    "title": "Energy crisis reinforces comeback of nuclear power, says IEA",
-    "summary": "Unprecedented disruption in the energy world - primarily resulting from the war in the Middle East - is set to reinforce the comeback of nuclear power, according to the International Energy Agency's latest World Energy Outlook, which has revised its forecast for nuclear upwards.",
-    "url": "https://www.world-nuclear-news.org/articles/energy-crisis-reinforces-comeback-of-nuclear-power-says-iea",
-    "source": "World Nuclear News",
-    "publishedAt": "2026-11-19T11:39:51.000Z",
-    "tags": [
-      "company:ge-hitachi",
-      "company:x-energy",
-      "company:nei"
-    ]
-  },
-  {
     "id": "5fd4f390db47841cb1898567",
     "title": "Hot and cold testing under way for Turkey's Akkuyu 1",
     "summary": "The first nuclear power reactor in Turkey has moved a step closer to start-up, with hot and cold commissioning tests taking place.",
     "url": "https://www.world-nuclear-news.org/articles/hot-cold-testing-under-way-for-turkeys-akkuyu-1",
     "source": "World Nuclear News",
-    "publishedAt": "2026-11-19T09:46:39.000Z",
+    "publishedAt": "2026-11-19T10:46:39.000Z",
     "tags": [
       "plant:AKKUYU-1",
       "type:PWR",
       "plant:AKKUYU-2",
       "plant:AKKUYU-3"
+    ]
+  },
+  {
+    "id": "30b1f58c5887b2c72f1acb1a",
+    "title": "Bulgaria's NEK signs MoU for potential BWRX-300 projects",
+    "summary": "State-owned electricity company Natsionalna Elektricheska Kompania has signed a memorandum of understanding with Poland's SGE and Blue Bird Energy to cooperate on the deployment of BWRX-300 small modular reactors in Bulgaria.",
+    "url": "https://www.world-nuclear-news.org/articles/bulgarias-nek-signs-mou-for-potential-bwrx-300-projects",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-11-19T10:42:59.000Z",
+    "tags": [
+      "country:Bulgaria",
+      "plant:COOPER",
+      "type:BWR",
+      "company:westinghouse",
+      "company:x-energy"
+    ]
+  },
+  {
+    "id": "f940dc54cefe797648ca797e",
+    "title": "New nuclear projects offer economic advantages for Ontario",
+    "summary": "Four major nuclear projects could bring billions of dollars of economic benefits to Ontario and to Canada - but government and industry need to act now to turn the nuclear buildout into a lasting industrial advantage, according to a report from the national body representing Canada's manufacturing sector.",
+    "url": "https://www.world-nuclear-news.org/articles/new-nuclear-projects-offer-economic-advantages-for-ontario",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-11-19T08:35:50.000Z",
+    "tags": [
+      "country:Canada"
     ]
   },
   {
@@ -11818,69 +11886,6 @@
       "company:ge-hitachi",
       "company:x-energy",
       "company:nei"
-    ]
-  },
-  {
-    "id": "56bb0d0cb470087f81f2010f",
-    "title": "NRC Starts Licensing Review for a New Medical Isotope Facility in New Mexico",
-    "summary": "",
-    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-065.pdf",
-    "source": "NRC News Releases",
-    "publishedAt": "2026-06-16T17:20:00.000Z",
-    "tags": [
-      "country:Mexico"
-    ]
-  },
-  {
-    "id": "94d0d5d767c2dd69d975954c",
-    "title": "Studsvik seeks state aid for SMRs",
-    "summary": "Studsvik has applied for Swedish state support to develop up to 1,400 MWe of new SMR capacity under the country’s financing framework. The post Studsvik seeks state aid for SMRs appeared first on Nuclear Engineering International.",
-    "url": "https://www.neimagazine.com/news/studsvik-seeks-state-aid-for-smrs",
-    "source": "Nuclear Engineering International",
-    "publishedAt": "2026-06-16T16:59:21.000Z",
-    "tags": []
-  },
-  {
-    "id": "5a5fa988463a98d745b25643",
-    "title": "Oklo clears DOE safety milestone",
-    "summary": "The US DoE has approved Oklo’s Preliminary Documented Safety Analysis for the Aurora-INL reactor, bringing it a step closer to construction and operation. The post Oklo clears DOE safety milestone appeared first on Nuclear Engineering International.",
-    "url": "https://www.neimagazine.com/news/oklo-clears-doe-safety-milestone",
-    "source": "Nuclear Engineering International",
-    "publishedAt": "2026-06-16T16:50:46.000Z",
-    "tags": []
-  },
-  {
-    "id": "d0e320d4d36b3a0721e0de8c",
-    "title": "Ports study nuclear ship readiness",
-    "summary": "A joint study by Lloyd’s Register, Port of Rotterdam, Core Power, and Maersk suggests EU port safety rules could already support nuclear-powered ships. The post Ports study nuclear ship readiness appeared first on Nuclear Engineering International.",
-    "url": "https://www.neimagazine.com/news/ports-study-nuclear-ship-readiness",
-    "source": "Nuclear Engineering International",
-    "publishedAt": "2026-06-16T15:30:04.000Z",
-    "tags": []
-  },
-  {
-    "id": "fc87cd87f145cd42af284f2d",
-    "title": "ITER gyrotron installation advances",
-    "summary": "The first three Russian-made gyrotrons have been installed at ITER’s Radiofrequency Building in France. The post ITER gyrotron installation advances appeared first on Nuclear Engineering International.",
-    "url": "https://www.neimagazine.com/news/iter-gyrotron-installation-advances",
-    "source": "Nuclear Engineering International",
-    "publishedAt": "2026-06-16T15:17:46.000Z",
-    "tags": [
-      "country:France",
-      "country:Russia"
-    ]
-  },
-  {
-    "id": "33ffcfc4a4e0fe6f1ad155c7",
-    "title": "NRC approves Hatch licence renewal",
-    "summary": "The US NRC has granted the Edwin I Hatch Nuclear Plant in Georgia a 20-year subsequent licence renewal, extending operations to 80 years. The post NRC approves Hatch licence renewal appeared first on Nuclear Engineering International.",
-    "url": "https://www.neimagazine.com/news/nrc-approves-hatch-licence-renewal",
-    "source": "Nuclear Engineering International",
-    "publishedAt": "2026-06-16T15:01:59.000Z",
-    "tags": [
-      "plant:HATCH-1",
-      "type:BWR",
-      "plant:HATCH-2"
     ]
   }
 ]
