@@ -1,5 +1,44 @@
 [
   {
+    "id": "d3e7590f58b3a12a79fa5a31",
+    "title": "Lloyd's Register approves new rules for nuclear for maritime",
+    "summary": "UK-based classification society and professional advisory service Lloyd's Register has approved Rules for the Classification of Ships and Offshore Units Integrated with Nuclear Power, providing a common classification framework to support the assessment of nuclear technologies for maritime use.",
+    "url": "https://www.world-nuclear-news.org/articles/lloyds-register-approves-new-rules-for-nuclear-for-maritime",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-11-20T14:15:21.000Z",
+    "tags": [
+      "company:bwxt",
+      "company:ans"
+    ]
+  },
+  {
+    "id": "41d10ca152c597d7d66d7649",
+    "title": "South Africa moving ahead on new nuclear plans",
+    "summary": "Energy Minister Kgosientsho Ramokgopa has said his department is preparing to put the case for an additional 5.2 GW of nuclear capacity in South Africa \"before the public and will consider submissions on their merits\".",
+    "url": "https://www.world-nuclear-news.org/articles/south-africa-moving-ahead-on-new-nuclear-plans",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-11-20T13:04:09.000Z",
+    "tags": [
+      "country:South Africa",
+      "company:ge-hitachi",
+      "company:x-energy",
+      "company:nei"
+    ]
+  },
+  {
+    "id": "4ba2127ed5f9525edbbc87e3",
+    "title": "Nuclea Energy concludes Moltex acquisition",
+    "summary": "Nuclea Energy has concluded its acquisition of Moltex Energy Limited's technology and intellectual property portfolio, adding the WATSS used nuclear fuel recycling technology and the SSR-W small modular reactor design to Nuclea's portfolio which already includes the Morpheus lead-cooled microreactor design.",
+    "url": "https://www.world-nuclear-news.org/articles/nuclea-concludes-moltex-acquisition",
+    "source": "World Nuclear News",
+    "publishedAt": "2026-11-20T10:18:43.000Z",
+    "tags": [
+      "company:ge-hitachi",
+      "company:x-energy",
+      "company:nei"
+    ]
+  },
+  {
     "id": "4d1e5294640a426c2b50b941",
     "title": "Blykalla Secures World’s First HALEU Enrichment Contract for a Commercial Lead-Cooled Reactor",
     "summary": "Swedish advanced nuclear developer Blykalla has signed an agreement with Urenco that the companies describe as the world’s first high-assay low-enriched uranium (HALEU) enrichment contract for a commercial lead-cooled reactor. The agreement covers Blykalla’s first commercial 55-MWe Swedish Advanced Lead Reactor (SEALER), which the company plans to deploy in…",
@@ -1796,6 +1835,15 @@
     ]
   },
   {
+    "id": "742fcbcc29a74a3d4a10f6d3",
+    "title": "NRC Streamlines Advisory Committee Role To Support Advanced Nuclear Licensing",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-084.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-11-12T10:00:00.000Z",
+    "tags": []
+  },
+  {
     "id": "3ee2cb5639e321ce6eea4f28",
     "title": "Bids invited for construction of UK prototype fusion plant",
     "summary": "UK Fusion Energy is seeking tenders for five engineering contracts worth up to GBP115 million (USD152 million) covering the design, integration, testing and control of key systems needed to operate the planned STEP fusion power plant.",
@@ -2163,6 +2211,15 @@
     ]
   },
   {
+    "id": "a21dbd047b62c9a1a1b05a28",
+    "title": "NRC Issues First Construction Permit in Nearly 60 Years for High-Temperature Gas-Cooled Reactor",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-083.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-11-09T10:00:00.000Z",
+    "tags": []
+  },
+  {
     "id": "49c9b3dc0fbdfa4303b8e453",
     "title": "The mothballed nuclear power plant",
     "summary": "The Philippines is considering refurbishing and commissioning the Bataan Nuclear Power Plant, which was completed in 1986 but was never started up. Warwick Pipe visited it to see how it is looking, 40 years on.",
@@ -2520,6 +2577,15 @@
     ]
   },
   {
+    "id": "fdf77e223c01e2f521683008",
+    "title": "Chairman Nieh Remarks at 2026 INPO CEO Conference",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/documents/s-26-006.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-11-03T10:00:00.000Z",
+    "tags": []
+  },
+  {
     "id": "4e617fb295e747c29b8a59a4",
     "title": "Rosatom planning new uranium processing plant",
     "summary": "A site has been selected, and design work is under way on a processing plant with a capacity of 11,000 tonnes of uranium oxide per year, according to Russia's state nuclear corporation Rosatom.",
@@ -2683,6 +2749,15 @@
     "url": "https://www.world-nuclear-news.org/articles/game-of-thrones-actor-aims-to-highlight-chernobyls-need-for-international-support",
     "source": "World Nuclear News",
     "publishedAt": "2026-10-30T10:10:34.000Z",
+    "tags": []
+  },
+  {
+    "id": "961a85a3f1ab842741c35982",
+    "title": "NRC Finalizes Contested Hearing Rule, Will Resolve Simplest Cases Within Six Months",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-082.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-10-30T08:00:00.000Z",
     "tags": []
   },
   {
@@ -3078,6 +3153,24 @@
     ]
   },
   {
+    "id": "5db5ac2b2711e37a7cb1e951",
+    "title": "NRC Advisory: NRC to Hold Second Workshop on New Reactor Licensing Pathways",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-034-a.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-10-23T08:00:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "8e24c285d3bc77aa724b9441",
+    "title": "NRC Proposes $36,000 Civil Penalty Against Industrial Radiography Company for Safety Violations",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-016-iii.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-10-23T08:00:00.000Z",
+    "tags": []
+  },
+  {
     "id": "c43ed064e726efdd97bc3fe1",
     "title": "NRC Finalizes Rule Allowing Reactor Applicants to Use DOE, DOW Demonstration Data",
     "summary": "The Nuclear Regulatory Commission (NRC) on Oct. 22 finalized a rule that allows commercial nuclear reactor applicants to use analyses, test data, and other technical evidence from reactor demonstrations previously authorized by the Department of Energy (DOE) or Department of War (DOW) to support license applications. The measure establishes a more direct…",
@@ -3152,6 +3245,15 @@
     "url": "https://www.world-nuclear-news.org/articles/smrs-could-be-part-of-port-of-rotterdams-future-says-study",
     "source": "World Nuclear News",
     "publishedAt": "2026-10-22T09:30:35.000Z",
+    "tags": []
+  },
+  {
+    "id": "658f6f5b31128e68a1b2053c",
+    "title": "NRC Finalizes Rule to Streamline Licensing for Reactor Designs Tested by DOE or DOW",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-081.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-10-22T08:00:00.000Z",
     "tags": []
   },
   {
@@ -3341,6 +3443,15 @@
       "plant:DUKOVANY-2",
       "plant:DUKOVANY-3"
     ]
+  },
+  {
+    "id": "ae89a4ce90ba8492a2ac6b9e",
+    "title": "NRC Advisory: NRC, FERC Commissioners to Meet Oct. 22 to Discuss Grid Reliability, Nuclear Power Plants, and Cyber Security",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-033-a.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-10-20T08:00:00.000Z",
+    "tags": []
   },
   {
     "id": "01a666a457c0fb7bf27303e2",
@@ -3705,6 +3816,28 @@
       "company:ge-hitachi",
       "company:x-energy",
       "company:nei"
+    ]
+  },
+  {
+    "id": "e23057bc738455b102f9a222",
+    "title": "NRC Updates AP1000 Design Certification, Streamlines Future Reactor Licensing",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-080.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-10-14T08:00:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "fd1622d99ce6843863448557",
+    "title": "NRC Begins Special Inspection at Dresden Nuclear Power Plant",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-015-iii.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-10-14T08:00:00.000Z",
+    "tags": [
+      "plant:DRESDEN-2",
+      "type:BWR",
+      "plant:DRESDEN-3"
     ]
   },
   {
@@ -4148,6 +4281,15 @@
     ]
   },
   {
+    "id": "35e27831716031fca9a3b0da",
+    "title": "NRC Advisory: NRC Commissioners to Host Public Meeting in Texas",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-032-a.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-10-07T08:00:00.000Z",
+    "tags": []
+  },
+  {
     "id": "5f29f5b9e6083c3e56b2bf30",
     "title": "Denver-Based Fusion Group Receives $30.5-Million Award from DOE",
     "summary": "Fusion energy company Xcimer Energy said it has finalized an agreement for up to $30.5 million in additional federal funding through the U.S. Department of Energy’s (DOE’s) Milestone-Based Fusion Development Program. The new DOE award, announced October 6, is for the program’s second budget period. It brings the total DOE funding for potential Milestone…",
@@ -4492,6 +4634,15 @@
       "plant:NINE MILE POINT-1",
       "type:BWR"
     ]
+  },
+  {
+    "id": "337a4ca6ce0a997c0a73b1ae",
+    "title": "NRC Advisory: NRC to Hold Webinars on Proposed Overhaul of Reactor Regulations",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-031-a.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-10-01T08:00:00.000Z",
+    "tags": []
   },
   {
     "id": "793eb95247901d03304b0e38",
@@ -4844,6 +4995,15 @@
     "tags": []
   },
   {
+    "id": "749a75b156b3bcefc62cca14",
+    "title": "NRC Approves Construction of Nation’s First Small Modular Reactor",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-079_0.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-09-29T08:00:00.000Z",
+    "tags": []
+  },
+  {
     "id": "afcfb17f051398a97c4f5dc7",
     "title": "NRC completes environmental review of Crane restart",
     "summary": "The US regulator, together with the Department of Energy Office of Energy Dominance Financing, has issued an environmental assessment and finding of no significant impact for environmental effects from proposed Federal actions related to reauthorising power operations at the Christopher Crane Clean Energy Center in Pennsylvania.",
@@ -5028,6 +5188,17 @@
     "tags": []
   },
   {
+    "id": "a8b75aa1e9d9ba5b563205ff",
+    "title": "Indiana Becomes 41st State to Assume Oversight of Radioactive Materials",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-078.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-09-24T08:00:00.000Z",
+    "tags": [
+      "country:India"
+    ]
+  },
+  {
     "id": "3ae170e1b6ede7bac255ab2e",
     "title": "POWER Digest [October 2026]",
     "summary": "Infinigen, a Puerto Rico-based independent power producer, in late August announced the closing of a $33-million tax equity investment in the Yabucoa Solar Project. The post POWER Digest [October 2026] appeared first on POWER Magazine.",
@@ -5203,6 +5374,17 @@
       "type:PWR",
       "plant:MOCHOVCE-2",
       "plant:MOCHOVCE-3"
+    ]
+  },
+  {
+    "id": "bd14a1aa0310660482375c6b",
+    "title": "NRC Advisory: NRC to Hold Public Hearing on Eden Medical Isotope Facility in New Mexico",
+    "summary": "",
+    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-030-a.pdf",
+    "source": "NRC News Releases",
+    "publishedAt": "2026-09-22T08:00:00.000Z",
+    "tags": [
+      "country:Mexico"
     ]
   },
   {
@@ -11663,229 +11845,6 @@
     "publishedAt": "2026-06-18T21:20:56.000Z",
     "tags": [
       "company:x-energy"
-    ]
-  },
-  {
-    "id": "643a74169e97578a25faa211",
-    "title": "In a First for Advanced Nuclear: Siemens Energy Turbine Package Advances for Oklo’s Aurora-INL",
-    "summary": "The steam turbine and generator package for Oklo’s first Aurora powerhouse at Idaho National Laboratory (INL)—a pioneering application of a commercially established industrial turbine platform at the heart of a first-of-a-kind advanced reactor’s conventional island—is in active production at Siemens Energy’s facilities in Görlitz and Erfurt, Germany. In…",
-    "url": "https://www.powermag.com/in-a-first-for-advanced-nuclear-siemens-energy-turbine-package-advances-for-oklos-aurora-inl",
-    "source": "POWER Magazine",
-    "publishedAt": "2026-06-18T18:49:19.000Z",
-    "tags": [
-      "company:ge-hitachi",
-      "company:x-energy",
-      "company:nei"
-    ]
-  },
-  {
-    "id": "ab995b6d5d22617442879f77",
-    "title": "NRC Schedules Public Outreach to Discuss River Bend Nuclear Power Plant Performance",
-    "summary": "",
-    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-010-iv.pdf",
-    "source": "NRC News Releases",
-    "publishedAt": "2026-06-18T18:45:00.000Z",
-    "tags": [
-      "plant:RIVER BEND-1",
-      "type:BWR"
-    ]
-  },
-  {
-    "id": "d6531569f78c45e83effd6d4",
-    "title": "Sites selected for Korean nuclear new build",
-    "summary": "Yeongdeok in North Gyeongsang Province has been selected by Korea Hydro & Nuclear Power for two new large-scale nuclear reactors. Gijang, in Busan, has been chosen to site a new small modular reactor.",
-    "url": "https://www.world-nuclear-news.org//articles/sites-selected-for-korean-nuclear-new-build",
-    "source": "World Nuclear News",
-    "publishedAt": "2026-06-18T13:55:09.000Z",
-    "tags": [
-      "country:Korea,rep.of",
-      "plant:NORTH ANNA-1",
-      "type:PWR",
-      "plant:NORTH ANNA-2"
-    ]
-  },
-  {
-    "id": "805e0456791fbdabed46e61d",
-    "title": "What changes are needed to help rollout of advanced nuclear technologies in UK?",
-    "summary": "There are currently several barriers to enabling the widespread deployment of advanced nuclear technologies in the UK, delegates heard at the NextGen Nuclear Summit held in London.",
-    "url": "https://www.world-nuclear-news.org//articles/what-changes-needed-advanced-nuclear-technologies-rollout-uk",
-    "source": "World Nuclear News",
-    "publishedAt": "2026-06-18T12:03:47.000Z",
-    "tags": [
-      "company:bwxt"
-    ]
-  },
-  {
-    "id": "e9d9cdd18c9cb56cc55443ea",
-    "title": "Estonia's Parliament passes new nuclear energy law",
-    "summary": "The Nuclear Energy and Safety Act sets out key steps required for the deployment of nuclear energy in Estonia, including rules \"for selecting the location of a nuclear power plant and for its construction, testing, and operation, as well as the rules for its decommissioning, and the final disposal of nuclear waste\".",
-    "url": "https://www.world-nuclear-news.org//articles/estonias-parliament-passes-new-nuclear-energy-law",
-    "source": "World Nuclear News",
-    "publishedAt": "2026-06-18T11:47:48.000Z",
-    "tags": [
-      "company:ge-hitachi",
-      "company:x-energy",
-      "company:nei"
-    ]
-  },
-  {
-    "id": "3f58eb3a4da3412e5134dbc5",
-    "title": "Heavy water delivered for Argentina's RA-10 multipurpose reactor",
-    "summary": "Twenty drums, containing six tonnes of heavy water, have been transferred from the Heavy Water Industrial Plant in Neuquén to the Ezeiza Atomic Centre for use in the neutron reflector system for Argentina's new RA-10 multipurpose reactor.",
-    "url": "https://www.world-nuclear-news.org//articles/heavy-water-delivered-for-argentinas-ra-10-multipurpose-reactor",
-    "source": "World Nuclear News",
-    "publishedAt": "2026-06-18T11:30:44.000Z",
-    "tags": [
-      "country:Argentina"
-    ]
-  },
-  {
-    "id": "f3cc7874df156e9297d7b480",
-    "title": "Fusion plant clears regulatory milestone",
-    "summary": "The receipt of two licences from the Washington Department of Health marks a major milestone for fusion company Helion in its project to build its Orion nuclear power plant.",
-    "url": "https://www.world-nuclear-news.org//articles/fusion-plant-clears-regulatory-milestone",
-    "source": "World Nuclear News",
-    "publishedAt": "2026-06-18T11:22:44.000Z",
-    "tags": []
-  },
-  {
-    "id": "fcc3d1fc3f6e0a49f4cff772",
-    "title": "Shine, Newcleo join up to close nuclear fuel cycle",
-    "summary": "US fusion energy company Shine has joined a consortium that is working to build US nuclear fuel recycling capability. It has also agreed to work with France-based company Newcleo to link Shine's recycling capabilities with Newcleo's reactors, which are designed to run on recycled fuel.",
-    "url": "https://www.world-nuclear-news.org//articles/shine-newcleo-french-join-up-to-close-nuclear-fuel-cycle",
-    "source": "World Nuclear News",
-    "publishedAt": "2026-06-18T10:32:25.000Z",
-    "tags": [
-      "country:France",
-      "company:ge-hitachi",
-      "company:x-energy",
-      "company:nei"
-    ]
-  },
-  {
-    "id": "7fe4b2c180d59cc4c1b11a4d",
-    "title": "Podcast: Urenco expansion plans to fuel nuclear growth",
-    "summary": "Laurent Odeh, chief commercial officer for Urenco, outlines the uranium enrichment and nuclear fuel services company's capacity expansion plans as it responds to a record order book.",
-    "url": "https://www.world-nuclear-news.org//articles/podcast-urenco-expansion-plans-to-fuel-nuclear-growth",
-    "source": "World Nuclear News",
-    "publishedAt": "2026-06-17T20:52:29.000Z",
-    "tags": [
-      "plant:ST. LAURENT B-1",
-      "type:PWR",
-      "plant:ST. LAURENT B-2"
-    ]
-  },
-  {
-    "id": "77bbdc058cefd43c091b9edb",
-    "title": "Sweden's Parliament approves reclassification of uranium mining",
-    "summary": "The Swedish Parliament has approved amendments to Swedish legislation that will streamline the permitting process for the extraction and processing of uranium, to treat it in a similar way to other metals and minerals. It has also approved a government-proposed amendment that will open up more coastal sites to potential nuclear power projects.",
-    "url": "https://www.world-nuclear-news.org//articles/parliament-approves-amendments-to-swedish-nuclear-law",
-    "source": "World Nuclear News",
-    "publishedAt": "2026-06-17T17:45:40.000Z",
-    "tags": [
-      "country:Sweden"
-    ]
-  },
-  {
-    "id": "7b68f59197f5b8d26e8381a2",
-    "title": "TerraPower’s Natrium reactor begins UK GDA process",
-    "summary": "TerraPower's Natrium 345 MWe sodium-cooled fast reactor with a molten-salt-based energy storage system has officially started the UK's Generic Design Assessment process.",
-    "url": "https://www.world-nuclear-news.org//articles/terrapowers-natrium-reactor-begins-uk-gda-process",
-    "source": "World Nuclear News",
-    "publishedAt": "2026-06-17T13:49:03.000Z",
-    "tags": [
-      "company:terrapower",
-      "company:x-energy"
-    ]
-  },
-  {
-    "id": "626b20491c876ca36f628063",
-    "title": "Core Power to assess BWXT SMRs for floating nuclear power plants",
-    "summary": "Maritime nuclear energy specialist Core Power has launched a feasibility study into using BWX Technologies' mPower small modular reactors in floating nuclear power plants.",
-    "url": "https://www.world-nuclear-news.org//articles/core-power-to-assess-bwxt-smrs-for-floating-power-plants",
-    "source": "World Nuclear News",
-    "publishedAt": "2026-06-17T10:39:33.000Z",
-    "tags": [
-      "company:ge-hitachi",
-      "company:x-energy",
-      "company:bwxt",
-      "company:nei"
-    ]
-  },
-  {
-    "id": "d83a19dba4c8adb7c60ec308",
-    "title": "NRC Finalizes Fee Rule to Increase Cost Certainty and Lower Barriers for Nuclear Energy Projects",
-    "summary": "",
-    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-066.pdf",
-    "source": "NRC News Releases",
-    "publishedAt": "2026-06-17T07:50:00.000Z",
-    "tags": [
-      "company:ge-hitachi",
-      "company:x-energy",
-      "company:nei"
-    ]
-  },
-  {
-    "id": "2dd83cba79c1664aeb9d7750",
-    "title": "UK to guarantee enriched uranium supplies to Ukraine",
-    "summary": "The UK has agreed to provide guarantees for a GBP210 million (USD282 million) loan for supplies of enriched uranium to Ukraine's nuclear power producer, Energoatom, over the next two years.",
-    "url": "https://www.world-nuclear-news.org//articles/uk-to-guarantee-enriched-uranium-supplies-to-ukraine",
-    "source": "World Nuclear News",
-    "publishedAt": "2026-06-17T07:47:30.000Z",
-    "tags": [
-      "country:Ukraine"
-    ]
-  },
-  {
-    "id": "937a214ba89569aeb2027002",
-    "title": "NRC Advisory: NRC Kicks Off Environmental Review of Cooper License Renewal",
-    "summary": "",
-    "url": "https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-016-a.pdf",
-    "source": "NRC News Releases",
-    "publishedAt": "2026-06-16T22:30:00.000Z",
-    "tags": [
-      "plant:COOPER",
-      "type:BWR"
-    ]
-  },
-  {
-    "id": "96bef30920df641ef694fa52",
-    "title": "Russian sanctions relief for Kozloduy",
-    "summary": "Bulgaria has granted Kozloduy NPP a sanctions exemption allowing imports of critical Russian-made components to maintain reactor safety and reliability. The post Russian sanctions relief for Kozloduy appeared first on Nuclear Engineering International.",
-    "url": "https://www.neimagazine.com/news/russian-sanctions-relief-for-kozloduy",
-    "source": "Nuclear Engineering International",
-    "publishedAt": "2026-06-16T22:16:35.000Z",
-    "tags": [
-      "country:Bulgaria",
-      "country:Russia",
-      "plant:KOZLODUY-5",
-      "type:PWR",
-      "plant:KOZLODUY-6"
-    ]
-  },
-  {
-    "id": "adb51979e348ddae46e1f5f1",
-    "title": "Sizewell B extension deal nears",
-    "summary": "EDF and Centrica are reported to be close to a draft agreement with the UK government to extend Sizewell B’s operating life to 2055. The post Sizewell B extension deal nears appeared first on Nuclear Engineering International.",
-    "url": "https://www.neimagazine.com/news/sizewell-b-extension-talks-advance",
-    "source": "Nuclear Engineering International",
-    "publishedAt": "2026-06-16T22:00:45.000Z",
-    "tags": [
-      "plant:SIZEWELL B",
-      "type:PWR"
-    ]
-  },
-  {
-    "id": "f3968eb6f45346f600f73d25",
-    "title": "FERC clears TMI restart",
-    "summary": "Constellation Energy has secured FERC approval to overcome transmission barriers and accelerate the restart of Three Mile Island Unit 1. The post FERC clears TMI restart appeared first on Nuclear Engineering International.",
-    "url": "https://www.neimagazine.com/news/ferc-clears-tmi-restart",
-    "source": "Nuclear Engineering International",
-    "publishedAt": "2026-06-16T21:47:43.000Z",
-    "tags": [
-      "company:ge-hitachi",
-      "company:x-energy",
-      "company:nei"
     ]
   }
 ]
