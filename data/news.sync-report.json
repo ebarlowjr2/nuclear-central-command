@@ -1,15 +1,15 @@
 {
   "ok": true,
-  "ranAt": "2026-11-23T06:33:10.542Z",
+  "ranAt": "2026-11-23T23:35:19.581Z",
   "total": 1000,
-  "inserted": 142,
-  "updated": 200,
+  "inserted": 14,
+  "updated": 155,
   "sources": [
     {
       "source": "World Nuclear News",
       "ok": true,
-      "fetched": 51,
-      "kept": 51,
+      "fetched": 50,
+      "kept": 50,
       "skippedOld": 0,
       "skippedNoUrl": 0,
       "skippedNoTitle": 0
@@ -54,12 +54,8 @@
     },
     {
       "source": "NRC News Releases",
-      "ok": true,
-      "fetched": 173,
-      "kept": 172,
-      "skippedOld": 1,
-      "skippedNoUrl": 0,
-      "skippedNoTitle": 0
+      "ok": false,
+      "error": "Status code 403"
     },
     {
       "source": "NRC Power Reactor Status",
