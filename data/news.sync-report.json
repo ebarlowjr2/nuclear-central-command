@@ -1,9 +1,9 @@
 {
   "ok": true,
-  "ranAt": "2026-11-26T21:07:14.902Z",
+  "ranAt": "2026-11-27T07:27:06.261Z",
   "total": 1000,
-  "inserted": 148,
-  "updated": 194,
+  "inserted": 143,
+  "updated": 199,
   "sources": [
     {
       "source": "World Nuclear News",
@@ -36,7 +36,7 @@
     {
       "source": "World Nuclear Association",
       "ok": false,
-      "error": "Status code 404"
+      "error": "Request timed out after 20000ms"
     },
     {
       "source": "DOE Office of Nuclear Energy",
